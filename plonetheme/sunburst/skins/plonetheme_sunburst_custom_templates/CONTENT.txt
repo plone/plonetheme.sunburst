@@ -1,0 +1,3 @@
+This folder holds Filesystem Page Template files that are registered for the
+'Sunburst Theme' Skin Selection only.
+They act as replacement for the default Plone (or 3rd party products) ones.

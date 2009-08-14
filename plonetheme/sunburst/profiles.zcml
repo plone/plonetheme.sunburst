@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="plonetheme.sunburst">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="Sunburst Theme"
+      directory="profiles/default"
+      description='Extension profile for the "Sunburst Theme" Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+</configure>

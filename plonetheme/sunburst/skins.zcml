@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    i18n_domain="plonetheme.sunburst">
+
+   <!-- File System Directory Views registration -->
+   <cmf:registerDirectory
+       name="plonetheme_sunburst_custom_images"/>
+   <cmf:registerDirectory
+       name="plonetheme_sunburst_custom_templates"/>
+   <cmf:registerDirectory
+       name="plonetheme_sunburst_styles"/>
+
+</configure>
