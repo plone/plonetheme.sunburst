@@ -13,18 +13,5 @@
     <!-- Viewlets registration -->
     <!-- Zope 3 browser resources -->
 
-    <!-- Resource directory for images -->
-    <browser:resourceDirectory
-        name="plonetheme.sunburst.images"
-        directory="images"
-        layer=".interfaces.IThemeSpecific"
-        />
-
-    <!-- Resource directory for stylesheets -->
-    <browser:resourceDirectory
-        name="plonetheme.sunburst.stylesheets"
-        directory="stylesheets"
-        layer=".interfaces.IThemeSpecific"
-        />
 
 </configure>
