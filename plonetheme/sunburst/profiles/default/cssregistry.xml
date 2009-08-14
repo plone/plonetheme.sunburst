@@ -1,6 +1,12 @@
 <?xml version="1.0"?>
 <object name="portal_css">
 
+ <!-- Disable some default stylesheets -->
+ <stylesheet enabled="0" id="base.css" />
+ <stylesheet enabled="0" id="public.css" />
+ <stylesheet enabled="0" id="columns.css" />
+ <stylesheet enabled="0" id="portlets.css" /> 
+
  <stylesheet title=""
     id="main.css"
     media="screen" rel="stylesheet" rendering="import"
