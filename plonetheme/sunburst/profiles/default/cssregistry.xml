@@ -6,6 +6,10 @@
  <stylesheet enabled="0" id="public.css" />
  <stylesheet enabled="0" id="columns.css" />
  <stylesheet enabled="0" id="portlets.css" /> 
+ <stylesheet enabled="0" id="authoring.css" /> 
+ <stylesheet enabled="0" id="print.css" /> 
+ <stylesheet enabled="0" id="deprecated.css" /> 
+ <stylesheet enabled="0" id="invisibles.css" /> 
 
  <stylesheet title=""
     id="main.css"

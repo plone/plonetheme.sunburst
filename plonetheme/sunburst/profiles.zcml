@@ -7,7 +7,7 @@
       name="default"
       title="Sunburst Theme"
       directory="profiles/default"
-      description='Extension profile for the "Sunburst Theme" Plone theme.'
+      description='Sunburst is a modern, minimalist, grid-based, HTML5 theme for Plone 4.'
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
