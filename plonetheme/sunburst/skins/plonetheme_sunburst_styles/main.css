@@ -934,10 +934,12 @@ dl.error dd {
 	margin: 0 auto;
 	background-color: #75ad0a;
 	clear: both;
-	border-radius: 0.5em;
-	-webkit-border-radius: 0.5em;
-	-moz-border-radius: 0.5em;
-	padding-left: 0.5em;
+	border-top-right-radius: 0.5em;
+	border-top-left-radius: 0.5em;
+	-webkit-border-top-right-radius: 0.5em;
+	-webkit-border-top-left-radius: 0.5em;
+	-moz-border-radius-topleft: 0.5em;
+	-moz-border-radius-topright: 0.5em;
 }
 
 #content-views ul { 
@@ -963,6 +965,12 @@ dl.error dd {
 	border-top: 0.1em solid #75ad0a;
 	line-height: 2em;
 	padding-top: 0.25em;
+	border-top-right-radius: 0.5em;
+	border-top-left-radius: 0.5em;
+	-webkit-border-top-right-radius: 0.5em;
+	-webkit-border-top-left-radius: 0.5em;
+	-moz-border-radius-topleft: 0.5em;
+	-moz-border-radius-topright: 0.5em;
 }
 
 /*#content-views li:hover a,
@@ -1292,9 +1300,15 @@ ul.formTabs {
     display: block;
     list-style-type: none;
     text-align: center;
-	background-color: #329fd7;
-	border-top: 3px solid #329fd7;
+	background-color: #ccc;
+	border-top: 3px solid #ccc;
 	margin-left: 0 !important;
+	border-top-right-radius: 0.5em;
+	border-top-left-radius: 0.5em;
+	-webkit-border-top-right-radius: 0.5em;
+	-webkit-border-top-left-radius: 0.5em;
+	-moz-border-radius-topleft: 0.5em;
+	-moz-border-radius-topright: 0.5em;
 }
 li.formTab {
     display: inline !important;
@@ -1306,8 +1320,8 @@ li.formTab a {
     display: inline-block;
 }
 li.formTab a {
-	background-color: #329fd7;
-    color: White !important;
+	background-color: #ccc;
+    color: #205c90 !important;
     padding: 0.125em 0.75em;
     text-decoration: none;
 	border: none !important;
@@ -1322,7 +1336,13 @@ li.lastFormTab a {
 li.formTab a.selected,
 li.formTab a:hover {
     background: White;
-    color: #329fd7 !important;
+    color: Black !important;
+	border-top-right-radius: 0.5em;
+	border-top-left-radius: 0.5em;
+	-webkit-border-top-right-radius: 0.5em;
+	-webkit-border-top-left-radius: 0.5em;
+	-moz-border-radius-topleft: 0.5em;
+	-moz-border-radius-topright: 0.5em;
 }
 li.formTab a.notify {
     background-color: #ffce7b;
