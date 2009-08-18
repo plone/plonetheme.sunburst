@@ -1,0 +1,138 @@
+<!DOCTYPE html> <!-- TODO: If ZPT isn't fixed, we need to move the master macro to surround the entire thing -->
+<html metal:define-macro="master"
+	tal:define="portal_state context/@@plone_portal_state;
+		context_state context/@@plone_context_state;
+		plone_view context/@@plone;
+		lang portal_state/language;
+		view nocall:view | nocall: plone_view;
+		dummy python: plone_view.mark_view(view);
+		portal_url portal_state/portal_url;
+		checkPermission nocall: context/portal_membership/checkPermission;
+		site_properties context/portal_properties/site_properties;"
+	tal:attributes="lang lang;">
+
+<!-- TODO: Can we do this in the @@plone view? -->
+<tal:cache tal:define="charset site_properties/default_charset|string:utf-8">
+	<metal:cache use-macro="context/global_cache_settings/macros/cacheheaders">
+	Get the global cache headers located in global_cache_settings.
+</metal:cache>
+</tal:cache>
+
+<head>
+	<meta name="generator" content="Plone - http://plone.org" />
+
+	<!-- Forces IE8+ into newest rendering engine even if on an intranet. This has to be defined before any script/style tags. -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+
+	<metal:baseslot define-slot="base">
+		<base tal:attributes="href context/renderBase" /><!--[if lt IE 7]></base><![endif]-->
+	</metal:baseslot>
+
+	<div tal:replace="structure provider:plone.htmlhead" />
+	<link tal:replace="structure provider:plone.htmlhead.links" />
+
+	<link rel="stylesheet" href="main.css" type="text/css" media="screen" charset="utf-8">
+
+	<tal:comment replace="nothing"> 
+		Various slots where you can insert elements in the header from a template.
+	</tal:comment>
+	<metal:topslot define-slot="top_slot" />
+	<metal:headslot define-slot="head_slot" />
+	<metal:styleslot define-slot="style_slot" />
+	<metal:javascriptslot define-slot="javascript_head_slot" />
+</head>
+
+<!-- TODO: Can we do this in the @@plone view? -->
+<body tal:define="isRTL portal_state/is_rtl;
+		sl python:plone_view.have_portlets('plone.leftcolumn');
+		sr python:plone_view.have_portlets('plone.rightcolumn');"
+	tal:attributes="class string:${context/getSectionFromURL} template-${template/id};
+		dir python:test(isRTL, 'rtl', 'ltr')">
+
+<div id="visual-portal-wrapper">
+
+	<header>
+		<div id="portal-top" i18n:domain="plone">
+			<div tal:replace="structure provider:plone.portaltop" />
+		</div>
+	</header>
+	<div id="portal-columns">
+		<aside>
+			<div id="portal-column-one" metal:define-slot="column_one_slot" tal:condition="sl">
+				<metal:portlets define-slot="portlets_one_slot">
+					<tal:block replace="structure provider:plone.leftcolumn" />
+				</metal:portlets>
+			</div>
+		</aside>
+
+		<div id="portal-column-content" metal:define-slot="content">
+			<div metal:define-macro="content"
+				tal:define="show_border context/@@plone/showEditableBorder"
+				tal:attributes="class python:test(show_border,'documentEditable','')">
+
+				<div tal:replace="structure provider:plone.contentviews" />
+
+				<div id="region-content" class="documentContent">
+
+					<a name="documentContent"></a>
+
+					<div metal:use-macro="context/global_statusmessage/macros/portal_message">
+						Portal status message
+					</div>
+
+					<div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" />
+
+					<metal:slot metal:define-slot="body">
+					<article>
+						<div id="content">
+							<header>
+								<metal:header metal:define-slot="header" tal:content="nothing">
+								Visual Header
+								</metal:header>
+							</header>
+							
+							<metal:bodytext metal:define-slot="main" tal:content="nothing">
+							Page body text
+							</metal:bodytext>
+						</div>
+					</article>
+					</metal:slot>
+
+					<metal:sub metal:define-slot="sub">
+						<div tal:replace="structure provider:plone.belowcontent" />
+					</metal:sub>
+			</div>
+		</div>
+
+		<aside>
+			<div id="portal-column-two" metal:define-slot="column_two_slot" tal:condition="sr">
+				<metal:portlets define-slot="portlets_two_slot">
+				<tal:block replace="structure provider:plone.rightcolumn" />
+				</metal:portlets>
+			</div>
+		</aside>
+	</div>
+
+	<!-- TODO: Can we do this in the @@plone view? -->
+	<div tal:define="context_state context/@@plone_context_state; portlet_assignable context_state/portlet_assignable"
+		tal:condition="python:not sl and not sr and portlet_assignable and checkPermission('Portlets: Manage portlets', context)">
+		<a class="managePortletsFallback"
+			tal:attributes="href string:${context_state/canonical_object_url}/@@manage-portlets"
+			i18n:translate="manage_portlets_fallback">
+			Manage portlets
+		</a>
+	</div>
+
+	<metal:block i18n:domain="plone">
+		<footer>
+		<div tal:replace="structure provider:plone.portalfooter" />
+		</footer>
+	</metal:block>
+
+</div>
+
+<!-- TODO: This needs to go away. -->
+<div id="kss-spinner"><img tal:attributes="src string:${portal_url}/spinner.png" alt="" /></div>
+
+</body>
+</html>

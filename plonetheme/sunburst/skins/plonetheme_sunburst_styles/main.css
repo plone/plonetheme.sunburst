@@ -1,4 +1,1565 @@
-/*
-** Main stylesheet for plonetheme.sunburst Plone theme
-*/
+/* @override http://localhost:8080/4/main.css */
 
+/* @group CSS Reset */
+
+/* Remove implicit browser styles to have a neutral starting point:
+   - No elements should have implicit margin/padding
+   - No underline by default on links (we add it explicitly in the body text)
+   - When we want markers on lists, we will be explicit about it, and they render inline by default
+   - Browsers are inconsistent about hX/pre/code, reset
+   - Linked images should not have borders
+   */
+
+* { margin: 0; padding: 0; }
+* :link,:visited { text-decoration:none }
+* ul,ol { list-style:none; }
+* li { display: inline; }
+* h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; }
+* a img,:link img,:visited img { border:none } 
+a { outline: none; }
+table { border-spacing: 0; }
+img { vertical-align: middle; }
+
+
+
+/* @end */
+
+/* @group Basics */
+
+body { 
+	font: 100% Arial, FreeSans, sans-serif;
+	background: White;
+	color: Black;
+	margin: 1em;
+	/* width: 58em; margin: 1em auto; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Helvetica Neue", Arial, FreeSans, sans-serif; 
+	font-weight: bold;
+	line-height: 125%;
+	color: Black;
+}
+h1, h2 {
+	letter-spacing: -1px;
+}
+h1 {
+	font-size: 1.625em; /* 26px equiv */
+}
+h2 {
+	font-size: 1.375em; /* 22px equiv */
+}
+h3 {
+	font-size: 1.125em; /* 18px equiv */
+}
+h4 {
+	font-size: 0.875em; /* 14px equiv */
+}
+h5 {
+	font-size: 0.75em; /* 12px equiv */
+}
+h6 {
+	font-size: 0.625em; /* 10px equiv */
+}
+
+p {
+	font-size: 0.75em; /* 12px equiv */
+}
+
+a:link, a:visited {
+	color: #205c90;
+}
+
+dt {
+	font-weight: bold;
+}
+input {
+	font-family: "Lucida Grande", Arial, FreeSans;
+}
+
+/* @end */
+
+/* @group Grid */
+
+/* Grid classes, these can also be nested */
+.grid-row {
+  float: left;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.grid-cell {
+  position: relative;
+  float: left;
+  left: 100%;
+}
+
+/* Widths, these are abstracted out so that pixel-based layouts or other
+   similar approaches can be retrofitted without changing the markup,
+   or if you want to apply rules like the Golden Ratio to your layouts */
+.width-half {
+	width: 50%;
+}
+.width-quarter {
+	width: 25%;
+}
+.width-three-quarters {
+	width: 75%;
+}
+.width-third {
+	width: 33.33%;
+}
+.width-two-thirds {
+	width: 66.67%;
+}
+
+/* Positioning classes, these are subtracting from a rightmost position */
+.position-leftmost {
+	margin-left: -100%;
+}
+.position-third {
+	margin-left: -66.67%;
+}
+.position-two-thirds {
+	margin-left: -33.33%;
+}
+.position-quarter {
+	margin-left: -75%;
+}
+.position-half {
+	margin-left: -50%;
+}
+.position-three-quarters {
+	margin-left: -25%;
+}
+
+/* @end */
+
+/* @group Navigation/search */
+
+#portal-logo {
+	display: inline-block;
+	margin-bottom: 1em;
+}
+
+#portal-globalnav {
+	clear: both;
+	font-size: 80%;
+	background: #ddd;
+	margin-bottom: 1em;
+}
+#portal-globalnav li {
+}
+#portal-globalnav li a {
+	display: inline-block;
+	padding: 0.5em 2em 2em 0.5em;	
+	background: #ddd;
+	min-width: 4em;
+	white-space: normal;
+	/*TODO: Once we have removed the whitespace from the nav template, this can be put back*/
+	/*border-bottom: 0.1em solid White;*/
+	border-right: 0.1em solid white;
+}
+
+#portal-globalnav .selected a,
+#portal-globalnav a:hover {
+	background: #205c90;
+	color: White;
+}
+
+
+#portal-personaltools {
+	float: right;
+	background: #ddd;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0.25em 0.5em;
+	margin-right: 1em;
+	font-size: 80%;
+	border: 0.1em solid #ddd;
+	border-bottom-right-radius: 0.5em;
+	border-bottom-left-radius: 0.5em;
+	-webkit-border-bottom-right-radius: 0.5em;
+	-webkit-border-bottom-left-radius: 0.5em;
+	-moz-border-radius-bottomleft: 0.5em;
+	-moz-border-radius-bottomright: 0.5em;
+
+}
+
+#portal-searchbox {
+	float: right;
+	text-align: left;
+	clear: right;
+	margin-top: 1.5em;
+	font-size: 80%;
+}
+
+#portal-siteactions,
+#portal-breadcrumbs {
+	font-size: 80%;
+}
+
+
+/* @end */
+
+
+/* @group Splash pages */
+
+div.splash {
+	font-family: "Helvetica Neue", Arial, FreeSans, sans-serif; 
+	background-color: #205c90;
+	color: White;
+	margin-bottom: 1em;
+	padding: 1em 1.5em 2em;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+}
+
+#content div.splash h1 {	
+	color: White;
+	letter-spacing: 0;
+}
+
+
+#content div.splash h2,
+#content div.splash h3 {
+	color: White;
+	letter-spacing: 0;
+	font-weight: normal;
+}
+
+#content div.splash a {
+	color: White;
+	border: none;
+	background: transparent 0 -114px url(http://plone.org/images/sprite-ploneorg.png) no-repeat;
+	padding-left: 16px;
+	font-size: 1.375em;
+	font-weight: bold;
+}
+
+div.pullout {
+	background-color: #87B829;
+	padding-left: 2.5em;
+	margin-left: -1em;
+}
+
+div.pullout li {
+	display: block;
+}
+
+div.pullout li a:before {
+	content: "→ ";
+}
+
+/*TODO: #sidebar & .sidebar need to be consolidated*/
+#sidebar {
+	padding-top: 2em;
+}
+
+div.sidebar {
+	padding-top: 0.5em;
+	margin-left: 1em;
+}
+
+#sidebar-frontpage {
+	margin-left: 0;
+}
+
+#content div.sidebar h3 {
+	margin: 0;
+	font-size: 1em;
+}
+
+#content div.sidebar ul,
+#content div.sidebar ol {
+	list-style: none;	
+	margin: 0;
+}
+
+#content div.sidebar ul li {
+	margin-bottom: 0;
+}
+
+#content div.sidebar ul li a {
+	line-height: 36px;
+	font-size: 18px;
+	display: block;
+	border-top: 1px solid #eee;
+	border-bottom: none;
+	font-weight: bold;
+	background: url(http://plone.org/images/sprite-ploneorg.png) no-repeat;
+    background-position: 0 -441px;
+	padding-left: 16px;
+	letter-spacing: -1px;
+}
+
+div.sidebar ol li {
+	line-height: 18px;
+	display: block;
+	margin-bottom: 0.5em;
+	padding-top: 0.5em;
+	clear: both;
+	list-style: none;
+}
+
+div.sidebar ol li a {
+	font-weight: bold;
+	display: block;
+}
+
+img.book-cover {
+	float: left;
+	display: block;
+	padding: 2px;
+	border: 1px solid #ddd;
+	margin: 5px 15px 10px 0;
+}
+
+/* @group Page-specific splash styles */
+
+#splash-frontpage {
+	min-height: 15.5em;
+	margin-right: 1em;
+	background: #205c90 0 -23px url(http://plone.org//images/frontpage-image.png) no-repeat;
+}
+
+#splash-frontpage a {
+	float: right;
+	margin-top: 3.5em;
+
+}
+
+#splash-downloads {
+	height: 11em;
+}
+
+#sidebar-downloads {
+	height: 11em;
+}
+
+#splash-downloads h1,
+#splash-downloads p {
+	text-align: right;
+	margin-right: 20px;
+}
+
+#splash-download-plone {
+	background: transparent 0 -30px url(http://plone.org/images/sprite-ploneorg.png) no-repeat !important;
+	height:58px;
+	width:300px;
+	margin:10px 0px 10px 260px;
+	display: block;
+	float: right;
+	font-size: 1em !important;
+	padding-top: 1em;
+}	
+
+#splash-download-package {
+	background: transparent 0 -495px url(http://plone.org/images/sprite-ploneorg.png) no-repeat;
+	height:130px;
+	margin-left: 2em;
+}
+
+
+#splash-documentation {
+	min-height: 99px;
+
+}
+
+/* @end */
+
+/* @end */
+
+/* @group Listings */
+
+/* @group Pane */
+
+div.pane {
+	background-color: #eee;
+	padding: 0.7em;
+	clear: left;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+}
+
+div.pane h2 {
+	font-size: 1.1em;
+	padding-bottom: 0.5em;
+	padding-left: 0.5em;
+}
+
+a.versions {
+	font-size: 12px;
+	color: #555;
+	padding: 2px;
+}
+
+a.versions:hover {
+	background-color: #666;
+	color: White;
+}
+
+div.pagesearch {
+	float: right;
+	font-size: 11px;
+	padding-right: 10px;
+}
+
+#categories {
+	background-color: white;
+	padding: 0.7em; 
+	/*margin-top: 8px; compensate for corners*/ 
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+}
+
+#categories h3 {
+	border-top: 1px solid #ccc;
+}
+
+#categories h3 a {
+	display: block;
+	padding: 0.5em 0 0.5em 0;
+	border: none !important;
+}
+
+#categories h3.selected a {
+	/*padding-left: 1.25em;*/
+	color: black;
+	cursor: default;
+}
+
+#categories ul {
+	margin-left: 0 !important;
+}
+
+#categories ul li {
+	list-style: none;
+}
+
+div.collapsible h3 a:before {
+	content: "▶ ";
+}
+div.collapsible h3.selected a:before {
+	content: "▼ ";
+}
+
+div.collapsible p {
+	font-size: 11px;	
+}
+
+ul.topic {
+	font-size: 12px;
+}
+
+ul.topic li {
+	display: inline-block !important;	
+	vertical-align: top;
+	width: 29.5%;
+	margin: 0 0 1em 1.5em;
+	text-align: justify;
+}
+
+
+
+/* @end */
+
+/* @group Downloads tile */
+
+/* TODO: Refactor these */
+
+
+
+#sort-by {
+	margin-left:.7em;
+	font-size:.7em;
+}
+
+#numreleases {
+	font-size:.8em;
+	border-bottom:1px solid #ccc;
+	display: block;
+	padding:5px 0px;
+}
+
+
+#product-details {
+	border-bottom: 1px solid #ccc;
+	padding: 5px 0px;
+}
+
+.product-leadin {
+	display: block;
+	font-size: .9em;
+	color: #666;
+}
+
+.company-logo {
+	float: right;
+	padding: 1em 0.5em;
+}
+
+/* @end */
+
+a.link-parent {
+	font-size: 11px;
+}
+
+/* @end */
+
+/* @group Portlets */
+
+dl.portlet {
+	margin: 0 0 1em;
+	font-size: 80%;
+}
+
+dl.portlet dt {
+	padding: 0.5em 1em;
+	background: #ddd;
+}
+
+dl.portlet dt a:link,
+dl.portlet dt a:visited,
+dl.portlet dt a:hover {
+	color: black;
+	display: block;
+	border: none;
+}
+
+dl.portlet dd {
+	padding: 0 1em;
+}
+
+
+div.managePortletsLink {
+	text-align: center;
+	padding: 1em;
+	font-size: 0.75em;
+}
+
+#portlet-prefs strong {
+	margin-left: 2em;
+}
+
+#dashboard-portlets1,
+#dashboard-portlets2,
+#dashboard-portlets3,
+#dashboard-portlets4 {
+	display: inline-block;
+}
+
+/* @end */
+
+/* @group Navigation portlet */
+
+ul.navTree {
+	margin-left: 0 !important;
+}
+
+dl.portletNavigationTree dd {
+	padding: 1em 0;
+}
+
+dl.portletNavigationTree dd a {
+	display: block;
+}
+
+dl.portletNavigationTree li {
+	display: block;
+	list-style: none;
+}
+
+dl.portletNavigationTree li a {
+	border: none !important;
+}
+
+dl.portletNavigationTree li a span {
+	display: block;
+	padding: 0.25em 0;
+}
+
+dl.portletNavigationTree .navTreeCurrentItem {
+	background: #ddd;
+}
+
+dl.portletNavigationTree li.navTreeItemInPath {
+	background: #eee
+}
+
+dl.portletNavigationTree li a.navTreeCurrentItem span {
+	color: black;
+}
+
+dl.portletNavigationTree ul {
+	margin: 0 !important;
+}
+dl.portletNavigationTree .navTreeLevel0 li a {
+	padding-left: 2em;
+}
+dl.portletNavigationTree .navTreeLevel1 li a {
+	padding-left: 3em;
+}
+dl.portletNavigationTree .navTreeLevel2 li a {
+	padding-left: 4em;
+}
+dl.portletNavigationTree .navTreeLevel3 li a {
+	padding-left: 5em;
+}
+
+/* @end */
+
+/* @group Content Area */
+
+#content {
+	line-height: 1.5em;
+	clear: both;
+}
+
+#content h1,
+#archetypes-fieldname-title input {
+	margin-top: 0.5em;
+}
+
+#content h1.documentFirstHeading {
+	margin-top: 0;
+}
+
+#content h2,
+#content h3,
+#content h4 {
+	margin-top: 0.5em;
+	color: #444;	
+}
+
+
+#content p,
+#content ul,
+#content ol,
+#content table,
+#content dl,
+#content dt,
+#content dd,
+dl.portlet p,
+dl.portlet ul {
+	margin-bottom: 1em;
+	line-height: 1.5em;
+	font-size: 13px;
+}
+
+/*#content p,
+#content dl,
+#content ul,
+#content ol {
+	text-align: justify;	
+}*/
+
+#content a:link,
+dl.portlet a:link {
+	color: #205c90;
+	border-bottom: 1px solid #ccc;
+}
+
+#content a:visited, 
+dl.portlet a:visited {
+	color: #427597;
+	border-bottom: 1px solid #ccc;
+}
+#content a:target {
+	background-color: #ffb !important;
+}
+
+#content img {
+	max-width: 100%;
+}
+
+#content ul,
+dl.portlet ul {
+	list-style-type: disc;
+	margin-left: 2em;
+}
+
+#content ol,
+dl.portlet ol {
+	list-style-type: decimal;
+	margin-left: 2em;
+}
+
+#content li,
+dl.portlet li {
+	margin-bottom: 0.25em;
+	line-height: 1.5em;
+	display: list-item;
+}
+
+#content dt {
+	font-weight: bold;
+	margin-bottom: 0;
+	margin-right: 0;
+}
+#content dd {
+	margin: 0 0 1em 1em;
+}
+
+#content pre {
+	background-color: #222;
+	color: White;
+	font-family: Consolas, Inconsolata, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;	
+	padding: 10px;
+	overflow-x: auto;
+	font-size: 90%;
+	margin-bottom: 1em;
+	line-height: 1em;
+}
+
+#content code {
+	font-family: Monaco, Consolas, Inconsolata, "Courier New", monospace;
+}
+
+#content div.documentByLine {
+	margin-bottom: 10px;
+	font-size: 11px;
+	display: block;
+	margin-top: -0.5em;
+	color: gray;
+}
+
+#content .discreet,
+#sidebar .discreet {
+	color: #666;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+#content .visualHighlight {
+    background-color: #ffb;
+}
+
+#content .pullquote {
+    padding: 0 1em 0 1em;
+    margin: 0 0 1em 1em;
+    font-weight: bold;
+    float: right;
+    width: 35%;
+    clear: right;
+    border-left: 1px solid #888;
+	color: #888;
+}
+#content .callout {
+    color: #666;
+    padding: 1em;
+	border: 1px solid #666;
+	border-style: solid none;
+	clear:  both;
+}
+
+
+#content table {
+	width: 100%;
+	text-align: left;
+}
+
+#content p.documentDescription,
+#description {
+	color: gray !important;
+	font: bold 1em "Helvetica Neue", Arial, FreeSans, sans-serif !important;
+	margin-left: 0;
+}
+
+#content img.tileImage,
+#content div.newsImageContainer {
+	float: right;
+	margin: 0 1em 0.5em 1em;
+}
+#content div.newsImageContainer {
+	width: 200px;
+}
+#content div.newsImageContainer p.discreet {
+	margin: 0;
+	padding: 0.5em;
+	background-color: #666;
+	background-color: rgba(40,40,40,0.7);
+	color: White;
+	font-weight: bold;
+	position: relative;
+	top: -3em;
+}
+/* @end */
+
+
+
+/* @group Data tables */
+
+table.listing {
+	width: 100%;
+	border-spacing: 0; 
+}
+
+table.listing td, 
+table.listing th {
+	padding: 0.5em;
+	vertical-align: top;
+}
+
+table.listing td.listingCheckbox, 
+table.listing th.listingCheckbox {
+	text-align: center;
+}
+
+table.listing thead th {
+	text-align: left;
+	color: #666;
+	border-bottom: 1px solid #e7e7e7;
+	padding-left: 0;
+}
+table.listing tbody th {
+	font-weight: bold;
+}
+table.listingtbody tr {
+	text-align:left;
+}
+table.listing tbody tr.odd {
+	background: #f9f9f9;
+}
+table.listing tbody tr td { 
+	background: transparent;
+}
+table.listing tbody tr.odd td { 
+	background: #f9f9f9;
+}
+table.listing a { 
+	border: none !important;
+}
+
+div.listingBar {
+	font-size: 13px;	
+	margin: 1em 0;
+}
+
+div.listingBar .next {
+	display: inline-block;
+	float: right;
+}
+
+div.listingBar .previous {
+	display: inline-block;
+}
+
+div.listingBar a {
+	display: inline-block;
+	padding: 0.25em 0.5em;
+	border: 1px solid #ccc;
+}
+
+div.listingBar a:hover {
+	color: White !important;
+	background-color: #329fd7 !important;
+	border-color: #329fd7 !important;
+}
+
+
+
+/* @end */
+
+/* @group Status messages */
+
+dl.portalMessage {
+    font-size: 12px;
+    background-color: #ffffe3; 
+    border: 1px solid #996;
+    margin: 1em 0;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+}
+
+dl.portalMessage a {
+    color: black !important;
+    border: none !important;
+    text-decoration: underline;
+}
+dl.portalMessage dt {
+    background-color: #996; 
+    font-weight: bold;
+    float: left;
+    margin: 0 0.5em 0 0;
+    padding: 0.5em 0.75em;
+    color: White;
+    line-height: 1.25em;
+	border-top-left-radius: 0.5em;
+	-webkit-border-top-left-radius: 0.5em;
+	-moz-border-topleft-radius: 0.5em;
+}
+dl.portalMessage dd {
+    padding: 0.5em 0.5em; 
+    margin: 0;
+    line-height: 1.25em;
+}
+dl.warning {
+    border-color: #d80;
+}
+dl.warning dt {
+    background-color: #d80;
+}
+dl.error {
+    border-color: #d00;    
+}
+dl.error dt {
+    background-color: #d00; 
+}
+dl.warning {
+    border-color: #d80;    
+}
+dl.warning dd {
+    background-color: #fd7; 
+}
+dl.error {
+    border-color: #d80;    
+}
+dl.error dd {
+    background-color: #fd7; 
+}
+
+
+
+/* @end */
+
+/* @group Editing */
+
+/* @group Edit bar */
+
+#content-views {
+	margin: 1em 0;
+	font-size: 80%;
+}
+
+#content-views { 
+	margin: 0 auto;
+	background-color: #75ad0a;
+	clear: both;
+}
+
+#content-views ul { 
+	padding-left: 0.5em;
+	border-top: 4px solid #76AD17;
+	background-color: #76AD17;
+	border-bottom: 1em solid #63A100;
+	line-height: 2em;
+	height: 1em;
+}
+
+#content-views li a { 
+	color: White;
+	font-weight: bold;
+	padding: 0.5em;
+	line-height: 2em;
+}
+
+#content-views li a:hover,
+#content-views li.selected a { 
+	color: #75ad0a;
+	background-color: White;
+	border-top: 0.1em solid #75ad0a;
+	line-height: 2em;
+	padding-top: 0.25em;
+}
+
+/*#content-views li:hover a,
+#content-views li.selected a { 
+	color: #75ad0a;
+}*/
+
+/* @end */
+
+/* @group Pulldown menus */
+
+dl.actionMenu {
+	float:right;
+	font-size: 80%;
+/*  overflow: hidden;*/
+	float: right;
+	white-space: nowrap;
+    position: relative;
+	top: -2em;
+}
+dl.actionMenu dd {
+/*    position: absolute;
+    top: 2em;
+    left: 0;*/
+}
+dl.actionMenu a {
+	line-height: 1.5em;
+    display: block;
+    white-space: nowrap;
+	color: white;
+	font-weight: bold;
+	padding: 0.25em 0.5em;
+}
+
+dl.actionMenu.deactivated dd {
+    display: none;
+}
+dl.actionMenu.activated dd {
+    position: absolute;
+    top: 1.9em;
+    left: 0;
+    width: auto;
+    min-width: 100%;
+}
+dl.actionMenu.activated dd ul {
+    border: 4px solid #76AD17;    
+}
+dl.actionMenu.activated dt a,
+dl.actionMenu.activated dd a {
+	background-color: #76AD17;
+	color: White;
+}
+dl.actionMenu.activated dd a:hover {
+	background: White;
+	color: #666;
+}
+
+/* @end */
+
+/* @group Control panel */
+
+ul.configlets {
+    margin: 1em 0;
+    list-style-image: none;
+    list-style: none;
+}
+
+.configlet .contentViews {
+    font-size: 90%;
+}
+
+ul.configlets li {
+    margin-bottom: 1em;
+}
+ul.configlets li a {
+    text-decoration: none;
+    border: none;
+}
+ul.configlets li a:visited {
+    color: #436976;
+    background-color: transparent;
+}
+ul.configlets li a:active {
+    color: #436976;
+    background-color: transparent;
+}
+ul.configlets li label {
+    font-weight: bold;
+}
+ul.configletDetails {
+    margin: 0em 1em 1em 4em;
+    list-style-image: none;
+    list-style: none;
+}
+ul.configletDetails li {
+    margin-bottom: 1em;
+    display: inline;
+}
+ul.configletDetails li a {
+	text-decoration: none;
+}
+ul.configletDetails li label {
+    font-weight: bold;
+}
+ul.configletDetails li.configletDescription {
+    display: block;
+    color: #76797c;
+    font-size: 90%;
+    margin: 0;
+}
+.inlineDisplay {
+display:inline
+}
+table.controlpanel-listing {
+width:100%;
+}
+table.controlpanel-listing td, table.controlpanel-listing th {
+font-size:120%;
+}
+table.controlpanel-listing dl {
+margin-top:0;
+}
+table.controlpanel-listing dd {
+margin-left: 1em;
+}
+table.controlpanel-listing dl dt a .trigger{
+font-weight:normal;
+}
+table .controlpanel-listing td {
+vertical-align:top;
+}
+table.controlpanel-listing td.checker{
+text-align:center;
+}
+table.controlpanel-listing th.smallcolumn {
+width:1.5em;
+}
+.chooser-right {
+float:right;
+margin-right:0 !important;
+margin-bottom:0 !important;
+}
+.rule-element {
+background-color:#EEF3F5;
+margin:0.5em 0pt 0.5em;
+padding:0.3em 1em 0.3em 1em;
+width:auto;
+}
+.rule-element dl {
+}
+.rule-element dl dd {
+margin-left:1em;
+}
+.rule-updown, .rule-operations {
+float:right;
+padding-top:0.8em;
+}
+/* @end */
+
+/* @group Collapsible */
+dl.collapsible {
+    border: 1px solid #8cacbb !important;
+    margin: 1em 0 0 0;
+    padding: 0;
+}
+dl.collapsible dt.collapsibleHeader {
+    display: block;
+    float: left;
+    background: White;
+    line-height: 1.2em;
+    vertical-align: middle;
+    font-size: 90%;
+    position: relative;
+    top: -0.6em;
+    width: auto;
+    margin: 0 0 -0.6em 1em;
+    padding: 0 0.5em;
+}
+dl.collapsible dd.collapsibleContent {
+    margin: 0;
+    padding: 0 1em;
+    clear: left;
+}
+
+/* for IE the following isn't needed, that's why the css2 selector is used */
+dl.collapsible dd.collapsibleContent > dl {
+    margin: 0;
+    padding: 0;
+}
+
+dl.expandedInlineCollapsible dt.collapsibleHeader,
+dl.expandedBlockCollapsible dt.collapsibleHeader {
+    padding: 0 6px 0 22px;
+    background: White url(treeExpanded.png) no-repeat 6px 50%;
+    cursor: pointer;
+}
+
+dl.collapsedBlockCollapsible {
+    border: none !important;
+    height: 1em;
+    width: auto;
+}
+dl.collapsedBlockCollapsible dt.collapsibleHeader {
+    float: none;
+    position: static;
+    margin: 0;
+    padding: 0 0 0 22px;
+    line-height: 1em;
+    cursor: pointer;
+}
+dl.collapsedInlineCollapsible dd.collapsibleContent,
+dl.collapsedBlockCollapsible dd.collapsibleContent {
+    display: none;
+}
+dl.collapsedInlineCollapsible {
+    border: none !important;
+    height: 1em;
+    width: auto;
+    display: inline;
+}
+dl.collapsedInlineCollapsible dt.collapsibleHeader {
+    position: static;
+    float: none;
+    margin: 0;
+    padding: 0 0 0 22px;
+    line-height: 1em;
+    cursor: pointer;
+    display: inline;
+}
+
+/* @end */
+
+/* @group Comments */
+
+.comment {
+	border: 1px solid #eee;
+	background-color: #f6f6f6;
+    padding: 0.25em 1em 1em 1em;
+    margin-bottom: 1em;
+}
+.comment h1,
+.comment h2,
+.comment h3,
+.comment h4, 
+.comment h5,
+.comment h6 {
+    border-bottom: 1px solid #76797c;
+    font-weight: normal;
+}
+.commentBody {
+	font-size: 13px;
+}
+
+/* @end */
+
+.reviewHistory,
+.contentHistory {
+    display: inline;
+    font-size: 110% !important; 
+    color: Black;
+}
+.spacer {
+    margin: 1em;
+}
+
+.label {
+    font-weight: bold;
+    display: inline;
+    padding-right: 0.5em;
+}
+.optionsToggle {
+    border: 1px solid #8cacbb;
+    color: Black;
+    background-color: #dee7ec;
+    font-weight: normal !important;
+    font-size: 90%;
+} 
+
+#portal-column-content fieldset > * input:focus,
+#portal-column-content fieldset > * textarea:focus {
+    border-color: #ffa500;
+    border-width: 1px;
+}
+
+/* for highlighting of search terms */
+.highlightedSearchTerm {
+   background-color: #ffa;
+}
+
+dl.searchResults .highlightedSearchTerm {
+    background-color: transparent;
+    font-weight: bold;
+}
+/* for greying out inherited roles */
+.noInheritedRoles {
+    color: #a0a0a0;
+}
+/* for highlighting current items, like the language or today in the calendar */
+.currentItem {
+    border-collapse: collapse;
+    border: 2px solid #ffa500;
+    padding: 1px;
+}
+.managePortletsLink {
+    display:  block;
+    color: #76797c;
+    font-size: 90%;
+    font-weight: normal;
+}
+
+
+/* @end */
+
+/* @group Tabbed form fieldsets */
+
+ul.formTabs {
+    position: relative;
+    display: block;
+    list-style-type: none;
+    text-align: center;
+	background-color: #329fd7;
+	border-top: 3px solid #329fd7;
+	margin-left: 0 !important;
+}
+li.formTab {
+    display: inline !important;
+    margin: 0;
+    padding: 0;
+}
+li.formTab a {
+    /* this isn't supported by all browsers, so we keep it in a separate rule */
+    display: inline-block;
+}
+li.formTab a {
+	background-color: #329fd7;
+    color: White !important;
+    padding: 0.125em 0.75em;
+    text-decoration: none;
+	border: none !important;
+	font-weight: bold;
+}
+li.formTab a:visited {
+}
+li.firstFormTab a {
+}
+li.lastFormTab a {
+}
+li.formTab a.selected,
+li.formTab a:hover {
+    background: White;
+    color: #329fd7 !important;
+}
+li.formTab a.notify {
+    background-color: #ffce7b;
+    color: Black;
+}
+li.formTab a.required span {
+    background-image: url(/required.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    padding-right: 8px;
+}
+li.formTab a.notify:hover {
+    background-color: #ffa500;
+}
+.formPanel {
+	margin-top: -1.5em;
+    border: 1px solid #8cacbb;
+    padding-top: 1em;
+}
+.formPanel.hidden {
+    display: none;
+}
+div.formControls input.hidden {
+    display: none;
+}
+
+/* @end */
+
+/* @group Forms */
+
+div.formControls {
+	margin-top: 1em;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+	background-color: #ffffe0;
+	/* outline: none; */
+}
+
+#content textarea {
+font: 100% Monaco, "Courier New", Courier, monospace;
+width: 100%;
+}
+#content select {
+vertical-align: top;
+}
+#content fieldset {
+border: 1px solid #329fd7;
+border-style: solid none none none;
+}
+#content legend {
+padding: 0.5em 0.5em 0.5em 0;
+font-size: 90%;
+}
+label {
+font-weight: bold;
+}
+input[type="checkbox"] + label:hover {
+	background: #ddd;
+	outline: 0.1em solid #ddd;
+}
+#content optgroup {
+font-style: normal;
+font-weight: bold;
+color: #999;
+padding-left: 0.25em;
+}
+#content option {
+color: black;
+}
+#content optgroup > option {
+padding: 0 0.25em 0 1em;
+}
+dl.enableFormTabbing dd {
+margin-left: 0;
+padding-top: 2em;
+}
+#content input.searchButton {
+}
+.searchSection {
+color: #76797c;
+margin-top: 0.25em;
+}
+.searchSection label:hover {
+color: Black;
+}
+.field {
+clear: both;
+margin-top: 1em;
+}
+.field input[type="text"] {
+	width: 100%;
+}
+.fieldRequired {
+background: url(/required.gif) center left no-repeat;
+padding: 0 0 0 8px;
+color: White;
+}
+.fieldUploadFile {
+text-align: right;
+margin-right: 0.75em;
+display: none;
+}
+.fieldTextFormat {
+text-align: right;
+margin-right: 0.75em
+}
+.formHelp {
+font-size: 90%;
+color: #76797c;
+margin: 0 0 0.2em 0;
+}
+.formHelp:hover {
+color: Black;
+cursor: default;
+}
+div.error {
+background-color: #fdc;
+border: 1px solid #d00;
+padding: 0.5em;
+margin: 0 0 1em 0;
+width: 95%;
+}
+.error .fieldRequired {
+color: #d00;
+}
+input.inputLabelActive {
+color: #76797c;
+}
+textarea#form\.description {
+height: 6em;
+width: 99%;
+}
+tr.selected {
+background-color: #ffa;
+}
+
+/* @group Login form */
+
+#login-form input {
+font-size: 150%;
+width: inherit;
+}
+
+body.template-join_form #content input {
+font-size: 150%;
+width: inherit;
+}
+
+
+/* @end */
+
+/* @end */
+
+/* @group Table of Contents */
+
+ /*Table of Contents styling - essentially a portlet with smaller fonts and aligned right + limited in width*/ 
+
+dl.toc {
+	float: right;
+    width: 35%;
+	font-size: 11px !important;
+    margin: 0 0 0.5em 1.5em;
+	border-left: 1px solid #666;
+}
+dl.toc dt {
+	margin-left: 3em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+dl.toc dd {
+	margin-bottom: 0 !important;
+}
+dl.toc dd ol {
+	margin-left: 1.5em !important;
+}
+
+/* @end */
+
+/* @group Footer */
+
+#portal-footer {
+	background: #ccc;
+	margin: 0 -1em 1em;
+	padding: 1em;
+	text-align: center;
+}
+
+#portal-colophon {
+	font-size: 70%;
+	text-align: center;
+}
+
+/* @end */
+
+/* @group Visual editor */
+
+.kupu-save-message {
+color: white;
+font-weight: bold;
+background-color: red;
+padding: 0.3em;
+position: fixed;
+top: 0;
+right: 0;
+z-index: 999;
+}
+
+#toolbar {
+    background-color: White;
+    width: auto;
+    border: none;
+}
+#toolbar button {
+	border-color: White;
+}
+#kupu-editor-iframe-text {
+	border: 1px solid Black;
+}
+#kupu-colorchooser {
+	display: none;
+}
+
+
+/* @end */
+
+/* @group Invisibles */
+
+.hiddenStructure {
+    display: none;
+    background: transparent;
+    background-image: none; /* safari bug */
+    border: none;
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    margin: -1px 0 0 -1px;
+    width: 1px;
+}
+
+.visualClear {
+	clear: both;
+}
+
+/* @end */
