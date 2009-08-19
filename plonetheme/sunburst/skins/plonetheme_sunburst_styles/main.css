@@ -1,4 +1,6 @@
-/* @override http://localhost:8080/4/main.css */
+/* @override 
+	http://localhost:8080/themetest/main.css
+*/
 
 /* @group CSS Reset */
 
@@ -79,62 +81,6 @@ input {
 
 /* @end */
 
-/* @group Grid */
-
-/* Grid classes, these can also be nested */
-.grid-row {
-  float: left;
-  width: 100%;
-  display: block;
-  position: relative;
-}
-.grid-cell {
-  position: relative;
-  float: left;
-  left: 100%;
-}
-
-/* Widths, these are abstracted out so that pixel-based layouts or other
-   similar approaches can be retrofitted without changing the markup,
-   or if you want to apply rules like the Golden Ratio to your layouts */
-.width-half {
-	width: 50%;
-}
-.width-quarter {
-	width: 25%;
-}
-.width-three-quarters {
-	width: 75%;
-}
-.width-third {
-	width: 33.33%;
-}
-.width-two-thirds {
-	width: 66.67%;
-}
-
-/* Positioning classes, these are subtracting from a rightmost position */
-.position-leftmost {
-	margin-left: -100%;
-}
-.position-third {
-	margin-left: -66.67%;
-}
-.position-two-thirds {
-	margin-left: -33.33%;
-}
-.position-quarter {
-	margin-left: -75%;
-}
-.position-half {
-	margin-left: -50%;
-}
-.position-three-quarters {
-	margin-left: -25%;
-}
-
-/* @end */
-
 /* @group Navigation/search */
 
 #portal-logo {
@@ -202,307 +148,7 @@ input {
 
 /* @end */
 
-
-/* @group Splash pages */
-
-div.splash {
-	font-family: "Helvetica Neue", Arial, FreeSans, sans-serif; 
-	background-color: #205c90;
-	color: White;
-	margin-bottom: 1em;
-	padding: 1em 1.5em 2em;
-	border-radius: 0.5em;
-	-webkit-border-radius: 0.5em;
-	-moz-border-radius: 0.5em;
-}
-
-#content div.splash h1 {	
-	color: White;
-	letter-spacing: 0;
-}
-
-
-#content div.splash h2,
-#content div.splash h3 {
-	color: White;
-	letter-spacing: 0;
-	font-weight: normal;
-}
-
-#content div.splash a {
-	color: White;
-	border: none;
-	background: transparent 0 -114px url(http://plone.org/images/sprite-ploneorg.png) no-repeat;
-	padding-left: 16px;
-	font-size: 1.375em;
-	font-weight: bold;
-}
-
-div.pullout {
-	background-color: #87B829;
-	padding-left: 2.5em;
-	margin-left: -1em;
-}
-
-div.pullout li {
-	display: block;
-}
-
-div.pullout li a:before {
-	content: "→ ";
-}
-
-/*TODO: #sidebar & .sidebar need to be consolidated*/
-#sidebar {
-	padding-top: 2em;
-}
-
-div.sidebar {
-	padding-top: 0.5em;
-	margin-left: 1em;
-}
-
-#sidebar-frontpage {
-	margin-left: 0;
-}
-
-#content div.sidebar h3 {
-	margin: 0;
-	font-size: 1em;
-}
-
-#content div.sidebar ul,
-#content div.sidebar ol {
-	list-style: none;	
-	margin: 0;
-}
-
-#content div.sidebar ul li {
-	margin-bottom: 0;
-}
-
-#content div.sidebar ul li a {
-	line-height: 36px;
-	font-size: 18px;
-	display: block;
-	border-top: 1px solid #eee;
-	border-bottom: none;
-	font-weight: bold;
-	background: url(http://plone.org/images/sprite-ploneorg.png) no-repeat;
-    background-position: 0 -441px;
-	padding-left: 16px;
-	letter-spacing: -1px;
-}
-
-div.sidebar ol li {
-	line-height: 18px;
-	display: block;
-	margin-bottom: 0.5em;
-	padding-top: 0.5em;
-	clear: both;
-	list-style: none;
-}
-
-div.sidebar ol li a {
-	font-weight: bold;
-	display: block;
-}
-
-img.book-cover {
-	float: left;
-	display: block;
-	padding: 2px;
-	border: 1px solid #ddd;
-	margin: 5px 15px 10px 0;
-}
-
-/* @group Page-specific splash styles */
-
-#splash-frontpage {
-	min-height: 15.5em;
-	margin-right: 1em;
-	background: #205c90 0 -23px url(http://plone.org//images/frontpage-image.png) no-repeat;
-}
-
-#splash-frontpage a {
-	float: right;
-	margin-top: 3.5em;
-
-}
-
-#splash-downloads {
-	height: 11em;
-}
-
-#sidebar-downloads {
-	height: 11em;
-}
-
-#splash-downloads h1,
-#splash-downloads p {
-	text-align: right;
-	margin-right: 20px;
-}
-
-#splash-download-plone {
-	background: transparent 0 -30px url(http://plone.org/images/sprite-ploneorg.png) no-repeat !important;
-	height:58px;
-	width:300px;
-	margin:10px 0px 10px 260px;
-	display: block;
-	float: right;
-	font-size: 1em !important;
-	padding-top: 1em;
-}	
-
-#splash-download-package {
-	background: transparent 0 -495px url(http://plone.org/images/sprite-ploneorg.png) no-repeat;
-	height:130px;
-	margin-left: 2em;
-}
-
-
-#splash-documentation {
-	min-height: 99px;
-
-}
-
-/* @end */
-
-/* @end */
-
 /* @group Listings */
-
-/* @group Pane */
-
-div.pane {
-	background-color: #eee;
-	padding: 0.7em;
-	clear: left;
-	border-radius: 0.5em;
-	-webkit-border-radius: 0.5em;
-	-moz-border-radius: 0.5em;
-}
-
-div.pane h2 {
-	font-size: 1.1em;
-	padding-bottom: 0.5em;
-	padding-left: 0.5em;
-}
-
-a.versions {
-	font-size: 12px;
-	color: #555;
-	padding: 2px;
-}
-
-a.versions:hover {
-	background-color: #666;
-	color: White;
-}
-
-div.pagesearch {
-	float: right;
-	font-size: 11px;
-	padding-right: 10px;
-}
-
-#categories {
-	background-color: white;
-	padding: 0.7em; 
-	/*margin-top: 8px; compensate for corners*/ 
-	border-radius: 0.5em;
-	-webkit-border-radius: 0.5em;
-	-moz-border-radius: 0.5em;
-}
-
-#categories h3 {
-	border-top: 1px solid #ccc;
-}
-
-#categories h3 a {
-	display: block;
-	padding: 0.5em 0 0.5em 0;
-	border: none !important;
-}
-
-#categories h3.selected a {
-	/*padding-left: 1.25em;*/
-	color: black;
-	cursor: default;
-}
-
-#categories ul {
-	margin-left: 0 !important;
-}
-
-#categories ul li {
-	list-style: none;
-}
-
-div.collapsible h3 a:before {
-	content: "▶ ";
-}
-div.collapsible h3.selected a:before {
-	content: "▼ ";
-}
-
-div.collapsible p {
-	font-size: 11px;	
-}
-
-ul.topic {
-	font-size: 12px;
-}
-
-ul.topic li {
-	display: inline-block !important;	
-	vertical-align: top;
-	width: 29.5%;
-	margin: 0 0 1em 1.5em;
-	text-align: justify;
-}
-
-
-
-/* @end */
-
-/* @group Downloads tile */
-
-/* TODO: Refactor these */
-
-
-
-#sort-by {
-	margin-left:.7em;
-	font-size:.7em;
-}
-
-#numreleases {
-	font-size:.8em;
-	border-bottom:1px solid #ccc;
-	display: block;
-	padding:5px 0px;
-}
-
-
-#product-details {
-	border-bottom: 1px solid #ccc;
-	padding: 5px 0px;
-}
-
-.product-leadin {
-	display: block;
-	font-size: .9em;
-	color: #666;
-}
-
-.company-logo {
-	float: right;
-	padding: 1em 0.5em;
-}
-
-/* @end */
 
 a.link-parent {
 	font-size: 11px;
@@ -982,19 +628,24 @@ dl.error dd {
 
 /* @group Pulldown menus */
 
+div.contentActions {
+}
+
+#contentActionMenus {
+}
+
 dl.actionMenu {
-	float:right;
+background: #76AD17;
 	font-size: 80%;
 /*  overflow: hidden;*/
 	float: right;
 	white-space: nowrap;
     position: relative;
-	top: -2em;
 }
 dl.actionMenu dd {
-/*    position: absolute;
+    position: absolute;
     top: 2em;
-    left: 0;*/
+    left: 0;
 }
 dl.actionMenu a {
 	line-height: 1.5em;

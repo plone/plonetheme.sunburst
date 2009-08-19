@@ -66,6 +66,7 @@ div.position-15 { margin-left:  -5.125% }
 div.width-1\3a 2 { width:    47.75%; } /* .width-1:2 */
 div.width-1\3a 4 { width:    22.75%; } /* .width-1:4 */
 div.width-3\3a 4 { width:    72.75%; } /* .width-3:4 */
+div.width-full   { width:    97.75%  } 
 div.position-1\3a 4 {margin-left:    -73.875%;} /* .position-1:4 */
 div.position-1\3a 2 {margin-left:    -48.875%;} /* .position-1:2 */
 div.position-3\3a 4 {margin-left:    -23.875%;} /* .position-3:4 */
