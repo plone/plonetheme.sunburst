@@ -56,16 +56,21 @@
 			<div tal:replace="structure provider:plone.portaltop" />
 		</div>
 	</header>
-	<div id="portal-columns">
+	<div id="portal-columns" class="row">
 		<aside>
-			<div id="portal-column-one" metal:define-slot="column_one_slot" tal:condition="sl">
+			<div id="portal-column-one" 
+				class="cell width-1:4 position-0"
+				metal:define-slot="column_one_slot" 
+				tal:condition="sl">
 				<metal:portlets define-slot="portlets_one_slot">
 					<tal:block replace="structure provider:plone.leftcolumn" />
 				</metal:portlets>
 			</div>
 		</aside>
 
-		<div id="portal-column-content" metal:define-slot="content">
+		<div id="portal-column-content" 
+			class="cell width-1:2 position-1:4"
+			metal:define-slot="content">
 			<div metal:define-macro="content"
 				tal:define="show_border context/@@plone/showEditableBorder"
 				tal:attributes="class python:test(show_border,'documentEditable','')">
@@ -82,8 +87,8 @@
 
 					<div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" />
 
-					<metal:slot metal:define-slot="body">
 					<article>
+					<metal:slot metal:define-slot="body">
 						<div id="content">
 							<header>
 								<metal:header metal:define-slot="header" tal:content="nothing">
@@ -95,17 +100,21 @@
 							Page body text
 							</metal:bodytext>
 						</div>
-					</article>
 					</metal:slot>
+					</article>
 
 					<metal:sub metal:define-slot="sub">
 						<div tal:replace="structure provider:plone.belowcontent" />
 					</metal:sub>
+				</div>
 			</div>
 		</div>
 
 		<aside>
-			<div id="portal-column-two" metal:define-slot="column_two_slot" tal:condition="sr">
+			<div id="portal-column-two" 
+				class="cell width-1:4 position-3:4"
+				metal:define-slot="column_two_slot" 
+				tal:condition="sr">
 				<metal:portlets define-slot="portlets_two_slot">
 				<tal:block replace="structure provider:plone.rightcolumn" />
 				</metal:portlets>
@@ -113,9 +122,12 @@
 		</aside>
 	</div>
 
+<div class="visualClear"></div> <!-- TODO: Temporary workaround -->
+
 	<!-- TODO: Can we do this in the @@plone view? -->
 	<div tal:define="context_state context/@@plone_context_state; portlet_assignable context_state/portlet_assignable"
-		tal:condition="python:not sl and not sr and portlet_assignable and checkPermission('Portlets: Manage portlets', context)">
+		tal:condition="python:not sl and not sr and portlet_assignable and checkPermission('Portlets: Manage portlets', context)"
+		class="row">
 		<a class="managePortletsFallback"
 			tal:attributes="href string:${context_state/canonical_object_url}/@@manage-portlets"
 			i18n:translate="manage_portlets_fallback">
