@@ -31,8 +31,6 @@
 	<div tal:replace="structure provider:plone.htmlhead" />
 	<link tal:replace="structure provider:plone.htmlhead.links" />
 
-	<link rel="stylesheet" href="main.css" type="text/css" media="screen" charset="utf-8">
-
 	<tal:comment replace="nothing"> 
 		Various slots where you can insert elements in the header from a template.
 	</tal:comment>
