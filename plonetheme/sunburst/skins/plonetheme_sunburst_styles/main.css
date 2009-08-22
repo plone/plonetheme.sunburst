@@ -166,7 +166,6 @@ input {
 	position: absolute;
 	background: White;
 	margin: -1.5em 0 0 -7em;
-
 }
 
 #LSResult fieldset {
@@ -220,7 +219,8 @@ dl.portlet dt a:hover {
 	border: none;
 }
 
-dl.portlet dd.portletItem {
+dl.portlet dd.portletItem,
+dl.portlet dd.portletFooter {
 	padding: 1em;
 }
 
@@ -262,8 +262,7 @@ dl.portlet ul.navTree li a {
 	clear: both;
 }
 
-#content h1,
-#archetypes-fieldname-title input {
+#content h1 {	
 	margin-top: 0.5em;
 }
 
@@ -405,7 +404,7 @@ dl.portlet li {
 }
 
 #content p.documentDescription,
-#description {
+#content #description {
 	color: gray;
 	font: bold 1em "Helvetica Neue", Arial, FreeSans, sans-serif;
 	margin-left: 0;
@@ -972,6 +971,16 @@ dl.searchResults .highlightedSearchTerm {
 
 /* @group Forms */
 
+/* Emulates the styling from the h1 tag */
+#archetypes-fieldname-title input {
+	font-family: "Helvetica Neue", Arial, FreeSans, sans-serif; 
+	font-weight: bold;
+	line-height: 125%;
+	color: Black;
+	letter-spacing: -1px;
+	font-size: 1.625em; /* 26px equiv */
+}
+
 div.formControls {
 	margin-top: 1em;
 }
@@ -1002,8 +1011,14 @@ font-weight: bold;
 }
 input[type="checkbox"] + label:hover {
 	background: #ddd;
-	outline: 0.1em solid #ddd;
+	outline: 0.5em solid #ddd;
+/* TODO: This should work, but creates flicker in all browsers. Figure out why.
+	position: relative;
+	left: -1.5em;
+	padding-left: 1.5em;
+*/
 }
+
 #content optgroup {
 font-style: normal;
 font-weight: bold;
