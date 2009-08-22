@@ -251,7 +251,21 @@ dl.portlet ul.navTree li a {
 	border: none;
 }
 
+dl.portlet ul.navTreeLevel0 > .navTreeItem {
+	margin: 0 -1em;
+	padding: 0.25em 1em;
+	border-bottom: 0.1em dotted #ddd;
+}
 
+dl.portlet ul.navTreeLevel1 .navTreeItem {
+	font-size: 85%;
+	margin-left: 1em;
+	line-height: 2em;
+}
+
+dl.portlet ul.navTree .navTreeCurrentItem {
+
+}
 
 /* @end */
 
@@ -982,7 +996,6 @@ input[type="text"]:focus,
 input[type="password"]:focus,
 textarea:focus {
 	background-color: #ffffe0;
-	/* outline: none; */
 }
 
 #content textarea {
