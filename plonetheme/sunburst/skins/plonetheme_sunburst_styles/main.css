@@ -180,7 +180,12 @@ input {
 
 /* @end */
 
-
+#breadcrumbs-you-are-here,
+#breadcrumbs-home,
+#breadcrumbs-current,
+#breadcrumbs-1 {
+	display: none;
+}
 
 #portal-siteactions,
 #portal-breadcrumbs {
@@ -1223,3 +1228,5 @@ z-index: 999;
 }
 
 /* @end */
+
+
