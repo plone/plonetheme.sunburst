@@ -163,8 +163,9 @@ dl.portlet {
 }
 
 dl.portlet dt {
-	padding: 0.5em 1em;
+	padding: 0em 1em;
 	background: #ddd;
+	line-height: 2.5em;
 }
 
 dl.portlet dt a:link,
@@ -175,9 +176,10 @@ dl.portlet dt a:hover {
 	border: none;
 }
 
-dl.portlet dd {
-	padding: 0 1em;
+dl.portlet dd.portletItem {
+	padding: 1em;
 }
+
 
 
 div.managePortletsLink {
@@ -200,6 +202,11 @@ div.managePortletsLink {
 /* @end */
 
 /* @group Navigation portlet */
+
+dl.portlet ul.navTree li a {
+	border: none;
+}
+
 
 
 /* @end */
@@ -268,8 +275,7 @@ dl.portlet a:visited {
 	max-width: 100%;
 }
 
-#content ul,
-dl.portlet ul {
+#content ul {
 	list-style-type: disc;
 	margin-left: 2em;
 }
@@ -503,10 +509,10 @@ dl.warning dd {
     background-color: #fd7; 
 }
 dl.error {
-    border-color: #d80;    
+    border-color: red;    
 }
 dl.error dd {
-    background-color: #fd7; 
+    background-color: #fdc; 
 }
 
 
