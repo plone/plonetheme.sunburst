@@ -549,35 +549,26 @@ dl.error dd {
 #content li.formTab {
     display: inline;
 }
+#content-views a,
 #content li.formTab a {
     /* this isn't supported by all browsers, so we keep it in a separate rule */
     display: inline-block;
 }
-
 #content-views a,
 #content li.formTab a {
 	line-height: 2em !important; 
-	display: inline-block;
     padding: 0.125em 0.75em;
     text-decoration: none;
 	border: none;
 	font-weight: bold;
 	margin: 0 0.25em;
 }
-
 #content-views li.selected a,
 #content-views li a:hover,
 #content li.formTab a.selected,
 #content li.formTab a:hover {
     background: White;
     color: Black;
-}
-
-#content li.formTab a:visited {
-}
-#content li.firstFormTab a {
-}
-#content li.lastFormTab a {
 }
 #content-views li.selected a,
 #content-views li a:hover,
@@ -591,17 +582,14 @@ dl.error dd {
 	-moz-border-radius-topright: 0.5em;
 }
 #content li.formTab a.notify {
-    background-color: #ffce7b;
-    color: Black;
+    background-color: red;
+    color: White;
 }
 #content li.formTab a.required span {
     background-image: url(/required.png);
     background-position: center right;
     background-repeat: no-repeat;
     padding-right: 8px;
-}
-#content li.formTab a.notify:hover {
-    background-color: #ffa500;
 }
 #content .formPanel {
 	margin-top: -1.5em;
@@ -1014,7 +1002,7 @@ text-align: right;
 margin-right: 0.75em
 }
 .formHelp {
-font-size: 90%;
+font-size: 80%;
 color: #76797c;
 margin: 0 0 0.2em 0;
 }
@@ -1024,10 +1012,10 @@ cursor: default;
 }
 div.error {
 background-color: #fdc;
-border: 1px solid #d00;
 padding: 0.5em;
-margin: 0 0 1em 0;
-width: 95%;
+margin:  1em 0;
+font-size: 80%;
+color: red;
 }
 .error .fieldRequired {
 color: #d00;
