@@ -526,7 +526,6 @@ dl.error dd {
 	background-color: #75ad0a;
 	border: 0.25em solid #75ad0a;
 	font-size: 80%;
-	line-height: 2em;
 }
 #content-views a {
 	color: White;
@@ -556,7 +555,7 @@ dl.error dd {
 }
 #content-views a,
 #content li.formTab a {
-	line-height: 2em !important; 
+	line-height: 2em;
     padding: 0.125em 0.75em;
     text-decoration: none;
 	border: none;
