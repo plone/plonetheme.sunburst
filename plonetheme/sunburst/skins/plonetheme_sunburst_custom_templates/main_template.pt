@@ -19,8 +19,6 @@
 </tal:cache>
 
 <head>
-	<meta name="generator" content="Plone - http://plone.org" />
-
 	<!-- Forces IE8+ into newest rendering engine even if on an intranet. This has to be defined before any script/style tags. -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
 
@@ -38,6 +36,7 @@
 	<metal:headslot define-slot="head_slot" />
 	<metal:styleslot define-slot="style_slot" />
 	<metal:javascriptslot define-slot="javascript_head_slot" />
+	<meta name="generator" content="Plone - http://plone.org" />
 </head>
 
 <!-- TODO: Can we do this in the @@plone view? -->
@@ -50,8 +49,12 @@
 <div id="visual-portal-wrapper">
 
 	<header>
-		<div id="portal-top" i18n:domain="plone">
+		<div id="portal-top"
+			class="row"
+			i18n:domain="plone">
+<div class="cell width-full position-0"> <!-- TODO: Temporary, this one should be in the template that is inserted -->
 			<div tal:replace="structure provider:plone.portaltop" />
+</div>
 		</div>
 	</header>
 	<div id="portal-columns" class="row">
@@ -135,7 +138,11 @@
 
 	<metal:block i18n:domain="plone">
 		<footer>
+<div class="row"> <!-- TODO: Also temporary, should be in the proper template -->
+	<div class="cell width-full position-0">
 		<div tal:replace="structure provider:plone.portalfooter" />
+	</div>
+</div>
 		</footer>
 	</metal:block>
 
