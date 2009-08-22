@@ -3,6 +3,19 @@
 	http://localhost:8080/themetest/portal_css/Sunburst%20Theme/main.css
 */
 
+/* @group Defaults */
+
+/* uncomment the below selector to get a fixed-width layout. *
+ * 60em is equivalent to 960px in this case, and every       *
+ * grid cell will be 40px with 10px padding.                 */
+
+/* #visual-portal-wrapper { width: 60em; margin: 0 auto; } */
+
+/* @end */
+
+
+
+
 /* @group CSS Reset */
 
 /* Remove implicit browser styles to have a neutral starting point:
@@ -100,7 +113,7 @@ input {
 	display: inline-block;
 	padding: 0.5em 2em 2em 0.5em;	
 	background: #ddd;
-	min-width: 4em;
+	min-width: 6em;
 	white-space: normal;
 	/*TODO: Once we have removed the whitespace from the nav template, this can be put back*/
 	/*border-bottom: 0.1em solid White;*/
