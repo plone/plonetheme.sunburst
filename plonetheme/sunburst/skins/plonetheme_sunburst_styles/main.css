@@ -249,17 +249,26 @@ div.managePortletsLink {
 
 dl.portlet ul.navTree li a {
 	border: none;
+	display: block;
+}
+
+dl.portlet ul.navTree li a:hover {
+
+}
+
+dl.portletNavigationTree dd.portletItem {
+	padding: 0;
 }
 
 dl.portlet ul.navTreeLevel0 > .navTreeItem {
-	margin: 0 -1em;
 	padding: 0.25em 1em;
 	border-bottom: 0.1em dotted #ddd;
+	line-height: 2em;
 }
 
 dl.portlet ul.navTreeLevel1 .navTreeItem {
 	font-size: 85%;
-	margin-left: 1em;
+	padding-left: 1em;
 	line-height: 2em;
 }
 
