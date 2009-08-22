@@ -934,12 +934,6 @@ dl.collapsedInlineCollapsible dt.collapsibleHeader {
     font-size: 90%;
 } 
 
-#portal-column-content fieldset > * input:focus,
-#portal-column-content fieldset > * textarea:focus {
-    border-color: #ffa500;
-    border-width: 1px;
-}
-
 /* for highlighting of search terms */
 .highlightedSearchTerm {
    background-color: #ffa;
