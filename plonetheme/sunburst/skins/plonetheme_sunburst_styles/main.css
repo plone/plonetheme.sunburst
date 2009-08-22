@@ -515,48 +515,30 @@ dl.error dd {
 
 /* @group Editing */
 
-/* @group Edit bar */
+/* @group Tabs */
 
+/* Color differences between the two tab types */
+#content ul.formTabs {
+	background-color: #ddd;
+	border: 3px solid #ddd;
+}
 #content-views {
-	margin: 1em 0;
-	font-size: 80%;
-}
-
-#content-views { 
-	margin: 0 auto;
 	background-color: #75ad0a;
-	clear: both;
-	border-top-right-radius: 0.5em;
-	border-top-left-radius: 0.5em;
-	-webkit-border-top-right-radius: 0.5em;
-	-webkit-border-top-left-radius: 0.5em;
-	-moz-border-radius-topleft: 0.5em;
-	-moz-border-radius-topright: 0.5em;
-}
-
-#content-views ul { 
-	padding-left: 0.5em;
-	border-top: 4px solid #76AD17;
-	background-color: #76AD17;
-	border-bottom: 1em solid #63A100;
+	border: 0.25em solid #75ad0a;
+	font-size: 80%;
 	line-height: 2em;
-	height: 1em;
 }
-
-#content-views li a { 
+#content-views a {
 	color: White;
-	font-weight: bold;
-	padding: 0.5em;
-	line-height: 2em;
 }
 
-#content-views li a:hover,
-#content-views li.selected a { 
-	color: #75ad0a;
-	background-color: White;
-	border-top: 0.1em solid #75ad0a;
-	line-height: 2em;
-	padding-top: 0.25em;
+/* Shared CSS between the two tab types */
+#content-views,
+#content ul.formTabs {
+    display: block;
+    position: relative;
+	border-style: solid solid none solid; 
+	margin-left: 0;
 	border-top-right-radius: 0.5em;
 	border-top-left-radius: 0.5em;
 	-webkit-border-top-right-radius: 0.5em;
@@ -564,11 +546,72 @@ dl.error dd {
 	-moz-border-radius-topleft: 0.5em;
 	-moz-border-radius-topright: 0.5em;
 }
+#content li.formTab {
+    display: inline;
+}
+#content li.formTab a {
+    /* this isn't supported by all browsers, so we keep it in a separate rule */
+    display: inline-block;
+}
 
-/*#content-views li:hover a,
-#content-views li.selected a { 
-	color: #75ad0a;
-}*/
+#content-views a,
+#content li.formTab a {
+	line-height: 2em !important; 
+	display: inline-block;
+    padding: 0.125em 0.75em;
+    text-decoration: none;
+	border: none;
+	font-weight: bold;
+	margin: 0 0.25em;
+}
+
+#content-views li.selected a,
+#content-views li a:hover,
+#content li.formTab a.selected,
+#content li.formTab a:hover {
+    background: White;
+    color: Black;
+}
+
+#content li.formTab a:visited {
+}
+#content li.firstFormTab a {
+}
+#content li.lastFormTab a {
+}
+#content-views li.selected a,
+#content-views li a:hover,
+#content li.formTab a.selected,
+#content li.formTab a:hover {
+	border-top-right-radius: 0.5em;
+	border-top-left-radius: 0.5em;
+	-webkit-border-top-right-radius: 0.5em;
+	-webkit-border-top-left-radius: 0.5em;
+	-moz-border-radius-topleft: 0.5em;
+	-moz-border-radius-topright: 0.5em;
+}
+#content li.formTab a.notify {
+    background-color: #ffce7b;
+    color: Black;
+}
+#content li.formTab a.required span {
+    background-image: url(/required.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    padding-right: 8px;
+}
+#content li.formTab a.notify:hover {
+    background-color: #ffa500;
+}
+#content .formPanel {
+	margin-top: -1.5em;
+}
+#content .formPanel.hidden {
+    display: none;
+}
+#content div.formControls input.hidden {
+    display: none;
+}
 
 /* @end */
 
@@ -887,81 +930,6 @@ dl.searchResults .highlightedSearchTerm {
     font-weight: normal;
 }
 
-
-/* @end */
-
-/* @group Tabbed form fieldsets */
-
-#content ul.formTabs {
-    display: block;
-    position: relative;
-    text-align: center;
-	background-color: #ddd;
-	border: 3px solid #ddd;
-	border-style: solid solid none solid; 
-	margin-left: 0;
-	border-top-right-radius: 0.5em;
-	border-top-left-radius: 0.5em;
-	-webkit-border-top-right-radius: 0.5em;
-	-webkit-border-top-left-radius: 0.5em;
-	-moz-border-radius-topleft: 0.5em;
-	-moz-border-radius-topright: 0.5em;
-}
-#content li.formTab {
-    display: inline;
-}
-#content li.formTab a {
-    /* this isn't supported by all browsers, so we keep it in a separate rule */
-    display: inline-block;
-}
-#content li.formTab a {
-	background-color: #ddd;
-    color: #205c90;
-    padding: 0.125em 0.75em;
-    text-decoration: none;
-	border: none;
-	font-weight: bold;
-	margin: 0 0.25em;
-}
-#content li.formTab a:visited {
-}
-#content li.firstFormTab a {
-}
-#content li.lastFormTab a {
-}
-#content li.formTab a.selected,
-#content li.formTab a:hover {
-    background: White;
-    color: Black;
-	border-top-right-radius: 0.5em;
-	border-top-left-radius: 0.5em;
-	-webkit-border-top-right-radius: 0.5em;
-	-webkit-border-top-left-radius: 0.5em;
-	-moz-border-radius-topleft: 0.5em;
-	-moz-border-radius-topright: 0.5em;
-}
-#content li.formTab a.notify {
-    background-color: #ffce7b;
-    color: Black;
-}
-#content li.formTab a.required span {
-    background-image: url(/required.png);
-    background-position: center right;
-    background-repeat: no-repeat;
-    padding-right: 8px;
-}
-#content li.formTab a.notify:hover {
-    background-color: #ffa500;
-}
-#content .formPanel {
-	margin-top: -1.5em;
-}
-#content .formPanel.hidden {
-    display: none;
-}
-#content div.formControls input.hidden {
-    display: none;
-}
 
 /* @end */
 
