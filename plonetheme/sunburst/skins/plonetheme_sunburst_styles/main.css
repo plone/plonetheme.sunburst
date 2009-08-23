@@ -599,20 +599,23 @@ dl.error dd {
 	background-color: #ddd;
 	border: 3px solid #ddd;
 }
-#content-views {
+#edit-bar {
 	background-color: #75ad0a;
 	border: 0.25em solid #75ad0a;
 	font-size: 80%;
+	min-height: 2em;
+}
+#content-views {
+	float: left;
 }
 #content-views a {
 	color: White;
 }
 
 /* Shared CSS between the two tab types */
-#content-views,
+#edit-bar,
 #content ul.formTabs {
     display: block;
-    position: relative;
 	border-style: solid solid none solid; 
 	margin-left: 0;
 	border-top-right-radius: 0.5em;
@@ -633,11 +636,11 @@ dl.error dd {
 #content-views a,
 #content li.formTab a {
 	line-height: 2em;
-    padding: 0.125em 0.75em;
+    padding: 0 0.75em;
     text-decoration: none;
 	border: none;
 	font-weight: bold;
-	margin: 0 0.25em;
+	margin: 0 ;
 }
 #content-views li.selected a,
 #content-views li a:hover,
@@ -685,28 +688,32 @@ div.contentActions {
 }
 
 #contentActionMenus {
+	float: right;
+	background: #76AD17;
+	margin: 0 -0.25em 0 0;
 }
 
 dl.actionMenu {
-background: #76AD17;
-	font-size: 80%;
+/*background: #76AD17;*/
+	/*font-size: 80%;*/
 /*  overflow: hidden;*/
 	float: right;
 	white-space: nowrap;
     position: relative;
 }
 dl.actionMenu dd {
-    position: absolute;
+    /*position: absolute;
     top: 2em;
-    left: 0;
+    left: 0;*/
 }
 dl.actionMenu a {
-	line-height: 1.5em;
+	background-color: #75ad0a;
+	line-height: 2em;
     display: block;
     white-space: nowrap;
 	color: white;
 	font-weight: bold;
-	padding: 0.25em 0.5em;
+	padding: 0 0.25em;
 }
 dl.actionMenu.deactivated dt {
 	margin: 0 0.25em;
@@ -716,8 +723,8 @@ dl.actionMenu.deactivated dd {
 }
 dl.actionMenu.activated dd {
     position: absolute;
-    top: 1.9em;
-    left: 0;
+    /*top: 2em;
+    left: 0;*/
     width: auto;
     min-width: 100%;
 	background-color: #76AD17;
