@@ -231,10 +231,12 @@ dl.portlet dd.portletFooter {
 
 
 
-div.managePortletsLink {
+div.managePortletsLink,
+a.managePortletsFallback {
 	text-align: center;
 	padding: 1em;
 	font-size: 0.75em;
+	display: block;
 }
 
 #portlet-prefs strong {
