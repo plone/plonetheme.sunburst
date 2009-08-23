@@ -98,7 +98,7 @@ input {
 
 #portal-logo {
 	display: inline-block;
-	margin-bottom: 1em;
+	margin: 1em 0;
 }
 
 #portal-globalnav {
@@ -148,7 +148,7 @@ input {
 	float: right;
 	text-align: left;
 	clear: right;
-	margin-top: 1.5em;
+	margin-top: 2.5em;
 	font-size: 80%;
 }
 

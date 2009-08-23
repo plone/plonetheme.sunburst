@@ -1,4 +1,7 @@
 <?xml version="1.0"?>
 <object>
-
+ <hidden manager="plone.portalheader" skinname="Sunburst Theme">
+   <viewlet name="plone.site_actions" />
+ </hidden>
 </object>
+
