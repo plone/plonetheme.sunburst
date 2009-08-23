@@ -3,5 +3,8 @@
  <hidden manager="plone.portalheader" skinname="Sunburst Theme">
    <viewlet name="plone.site_actions" />
  </hidden>
+ <hidden manager="plone.belowcontentbody" skinname="Sunburst Theme">
+   <viewlet name="plone.abovecontenttitle.documentactions" />
+ </hidden>
 </object>
 
