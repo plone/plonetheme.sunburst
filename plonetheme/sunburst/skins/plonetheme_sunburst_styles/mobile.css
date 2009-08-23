@@ -6,3 +6,13 @@
 	width: 97.75%; 
 	margin-left: -98.875%; 
 }
+
+#portal-top {
+	font-size: 160%;
+}
+#portal-top input {
+	font-size: 100%;
+}
+#portal-globalnav li a {
+	min-width: 4.9em !important;
+}
