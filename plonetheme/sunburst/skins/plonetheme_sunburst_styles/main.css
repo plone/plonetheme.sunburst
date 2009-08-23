@@ -480,17 +480,23 @@ table.listingtbody tr {
 	text-align:left;
 }
 table.listing tbody tr.odd {
-	background: #f9f9f9;
+	background: #eee;
 }
 table.listing tbody tr td { 
 	background: transparent;
 }
 table.listing tbody tr.odd td { 
-	background: #f9f9f9;
+	background: #eee;
 }
 table.listing a { 
 	border: none;
 }
+
+table.listing td.draggable {
+	cursor: move;	
+	cursor: ns-resize;
+}
+
 
 div.listingBar {
 	font-size: 13px;	
@@ -517,8 +523,6 @@ div.listingBar a:hover {
 	background-color: #329fd7;
 	border-color: #329fd7;
 }
-
-
 
 /* @end */
 
@@ -1110,6 +1114,7 @@ textarea#form\.description {
 height: 6em;
 width: 99%;
 }
+table.listing tbody tr.odd.selected td,
 tr.selected {
 background-color: #ffa;
 }
