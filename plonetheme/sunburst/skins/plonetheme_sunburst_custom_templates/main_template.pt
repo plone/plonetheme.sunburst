@@ -58,16 +58,6 @@
 		</div>
 	</header>
 	<div id="portal-columns" class="row">
-		<div id="portal-column-one" 
-			class="cell width-1:4 position-0"
-			metal:define-slot="column_one_slot" 
-			tal:condition="sl">
-			<aside>
-			<metal:portlets define-slot="portlets_one_slot">
-				<tal:block replace="structure provider:plone.leftcolumn" />
-			</metal:portlets>
-			</aside>
-		</div>
 
 		<!-- TODO: There is probably be a more elegant way to do this ;) -->
 		<div id="portal-column-content" metal:define-slot="content"
@@ -83,7 +73,7 @@
 				tal:define="show_border context/@@plone/showEditableBorder"
 				tal:attributes="class python:test(show_border,'documentEditable','')">
 
-				<div tal:replace="structure provider:plone.contentviews" />
+				<div id="edit-bar" tal:content="structure provider:plone.contentviews" />
 
 				<div id="region-content" class="documentContent">
 
@@ -119,16 +109,27 @@
 		
 		</div></div></div></div>
 
-		<aside>
-			<div id="portal-column-two" 
-				class="cell width-1:4 position-3:4"
-				metal:define-slot="column_two_slot" 
-				tal:condition="sr">
-				<metal:portlets define-slot="portlets_two_slot">
+		<div id="portal-column-one" 
+			class="cell width-1:4 position-0"
+			metal:define-slot="column_one_slot" 
+			tal:condition="sl">
+			<aside>
+			<metal:portlets define-slot="portlets_one_slot">
+				<tal:block replace="structure provider:plone.leftcolumn" />
+			</metal:portlets>
+			</aside>
+		</div>
+
+		<div id="portal-column-two" 
+			class="cell width-1:4 position-3:4"
+			metal:define-slot="column_two_slot" 
+			tal:condition="sr">
+			<aside>
+			<metal:portlets define-slot="portlets_two_slot">
 				<tal:block replace="structure provider:plone.rightcolumn" />
-				</metal:portlets>
-			</div>
-		</aside>
+			</metal:portlets>
+			</aside>
+		</div>
 	</div>
 
 <div class="visualClear"></div> <!-- TODO: Temporary workaround -->

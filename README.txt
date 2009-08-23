@@ -10,3 +10,4 @@ Goals:
 - No substantial markup changes outside of the table removal and new HTML5 elements — class and ID names are kept.
 - The theme uses some CSS3 features, but degrades gracefully.
 - The theme does not use any DTML.
+- When viewed on a device with less than 640px width, the portlets neatly tuck under the main content area. This means that the site works well with devices like tablets and phones that support CSS.
