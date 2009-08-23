@@ -601,6 +601,7 @@ dl.error dd {
 }
 #content-views {
 	float: left;
+	background-color: #75ad0a;
 }
 #content-views a {
 	color: White;
