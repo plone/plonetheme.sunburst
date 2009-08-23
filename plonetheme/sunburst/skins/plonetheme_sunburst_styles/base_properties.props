@@ -1,0 +1,10 @@
+title:string=Example of variables for use in CSS. Not used by default, see ploneCustom.css for example usage. You can also add your own variables here.
+
+plone_skin:string=Sunburst Theme
+
+logoName:string=logo.jpg
+
+fontFamily:string="Helvetica Neue", Arial, FreeSans, sans-serif; 
+linkColor:string=#205c90
+editBarColor:string=#75ad0a
+
