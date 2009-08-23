@@ -3,19 +3,6 @@
 	http://localhost:8080/themetest/portal_css/Sunburst%20Theme/main.css
 */
 
-/* @group Defaults */
-
-/* uncomment the below selector to get a fixed-width layout. *
- * 60em is equivalent to 960px in this case, and every       *
- * grid cell will be 40px with 10px padding.                 */
-
-/* #visual-portal-wrapper { width: 60em; margin: 0 auto; } */
-
-/* @end */
-
-
-
-
 /* @group CSS Reset */
 
 /* Remove implicit browser styles to have a neutral starting point:
@@ -294,6 +281,10 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 
 #content h1 {	
 	margin-top: 0.5em;
+}
+
+#content h1.documentFirstHeading {	
+	margin-top: 0;
 }
 
 #content h2,
@@ -602,6 +593,7 @@ dl.error dd {
 	border: 0.25em solid #75ad0a;
 	font-size: 80%;
 	min-height: 2em;
+	margin-bottom: 1em;
 }
 #content-views {
 	float: left;
@@ -1176,6 +1168,7 @@ dl.toc dd ol {
 #portal-colophon {
 	font-size: 70%;
 	text-align: center;
+	margin-bottom: 1em;
 }
 
 #portal-colophon a {
