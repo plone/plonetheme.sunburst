@@ -9,8 +9,13 @@
 
 #portal-top {
 	font-size: 160%;
+	text-align: center;
 }
-#portal-top input {
+#portal-searchbox {
+	float: none !important;
+	text-align: center !important;
+}
+input {
 	font-size: 100%;
 }
 #portal-globalnav li a {
