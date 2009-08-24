@@ -75,6 +75,10 @@ input {
 	font-family: "Lucida Grande", Arial, FreeSans;
 }
 
+q {
+    quotes: "“" "”" "‘" "’"
+}
+
 /* @end */
 
 /* @group Navigation/search */
