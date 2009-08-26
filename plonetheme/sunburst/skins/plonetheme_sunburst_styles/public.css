@@ -486,7 +486,7 @@ table.listing a {
 
 table.listing td.draggable {
 	cursor: move;	
-	cursor: ns-resize;
+	/*cursor: ns-resize;*/
 }
 
 
