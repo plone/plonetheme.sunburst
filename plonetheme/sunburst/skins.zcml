@@ -5,9 +5,9 @@
 
    <!-- File System Directory Views registration -->
    <cmf:registerDirectory
-       name="plonetheme_sunburst_custom_images"/>
+       name="plonetheme_sunburst_images"/>
    <cmf:registerDirectory
-       name="plonetheme_sunburst_custom_templates"/>
+       name="plonetheme_sunburst_templates"/>
    <cmf:registerDirectory
        name="plonetheme_sunburst_styles"/>
 
