@@ -1,3 +1,4 @@
+/* @override http://localhost:8080/sunburst/portal_css/Sunburst%20Theme/public.css */
 
 /* @group CSS Reset */
 
@@ -39,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 	color: Black;
 }
 h1, h2 {
-	letter-spacing: -1px;
+	letter-spacing: -0.05em;
 }
 h1 {
 	font-size: 1.625em; /* 26px equiv */
@@ -162,7 +163,7 @@ q {
 
 #LSResult .LSDescr {
 	font-size: 85%;
-	color: gray;
+	color: #666;
 }
 
 /* @end */
@@ -185,7 +186,7 @@ q {
 /* @group Listings */
 
 a.link-parent {
-	font-size: 11px;
+	font-size: 80%;
 }
 
 /* @end */
@@ -306,26 +307,19 @@ dl.portlet p,
 dl.portlet ul {
 	margin-bottom: 1em;
 	line-height: 1.5em;
-	font-size: 13px;
+	font-size: 80%;
 }
-
-/*#content p,
-#content dl,
-#content ul,
-#content ol {
-	text-align: justify;	
-}*/
 
 #content a:link,
 dl.portlet a:link {
 	color: #205c90;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 0.1em solid #ccc;
 }
 
 #content a:visited, 
 dl.portlet a:visited {
 	color: #427597;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 0.1em solid #ccc;
 }
 #content a:target {
 	background-color: #ffb;
@@ -366,7 +360,7 @@ dl.portlet li {
 	background-color: #222;
 	color: White;
 	font-family: Consolas, Inconsolata, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;	
-	padding: 10px;
+	padding: 1em;
 	overflow-x: auto;
 	font-size: 90%;
 	margin-bottom: 1em;
@@ -378,17 +372,16 @@ dl.portlet li {
 }
 
 #content div.documentByLine {
-	margin-bottom: 10px;
-	font-size: 11px;
+	font-size: 70%;
 	display: block;
 	margin-top: -0.5em;
-	color: gray;
+	color: #666;
 }
 
 #content .discreet,
 #sidebar .discreet {
-	color: gray;
-	font-size: 11px;
+	color: #666;
+	font-size: 70%;
 	font-weight: normal;
 }
 
@@ -403,13 +396,13 @@ dl.portlet li {
     float: right;
     width: 35%;
     clear: right;
-    border-left: 1px solid #888;
+    border-left: 0.1em solid #888;
 	color: #888;
 }
 #content .callout {
     color: #666;
     padding: 1em;
-	border: 1px solid #666;
+	border: 0.1em solid #666;
 	border-style: solid none;
 	clear:  both;
 }
@@ -422,7 +415,7 @@ dl.portlet li {
 
 #content p.documentDescription,
 #content #description {
-	color: gray;
+	color: #666;
 	font: bold 1em "Helvetica Neue", Arial, FreeSans, sans-serif;
 	margin-left: 0;
 }
@@ -433,7 +426,6 @@ dl.portlet li {
 	margin: 0 1em 0.5em 1em;
 }
 #content div.newsImageContainer {
-	width: 200px;
 }
 #content div.newsImageContainer p.discreet {
 	margin: 0;
@@ -470,7 +462,7 @@ table.listing th.listingCheckbox {
 table.listing thead th {
 	text-align: left;
 	color: #666;
-	border-bottom: 1px solid #e7e7e7;
+	border-bottom: 0.1em solid #e7e7e7;
 	padding-left: 0;
 }
 table.listing tbody th {
@@ -499,7 +491,7 @@ table.listing td.draggable {
 
 
 div.listingBar {
-	font-size: 13px;	
+	font-size: 80%;	
 	margin: 1em 0;
 }
 
@@ -515,7 +507,7 @@ div.listingBar .previous {
 div.listingBar a {
 	display: inline-block;
 	padding: 0.25em 0.5em;
-	border: 1px solid #ccc;
+	border: 0.1em solid #ccc;
 }
 
 div.listingBar a:hover {
@@ -529,9 +521,9 @@ div.listingBar a:hover {
 /* @group Status messages */
 
 dl.portalMessage {
-    font-size: 12px;
+    font-size: 80%;
     background-color: #ffffe3; 
-    border: 1px solid #996;
+    border: 0.1em solid #996;
     margin: 1em 0;
 }
 
@@ -590,7 +582,7 @@ dl.error dd {
 /* Color differences between the two tab types */
 #content ul.formTabs {
 	background-color: #ddd;
-	border: 3px solid #ddd;
+	border: 0.3em solid #ddd;
 }
 #edit-bar {
 	background-color: #75ad0a;
@@ -660,10 +652,10 @@ dl.error dd {
     color: White;
 }
 #content li.formTab a.required span {
-    background-image: url(/required.png);
+    background-image: url(required.png);
     background-position: center right;
     background-repeat: no-repeat;
-    padding-right: 8px;
+    padding-right: 1em;
 }
 #content .formPanel {
 	margin-top: -1.5em;
@@ -848,7 +840,7 @@ padding-top:0.8em;
 
 /* @group Collapsible */
 dl.collapsible {
-    border: 1px solid #8cacbb;
+    border: 0.1em solid #8cacbb;
     margin: 1em 0 0 0;
     padding: 0;
 }
@@ -879,8 +871,8 @@ dl.collapsible dd.collapsibleContent > dl {
 
 dl.expandedInlineCollapsible dt.collapsibleHeader,
 dl.expandedBlockCollapsible dt.collapsibleHeader {
-    padding: 0 6px 0 22px;
-    background: White url(treeExpanded.png) no-repeat 6px 50%;
+    padding: 0 0.5em 0 2em;
+    background: White url(treeExpanded.png) no-repeat 0.5em 50%;
     cursor: pointer;
 }
 
@@ -893,7 +885,7 @@ dl.collapsedBlockCollapsible dt.collapsibleHeader {
     float: none;
     position: static;
     margin: 0;
-    padding: 0 0 0 22px;
+    padding: 0 0 0 2em;
     line-height: 1em;
     cursor: pointer;
 }
@@ -911,7 +903,7 @@ dl.collapsedInlineCollapsible dt.collapsibleHeader {
     position: static;
     float: none;
     margin: 0;
-    padding: 0 0 0 22px;
+    padding: 0 0 0 2em;
     line-height: 1em;
     cursor: pointer;
     display: inline;
@@ -922,7 +914,7 @@ dl.collapsedInlineCollapsible dt.collapsibleHeader {
 /* @group Comments */
 
 .comment {
-	border: 1px solid #eee;
+	border: 0.1em solid #eee;
 	background-color: #f6f6f6;
     padding: 0.25em 1em 1em 1em;
     margin-bottom: 1em;
@@ -933,11 +925,11 @@ dl.collapsedInlineCollapsible dt.collapsibleHeader {
 .comment h4, 
 .comment h5,
 .comment h6 {
-    border-bottom: 1px solid #76797c;
+    border-bottom: 0.1em solid #76797c;
     font-weight: normal;
 }
 .commentBody {
-	font-size: 13px;
+	font-size: 80%;
 }
 
 /* @end */
@@ -958,7 +950,7 @@ dl.collapsedInlineCollapsible dt.collapsibleHeader {
     padding-right: 0.5em;
 }
 .optionsToggle {
-    border: 1px solid #8cacbb;
+    border: 0.1em solid #8cacbb;
     color: Black;
     background-color: #dee7ec;
     font-weight: normal;
@@ -981,8 +973,8 @@ dl.searchResults .highlightedSearchTerm {
 /* for highlighting current items, like the language or today in the calendar */
 .currentItem {
     border-collapse: collapse;
-    border: 2px solid #ffa500;
-    padding: 1px;
+    border: 0.2em solid #ffa500;
+    padding: 0.1em;
 }
 .managePortletsLink {
     display:  block;
@@ -1002,7 +994,7 @@ dl.searchResults .highlightedSearchTerm {
 	font-weight: bold;
 	line-height: 125%;
 	color: Black;
-	letter-spacing: -1px;
+	letter-spacing: -0.05em;
 	font-size: 1.625em; /* 26px equiv */
 }
 
@@ -1023,7 +1015,7 @@ width: 100%;
 vertical-align: top;
 }
 #content fieldset {
-border: 1px solid #329fd7;
+border: 0.1em solid #329fd7;
 border-style: solid none none none;
 }
 #content legend {
@@ -1077,7 +1069,7 @@ margin-top: 1em;
 }
 .fieldRequired {
 background: url(/required.gif) center left no-repeat;
-padding: 0 0 0 8px;
+padding: 0 0 0 1em;
 color: White;
 }
 .fieldUploadFile {
@@ -1144,9 +1136,9 @@ width: inherit;
 dl.toc {
 	float: right;
     width: 35%;
-	font-size: 11px;
+	font-size: 70%;
     margin: 0 0 0.5em 1.5em;
-	border-left: 1px solid #666;
+	border-left: 0.1em solid #666;
 }
 dl.toc dt {
 	margin-left: 3em;
@@ -1190,10 +1182,10 @@ dl.toc dd ol {
     background: transparent;
     background-image: none; /* safari bug */
     border: none;
-    height: 1px;
+    height: 0.1em;
     overflow: hidden;
     padding: 0;
-    margin: -1px 0 0 -1px;
+    margin: -0.1em 0 0 -0.1em;
     width: 1px;
 }
 
