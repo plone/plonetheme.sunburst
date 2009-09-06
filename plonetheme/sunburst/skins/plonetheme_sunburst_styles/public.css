@@ -222,8 +222,17 @@ dl.portlet dd.portletFooter {
 div.managePortletsLink,
 a.managePortletsFallback {
 	text-align: center;
-	padding: 1em;
+	padding: 0.25em 0.5em;
 	font-size: 0.75em;
+	width: 8em;
+	margin: 0 auto 1em;
+	background: #ddd;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+}
+
+a.managePortletsFallback {
 	display: block;
 }
 
@@ -323,6 +332,19 @@ dl.portlet a:visited {
 }
 #content a:target {
 	background-color: #ffb;
+}
+
+#content a.link-category {
+	color: black;
+	padding: 0.25em 0.5em;
+	background: #ddd;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+}
+#content a.link-category:hover {
+	background: #205c90;
+	color: White;
 }
 
 #content img {
