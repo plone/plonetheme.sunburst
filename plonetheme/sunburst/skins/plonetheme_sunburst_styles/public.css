@@ -345,6 +345,7 @@ dl.portlet a:visited {
 #content a.link-category:hover {
 	background: #205c90;
 	color: White;
+	border-color: #205c90;
 }
 
 #content img {
@@ -390,7 +391,7 @@ dl.portlet li {
 }
 
 #content code {
-	font-family: Monaco, Consolas, Inconsolata, "Courier New", monospace;
+	font-family: Consolas, Inconsolata, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;	
 }
 
 #content div.documentByLine {
@@ -679,10 +680,10 @@ dl.error dd {
     background-repeat: no-repeat;
     padding-right: 1em;
 }
-#content .formPanel {
-	margin-top: -1.5em;
+#content fieldset.formPanel {
+	border: none;
 }
-#content .formPanel.hidden {
+#content fieldset.formPanel.hidden {
     display: none;
 }
 #content div.formControls input.hidden {
@@ -762,18 +763,14 @@ dl.actionMenu.activated dd a:hover {
 
 /* @group Control panel */
 
-ul.configlets {
+#content ul.configlets {
     margin: 1em 0;
     list-style-image: none;
     list-style: none;
 }
-
-.configlet .contentViews {
-    font-size: 90%;
-}
-
-ul.configlets li {
+#content ul.configlets li {
     margin-bottom: 1em;
+    list-style: none;
 }
 ul.configlets li a {
     text-decoration: none;
@@ -808,7 +805,6 @@ ul.configletDetails li label {
 ul.configletDetails li.configletDescription {
     display: block;
     color: #76797c;
-    font-size: 90%;
     margin: 0;
 }
 .inlineDisplay {
@@ -1042,14 +1038,14 @@ border-style: solid none none none;
 }
 #content legend {
 padding: 0.5em 0.5em 0.5em 0;
-font-size: 90%;
+font-size: 80%;
 }
 label {
 font-weight: bold;
 }
 input[type="checkbox"] + label:hover {
 	background: #ddd;
-	outline: 0.5em solid #ddd;
+	outline: 0.25em solid #ddd;
 /* TODO: This should work, but creates flicker in all browsers. Figure out why.
 	position: relative;
 	left: -1.5em;
