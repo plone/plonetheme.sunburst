@@ -38,6 +38,7 @@
 	<metal:headslot define-slot="head_slot" />
 	<metal:styleslot define-slot="style_slot" />
 	<metal:javascriptslot define-slot="javascript_head_slot" />
+		
 	<meta name="viewport" content="width=320; initial-scale=0.6666; maximum-scale=1.0; minimum-scale=0.6666" />
 	<meta name="generator" content="Plone - http://plone.org" />
 </head>

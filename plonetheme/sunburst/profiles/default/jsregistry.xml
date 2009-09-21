@@ -1,4 +1,6 @@
 <?xml version="1.0"?>
 <object name="portal_javascripts">
-
+    <javascript authenticated="False" cacheable="True" compression="safe"
+       conditionalcomment="lt IE 8" cookable="True" enabled="True"
+       expression="" id="IE8.js" inline="False"/>
 </object>

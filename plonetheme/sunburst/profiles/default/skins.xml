@@ -11,6 +11,9 @@
  <object name="plonetheme_sunburst_styles"
     meta_type="Filesystem Directory View"
     directory="plonetheme.sunburst:skins/plonetheme_sunburst_styles"/>
+ <object name="plonetheme_sunburst_js"
+    meta_type="Filesystem Directory View"
+    directory="plonetheme.sunburst:skins/plonetheme_sunburst_js"/>    
 
  <skin-path name="Sunburst Theme" based-on="Plone Default">
   <layer name="plonetheme_sunburst_images"
@@ -19,6 +22,8 @@
      insert-after="plonetheme_sunburst_images"/>
   <layer name="plonetheme_sunburst_styles"
      insert-after="plonetheme_sunburst_templates"/>
+  <layer name="plonetheme_sunburst_js"
+     insert-after="plonetheme_sunburst_styles"/>     
  </skin-path>
 
 </object>

@@ -10,5 +10,7 @@
        name="plonetheme_sunburst_templates"/>
    <cmf:registerDirectory
        name="plonetheme_sunburst_styles"/>
+   <cmf:registerDirectory
+       name="plonetheme_sunburst_js"/>       
 
 </configure>
