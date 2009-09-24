@@ -196,6 +196,9 @@ dl.portlet {
 	margin: 0 0 1em;
 	font-size: 80%;
 }
+dl.portletError {
+    background-color: #FFA500;
+}
 
 dl.portlet dt {
 	padding: 0em 1em;
@@ -212,7 +215,8 @@ dl.portlet dt a:hover {
 }
 
 dl.portlet dd.portletItem,
-dl.portlet dd.portletFooter {
+dl.portlet dd.portletFooter,
+dl.portletError dd {
 	padding: 1em;
 }
 
