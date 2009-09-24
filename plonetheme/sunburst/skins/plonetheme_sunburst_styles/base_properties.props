@@ -2,7 +2,7 @@ title:string=Example of variables for use in CSS. Not used by default, see plone
 
 plone_skin:string=Sunburst Theme
 
-logoName:string=logo.jpg
+logoName:string=logo.png
 
 fontFamily:string="Helvetica Neue", Arial, FreeSans, sans-serif; 
 linkColor:string=#205c90
