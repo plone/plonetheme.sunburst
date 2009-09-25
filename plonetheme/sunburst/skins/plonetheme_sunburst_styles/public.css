@@ -1214,6 +1214,10 @@ dl.toc dd ol {
 	margin-bottom: 1em;
 }
 
+#portal-colophon li {
+    padding:0 0.75em;
+}
+
 #portal-colophon a {
 	color: #444;
 }
