@@ -14,7 +14,8 @@
     <browser:viewlet
         name="plonetheme.sunburst.personal_bar"
         manager="plone.app.layout.viewlets.interfaces.IPortalTop"
-        class=".viewlets.NewPersonalBarViewlet"
+        class="plone.app.layout.viewlets.common.PersonalBarViewlet"
+        template="templates/personal_bar.pt"
         permission="zope2.View" 
         layer=".interfaces.IThemeSpecific"
         />
