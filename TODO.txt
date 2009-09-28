@@ -1,0 +1,62 @@
+Remaining/known issues:
+
+- Resolve the #content vs #region-content mess
+
+- Add support for the jQuery Tools dialog for login + deletion
+
+- Related, the Login portlet doesn't need to be shown by default anymore.
+
+- Unify viewlet positions in plonetheme.classic and this theme, essentially add 
+  pulldown support + bottom site actions to the classic theme.
+
+- Fix formlib forms to render formControls class on its submit buttons.
+
+- When going to the Sharing form on the front page, it says "You are adjusting 
+  the sharing privileges for a default view in a container. To adjust them for 
+  the entire container, go here" — but there is no link to "here" :)
+
+- Look in main_template for TODO markers; I'm hoping we can simplify or remove
+  some of the more complex TAL expressions. Help appreciated. :)
+
+- If ZPT can't be fixed to include a DOCTYPE on all documents similar to what 
+  Chameleon does, we need to have a METAL header like the Plone 3 theme. I'm 
+  hoping we can fix this in ZPT, though.
+
+- Theme is not split up in multiple files yet — we'll probably do a simple 
+  public/edit interface split to encourage reuse, but not as many files as Plone 
+  3.
+
+- The theme is using Dean Edwards' "ie8.js" to compensate for deficiencies in 
+  IE6/7 CSS support. Currently, there's a bug in this script that applies the 
+  mobile phone styling on IE6/7, but it's being looked into:
+  http://code.google.com/p/ie7-js/issues/detail?id=197
+
+- No RTL testing/updates done yet.
+
+- Personal bar is supposed to be a pulldown menu with log out, profile, 
+  dashboard and site setup links, but isn't yet.
+
+- Editing CSS is still not complete.
+
+- The plan is to get rid of most of the unnecessary icons (copy/paste, etc), and 
+  possibly make the standard folder/page icons etc more color-neutral 
+  (black & white is one option).
+
+- The old CMFPlone theme should be separated out into its own product.
+
+- The searchField/inputLabel JS should apply the type="search" dynamically using Martijn's script for this.
+
+- The sortableTable script should insert the utf-8 characters for up/down instead of using images.
+
+- Remove the "Subfolder" tab from Collections, "Contents" does the same thing.
+
+- Remove cut/copy/paste icons
+
+- Add in the "Profile" and "Dashboard" links in the pulldown menu
+
+- Figure out whether we can get rid of the prefs_main_template now; having a special main_template just for the pref panels shouldn't be necessary.
+
+- Profile and dashboard pages are not styled yet, need to see if we can make these use the standard templates.
+
+- Move code to views where possible, and move the KSS spinner to a viewlet or something.
+

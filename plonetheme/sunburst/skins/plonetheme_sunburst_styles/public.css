@@ -36,33 +36,32 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Helvetica Neue", Arial, FreeSans, sans-serif; 
 	font-weight: bold;
-	line-height: 125%;
+	line-height: 150%;
 	color: Black;
 }
 h1, h2 {
 	letter-spacing: -0.05em;
 }
 h1 {
-	font-size: 1.625em; /* 26px equiv */
+	font-size: 2em; 
 }
 h2 {
-	font-size: 1.375em; /* 22px equiv */
+	font-size: 1.75em; 
 }
 h3 {
-	font-size: 1.125em; /* 18px equiv */
+	font-size: 1.5em; 
 }
 h4 {
-	font-size: 0.875em; /* 14px equiv */
+	font-size: 1.25em; 
 }
 h5 {
-	font-size: 0.75em; /* 12px equiv */
+	font-size: 1em; 
 }
 h6 {
-	font-size: 0.625em; /* 10px equiv */
+	font-size: 0.8em; 
 }
 
 p {
-	font-size: 0.75em; /* 12px equiv */
 }
 
 a:link, a:visited {
@@ -147,6 +146,10 @@ q {
 	width: 13em;
 }
 
+#region-content input.searchField {
+	margin-bottom: 1em;
+}
+
 /* @group LiveSearch */
 
 #LSResult {
@@ -185,7 +188,6 @@ q {
 /* @group Listings */
 
 a.link-parent {
-	font-size: 80%;
 }
 
 /* @end */
@@ -226,7 +228,7 @@ div.managePortletsLink,
 a.managePortletsFallback {
 	text-align: center;
 	padding: 0.25em 0.5em;
-	font-size: 0.75em;
+	font-size: 80%;
 	width: 8em;
 	margin: 0 auto 1em;
 	background: #ddd;
@@ -239,8 +241,10 @@ a.managePortletsFallback {
 	display: block;
 }
 
-#portlet-prefs strong {
-	margin-left: 2em;
+
+#portlet-prefs a {
+	border: none;
+	line-height: 2em;
 }
 
 #dashboard-portlets1,
@@ -290,6 +294,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 #content {
 	line-height: 1.5em;
 	clear: both;
+	font-size: 80%;
 }
 
 #content h1 {	
@@ -313,13 +318,9 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 #content ol,
 #content table,
 #content dl,
-#content dt,
-#content dd,
 dl.portlet p,
-dl.portlet ul {
+dl.portlet {
 	margin-bottom: 1em;
-	line-height: 1.5em;
-	font-size: 80%;
 }
 
 #content a:link,
@@ -398,7 +399,7 @@ dl.portlet li {
 }
 
 #content div.documentByLine {
-	font-size: 70%;
+	font-size: 85%;
 	display: block;
 	margin-top: -0.5em;
 	color: #666;
@@ -407,7 +408,7 @@ dl.portlet li {
 #content .discreet,
 #sidebar .discreet {
 	color: #666;
-	font-size: 70%;
+	font-size: 85%;
 	font-weight: normal;
 }
 
@@ -442,7 +443,7 @@ dl.portlet li {
 #content p.documentDescription,
 #content #description {
 	color: #666;
-	font: bold 1em "Helvetica Neue", Arial, FreeSans, sans-serif;
+	font: bold 1.25em "Helvetica Neue", Arial, FreeSans, sans-serif;
 	margin-left: 0;
 }
 
@@ -470,8 +471,8 @@ dl.portlet li {
 /* @group Data tables */
 
 table.listing {
-	width: 100%;
 	border-spacing: 0; 
+	font-size: 90%;
 }
 
 table.listing td, 
@@ -488,7 +489,8 @@ table.listing th.listingCheckbox {
 table.listing thead th {
 	text-align: left;
 	color: #666;
-	border-bottom: 0.1em solid #e7e7e7;
+	border: 0.1em solid #e7e7e7;
+	border-style: solid none;
 	padding-left: 0;
 }
 table.listing tbody th {
@@ -548,7 +550,7 @@ div.listingBar a:hover {
 
 #region-content dl.portalMessage {
     margin: 1em 0;
-	font-size: 90%;
+	font-size: 80%;
 	border: 1px solid #996;
 	background-color: #ffffe3; 
 }
@@ -639,6 +641,7 @@ div.listingBar a:hover {
 }
 #content li.formTab {
     display: inline;
+	margin-right:0.25em;
 }
 #content-views a,
 #content li.formTab a {
@@ -731,6 +734,7 @@ div.listingBar a:hover {
 	background-color: #75ad0a;
 	color: White;
 	font-weight: bold;
+	z-index: 5;
 }
 #contentActionMenus dl.actionMenu.activated dd {
 	border-bottom: 0.5em solid #75ad0a;
@@ -798,37 +802,37 @@ dl.actionMenu.activated dd a {
     margin-bottom: 1em;
     list-style: none;
 }
-ul.configlets li a {
+#content ul.configlets li a {
     text-decoration: none;
     border: none;
 }
-ul.configlets li a:visited {
+#content ul.configlets li a:visited {
     color: #436976;
     background-color: transparent;
 }
-ul.configlets li a:active {
+#content ul.configlets li a:active {
     color: #436976;
     background-color: transparent;
 }
-ul.configlets li label {
+#content ul.configlets li label {
     font-weight: bold;
 }
-ul.configletDetails {
+#content ul.configletDetails {
     margin: 0em 1em 1em 4em;
     list-style-image: none;
     list-style: none;
 }
-ul.configletDetails li {
+#content ul.configletDetails li {
     margin-bottom: 1em;
     display: inline;
 }
-ul.configletDetails li a {
+#content ul.configletDetails li a {
 	text-decoration: none;
 }
-ul.configletDetails li label {
+#content ul.configletDetails li label {
     font-weight: bold;
 }
-ul.configletDetails li.configletDescription {
+#content ul.configletDetails li.configletDescription {
     display: block;
     color: #76797c;
     margin: 0;
@@ -962,6 +966,7 @@ dl.collapsedInlineCollapsible dt.collapsibleHeader {
 	background-color: #f6f6f6;
     padding: 0.25em 1em 1em 1em;
     margin-bottom: 1em;
+	font-size: 80%;
 }
 .comment h1,
 .comment h2,
@@ -972,16 +977,12 @@ dl.collapsedInlineCollapsible dt.collapsibleHeader {
     border-bottom: 0.1em solid #76797c;
     font-weight: normal;
 }
-.commentBody {
-	font-size: 80%;
-}
 
 /* @end */
 
 .reviewHistory,
 .contentHistory {
     display: inline;
-    font-size: 110%; 
     color: Black;
 }
 .spacer {
@@ -1019,12 +1020,6 @@ dl.searchResults .highlightedSearchTerm {
     border-collapse: collapse;
     border: 0.2em solid #ffa500;
     padding: 0.1em;
-}
-.managePortletsLink {
-    display:  block;
-    color: #76797c;
-    font-size: 90%;
-    font-weight: normal;
 }
 
 
@@ -1064,14 +1059,17 @@ border-style: solid none none none;
 }
 #content legend {
 padding: 0.5em 0.5em 0.5em 0;
-font-size: 80%;
+font-size: 85%;
 }
 label {
-font-weight: bold;
+	font-weight: bold;
 }
+#region-content label {
+}
+
 input[type="checkbox"] + label:hover {
 	background: #ddd;
-	outline: 0.25em solid #ddd;
+	outline: 0.1em solid #ddd;
 /* TODO: This should work, but creates flicker in all browsers. Figure out why.
 	position: relative;
 	left: -1.5em;
@@ -1095,8 +1093,6 @@ dl.enableFormTabbing dd {
 margin-left: 0;
 padding-top: 2em;
 }
-#content input.searchButton {
-}
 .searchSection {
 color: #76797c;
 margin-top: 0.25em;
@@ -1109,8 +1105,12 @@ clear: both;
 margin-top: 1em;
 }
 .field input[type="text"] {
+	/*width: 100%;*/
+}
+input#title {
 	width: 100%;
 }
+
 .fieldRequired {
 background: url(/required.gif) center left no-repeat;
 padding: 0 0 0 1em;
@@ -1126,20 +1126,14 @@ text-align: right;
 margin-right: 0.75em
 }
 .formHelp {
-font-size: 80%;
-color: #76797c;
-margin: 0 0 0.2em 0;
-}
-.formHelp:hover {
-color: Black;
-cursor: default;
+	color: #555;
+	margin: 0 0 0.2em 0;
 }
 div.error {
 background-color: #fdc;
 border:  1px solid red;
 padding: 0.5em;
 margin:  1em 0;
-font-size: 80%;
 color: red;
 }
 .error .fieldRequired {
@@ -1202,10 +1196,11 @@ dl.toc dd ol {
 /* @group Footer */
 
 #portal-footer {
+	font-size: 75%;
 	background: #ddd;
 	padding: 1em 0; 
 	text-align: center;
-	margin: 0 0 1em 0;
+	margin: 1em 0;
 }
 
 #portal-colophon {

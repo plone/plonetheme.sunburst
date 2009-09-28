@@ -23,6 +23,8 @@
 <head>
 	<!-- Forces IE8+ into newest rendering engine even if on an intranet. This has to be defined before any script/style tags. -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+	<!-- Enables iPhone web app use, fullscreen when added to home screen -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
 
 	<metal:baseslot define-slot="base">
 		<base tal:attributes="href context/renderBase" /><!--[if lt IE 7]></base><![endif]-->
@@ -152,7 +154,7 @@
 </div>
 
 <!-- TODO: This needs to go away. -->
-<div id="kss-spinner"><img tal:attributes="src string:${portal_url}/spinner.png" alt="" /></div>
+<!-- <div id="kss-spinner"><img tal:attributes="src string:${portal_url}/spinner.png" alt="" /></div> -->
 
 </body>
 </html>
