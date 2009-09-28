@@ -11,7 +11,14 @@
         />
 
     <!-- Viewlets registration -->
+    <browser:viewlet
+        name="plonetheme.sunburst.personal_bar"
+        manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+        class=".viewlets.NewPersonalBarViewlet"
+        permission="zope2.View" 
+        layer=".interfaces.IThemeSpecific"
+        />
+        
     <!-- Zope 3 browser resources -->
-
 
 </configure>
