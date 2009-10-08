@@ -47,6 +47,13 @@
     margin: 0 0 0 0.5em;
 }
 
+/* Content pulldowns */
+
+#contentActionMenus {
+    float: left;
+    margin: auto;
+}
+
 
 /*                                            RTL overides of columns.css */
 
