@@ -21,6 +21,11 @@
 /*                                             RTL overides of public.css */
 
 
+#portal-globalnav li a {
+    border-right: none;
+    border-left: 0.1em solid white;    
+}
+
 #portal-personaltools {
     position: absolute;
     right: auto;
