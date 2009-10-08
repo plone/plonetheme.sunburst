@@ -20,6 +20,13 @@
 
 /*                                             RTL overides of public.css */
 
+
+#portal-personaltools {
+    position: absolute;
+    right: auto;
+    left: 0;
+}
+
 /* Searchbox style and positioning */
 
 #portal-searchbox {
