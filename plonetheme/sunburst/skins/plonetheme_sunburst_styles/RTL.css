@@ -20,7 +20,13 @@
 
 /*                                             RTL overides of public.css */
 
+/* Searchbox style and positioning */
 
+#portal-searchbox {
+    padding: 0 0 0 2em;
+    float: left;
+    clear: left;
+}
 
 
 /*                                            RTL overides of columns.css */
