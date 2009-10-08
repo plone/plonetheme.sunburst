@@ -47,6 +47,13 @@
     margin: 0 0 0 0.5em;
 }
 
+/* Editing */
+/* Tabs */
+
+#content-views {
+    float: right;
+}
+
 /* Content pulldowns */
 
 #contentActionMenus {
