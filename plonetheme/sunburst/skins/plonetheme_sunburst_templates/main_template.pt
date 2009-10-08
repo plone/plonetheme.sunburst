@@ -67,9 +67,11 @@
 		<div id="portal-column-content" metal:define-slot="content"
 			tal:omit-tag="python: not (sl and sr)" class="cell width-1:2 position-1:4">
 		<div id="portal-column-content" metal:define-slot="content"
-			tal:omit-tag="python: not (not sl and sr)" class="cell width-3:4 position-0">
+			tal:omit-tag="python: not (not sl and sr)" class="cell width-3:4 position-0"
+		        tal:attributes="class python:test(isRTL, 'cell width-3:4 position-1:4', 'cell width-3:4 position-0')">
 		<div id="portal-column-content" metal:define-slot="content"
-			tal:omit-tag="python: not (sl and not sr)" class="cell width-3:4 position-1:4">
+			tal:omit-tag="python: not (sl and not sr)" class="cell width-3:4 position-1:4"
+		        tal:attributes="class python:test(isRTL, 'cell width-3:4 position-0', 'cell width-3:4 position-1:4')">
 		<div id="portal-column-content" metal:define-slot="content"
 			tal:omit-tag="python: not (not sl and not sr)" class="cell width-full position-0">
 
@@ -114,7 +116,8 @@
 		<div id="portal-column-one" 
 			class="cell width-1:4 position-0"
 			metal:define-slot="column_one_slot" 
-			tal:condition="sl">
+			tal:condition="sl"
+			tal:attributes="class python:test(isRTL, 'cell width-1:4 position-3:4', 'cell width-1:4 position-0')">
 			<metal:portlets define-slot="portlets_one_slot">
 				<tal:block replace="structure provider:plone.leftcolumn" />
 			</metal:portlets>
@@ -123,7 +126,8 @@
 		<div id="portal-column-two" 
 			class="cell width-1:4 position-3:4"
 			metal:define-slot="column_two_slot" 
-			tal:condition="sr">
+			tal:condition="sr"
+			tal:attributes="class python:test(isRTL, 'cell width-1:4 position-0', 'cell width-1:4 position-3:4')">
 			<metal:portlets define-slot="portlets_two_slot">
 				<tal:block replace="structure provider:plone.rightcolumn" />
 			</metal:portlets>
