@@ -77,3 +77,4 @@ Remaining/known issues:
 - Move code to views where possible, and move the KSS spinner to a viewlet or
   something.
 
+- Properly register the uninstall profile.
