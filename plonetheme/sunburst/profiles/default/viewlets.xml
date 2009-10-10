@@ -13,5 +13,10 @@
      <viewlet name="plone.header" />
      <viewlet name="plonetheme.sunburst.personal_bar" insert-after="plone.header" />
  </order>
+ <order manager="plone.portalfooter" skinname="Sunburst Theme">
+     <viewlet name="plone.footer" />
+     <viewlet name="plone.colophon" />
+     <viewlet name="plonetheme.sunburst.site_actions" />
+ </order>
 </object>
 

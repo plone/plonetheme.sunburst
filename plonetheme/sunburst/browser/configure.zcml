@@ -19,6 +19,15 @@
         permission="zope2.View" 
         layer=".interfaces.IThemeSpecific"
         />
+
+    <browser:viewlet
+        name="plonetheme.sunburst.personal_bar"
+        manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+        class="plone.app.layout.viewlets.common.SiteActionsViewlet"
+        permission="zope2.View" 
+        layer=".interfaces.IThemeSpecific"
+        />
+        
         
     <!-- Zope 3 browser resources -->
 
