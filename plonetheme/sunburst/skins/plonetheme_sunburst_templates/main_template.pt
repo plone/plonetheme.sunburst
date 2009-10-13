@@ -21,6 +21,8 @@
 </tal:cache>
 
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 	<!-- Forces IE8+ into newest rendering engine even if on an intranet. This has to be defined before any script/style tags. -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
 	<!-- Enables iPhone web app use, fullscreen when added to home screen -->
