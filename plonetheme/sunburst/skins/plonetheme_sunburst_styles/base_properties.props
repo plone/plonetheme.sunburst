@@ -1,4 +1,4 @@
-title:string=Example of variables for use in CSS. Not used by default, see ploneCustom.css for example usage. You can also add your own variables here.
+title:string=NOT USED in the Sunburst theme by default, see ploneCustom.css for example usage. You can also add your own variables here.
 
 plone_skin:string=Sunburst Theme
 
@@ -8,3 +8,44 @@ fontFamily:string="Helvetica Neue", Arial, FreeSans, sans-serif;
 linkColor:string=#205c90
 editBarColor:string=#75ad0a
 
+compatibilityClassic:string=The below values are copied directly from the old Plone theme to make sure that products that rely on them don't break. 
+
+fontBaseSize:string=69%
+fontColor:string=Black
+fontSmallSize:string=90%
+
+backgroundColor:string=White
+
+linkActiveColor:string=Red
+linkVisitedColor:string=Purple
+
+borderWidth:string=1px
+borderStyle:string=solid
+borderStyleAnnotations:string=solid
+
+globalBorderColor:string=#8cacbb
+globalBackgroundColor:string=#dee7ec
+globalFontColor:string=#436976
+
+headingFontFamily:string="Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif
+
+contentViewBorderColor:string=#74ae0b
+contentViewBackgroundColor:string=#cde2a7
+contentViewFontColor:string=#578308
+
+inputFontColor:string=Black
+
+textTransform:string=none
+
+evenRowBackgroundColor:string=#eef3f5 
+oddRowBackgroundColor:string=transparent
+
+notifyBorderColor:string=#ffa500
+notifyBackgroundColor:string=#ffce7b
+
+discreetColor:string=#76797c
+helpBackgroundColor:string=#ffffe1
+
+portalMinWidth:string=70em
+columnOneWidth:string=16em
+columnTwoWidth:string=16em
