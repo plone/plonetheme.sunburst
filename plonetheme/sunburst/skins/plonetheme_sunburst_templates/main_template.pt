@@ -40,7 +40,12 @@
 	<metal:headslot define-slot="head_slot" />
 	<metal:styleslot define-slot="style_slot" />
 	<metal:javascriptslot define-slot="javascript_head_slot" />
-		
+	
+    <meta tal:define="metatags python:context.plone_utils.listMetaTags(here).items()"
+      tal:condition="metatags"
+      tal:repeat="keyval metatags"
+      tal:attributes="name python:keyval[0]; content python:keyval[1];"
+    />
 	<meta name="viewport" content="width=320; initial-scale=0.6666; maximum-scale=1.0; minimum-scale=0.6666" />
 	<meta name="generator" content="Plone - http://plone.org" />
 </head>
@@ -82,7 +87,7 @@
 				<div id="edit-bar" 
 					tal:condition="show_border"
 					tal:content="structure provider:plone.contentviews" />
-
+    
 				<div id="region-content" class="documentContent">
 
 					<a name="documentContent"></a>
