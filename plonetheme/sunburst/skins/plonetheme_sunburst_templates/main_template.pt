@@ -1,7 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- TODO: If ZPT isn't fixed to have the option of setting the doctype, we need to move the master macro to surround the entire thing -->
+<metal:page define-macro="master"><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml" 
-	metal:define-macro="master"
 	tal:define="portal_state context/@@plone_portal_state;
 		context_state context/@@plone_context_state;
 		plone_view context/@@plone;
@@ -164,3 +163,5 @@
 
 </body>
 </html>
+
+</metal:page>
