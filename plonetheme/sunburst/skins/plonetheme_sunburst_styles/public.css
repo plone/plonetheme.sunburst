@@ -202,10 +202,22 @@ dl.portletError {
     background-color: #FFA500;
 }
 
-dl.portlet dt {
+dl.portlet dt,
+div.portletAssignments div.portletHeader {
 	padding: 0em 1em;
 	background: #ddd;
 	line-height: 2.5em;
+}
+div.portletAssignments {
+	font-size: 0.8em;
+	line-height: 2em;
+}
+
+div.portletAssignments .managedPortletActions {
+	float: right;
+}
+div.portletAssignments .managedPortletActions a {
+	margin: 0 0.25em;
 }
 
 dl.portlet dt a:link,
