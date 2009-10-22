@@ -1251,4 +1251,66 @@ dl.toc dd ol {
 
 /* @end */
 
+/* @group overlays */
 
+/* styling for overlays (popups) */
+
+div.overlay {
+    width: auto;
+    height: auto;
+    /* initially overlay is hidden */
+    display:none;
+    /* some padding to layout nested elements nicely  */
+    margin:1em;
+}
+
+div.overlay-iframe,
+div.overlay-ajax {
+    width: 60%;
+    min-height: 100px;
+}
+
+div.overlay-iframe {
+    height: 60%;
+}
+
+/* default close button positioned on upper right corner */
+    div.overlaybg div.close,
+    div.overlay div.close {
+    background-image: url(pb_close.png);
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+.pb-ajax, .pb-image {
+    white-space: normal;
+    border:0.5em solid #205C90;
+
+    -moz-border-radius:0.35em;
+    -webkit-border-radius:0.35em;
+    -moz-box-shadow:0 0 1em #888;
+    -webkit-box-shadow:0 0 1em #888;
+}
+
+.pb-ajax > * {
+    background-color: #fff;
+    padding: 1em;
+    white-space: normal;
+}
+
+.pb-ajax .documentActions {display:none}
+
+div.overlay div.close span {
+    display:block;
+    height:1px;
+    margin:-1px 0 0 -1px;
+    overflow:hidden;
+    padding:0;
+    width:1px;
+}
+
+/* @end */
