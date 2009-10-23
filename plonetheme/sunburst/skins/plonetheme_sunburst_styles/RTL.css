@@ -61,6 +61,15 @@
     margin: auto;
 }
 
+dl.actionMenu.activated {
+    direction: ltr;
+}
+dl.actionMenu.activated dt {
+    direction: rtl;
+}
+dd.actionMenuContent ul {
+    direction: rtl;
+}
 
 /*                                            RTL overides of columns.css */
 
