@@ -38,6 +38,13 @@
     padding: 0 0 0 2em;
     float: left;
     clear: left;
+    text-align: right;
+}
+
+/* LiveSearch styles */
+
+#LSResult {
+    margin: -1.5em -7em 0 0;
 }
 
 /* Status messages */
