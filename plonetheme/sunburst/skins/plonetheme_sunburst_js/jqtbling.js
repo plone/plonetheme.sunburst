@@ -12,6 +12,37 @@ jq(function(){
         }
     );
 
+    // contact form
+    jq('#siteaction-contact a').prepOverlay(
+        {
+            subtype: 'ajax',
+            filter: '#content>*',
+            formselector: 'form',
+            noform: 'close'
+        }
+    );
+
+    // display: select content item / change content item
+    jq('#contextSetDefaultPage, #folderChangeDefaultPage').prepOverlay(
+        {
+            subtype: 'ajax',
+            filter: '#content>*',
+            formselector: 'form',
+            noform: 'reload'
+        }
+    );
+
+    // advanced state
+    jq('dl#plone-contentmenu-workflow a#advanced').prepOverlay(
+        {
+            subtype: 'ajax',
+            filter: '#content>*',
+            formselector: 'form',
+            noform: 'reload',
+            closeselector: '[name=form.button.Cancel]'
+        }
+    );
+    
     // delete / rename confirmation dialog;
     jq('#plone-contentmenu-actions a#delete, #plone-contentmenu-actions a#rename').prepOverlay(
         {
