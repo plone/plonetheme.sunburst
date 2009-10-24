@@ -130,6 +130,22 @@ q {
 	-moz-border-radius-bottomright: 0.5em;
 }
 
+#portal-languageselector {
+	float: right;
+	background: #e3e3e3;
+	position: absolute;
+	top: 0;
+	right: 10em;
+	padding: 0.25em 0.5em;
+	font-size: 80%;
+	border-bottom-right-radius: 0.5em;
+	border-bottom-left-radius: 0.5em;
+	-webkit-border-bottom-right-radius: 0.5em;
+	-webkit-border-bottom-left-radius: 0.5em;
+	-moz-border-radius-bottomleft: 0.5em;
+	-moz-border-radius-bottomright: 0.5em;
+}
+
 #portal-searchbox {
 	float: right;
 	text-align: left;
