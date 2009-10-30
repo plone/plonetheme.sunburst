@@ -1,0 +1,8 @@
+.blockedPortlet .portletHeader {
+    border: 1px solid #666;
+}
+
+.blockedPortlet .portletBlockedMessage {
+    color: #666;
+    display: inline;
+}
