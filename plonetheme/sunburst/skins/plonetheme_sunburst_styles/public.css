@@ -1140,7 +1140,7 @@ input#title {
 }
 
 .fieldRequired {
-background: url(/required.gif) center left no-repeat;
+background: url(required.png) center left no-repeat;
 padding: 0 0 0 1em;
 color: White;
 }
