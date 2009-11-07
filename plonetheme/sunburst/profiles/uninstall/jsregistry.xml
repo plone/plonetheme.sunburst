@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<object name="portal_javascripts">
-  
-  <javascript id="IE8.js" remove="True"/>
-  <javascript id="jqtbling.js" remove="True"/>
-
-</object>

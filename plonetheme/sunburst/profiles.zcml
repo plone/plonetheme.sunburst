@@ -11,12 +11,4 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
-  <genericsetup:registerProfile
-      name="uninstall"
-      title="Sunburst Theme Uninstall Profile"
-      directory="profiles/uninstall"
-      description='Sunburst is a modern, minimalist, grid-based theme for Plone 4.'
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
-
 </configure>
