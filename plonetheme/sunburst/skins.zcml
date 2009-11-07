@@ -5,12 +5,12 @@
 
    <!-- File System Directory Views registration -->
    <cmf:registerDirectory
-       name="plonetheme_sunburst_images"/>
+       name="sunburst_images"/>
    <cmf:registerDirectory
-       name="plonetheme_sunburst_templates"/>
+       name="sunburst_templates"/>
    <cmf:registerDirectory
-       name="plonetheme_sunburst_styles"/>
+       name="sunburst_styles"/>
    <cmf:registerDirectory
-       name="plonetheme_sunburst_js"/>       
+       name="sunburst_js"/>       
 
 </configure>

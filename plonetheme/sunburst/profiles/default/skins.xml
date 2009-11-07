@@ -2,28 +2,28 @@
 <object name="portal_skins" allow_any="False" cookie_persistence="False"
    default_skin="Sunburst Theme">
 
- <object name="plonetheme_sunburst_images"
+ <object name="sunburst_images"
     meta_type="Filesystem Directory View"
-    directory="plonetheme.sunburst:skins/plonetheme_sunburst_images"/>
- <object name="plonetheme_sunburst_templates"
+    directory="plonetheme.sunburst:skins/sunburst_images"/>
+ <object name="sunburst_templates"
     meta_type="Filesystem Directory View"
-    directory="plonetheme.sunburst:skins/plonetheme_sunburst_templates"/>
- <object name="plonetheme_sunburst_styles"
+    directory="plonetheme.sunburst:skins/sunburst_templates"/>
+ <object name="sunburst_styles"
     meta_type="Filesystem Directory View"
-    directory="plonetheme.sunburst:skins/plonetheme_sunburst_styles"/>
- <object name="plonetheme_sunburst_js"
+    directory="plonetheme.sunburst:skins/sunburst_styles"/>
+ <object name="sunburst_js"
     meta_type="Filesystem Directory View"
-    directory="plonetheme.sunburst:skins/plonetheme_sunburst_js"/>    
+    directory="plonetheme.sunburst:skins/sunburst_js"/>    
 
  <skin-path name="Sunburst Theme" based-on="Plone Default">
-  <layer name="plonetheme_sunburst_images"
+  <layer name="sunburst_images"
      insert-after="custom"/>
-  <layer name="plonetheme_sunburst_templates"
-     insert-after="plonetheme_sunburst_images"/>
-  <layer name="plonetheme_sunburst_styles"
-     insert-after="plonetheme_sunburst_templates"/>
-  <layer name="plonetheme_sunburst_js"
-     insert-after="plonetheme_sunburst_styles"/>     
+  <layer name="sunburst_templates"
+     insert-after="sunburst_images"/>
+  <layer name="sunburst_styles"
+     insert-after="sunburst_templates"/>
+  <layer name="sunburst_js"
+     insert-after="sunburst_styles"/>     
  </skin-path>
 
 </object>
