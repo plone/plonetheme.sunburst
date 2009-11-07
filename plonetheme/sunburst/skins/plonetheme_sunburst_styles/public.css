@@ -166,6 +166,18 @@ q {
 	margin-bottom: 1em;
 }
 
+/* Collapsible elements in search_form */
+
+.collapsible .collapser.collapsed {
+    padding-right: 14px;
+    background: url('http://localhost:8080/Plone2/arrowRight.png') center right no-repeat;
+} 
+
+.collapsible .collapser.expanded {
+    padding-right: 14px;
+    background: url('http://localhost:8080/Plone2/arrowDown.png') center right no-repeat;
+}
+
 /* @group LiveSearch */
 
 #LSResult {
