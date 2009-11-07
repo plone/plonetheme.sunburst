@@ -170,13 +170,13 @@ q {
 
 .collapsible .collapser.collapsed {
     padding-right: 14px;
-    background: url('http://localhost:8080/Plone2/arrowRight.png') center right no-repeat;
+    background: url('arrowRight.png') center right no-repeat;
 } 
 
 .collapsible .collapser.expanded {
     padding-right: 14px;
-    background: url('http://localhost:8080/Plone2/arrowDown.png') center right no-repeat;
-}
+    background: url('arrowDown.png') center right no-repeat;
+} 
 
 /* @group LiveSearch */
 
