@@ -4,161 +4,161 @@
   &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;" />
 
 <html xmlns="http://www.w3.org/1999/xhtml" 
-	tal:define="portal_state context/@@plone_portal_state;
-		context_state context/@@plone_context_state;
-		plone_view context/@@plone;
-		lang portal_state/language;
-		view nocall:view | nocall: plone_view;
-		dummy python: plone_view.mark_view(view);
-		portal_url portal_state/portal_url;
-		checkPermission nocall: context/portal_membership/checkPermission;
-		site_properties context/portal_properties/site_properties;"
-	tal:attributes="lang lang;">
+    tal:define="portal_state context/@@plone_portal_state;
+        context_state context/@@plone_context_state;
+        plone_view context/@@plone;
+        lang portal_state/language;
+        view nocall:view | nocall: plone_view;
+        dummy python: plone_view.mark_view(view);
+        portal_url portal_state/portal_url;
+        checkPermission nocall: context/portal_membership/checkPermission;
+        site_properties context/portal_properties/site_properties;"
+    tal:attributes="lang lang;">
 
-<!-- TODO: Can we do this in the @@plone view? -->
-<tal:cache tal:define="charset site_properties/default_charset|string:utf-8">
-	<metal:cache use-macro="context/global_cache_settings/macros/cacheheaders">
-	Get the global cache headers located in global_cache_settings.
-</metal:cache>
+<tal:cache tal:define="charset plone_view/site_encoding">
+    <metal:cache use-macro="context/global_cache_settings/macros/cacheheaders">
+    Get the global cache headers located in global_cache_settings.
+    </metal:cache>
 </tal:cache>
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-	<!-- Forces IE8+ into newest rendering engine even if on an intranet. This has to be defined before any script/style tags. -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
-	<!-- Enables iPhone web app use, fullscreen when added to home screen -->
-	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- Forces IE8+ into newest rendering engine even if on an intranet. This has to be defined before any script/style tags. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <!-- Enables iPhone web app use, fullscreen when added to home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 
-	<metal:baseslot define-slot="base">
-		<base tal:attributes="href context/renderBase" /><!--[if lt IE 7]></base><![endif]-->
-	</metal:baseslot>
+    <metal:baseslot define-slot="base">
+        <base tal:attributes="href context/renderBase" /><!--[if lt IE 7]></base><![endif]-->
+    </metal:baseslot>
 
-	<div tal:replace="structure provider:plone.htmlhead" />
-	<link tal:replace="structure provider:plone.htmlhead.links" />
+    <div tal:replace="structure provider:plone.htmlhead" />
+    <link tal:replace="structure provider:plone.htmlhead.links" />
 
-	<tal:comment replace="nothing"> 
-		Various slots where you can insert elements in the header from a template.
-	</tal:comment>
-	<metal:topslot define-slot="top_slot" />
-	<metal:headslot define-slot="head_slot" />
-	<metal:styleslot define-slot="style_slot" />
-	<metal:javascriptslot define-slot="javascript_head_slot" />
+    <tal:comment replace="nothing"> 
+        Various slots where you can insert elements in the header from a template.
+    </tal:comment>
+    <metal:topslot define-slot="top_slot" />
+    <metal:headslot define-slot="head_slot" />
+    <metal:styleslot define-slot="style_slot" />
+    <metal:javascriptslot define-slot="javascript_head_slot" />
 
-	<meta name="viewport" content="width=320; initial-scale=0.6666; maximum-scale=1.0; minimum-scale=0.6666" />
-	<meta name="generator" content="Plone - http://plone.org" />
+    <meta name="viewport" content="width=320; initial-scale=0.6666; maximum-scale=1.0; minimum-scale=0.6666" />
+    <meta name="generator" content="Plone - http://plone.org" />
 </head>
 
 <!-- TODO: Can we do this in the @@plone view? -->
 <body tal:define="isRTL portal_state/is_rtl;
-		sl python:plone_view.have_portlets('plone.leftcolumn', view);
-		sr python:plone_view.have_portlets('plone.rightcolumn', view);"
-	tal:attributes="class string:${context/getSectionFromURL} template-${template/id};
-		dir python:test(isRTL, 'rtl', 'ltr')">
+                  sl python:plone_view.have_portlets('plone.leftcolumn', view);
+                  sr python:plone_view.have_portlets('plone.rightcolumn', view);
+                  template_id python:plone_view.bodyClass(template, view);"
+    tal:attributes="class string:${context/getSectionFromURL} template-${template_id};
+                    dir python:test(isRTL, 'rtl', 'ltr')">
 
 <div id="visual-portal-wrapper">
 
-		<div id="portal-top"
-			class="row"
-			i18n:domain="plone">
+        <div id="portal-top"
+            class="row"
+            i18n:domain="plone">
 <div class="cell width-full position-0"> <!-- TODO: Temporary, this one should be in the template that is inserted -->
-			<div tal:replace="structure provider:plone.portaltop" />
+            <div tal:replace="structure provider:plone.portaltop" />
 </div>
-		</div>
-	<div id="portal-columns" class="row">
+        </div>
+    <div id="portal-columns" class="row">
 
-		<!-- TODO: There is probably be a more elegant way to do this ;) -->
-		<div id="portal-column-content" metal:define-slot="content"
-			tal:omit-tag="python: not (sl and sr)" class="cell width-1:2 position-1:4">
-		<div id="portal-column-content" metal:define-slot="content"
-			tal:omit-tag="python: not (not sl and sr)" class="cell width-3:4 position-0"
-		        tal:attributes="class python:test(isRTL, 'cell width-3:4 position-1:4', 'cell width-3:4 position-0')">
-		<div id="portal-column-content" metal:define-slot="content"
-			tal:omit-tag="python: not (sl and not sr)" class="cell width-3:4 position-1:4"
-		        tal:attributes="class python:test(isRTL, 'cell width-3:4 position-0', 'cell width-3:4 position-1:4')">
-		<div id="portal-column-content" metal:define-slot="content"
-			tal:omit-tag="python: not (not sl and not sr)" class="cell width-full position-0">
+        <!-- TODO: There is probably be a more elegant way to do this ;) -->
+        <div id="portal-column-content" metal:define-slot="content"
+            tal:omit-tag="python: not (sl and sr)" class="cell width-1:2 position-1:4">
+        <div id="portal-column-content" metal:define-slot="content"
+            tal:omit-tag="python: not (not sl and sr)" class="cell width-3:4 position-0"
+                tal:attributes="class python:test(isRTL, 'cell width-3:4 position-1:4', 'cell width-3:4 position-0')">
+        <div id="portal-column-content" metal:define-slot="content"
+            tal:omit-tag="python: not (sl and not sr)" class="cell width-3:4 position-1:4"
+                tal:attributes="class python:test(isRTL, 'cell width-3:4 position-0', 'cell width-3:4 position-1:4')">
+        <div id="portal-column-content" metal:define-slot="content"
+            tal:omit-tag="python: not (not sl and not sr)" class="cell width-full position-0">
 
-			<div metal:define-macro="content"
-				tal:define="show_border context/@@plone/showEditableBorder"
-				tal:attributes="class python:test(show_border,'documentEditable','')">
+            <div metal:define-macro="content"
+                tal:define="show_border context/@@plone/showEditableBorder"
+                tal:attributes="class python:test(show_border,'documentEditable','')">
 
-				<div id="edit-bar" 
-					tal:condition="show_border"
-					tal:content="structure provider:plone.contentviews" />
+                <div id="edit-bar" 
+                    tal:condition="show_border"
+                    tal:content="structure provider:plone.contentviews" />
     
-				<div id="region-content" class="documentContent">
+                <div id="region-content" class="documentContent">
 
-					<a name="documentContent"></a>
+                    <a name="documentContent"></a>
 
-					<div metal:use-macro="context/global_statusmessage/macros/portal_message">
-						Portal status message
-					</div>
+                    <div metal:use-macro="context/global_statusmessage/macros/portal_message">
+                        Portal status message
+                    </div>
 
-					<div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" />
+                    <div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" />
 
-					<metal:slot metal:define-slot="body">
-						<div id="content">
-								<metal:header metal:define-slot="header" tal:content="nothing">
-								Visual Header
-								</metal:header>
-							
-							<metal:bodytext metal:define-slot="main" tal:content="nothing">
-							Page body text
-							</metal:bodytext>
-						</div>
-					</metal:slot>
+                    <metal:slot metal:define-slot="body">
+                        <div id="content">
+                                <metal:header metal:define-slot="header" tal:content="nothing">
+                                Visual Header
+                                </metal:header>
+                            
+                            <metal:bodytext metal:define-slot="main" tal:content="nothing">
+                            Page body text
+                            </metal:bodytext>
+                        </div>
+                    </metal:slot>
 
-					<metal:sub metal:define-slot="sub">
-						<div tal:replace="structure provider:plone.belowcontent" />
-					</metal:sub>
-				</div>
-			</div>
-		
-		</div></div></div></div>
+                    <metal:sub metal:define-slot="sub">
+                        <div tal:replace="structure provider:plone.belowcontent" />
+                    </metal:sub>
+                </div>
+            </div>
+        
+        </div></div></div></div>
 
-		<div id="portal-column-one" 
-			class="cell width-1:4 position-0"
-			metal:define-slot="column_one_slot" 
-			tal:condition="sl"
-			tal:attributes="class python:test(isRTL, 'cell width-1:4 position-3:4', 'cell width-1:4 position-0')">
-			<metal:portlets define-slot="portlets_one_slot">
-				<tal:block replace="structure provider:plone.leftcolumn" />
-			</metal:portlets>
-		</div>
+        <div id="portal-column-one" 
+            class="cell width-1:4 position-0"
+            metal:define-slot="column_one_slot" 
+            tal:condition="sl"
+            tal:attributes="class python:test(isRTL, 'cell width-1:4 position-3:4', 'cell width-1:4 position-0')">
+            <metal:portlets define-slot="portlets_one_slot">
+                <tal:block replace="structure provider:plone.leftcolumn" />
+            </metal:portlets>
+        </div>
 
-		<div id="portal-column-two" 
-			class="cell width-1:4 position-3:4"
-			metal:define-slot="column_two_slot" 
-			tal:condition="sr"
-			tal:attributes="class python:test(isRTL, 'cell width-1:4 position-0', 'cell width-1:4 position-3:4')">
-			<metal:portlets define-slot="portlets_two_slot">
-				<tal:block replace="structure provider:plone.rightcolumn" />
-			</metal:portlets>
-		</div>
-	</div>
+        <div id="portal-column-two" 
+            class="cell width-1:4 position-3:4"
+            metal:define-slot="column_two_slot" 
+            tal:condition="sr"
+            tal:attributes="class python:test(isRTL, 'cell width-1:4 position-0', 'cell width-1:4 position-3:4')">
+            <metal:portlets define-slot="portlets_two_slot">
+                <tal:block replace="structure provider:plone.rightcolumn" />
+            </metal:portlets>
+        </div>
+    </div>
 
 <div class="visualClear"></div> <!-- TODO: Temporary workaround -->
 
-	<!-- TODO: Can we do this in the @@plone view? -->
-	<div tal:define="context_state context/@@plone_context_state; portlet_assignable context_state/portlet_assignable"
-		tal:condition="python:not sl and not sr and portlet_assignable and checkPermission('Portlets: Manage portlets', context)"
-		class="row">
-		<a class="managePortletsFallback"
-			tal:attributes="href string:${context_state/canonical_object_url}/@@manage-portlets"
-			i18n:domain="plone"
-			i18n:translate="manage_portlets_link">
-			Manage portlets
-		</a>
-	</div>
+    <!-- TODO: Can we do this in the @@plone view? -->
+    <div tal:define="context_state context/@@plone_context_state; portlet_assignable context_state/portlet_assignable"
+        tal:condition="python:not sl and not sr and portlet_assignable and checkPermission('Portlets: Manage portlets', context)"
+        class="row">
+        <a class="managePortletsFallback"
+            tal:attributes="href string:${context_state/canonical_object_url}/@@manage-portlets"
+            i18n:domain="plone"
+            i18n:translate="manage_portlets_link">
+            Manage portlets
+        </a>
+    </div>
 
-	<metal:block i18n:domain="plone">
+    <metal:block i18n:domain="plone">
 <div class="row"> <!-- TODO: Also temporary, should be in the proper template -->
-	<div class="cell width-full position-0">
-		<div tal:replace="structure provider:plone.portalfooter" />
-	</div>
+    <div class="cell width-full position-0">
+        <div tal:replace="structure provider:plone.portalfooter" />
+    </div>
 </div>
-	</metal:block>
+    </metal:block>
 
 </div>
 
