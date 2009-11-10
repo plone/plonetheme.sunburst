@@ -33,7 +33,7 @@
     tal:condition="view/anonymous">
   <dt>
     <a href=""
-       tal:attributes="href string:${view/navigation_root_url}/login">Log in</a>
+       tal:attributes="href string:${view/navigation_root_url}/login_form">Log in</a>
   </dt>
 </dl>
 
