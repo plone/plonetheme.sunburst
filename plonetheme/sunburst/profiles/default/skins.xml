@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
-<object name="portal_skins" allow_any="False" cookie_persistence="False"
-   default_skin="Sunburst Theme">
+<object name="portal_skins" default_skin="Sunburst Theme">
 
  <object name="sunburst_images"
     meta_type="Filesystem Directory View"

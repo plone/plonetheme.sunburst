@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<object name="portal_css" meta_type="Stylesheets Registry">
+<object name="portal_css">
 
  <stylesheet id="member.css" media="screen" authenticated="True"/>
  <stylesheet id="base.css" media="screen" />
