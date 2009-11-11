@@ -1,8 +1,16 @@
+.managedPortlet {
+    margin: 0 0 1em;
+}
+
 .blockedPortlet .portletHeader {
-    border: 1px solid #666;
+    background: #eee !important;
+}
+
+.blockedPortlet .portletHeader a {
+    color: #666;
 }
 
 .blockedPortlet .portletBlockedMessage {
-    color: #666;
+    color: #eee;
     display: inline;
 }
