@@ -83,6 +83,11 @@ q {
 
 /* @group Navigation/search */
 
+#portal-header {
+    position: relative;
+    z-index: 2;
+}
+
 #portal-logo {
 	display: inline-block;
 	margin: 1em 0;
