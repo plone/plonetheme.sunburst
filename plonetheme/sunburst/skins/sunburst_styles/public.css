@@ -1288,7 +1288,13 @@ dl.toc dd ol {
 
 /* @group Sitemap */
 
-#content #portal-sitemap,
+#content #portal-sitemap {
+    list-style: none;
+    margin-left: 0;
+    font-size: 130%;
+    font-weight: bold;    
+}
+
 #content #portal-sitemap li {
     list-style: none;
     margin-left: 0;
@@ -1299,18 +1305,14 @@ dl.toc dd ol {
     display: block;
 }
 
-#content #portal-sitemap {
-    font-size: 130%;
-    font-weight: bold;
-}
-
 #content #portal-sitemap > li {   
     border-bottom:0.1em dotted #ddd;
     line-height:1.8em;
     padding:0.25em 1em;
 }
 
-#content #portal-sitemap .navTreeLevel2 {
+#content #portal-sitemap .navTreeLevel2,
+#content #portal-sitemap .navTreeLevel2 ul {
     font-size: 85%;
     font-weight: normal;  
     margin-bottom: 0;  
