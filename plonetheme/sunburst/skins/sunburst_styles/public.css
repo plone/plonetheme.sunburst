@@ -21,7 +21,6 @@ table { border-spacing: 0; }
 img { vertical-align: text-bottom; }
 
 
-
 /* @end */
 
 /* @group Basics */
@@ -78,6 +77,13 @@ input {
 q {
     quotes: "“" "”" "‘" "’"
 }
+
+/* @end */
+
+/* @group Accessibility elements, applied by JS */
+
+body.largeText { font-size: 111%; }
+body.smallText { font-size: 60%; }
 
 /* @end */
 
