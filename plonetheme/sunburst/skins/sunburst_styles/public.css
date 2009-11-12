@@ -1309,6 +1309,7 @@ dl.toc dd ol {
     border-bottom:0.1em dotted #ddd;
     line-height:1.8em;
     padding:0.25em 1em;
+    margin-bottom: 0;
 }
 
 #content #portal-sitemap .navTreeLevel2,
