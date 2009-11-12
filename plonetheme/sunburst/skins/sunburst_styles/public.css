@@ -192,13 +192,29 @@ q {
 }
 
 #LSResult fieldset {
-	padding: 1em;
+	padding: 1em 0 0;
 	border: 0.1em solid #ccc;
+}
+
+#livesearchLegend {
+    margin-left: 1em;
+    
+    background-color:#ccc;
+    padding:0.3em;
 }
 
 #LSResult .LSDescr {
 	font-size: 85%;
 	color: #666;
+}
+
+.LSRow {
+    display: block;
+    padding: 0.5em 1em;
+}
+
+.LSHighlight {
+    background: #ddd;
 }
 
 /* @end */
