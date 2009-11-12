@@ -1286,6 +1286,26 @@ dl.toc dd ol {
 
 /* @end */
 
+/* @group Sitemap */
+
+#content #portal-sitemap,
+#content #portal-sitemap li {
+    list-style: none;
+    margin-left: 0;
+}
+
+#content #portal-sitemap a {
+    border-bottom: none;
+    display: block;
+}
+
+#content #portal-sitemap {
+    font-size: 130%;
+    font-weight: bold;
+}
+
+/* @end */
+
 /* @group Invisibles */
 
 .hiddenStructure {
