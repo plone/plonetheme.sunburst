@@ -366,7 +366,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 	font-size: 80%;
 }
 
-#content h1 {	
+.documentContent h1 {	
 	margin-top: 0.5em;
 }
 
@@ -374,40 +374,40 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 	margin-top: 0;
 }
 
-#content h2,
-#content h3,
-#content h4 {
+.documentContent h2,
+.documentContent h3,
+.documentContent h4 {
 	margin-top: 0.5em;
 	color: #444;	
 }
 
 
-#content p,
-#content ul,
-#content ol,
-#content table,
-#content dl,
+.documentContent p,
+.documentContent ul,
+.documentContent ol,
+.documentContent table,
+.documentContent dl,
 dl.portlet p,
 dl.portlet {
 	margin-bottom: 1em;
 }
 
-#content a:link,
+.documentContent a:link,
 dl.portlet a:link {
 	color: #205c90;
 	border-bottom: 0.1em solid #ccc;
 }
 
-#content a:visited, 
+.documentContent a:visited, 
 dl.portlet a:visited {
 	color: #427597;
 	border-bottom: 0.1em solid #ccc;
 }
-#content a:target {
+.documentContent a:target {
 	background-color: #ffb;
 }
 
-#content a.link-category {
+.documentContent a.link-category {
 	color: black;
 	padding: 0.25em 0.5em;
 	background: #ddd;
@@ -415,44 +415,44 @@ dl.portlet a:visited {
 	-webkit-border-radius: 0.5em;
 	-moz-border-radius: 0.5em;
 }
-#content a.link-category:hover {
+.documentContent a.link-category:hover {
 	background: #205c90;
 	color: White;
 	border-color: #205c90;
 }
 
-#content img {
+.documentContent img {
 	max-width: 100%;
 }
 
-#content ul {
+.documentContent ul {
 	list-style-type: disc;
 	margin-left: 2em;
 }
 
-#content ol,
+.documentContent ol,
 dl.portlet ol {
 	list-style-type: decimal;
 	margin-left: 2em;
 }
 
-#content li,
+.documentContent li,
 dl.portlet li {
 	margin-bottom: 0.25em;
 	line-height: 1.5em;
 	display: list-item;
 }
 
-#content dt {
+.documentContent dt {
 	font-weight: bold;
 	margin-bottom: 0;
 	margin-right: 0;
 }
-#content dd {
+.documentContent dd {
 	margin: 0 0 1em 1em;
 }
 
-#content pre {
+.documentContent pre {
 	background-color: #222;
 	color: White;
 	font-family: Consolas, Inconsolata, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;	
@@ -463,7 +463,7 @@ dl.portlet li {
 	line-height: 1em;
 }
 
-#content code {
+.documentContent code {
 	font-family: Consolas, Inconsolata, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;	
 }
 
@@ -474,18 +474,18 @@ dl.portlet li {
 	color: #666;
 }
 
-#content .discreet,
+.documentContent .discreet,
 #sidebar .discreet {
 	color: #666;
 	font-size: 85%;
 	font-weight: normal;
 }
 
-#content .visualHighlight {
+.documentContent .visualHighlight {
     background-color: #ffb;
 }
 
-#content .pullquote {
+.documentContent .pullquote {
     padding: 0 1em 0 1em;
     margin: 0 0 1em 1em;
     font-weight: bold;
@@ -495,7 +495,7 @@ dl.portlet li {
     border-left: 0.1em solid #888;
 	color: #888;
 }
-#content .callout {
+.documentContent .callout {
     color: #666;
     padding: 1em;
 	border: 0.1em solid #666;
@@ -504,26 +504,26 @@ dl.portlet li {
 }
 
 
-#content table {
+.documentContent table {
 	width: 100%;
 	text-align: left;
 }
 
-#content p.documentDescription,
-#content #description {
+.documentContent p.documentDescription,
+.documentContent #description {
 	color: #666;
 	font: bold 1.25em "Helvetica Neue", Arial, FreeSans, sans-serif;
 	margin-left: 0;
 }
 
-#content img.tileImage,
-#content div.newsImageContainer {
+.documentContent img.tileImage,
+.documentContent div.newsImageContainer {
 	float: right;
 	margin: 0 1em 0.5em 1em;
 }
-#content div.newsImageContainer {
+.documentContent div.newsImageContainer {
 }
-#content div.newsImageContainer p.discreet {
+.documentContent div.newsImageContainer p.discreet {
 	margin: 0;
 	padding: 0.5em;
 	background-color: #666;
@@ -1134,19 +1134,6 @@ label {
     font-weight:bold;
 }
 
-#login-form label {
-	float:left;
-    width:25%;
-    margin-right:0.5em;
-    padding-top:0.2em;
-    text-align:right;    
-}
-
-#login-form .formControls {
-    padding-left: 25%;
-    margin-left: 0.5em;
-}
-
 #region-content label {
 }
 
@@ -1245,6 +1232,30 @@ body.template-join_form #content input {
     font-size: 150%;
     width: inherit;
 }
+
+#login-form label {
+	float:left;
+    width:25%;
+    margin-right:0.5em;
+    padding-top:0.2em;
+    text-align:right;    
+}
+
+#login-form .formControls {
+    padding-left: 25%;
+    margin-left: 0.5em;
+}
+
+/* @group TinyMCE styles */
+
+/* we want to make TinyMCE to follow the theme's styles. But it doesn't make 
+   sense to put these styles for TinyMCE product globally  */
+body#tinymce {
+    font-size:116%;
+    line-height:1.5em;
+}
+
+/* @end */
 
 
 /* @end */
