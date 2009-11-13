@@ -101,7 +101,7 @@ body.smallText { font-size: 85%; }
 
 #portal-globalnav {
 	clear: both;
-	font-size: 80%;
+  font-size: 90%;
 	background: #ddd;
 	margin-bottom: 1em;
 }
