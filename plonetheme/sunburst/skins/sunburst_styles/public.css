@@ -82,8 +82,8 @@ q {
 
 /* @group Accessibility elements, applied by JS */
 
-body.largeText { font-size: 111%; }
-body.smallText { font-size: 60%; }
+body.largeText { font-size: 115%; }
+body.smallText { font-size: 85%; }
 
 /* @end */
 
