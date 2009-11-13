@@ -976,7 +976,7 @@ dl.collapsible dt.collapsibleHeader {
 }
 dl.collapsible dd.collapsibleContent {
     margin: 0;
-    padding: 0 1em;
+    padding: 0 1em 0.4em;
     clear: left;
 }
 
