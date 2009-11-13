@@ -129,6 +129,7 @@ body.smallText { font-size: 60%; }
 	float: right;
 	background: #e3e3e3;
 	position: absolute;
+	z-index: 3; /* personaltools shoyuld be above #portal-header (with z-index: 2) */
 	top: 0;
 	right: 0;
 	padding: 0.25em 0.5em;
