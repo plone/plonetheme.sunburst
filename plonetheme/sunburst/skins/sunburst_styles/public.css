@@ -1094,6 +1094,18 @@ dl.searchResults .highlightedSearchTerm {
 
 /* @end */
 
+/* @group Dashboard */
+
+#dashboard-actions ul,
+#dashboard-actions ul li {
+    list-style: none;
+}
+#dashboard-actions ul {
+    margin-left: 0;
+}
+
+/* @end */
+
 /* @group Forms */
 
 /* Emulates the styling from the h1 tag */
