@@ -172,6 +172,7 @@ body.smallText { font-size: 85%; }
 
 #searchGadget {
 	width: 13em;
+	font-size: 80%;
 }
 
 #region-content input.searchField {
