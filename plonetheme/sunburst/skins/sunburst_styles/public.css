@@ -1000,11 +1000,12 @@ dl.collapsedBlockCollapsible {
 }
 dl.collapsedBlockCollapsible dt.collapsibleHeader {
     float: none;
-    position: static;
-    margin: 0;
-    padding: 0 0 0 2em;
-    line-height: 1em;
+    position: relative;
+    margin: 0 0 0 1em;
+    padding: 0 0.5em 0 2em;
+    line-height: 1.2em;
     cursor: pointer;
+    background: White url(treeCollapsed.png) no-repeat 0.5em 50%;    
 }
 dl.collapsedInlineCollapsible dd.collapsibleContent,
 dl.collapsedBlockCollapsible dd.collapsibleContent {
