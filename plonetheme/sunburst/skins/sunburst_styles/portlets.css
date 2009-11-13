@@ -14,3 +14,73 @@
     color: #eee;
     display: inline;
 }
+
+.portletCalendar {
+    width: 100%;
+    margin: 1px 0 1em 0;
+}
+
+.portletCalendar dt {
+    background-color: #eee;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6em;
+    border-bottom: none;
+}
+
+.portletCalendar dd {
+    margin: 0;
+    padding: 0;
+}
+
+.portletCalendar dt a#calendar-previous {
+    float: left;
+    padding: 0 1em;
+    margin: 0 -.5em;
+}
+
+.portletCalendar dt a#calendar-next {
+    float: right;
+    padding: 0 1em;
+    margin: 0 -.5em;
+}
+
+.portletCalendar a, .portletCalendar a:hover {
+    text-decoration: none;
+}
+
+.ploneCalendar {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.ploneCalendar td {
+    background-color: transparent;
+    width: 14%;
+    text-align: center;
+    padding: 2px;
+}
+
+.ploneCalendar .weekdays th {
+    background-color: #eee;
+    text-align: center;
+    padding: 2px;
+    font-weight: normal;
+}
+
+.ploneCalendar .event {
+    background-color: #eee;
+    font-weight: bold;
+}
+
+.ploneCalendar .todayevent {
+    background-color: #eee;
+    border: 2px solid #eee;
+    font-weight: bold;
+}
+
+.ploneCalendar .todaynoevent {
+    border-collapse: collapse;
+    border: 2px solid #eee;
+}
