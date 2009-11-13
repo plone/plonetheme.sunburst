@@ -907,51 +907,51 @@ dl.actionMenu.activated dd a {
     margin: 0;
 }
 .inlineDisplay {
-display:inline
+    display:inline
 }
 table.controlpanel-listing {
-width:100%;
+    width:100%;
 }
 table.controlpanel-listing td, table.controlpanel-listing th {
-font-size:120%;
+    font-size:120%;
 }
 table.controlpanel-listing dl {
-margin-top:0;
+    margin-top:0;
 }
 table.controlpanel-listing dd {
-margin-left: 1em;
+    margin-left: 1em;
 }
 table.controlpanel-listing dl dt a .trigger{
-font-weight:normal;
+    font-weight:normal;
 }
 table .controlpanel-listing td {
-vertical-align:top;
+    vertical-align:top;
 }
 table.controlpanel-listing td.checker{
-text-align:center;
+    text-align:center;
 }
 table.controlpanel-listing th.smallcolumn {
-width:1.5em;
+    width:1.5em;
 }
 .chooser-right {
-float:right;
-margin-right:0;
-margin-bottom:0;
+    float:right;
+    margin-right:0;
+    margin-bottom:0;
 }
 .rule-element {
-background-color:#EEF3F5;
-margin:0.5em 0pt 0.5em;
-padding:0.3em 1em 0.3em 1em;
-width:auto;
+    background-color:#EEF3F5;
+    margin:0.5em 0pt 0.5em;
+    padding:0.3em 1em 0.3em 1em;
+    width:auto;
 }
 .rule-element dl {
 }
 .rule-element dl dd {
-margin-left:1em;
+    margin-left:1em;
 }
 .rule-updown, .rule-operations {
-float:right;
-padding-top:0.8em;
+    float:right;
+    padding-top:0.8em;
 }
 /* @end */
 
@@ -1116,19 +1116,19 @@ textarea:focus {
 }
 
 #content textarea {
-font: 100% Monaco, "Courier New", Courier, monospace;
-width: 100%;
+    font: 100% Monaco, "Courier New", Courier, monospace;
+    width: 100%;
 }
 #content select {
-vertical-align: top;
+    vertical-align: top;
 }
 #content fieldset {
-border: 0.1em solid #329fd7;
-border-style: solid none none none;
+    border: 0.1em solid #329fd7;
+    border-style: solid none none none;
 }
 #content legend {
-padding: 0.5em 0.5em 0.5em 0;
-font-size: 85%;
+    padding: 0.5em 0.5em 0.5em 0;
+    font-size: 85%;
 }
 label {
 	font-weight: bold;
@@ -1147,31 +1147,31 @@ input[type="checkbox"] + label:hover {
 }
 
 #content optgroup {
-font-style: normal;
-font-weight: bold;
-color: #999;
-padding-left: 0.25em;
+    font-style: normal;
+    font-weight: bold;
+    color: #999;
+    padding-left: 0.25em;
 }
 #content option {
-color: black;
+    color: black;
 }
 #content optgroup > option {
-padding: 0 0.25em 0 1em;
+    padding: 0 0.25em 0 1em;
 }
 dl.enableFormTabbing dd {
-margin-left: 0;
-padding-top: 2em;
+    margin-left: 0;
+    padding-top: 2em;
 }
 .searchSection {
-color: #76797c;
-margin-top: 0.25em;
+    color: #76797c;
+    margin-top: 0.25em;
 }
 .searchSection label:hover {
-color: Black;
+    color: Black;
 }
 .field {
-clear: both;
-margin-top: 1em;
+    clear: both;
+    margin-top: 1em;
 }
 .field input[type="text"] {
 	/*width: 100%;*/
@@ -1181,55 +1181,55 @@ input#title {
 }
 
 .fieldRequired {
-background: url(required.png) center left no-repeat;
-padding: 0 0 0 1em;
-color: White;
+    background: url(required.png) center left no-repeat;
+    padding: 0 0 0 1em;
+    color: White;
 }
 .fieldUploadFile {
-text-align: right;
-margin-right: 0.75em;
-display: none;
+    text-align: right;
+    margin-right: 0.75em;
+    display: none;
 }
 .fieldTextFormat {
-text-align: right;
-margin-right: 0.75em
+    text-align: right;
+    margin-right: 0.75em
 }
 .formHelp {
 	color: #555;
 	margin: 0 0 0.2em 0;
 }
 div.error {
-background-color: #fdc;
-border:  1px solid red;
-padding: 0.5em;
-margin:  1em 0;
-color: red;
+    background-color: #fdc;
+    border:  1px solid red;
+    padding: 0.5em;
+    margin:  1em 0;
+    color: red;
 }
 .error .fieldRequired {
-color: #d00;
+    color: #d00;
 }
 input.inputLabelActive {
-color: #76797c;
+    color: #76797c;
 }
 textarea#form\.description {
-height: 6em;
-width: 99%;
+    height: 6em;
+    width: 99%;
 }
 table.listing tbody tr.odd.selected td,
 tr.selected {
-background-color: #ffa;
+    background-color: #ffa;
 }
 
 /* @group Login form */
 
 #login-form input {
-font-size: 150%;
-width: inherit;
+    font-size: 150%;
+    width: inherit;
 }
 
 body.template-join_form #content input {
-font-size: 150%;
-width: inherit;
+    font-size: 150%;
+    width: inherit;
 }
 
 
