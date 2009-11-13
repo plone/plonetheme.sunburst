@@ -1192,6 +1192,9 @@ dl.enableFormTabbing dd {
 input#title {
 	width: 100%;
 }
+.error input#title {
+    width:99%;
+}
 
 .fieldRequired {
     background: url(required.png) center left no-repeat;
