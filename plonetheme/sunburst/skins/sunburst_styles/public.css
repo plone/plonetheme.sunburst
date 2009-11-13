@@ -216,7 +216,8 @@ body.smallText { font-size: 85%; }
 	color: #666;
 }
 
-.LSRow {
+.LSRow,
+#LSNothingFound {
     display: block;
     padding: 0.5em 1em;
 }
