@@ -22,8 +22,9 @@
     present from main_template.
 </tal:comment>
 
-<metal:main fill-slot="content"
-    tal:define="errors options/state/getErrors;">
+<div id="portal-column-content" metal:fill-slot="content" class="cell width-full position-0"
+     tal:define="errors options/state/getErrors;">
+     
     <tal:main-macro metal:define-macro="main"
                     tal:define="site_properties here/portal_properties/site_properties;
                                 allowAnonymousViewAbout python:site_properties.getProperty('allowAnonymousViewAbout', True);
@@ -300,7 +301,8 @@
 
     </tal:main-macro>
 
-</metal:main>
+
+</div>
 
 </body>
 </html>
