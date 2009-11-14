@@ -869,6 +869,7 @@ dl.actionMenu.activated dd a {
 #content ul.configlets li {
     margin-bottom: 1em;
     list-style: none;
+    display: block;
 }
 #content ul.configlets li a {
     text-decoration: none;
