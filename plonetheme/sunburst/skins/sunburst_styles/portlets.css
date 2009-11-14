@@ -55,6 +55,7 @@
 }
 
 .ploneCalendar a {
+    text-decoration: none;
     border-bottom: none !important;
 }
 
@@ -79,10 +80,10 @@
 
 .ploneCalendar .todayevent {
     background-color: #eee;
-    border: 2px solid #eee;
+    border: 2px solid #205C90;
     font-weight: bold;
 }
 
 .ploneCalendar .todaynoevent {
-    border: 2px solid #eee;
+    border: 2px solid #205C90;
 }
