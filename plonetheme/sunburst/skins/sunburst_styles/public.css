@@ -1095,6 +1095,18 @@ dl.searchResults .highlightedSearchTerm {
 
 /* @end */
 
+/* @group Search results page */
+
+form.searchPage {
+    text-align:center;
+}
+
+input.searchPage {
+    font-size:200% !important;
+}
+
+/* @end */
+
 /* @group Dashboard */
 
 #dashboard-actions ul,
