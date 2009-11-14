@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<object name="portal_javascripts">
-  <javascript id="IE8.js" conditionalcomment="lt IE 8" />
-  <javascript id="jqtbling.js" insert-after="jquery-integration.js" />
-</object>
