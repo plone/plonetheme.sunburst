@@ -31,7 +31,7 @@
 
 <dl class="actionMenu" id="portal-personaltools"
     tal:condition="view/anonymous">
-  <dt>
+  <dt id="anon-personalbar">
     <tal:actions repeat="action view/user_actions">
         <a href=""
            tal:attributes="href action/url"

@@ -140,6 +140,9 @@ body.smallText { font-size: 85%; }
 	-moz-border-radius-bottomleft: 0.5em;
 	-moz-border-radius-bottomright: 0.5em;
 }
+#portal-personaltools #anon-personalbar a {
+    float: left;
+}
 
 #portal-languageselector {
 	float: right;
