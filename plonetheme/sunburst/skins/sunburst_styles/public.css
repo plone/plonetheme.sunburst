@@ -82,7 +82,7 @@ q {
 
 /* @group Accessibility elements, applied by JS */
 
-body.largeText { font-size: 115%; }
+body.largeText { font-size: 125%; }
 body.smallText { font-size: 85%; }
 
 /* @end */
@@ -101,7 +101,7 @@ body.smallText { font-size: 85%; }
 
 #portal-globalnav {
 	clear: both;
-    font-size: 90%;
+    font-size: 80%;
 	background: #ddd;
 	margin-bottom: 1em;
 }
