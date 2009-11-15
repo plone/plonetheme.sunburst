@@ -32,8 +32,14 @@
 <dl class="actionMenu" id="portal-personaltools"
     tal:condition="view/anonymous">
   <dt>
-    <a href=""
-       tal:attributes="href string:${view/navigation_root_url}/login_form">Log in</a>
+    <tal:actions repeat="action view/user_actions">
+        <a href=""
+           tal:attributes="href action/url"
+           tal:content="action/title"
+           i18n:translate="">
+            action title
+        </a>
+    </tal:actions>
   </dt>
 </dl>
 
