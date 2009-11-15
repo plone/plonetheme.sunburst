@@ -504,7 +504,6 @@ dl.portlet li {
 
 
 .documentContent table {
-	width: 100%;
 	text-align: left;
 }
 
@@ -540,12 +539,11 @@ dl.portlet li {
 
 table.listing {
 	border-spacing: 0; 
-	font-size: 90%;
 }
 
 table.listing td, 
 table.listing th {
-	padding: 0.5em;
+	padding: 0.5em 1em;
 	vertical-align: top;
 }
 
@@ -559,12 +557,11 @@ table.listing thead th {
 	color: #666;
 	border: 0.1em solid #e7e7e7;
 	border-style: solid none;
-	padding-left: 0;
 }
 table.listing tbody th {
 	font-weight: bold;
 }
-table.listingtbody tr {
+table.listing tbody tr {
 	text-align:left;
 }
 table.listing tbody tr.odd {
@@ -958,7 +955,7 @@ table.controlpanel-listing th.smallcolumn {
 /* @group Collapsible */
 dl.collapsible {
     border: 0.1em solid #8cacbb;
-    margin: 1em 0 0 0;
+    margin: 1em 0;
     padding: 0;
 }
 dl.collapsible dt.collapsibleHeader {

@@ -24,11 +24,6 @@ Remaining/known issues:
   public/edit interface split to encourage reuse, but not as many files as Plone 
   3.
 
-- The theme is using Dean Edwards' "ie8.js" to compensate for deficiencies in 
-  IE6/7 CSS support. Currently, there's a bug in this script that applies the 
-  mobile phone styling on IE6/7, but it's being looked into:
-  http://code.google.com/p/ie7-js/issues/detail?id=197
-
 - Personal bar is missing Profile link, prefs should link directly to the
   preferences, not to the intermediate page.
 
@@ -53,11 +48,17 @@ Remaining/known issues:
 - Move code to views where possible, and move the KSS spinner to a viewlet or
   something.
 
-- Properly register the uninstall profile.
-
 Need more testing:
 
 - IE6/7 should be functional now, but I haven't tested this personally yet — I
   trust Denys on these things, though. :)
 
 - Limited RTL testing/updates done, need more eyes on this.
+
+Known issues that are upstream bugs:
+
+- The theme is using Dean Edwards' "ie8.js" to compensate for deficiencies in 
+  IE6/7 CSS support. Currently, there's a bug in this script that applies the 
+  mobile phone styling on IE6/7, but it's being looked into:
+  http://code.google.com/p/ie7-js/issues/detail?id=197
+
