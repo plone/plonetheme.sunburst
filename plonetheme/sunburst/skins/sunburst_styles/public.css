@@ -66,7 +66,6 @@ p {
 a:link, a:visited {
 	color: #205c90;
 }
-
 dt {
 	font-weight: bold;
 }
@@ -232,10 +231,16 @@ body.smallText { font-size: 85%; }
 #breadcrumbs-1 {
 	display: none;
 }
-
-#portal-siteactions,
 #portal-breadcrumbs {
-	font-size: 80%;
+	font-size: 90%;
+	margin-bottom: -0.5em;
+}
+#portal-breadcrumbs a {
+	border-bottom: none;
+	color: #666;
+}
+#portal-siteactions {
+	font-size: 85%;
 }
 
 
@@ -400,6 +405,10 @@ dl.portlet a:link {
 dl.portlet a:visited {
 	color: #427597;
 	border-bottom: 0.1em solid #ccc;
+}
+.documentContent a:hover,
+dl.portlet a:hover {
+	color: #75ad0a !important; /* This one gets an !important because it should always activate in the content area, even when state coloring is active */
 }
 .documentContent a:target {
 	background-color: #ffb;
