@@ -351,7 +351,7 @@ dl.portlet ul.navTreeLevel0 > .navTreeItem {
 }
 
 dl.portlet ul.navTreeLevel1 .navTreeItem {
-	padding-left: 1em;
+	padding-left: 0.5em;
 	line-height: 2em;
 }
 
