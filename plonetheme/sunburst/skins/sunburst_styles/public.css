@@ -334,6 +334,10 @@ a.managePortletsFallback {
 
 /* @group Navigation portlet */
 
+dl.portletNavigationTree dt.portletHeader {
+	display: none; /* The nav portlet title is useless :) */
+}
+
 dl.portlet ul.navTree li a {
 	border: none;
 	display: block;
