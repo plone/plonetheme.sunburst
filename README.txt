@@ -17,7 +17,7 @@ Goals:
   commented-out section in the top of the CSS file you can enable if you want 
   fixed-width layout.
 
-- No substantial markup changes outside of the table removal — class and ID 
+- No substantial markup changes outside of the table removal - class and ID 
   names are kept.
 
 - The theme uses some CSS3 features, but degrades gracefully.
