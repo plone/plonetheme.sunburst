@@ -1472,4 +1472,6 @@ div.overlay div.close span {
     width:1px;
 }
 
+div.overlay textarea { width: 100%; }
+
 /* @end */
