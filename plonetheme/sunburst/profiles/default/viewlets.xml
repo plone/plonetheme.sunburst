@@ -6,9 +6,6 @@
  <hidden manager="plone.portalheader" skinname="Sunburst Theme">
    <viewlet name="plone.site_actions" />
  </hidden>
- <hidden manager="plone.belowcontentbody" skinname="Sunburst Theme">
-   <viewlet name="plone.abovecontenttitle.documentactions" />
- </hidden>
  <order manager="plone.portaltop" skinname="Sunburst Theme">
      <viewlet name="plone.header" />
      <viewlet name="plonetheme.sunburst.personal_bar" insert-after="plone.header" />
