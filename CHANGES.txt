@@ -4,6 +4,8 @@ Changelog
 1.0a3 - Unreleased
 ------------------
 
+- Update styles to reflect the move to @@register and @@new-user
+  [esteele]
 
 1.0a2 - 2009-11-18
 ------------------

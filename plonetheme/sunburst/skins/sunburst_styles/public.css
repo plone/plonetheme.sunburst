@@ -1267,7 +1267,8 @@ tr.selected {
     width: inherit;
 }
 
-body.template-join_form #content input {
+body.template-register #content input,
+body.template-new-user #content input {
     font-size: 150%;
     width: inherit;
 }
