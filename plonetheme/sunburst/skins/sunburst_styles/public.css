@@ -571,7 +571,11 @@ table.listing thead th {
 	text-align: left;
 	color: #666;
 	border: 0.1em solid #e7e7e7;
-	border-style: solid none;
+	border-style: solid none none;
+}
+table.listing tr.odd th {
+	border: 0.1em solid #fff;
+	border-style: solid solid none none;
 }
 table.listing tbody th {
 	font-weight: bold;
@@ -587,6 +591,8 @@ table.listing tbody tr td {
 }
 table.listing tbody tr.odd td { 
 	background: #eee;
+	border: 0.1em solid #fff;
+	border-style: none solid none none;	
 }
 table.listing a { 
 	border: none;
