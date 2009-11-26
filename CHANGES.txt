@@ -4,6 +4,11 @@ Changelog
 1.0a3 - Unreleased
 ------------------
 
+- Sunburst has it's own table-less prefs_main_template.pt to 
+  keep validation of control panels for both sunburst and 
+  plonetheme.classic
+  [spliter]
+
 - removed negative margin from #contentActionMenus - it broke 
   the rounded corner of #edit-bar
   [spliter]
