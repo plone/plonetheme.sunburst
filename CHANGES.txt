@@ -4,6 +4,10 @@ Changelog
 1.0a3 - Unreleased
 ------------------
 
+- removed negative margin from #contentActionMenus - it broke 
+  the rounded corner of #edit-bar
+  [spliter]
+
 - moved "Manage portlets" fallback link out of main_template to 
   plone.manage_portlets_fallback viewlet
   http://dev.plone.org/plone/ticket/9808
