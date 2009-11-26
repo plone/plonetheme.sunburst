@@ -6,7 +6,7 @@ Changelog
 
 - moved "Manage portlets" fallback link out of main_template to 
   plone.manage_portlets_fallback viewlet
-  https://dev.plone.org/plone/ticket/9808
+  http://dev.plone.org/plone/ticket/9808
   [spliter]
 
 - Update styles to reflect the move to @@register and @@new-user
