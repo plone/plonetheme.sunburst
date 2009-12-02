@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0a3 - Unreleased
+1.0a3 - 2009-12-02
 ------------------
 
 - Add selectors for openid login form section to login styles.
