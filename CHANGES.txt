@@ -1,6 +1,13 @@
 Changelog
 =========
 
+1.0a4 - Unreleased
+------------------
+
+- On author.cpt, only display the "log in to add comments" button if mailhost
+  is defined. Only show the mailhost warning if user is authenticated.
+  [esteele]
+
 1.0a3 - 2009-12-02
 ------------------
 
