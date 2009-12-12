@@ -4,6 +4,10 @@ Changelog
 1.0a4 - Unreleased
 ------------------
 
+- Do not display the author contact form when the author has no email
+  (for example for openid users).  Refs #8707.
+  [maurits]
+
 - On author.cpt, only display the "log in to add comments" button if mailhost
   is defined. Only show the mailhost warning if user is authenticated.
   [esteele]
