@@ -313,8 +313,11 @@ a.managePortletsFallback {
 	-moz-border-radius: 0.5em;
 }
 
-a.managePortletsFallback {
+.documentContent a.managePortletsFallback {
 	display: block;
+}
+.documentContent a.managePortletsFallback:link {
+	border-bottom: none;    
 }
 
 
