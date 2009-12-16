@@ -4,6 +4,10 @@ Changelog
 1.0a4 - Unreleased
 ------------------
 
+- fixed positioning of livesearch to not overflow the screen on the
+  right and have horizontal scrollbar.
+  [spliter]
+
 - Enabled thumbnails view in Sunburst. Fixes #9870.
   [spliter]
 

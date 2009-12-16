@@ -197,6 +197,7 @@ body.smallText { font-size: 85%; }
 
 #LSResult {
 	position: absolute;
+	right: 0;
 	background: White;
 	margin: -1.5em 0 0 -7em;
 }
