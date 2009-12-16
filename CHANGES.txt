@@ -4,6 +4,9 @@ Changelog
 1.0a4 - Unreleased
 ------------------
 
+- made descriptions for items in livesearch wrap normally
+  [spliter]
+
 - fixed positioning of livesearch to not overflow the screen on the
   right and have horizontal scrollbar.
   [spliter]

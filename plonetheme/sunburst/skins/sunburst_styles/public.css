@@ -221,6 +221,8 @@ body.smallText { font-size: 85%; }
 #LSNothingFound {
     display: block;
     padding: 0.5em 1em;
+    white-space: normal;
+    width:28em;
 }
 
 .LSHighlight {
