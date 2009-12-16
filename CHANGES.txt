@@ -4,6 +4,9 @@ Changelog
 1.0a4 - Unreleased
 ------------------
 
+- Enabled thumbnails view in Sunburst. Fixes #9870.
+  [spliter]
+
 - Do not display the author contact form when the author has no email
   (for example for openid users).  Refs #8707.
   [maurits]
