@@ -249,6 +249,9 @@ body.smallText { font-size: 85%; }
 	font-size: 85%;
 }
 
+#portal-siteactions li {
+        margin-right: 0.5em;
+}
 
 /* @end */
 
