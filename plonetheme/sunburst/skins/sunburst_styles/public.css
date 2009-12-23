@@ -1292,7 +1292,8 @@ tr.selected {
 
 #fieldset-openid-login input, #login-form input {
     font-size: 150%;
-    width: inherit;
+    width: 60%;
+    margin-right: 5px;
 }
 
 body.template-register #content input,
@@ -1302,8 +1303,8 @@ body.template-new-user #content input {
 }
 
 #fieldset-openid-login label, #login-form label {
-	float:left;
-    width:15%;
+    float:left;
+    width:30%;
     margin-right:0.5em;
     padding-top:0.2em;
     text-align:right;    

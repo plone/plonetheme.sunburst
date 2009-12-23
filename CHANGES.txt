@@ -4,6 +4,10 @@ Changelog
 1.0a5 - Unreleased
 ------------------
 
+- Adjust login overlay position and width. Refs 
+  http://dev.plone.org/plone/ticket/9869
+  [dukebody]
+
 - Underline links in warning and error info messages. This closes
   http://dev.plone.org/plone/ticket/9801
   [dukebody]
