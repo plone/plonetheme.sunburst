@@ -8,6 +8,10 @@ Changelog
   http://dev.plone.org/plone/ticket/9830
   [dukebody]
 
+- Style display view menu for items selected as main view for a
+  folder. This closes http://dev.plone.org/plone/ticket/9894
+  [dukebody, thanks cewing]
+
 1.0a4 - 2009-12-21
 ------------------
 

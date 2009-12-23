@@ -834,14 +834,21 @@ div.listingBar a:hover {
 #contentActionMenus dl.actionMenu.activated dd {
 	border-bottom: 0.5em solid #75ad0a;
 }
-#contentActionMenus dl.actionMenu.activated dd a:hover {
+#contentActionMenus dl.actionMenu.activated dd a:hover,
+#contentActionMenus dl.actionMenu.activated dd .actionMenuSelected {
 	background: White;
 	color: #666;
 }
-#contentActionMenus dl.actionMenu a {
+#contentActionMenus dl.actionMenu a,
+#contentActionMenus dl.actionMenu div {
 	line-height: 2em;
 }
 
+#folderHeader, #contextHeader {
+        border-bottom: 2px solid white;
+}
+
+#contextHeader { margin-top: 5px; }
 
 
 /* @end */
@@ -857,7 +864,8 @@ dl.actionMenu {
 	white-space: nowrap;
     position: relative;
 }
-dl.actionMenu a {
+dl.actionMenu a,
+dl.actionMenu div {
     display: block;
     white-space: nowrap;
 	padding: 0 0.25em;
@@ -880,7 +888,8 @@ dl.actionMenu.activated dd {
 	-moz-border-radius-bottomright: 0.5em;
 }
 dl.actionMenu.activated dt a,
-dl.actionMenu.activated dd a {
+dl.actionMenu.activated dd a,
+dl.actionMenu.activated dd div {
 	margin: 0 0.25em;
 }
 
