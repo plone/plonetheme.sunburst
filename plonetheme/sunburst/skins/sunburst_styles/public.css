@@ -692,6 +692,10 @@ div.listingBar a:hover {
 #region-content dl.error dd {
     background-color: #fdc; 
 }
+#region-content dl.warning a,
+#region-content dl.error a {
+    text-decoration: underline;
+}
 
 
 

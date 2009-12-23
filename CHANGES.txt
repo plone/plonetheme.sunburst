@@ -4,6 +4,10 @@ Changelog
 1.0a5 - Unreleased
 ------------------
 
+- Underline links in warning and error info messages. This closes
+  http://dev.plone.org/plone/ticket/9801
+  [dukebody]
+
 - Add some spacing between siteaction links. This closes
   http://dev.plone.org/plone/ticket/9830
   [dukebody]
