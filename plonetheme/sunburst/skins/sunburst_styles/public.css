@@ -321,11 +321,8 @@ a.managePortletsFallback {
 
 .documentContent a.managePortletsFallback {
 	display: block;
+	border-bottom: none !important;    	
 }
-.documentContent a.managePortletsFallback:link {
-	border-bottom: none;    
-}
-
 
 #portlet-prefs a {
 	border: none;

@@ -4,6 +4,9 @@ Changelog
 1.0a5 - Unreleased
 ------------------
 
+- Removed underline from "Manage portlets" fallback link
+  [spliter]
+
 - Adjust login overlay position and width. Refs 
   http://dev.plone.org/plone/ticket/9869
   [dukebody]
