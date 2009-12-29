@@ -4,6 +4,10 @@ Changelog
 1.0a5 - Unreleased
 ------------------
 
+- Avoid leading spaces in the class attribute of the body element.
+  Fixes http://dev.plone.org/plone/ticket/9489.
+  [dukebody]
+
 - Removed underline from "Manage portlets" fallback link
   [spliter]
 
