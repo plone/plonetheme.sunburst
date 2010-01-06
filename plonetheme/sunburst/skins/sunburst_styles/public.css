@@ -550,6 +550,7 @@ dl.portlet li {
 	color: White;
 	font-weight: bold;
 	position: relative;
+        width: 190px;
 	top: -3em;
 }
 /* @end */
