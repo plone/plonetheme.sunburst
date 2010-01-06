@@ -4,6 +4,10 @@ Changelog
 1.0a5 - Unreleased
 ------------------
 
+- Port changes to author.pt from 
+  http://dev.plone.org/plone/changeset/32858
+  [esteele]
+  
 - Limit the caption width to 200px.
   Fixes http://dev.plone.org/plone/ticket/9992.
   [dukebody]
