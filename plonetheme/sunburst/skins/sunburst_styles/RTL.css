@@ -45,6 +45,8 @@
 
 #LSResult {
     margin: -1.5em -7em 0 0;
+    right: auto;
+    left: 0;
 }
 
 /* Status messages */
