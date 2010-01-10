@@ -8,6 +8,8 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: "Helvetica Neue", Arial, FreeSans, sans-serif; 
 	font-weight: bold;
 	line-height: 125%;
+	page-break-inside: avoid; 
+	page-break-after: avoid;
 }
 h1, h2 {
 	letter-spacing: -0.05em;
@@ -22,24 +24,24 @@ a {
 }
 
 .documentDescription {
-    font-weight: bold;
+	font-weight: bold;
 }
 pre {
-    border: 1pt dotted black;
-    white-space: pre;
-    font-size: 8pt;
-    overflow: auto;
-    padding: 1em 0;
+	border: 1pt dotted black;
+	white-space: pre;
+	font-size: 8pt;
+	overflow: auto;
+	padding: 1em 0;
 }
 table.listing,
 table.listing td {
-    border: 1pt solid black;
-    border-collapse: collapse;
+	border: 1pt solid black;
+	border-collapse: collapse;
 }
 
 /* Page break class for use when printing */
 div.pageBreak {
-    page-break-before: always;
+	page-break-before: always;
 }
 
 /* Uncomment these if you want link addresses inserted along with the link text
@@ -69,7 +71,6 @@ div.top,
 .legend,
 .portalMessage,
 .documentActions,
-.documentByLine,
 .netscape4,
 #kss-spinner,
 #review-history,
@@ -78,10 +79,41 @@ div.top,
 #portal-footer,
 #portal-colophon,
 .skipnav,
- #kss-spinner,
- #review-history,
- #content-history,
- .listingBar,
+#kss-spinner,
+#review-history,
+#content-history,
+.listingBar,
+.link-presentation,
+input.standalone, 
 .visualNoPrint {
-    display: none;
+	display: none;
+}
+
+/* Image alignment classes */
+.image-left {
+	float: left;
+	clear: both;
+	margin: 0.5em 1em 0.5em 0;
+	border: 0.4pt solid Black;
+}
+.image-inline {
+	float: none;
+}
+.image-right {
+	float: right;
+	clear: both;
+	margin: 0.5em;
+	border: 0.4pt solid Black;
+}
+dd.image-caption {
+	text-align:left;
+	padding: 0; margin:0;
+}
+dl.captioned {
+	padding: 0.8em;
+}
+.newsImageContainer {
+	float:right;
+	margin: 0 0 0.5em 1em;
+	width: 16em;
 }
