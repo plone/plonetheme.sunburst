@@ -4,6 +4,10 @@ Changelog
 1.0a5 - Unreleased
 ------------------
 
+- Just a markup polishing - <metal> tags don't need explicit "metal" for 
+  defining slots.
+  [spliter]
+
 - Copied preferred structure of 'main' slot from default main_template
   [spliter]
 
