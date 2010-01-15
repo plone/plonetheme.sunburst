@@ -4,6 +4,11 @@ Changelog
 1.0a5 - Unreleased
 ------------------
 
+- Moved plone.abovecontent and plone.belowcontent viewlet managers actually 
+  above and below content respectively for Sunburst. 
+  References http://dev.plone.org/plone/ticket/10081
+  [spliter]
+
 - Support various image alignment classes and image caption.
   Based on the classic theme but with a slight sunburst touch. 
   http://dev.plone.org/plone/ticket/10043

@@ -80,6 +80,8 @@
         <div id="portal-column-content" metal:define-slot="content"
             tal:omit-tag="python: not (not sl and not sr)" class="cell width-full position-0">
 
+            <div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" />
+            
             <div metal:define-macro="content"
                 tal:define="show_border context/@@plone/showEditableBorder"
                 tal:attributes="class python:test(show_border,'documentEditable','')">
@@ -96,13 +98,11 @@
                         Portal status message
                     </div>
 
-                    <div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" />
-
                     <metal:slot metal:define-slot="body">
                         <div id="content">
-                                <metal:header metal:define-slot="header" tal:content="nothing">
-                                Visual Header
-                                </metal:header>
+                            <metal:header metal:define-slot="header" tal:content="nothing">
+                            Visual Header
+                            </metal:header>
                             
                             <metal:bodytext metal:define-slot="main" tal:content="nothing">
                             Page body text
@@ -110,12 +110,14 @@
                         </div>
                     </metal:slot>
 
-                    <metal:sub metal:define-slot="sub">
-                        <div tal:replace="structure provider:plone.belowcontent" />
+                    <metal:sub metal:define-slot="sub" tal:content="nothing">
+                        This slot is here for backwards-compatibility only. 
+                        Don't copy it in a custom templates.
                     </metal:sub>
                 </div>
             </div>
         
+            <div id="viewlet-below-content" tal:content="structure provider:plone.belowcontent" />
         </div></div></div></div>
 
         <div id="portal-column-one" 
