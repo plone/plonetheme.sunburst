@@ -4,6 +4,11 @@ Changelog
 1.0a5 - Unreleased
 ------------------
 
+- Support various image alignment classes and image caption.
+  Based on the classic theme but with a slight sunburst touch. 
+  http://dev.plone.org/plone/ticket/10043
+  [pelle]  
+
 - Don't limit the styling of portal messages etc. to the 
   #region-content, portal messages might also appear out side
   that area in an overlay, portlet etc.

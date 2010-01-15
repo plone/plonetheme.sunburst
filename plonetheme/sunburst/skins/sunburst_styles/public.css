@@ -1145,6 +1145,45 @@ input.searchPage {
 
 /* @end */
 
+
+/* @group Image alignment classes */
+
+.image-left {
+   float: left;
+   clear: both;
+   margin: 0.5em 1em 0.5em 0;
+}
+.image-right {
+   float: right;
+   clear: both;
+   margin: 0.5em;
+}
+.image-inline {
+   float: none;
+}
+/*note: the tricky thing here is that image-inline|image-left|image-right
+can both be on an image and a wrapper element e.g. a dl tag*/
+img.image-inline,
+img.image-left,
+img.image-right,
+.captioned img {
+    border:1px solid #ddd;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    background-color:#fff;
+    padding:2px;
+}
+dd.image-caption {
+    text-align:left;
+    padding: 0 0 0 3px; /*image padding+border with*/
+    margin:0;
+    color: #666;
+    font-size: 85%;
+}
+
+/* @end */
+
+
 /* @group Dashboard */
 
 #dashboard-actions ul,
