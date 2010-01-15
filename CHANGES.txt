@@ -4,6 +4,9 @@ Changelog
 1.0a5 - Unreleased
 ------------------
 
+- Copied preferred structure of 'main' slot from default main_template
+  [spliter]
+
 - Moved plone.abovecontent and plone.belowcontent viewlet managers actually 
   above and below content respectively for Sunburst. 
   References http://dev.plone.org/plone/ticket/10081
