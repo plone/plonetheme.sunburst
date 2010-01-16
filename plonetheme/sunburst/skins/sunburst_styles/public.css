@@ -150,7 +150,7 @@ body.smallText { font-size: 85%; }
 	position: absolute;
 	top: 0;
 	right: 10em;
-        z-index: 3; /* portal-header has 2 and we need to be above to be clickable */
+	z-index: 3; /* portal-header has 2 and we need to be above to be clickable */
 	padding: 0.25em 0.5em;
 	font-size: 80%;
 	border-bottom-right-radius: 0.5em;
@@ -312,7 +312,6 @@ a.managePortletsFallback {
 	text-align: center;
 	padding: 0.25em 0.5em;
 	font-size: 80%;
-	width: 8em;
 	margin: 0 auto 1em;
 	background: #ddd;
 	border-radius: 0.5em;
