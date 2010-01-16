@@ -261,6 +261,13 @@ body.smallText { font-size: 85%; }
 a.link-parent {
 }
 
+a.link-anchor {
+	border: none !important;
+	color: Black !important;
+	cursor: default !important;
+}
+
+
 /* @end */
 
 /* @group Portlets */
