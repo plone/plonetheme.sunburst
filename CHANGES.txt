@@ -3,7 +3,10 @@ Changelog
 
 1.0a5 - Unreleased
 ------------------
-
+- Remove the ability for anonymous to send author feedback again. A quick
+  survey of integrators showed that this wasn't desirable.
+  [esteele]
+  
 - Avoid the test function in the main_template. It doesn't exist in view page
   template files.
   [hannosch]
