@@ -15,11 +15,9 @@
         site_properties context/portal_properties/site_properties;"
     tal:attributes="lang lang;">
 
-<tal:cache tal:define="charset plone_view/site_encoding">
     <metal:cache use-macro="context/global_cache_settings/macros/cacheheaders">
     Get the global cache headers located in global_cache_settings.
     </metal:cache>
-</tal:cache>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

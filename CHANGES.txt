@@ -4,6 +4,9 @@ Changelog
 1.0a5 - Unreleased
 ------------------
 
+- Remove obsolete charset definition for the global_cache_settings macro.
+  [hannosch]
+
 - Follow the getSectionFromURL change in CMFPlone.
   [hannosch]
 
