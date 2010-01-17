@@ -4,6 +4,9 @@ Changelog
 1.0a5 - Unreleased
 ------------------
 
+- Follow the getSectionFromURL change in CMFPlone.
+  [hannosch]
+
 - Just a markup polishing - <metal> tags don't need explicit "metal" for 
   defining slots.
   [spliter]
