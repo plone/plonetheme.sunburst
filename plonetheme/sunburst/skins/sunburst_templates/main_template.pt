@@ -28,7 +28,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <metal:baseslot define-slot="base">
-        <base tal:attributes="href context/renderBase" /><!--[if lt IE 7]></base><![endif]-->
+        <base tal:attributes="href plone_view/renderBase" /><!--[if lt IE 7]></base><![endif]-->
     </metal:baseslot>
 
     <div tal:replace="structure provider:plone.htmlhead" />
