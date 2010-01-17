@@ -4,6 +4,10 @@ Changelog
 1.0a5 - Unreleased
 ------------------
 
+- Avoid the test function in the main_template. It doesn't exist in view page
+  template files.
+  [hannosch]
+
 - Simplify the bodyClass construction.
   [hannosch]
 
