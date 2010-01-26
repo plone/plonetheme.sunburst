@@ -3,6 +3,11 @@ Changelog
 
 1.0a5 - Unreleased
 ------------------
+
+- Align the action drop-down submenu to the right.
+  Fixes http://dev.plone.org/plone/ticket/10074.
+  [dukebody]
+
 - Remove the ability for anonymous to send author feedback again. A quick
   survey of integrators showed that this wasn't desirable.
   [esteele]
