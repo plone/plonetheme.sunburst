@@ -4,6 +4,11 @@ Changelog
 1.0a5 - Unreleased
 ------------------
 
+- Move the login overlay form labels slightly down to align vertically
+  with their associated fields.
+  Refs http://dev.plone.org/plone/ticket/10021.
+  [dukebody]
+
 - Align the action drop-down submenu to the right.
   Fixes http://dev.plone.org/plone/ticket/10074.
   [dukebody]

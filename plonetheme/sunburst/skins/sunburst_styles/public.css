@@ -1354,6 +1354,10 @@ body.template-new-user #content input {
     text-align:right;    
 }
 
+.pb-ajax #fieldset-openid-login label, .pb-ajax #login-form label {
+    padding-top:0.4em;
+}
+
 #fieldset-openid-login .formControls, #login-form .formControls {
     padding-left: 15%;
     margin-left: 0.5em;
