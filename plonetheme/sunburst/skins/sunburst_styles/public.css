@@ -232,6 +232,9 @@ body.smallText { font-size: 85%; }
 
 /* @end */
 
+
+/* @group Bread Crumb */
+
 #breadcrumbs-you-are-here,
 #breadcrumbs-home,
 #breadcrumbs-current,
@@ -246,12 +249,19 @@ body.smallText { font-size: 85%; }
 	border-bottom: none;
 	color: #666;
 }
+
+/* @group Site actions */
+
 #portal-siteactions {
 	font-size: 85%;
+	padding-bottom: 2em;
+	text-align: center;
 }
-
 #portal-siteactions li {
-        margin-right: 0.5em;
+    margin-right: 0.5em;
+}
+#portal-siteactions li a:hover {
+    color: #75ad0a
 }
 
 /* @end */
@@ -266,7 +276,6 @@ a.link-anchor {
 	color: Black !important;
 	cursor: default !important;
 }
-
 
 /* @end */
 
