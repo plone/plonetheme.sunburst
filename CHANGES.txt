@@ -4,6 +4,10 @@ Changelog
 1.0b1 - Unreleased
 ------------------
 
+- Remove common CSS registries. 
+  Refs http://dev.plone.org/plone/ticket/9988.
+  [dukebody]
+
 - Copied updated structure of 'main' slot from classic theme to Sunburst
   [spliter]
 
