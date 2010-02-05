@@ -4,6 +4,9 @@ Changelog
 1.0b1 - Unreleased
 ------------------
 
+- Copied updated structure of 'main' slot from classic theme to Sunburst
+  [spliter]
+
 1.0a5 - 2010-02-01
 ------------------
 
