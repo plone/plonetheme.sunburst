@@ -70,6 +70,10 @@
     margin: auto;
 }
 
+#contentActionMenus dl.actionMenu.activated dd {
+    right: auto;
+}
+
 dl.actionMenu.activated {
     direction: ltr;
 }

@@ -4,6 +4,10 @@ Changelog
 1.0b1 - Unreleased
 ------------------
 
+- Removed action drop-down submenu right alignment for RTL scripts.
+  Re-fixes http://dev.plone.org/plone/ticket/9651.
+  [emanlove]
+
 - Some sunburst for the site actions.
   Refs https://dev.plone.org/plone/ticket/10176
   [pelle]
