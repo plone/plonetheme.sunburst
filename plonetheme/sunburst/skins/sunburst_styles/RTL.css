@@ -63,6 +63,13 @@
     float: right;
 }
 
+/* Personal tools pulldown */
+
+#portal-personaltools dd {
+	right: auto;
+	left: 0;
+}
+
 /* Content pulldowns */
 
 #contentActionMenus {

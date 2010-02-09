@@ -4,6 +4,11 @@ Changelog
 1.0b1 - Unreleased
 ------------------
 
+- Align the personal tools drop-down submenu to the left for
+  RTL scripts.
+  Fixes http://dev.plone.org/plone/ticket/10181.
+  [emanlove]
+
 - Updated templates to disable the columns with 'disable_MANAGER_NAME'
   pattern.
   [spliter]
