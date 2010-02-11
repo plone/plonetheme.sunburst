@@ -4,6 +4,9 @@ Changelog
 1.0b1 - Unreleased
 ------------------
 
+- Add html id to personal bar actions.
+  [paul_r]
+
 - Align the personal tools drop-down submenu to the left for
   RTL scripts.
   Fixes http://dev.plone.org/plone/ticket/10181.
