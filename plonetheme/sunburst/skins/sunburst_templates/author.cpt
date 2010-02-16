@@ -43,17 +43,15 @@
                                 email_from_address portal/email_from_address">
 
         <tal:noAuthor condition="not: authorinfo">
-        <div id="region-content">
         <div id="content">
-        <dl class="portalMessage error">
-            <dt i18n:translate="">
-                Error
-            </dt>
-            <dd i18n:translate="text_no_user_by_name">
-                No user by that name.
-            </dd>
-        </dl>
-        </div>
+            <dl class="portalMessage error">
+                <dt i18n:translate="">
+                    Error
+                </dt>
+                <dd i18n:translate="text_no_user_by_name">
+                    No user by that name.
+                </dd>
+            </dl>
         </div>
         </tal:noAuthor>
 
@@ -88,13 +86,9 @@
           &nbsp;
         </div>
         </div>
- 
-    <div class="documentEditable" id="region-content"
-         tal:attributes="class python: test(isOwner, 'documentEditable', '')">
 
-        <div class="documentContent" id="content">
 
-            <a name="documentContent"></a>
+        <div id="content">
                     
             <div metal:use-macro="context/global_statusmessage/macros/portal_message">
                 Portal status message
@@ -293,8 +287,7 @@
 
             </tal:authorContent>
 
-        </div>
-    </div> <!-- end simulated tabs -->
+        </div> <!-- end simulated tabs -->
         
     </tal:haveAuthor>
 
