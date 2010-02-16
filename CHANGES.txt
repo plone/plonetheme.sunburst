@@ -4,6 +4,11 @@ Changelog
 1.0b1 - Unreleased
 ------------------
 
+- Moved 'content' slot to the same place as it is in CMFPlone's
+  main_template.pt. Having the same slot in different places is confusing.
+  References http://dev.plone.org/old/plone/ticket/9981
+  [spliter]
+
 - Wrapped .contentViews and .contentActions with <div id="edit-bar"> in
   author.pt.
   [spliter]
