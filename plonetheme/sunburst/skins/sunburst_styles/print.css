@@ -84,7 +84,9 @@ div.top,
 #content-history,
 .listingBar,
 .link-presentation,
-input.standalone, 
+input.standalone,
+.overlay,
+.close, 
 .visualNoPrint {
 	display: none;
 }
