@@ -21,6 +21,15 @@
         />
 
     <browser:viewlet
+        name="plonetheme.sunburst.path_bar"
+        manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
+        class="plone.app.layout.viewlets.common.PathBarViewlet"
+        permission="zope2.View" 
+        layer=".interfaces.IThemeSpecific"
+        />
+
+
+    <browser:viewlet
         name="plonetheme.sunburst.site_actions"
         manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
         class="plone.app.layout.viewlets.common.SiteActionsViewlet"
