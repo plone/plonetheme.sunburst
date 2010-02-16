@@ -86,61 +86,56 @@
                     tal:condition="show_border"
                     tal:content="structure provider:plone.contentviews" />
     
-                <div id="region-content" class="documentContent">
-
-                    <a name="documentContent"></a>
-
-                    <div metal:use-macro="context/global_statusmessage/macros/portal_message">
-                        Portal status message
-                    </div>
-
-                    <metal:slot define-slot="body">
-                        <div id="content">
-                            <metal:header define-slot="header" tal:content="nothing">
-                            Visual Header
-                            </metal:header>
-                            
-                            <metal:bodytext define-slot="main">                                                            
-
-                              <div tal:replace="structure provider:plone.abovecontenttitle" />                             
-                              <metal:title define-slot="content-title">                              
-                                  <metal:comment tal:content="nothing">
-                                      If you write a custom title always use 
-                                      <h1 class="documentFirstHeading"></h1> for it
-                                  </metal:comment>
-                                  <h1 metal:use-macro="context/kss_generic_macros/macros/generic_title_view">              
-                                      Generic KSS Title. Is rendered with class="documentFirstHeading".                    
-                                  </h1>                                                                                    
-                              </metal:title>                                                                               
-                              <div tal:replace="structure provider:plone.belowcontenttitle" />                             
-
-                              <metal:description define-slot="content-description">                  
-                                  <metal:comment tal:content="nothing">
-                                      If you write a custom description always use 
-                                      <div class="documentDescription"></div> for it    
-                                  </metal:comment>
-                                  <div metal:use-macro="context/kss_generic_macros/macros/generic_description_view">         
-                                      Generic KSS Description. Is rendered with class="documentDescription".               
-                                  </div>                                                                                     
-                              </metal:description>                                                                         
-
-                              <div tal:replace="structure provider:plone.abovecontentbody" />                              
-                              <div id="content-core">                                                                      
-                                  <metal:text define-slot="content-core" tal:content="nothing">                            
-                                      Page body text                                                                       
-                                  </metal:text>                                                                            
-                              </div>                                                                                       
-                              <div tal:replace="structure provider:plone.belowcontentbody" />                              
-
-                            </metal:bodytext>
-                        </div>
-                    </metal:slot>
-
-                    <metal:sub define-slot="sub" tal:content="nothing">
-                        This slot is here for backwards-compatibility only. 
-                        Don't copy it in a custom templates.
-                    </metal:sub>
+                <div metal:use-macro="context/global_statusmessage/macros/portal_message">
+                   Portal status message
                 </div>
+
+                <metal:slot define-slot="body">
+                   <div id="content">
+                       <metal:header define-slot="header" tal:content="nothing">
+                       Visual Header
+                       </metal:header>
+
+                       <metal:bodytext define-slot="main">                                                            
+
+                         <div tal:replace="structure provider:plone.abovecontenttitle" />                             
+                         <metal:title define-slot="content-title">                              
+                             <metal:comment tal:content="nothing">
+                                 If you write a custom title always use 
+                                 <h1 class="documentFirstHeading"></h1> for it
+                             </metal:comment>
+                             <h1 metal:use-macro="context/kss_generic_macros/macros/generic_title_view">              
+                                 Generic KSS Title. Is rendered with class="documentFirstHeading".                    
+                             </h1>                                                                                    
+                         </metal:title>                                                                               
+                         <div tal:replace="structure provider:plone.belowcontenttitle" />                             
+
+                         <metal:description define-slot="content-description">                  
+                             <metal:comment tal:content="nothing">
+                                 If you write a custom description always use 
+                                 <div class="documentDescription"></div> for it    
+                             </metal:comment>
+                             <div metal:use-macro="context/kss_generic_macros/macros/generic_description_view">         
+                                 Generic KSS Description. Is rendered with class="documentDescription".               
+                             </div>                                                                                     
+                         </metal:description>                                                                         
+
+                         <div tal:replace="structure provider:plone.abovecontentbody" />                              
+                         <div id="content-core">                                                                      
+                             <metal:text define-slot="content-core" tal:content="nothing">                            
+                                 Page body text                                                                       
+                             </metal:text>                                                                            
+                         </div>                                                                                       
+                         <div tal:replace="structure provider:plone.belowcontentbody" />                              
+
+                       </metal:bodytext>
+                   </div>
+                </metal:slot>
+
+                <metal:sub define-slot="sub" tal:content="nothing">
+                   This slot is here for backwards compatibility only. 
+                   Don't copy it in custom templates.
+                </metal:sub>
             </div>
         
             <div id="viewlet-below-content" tal:content="structure provider:plone.belowcontent" />

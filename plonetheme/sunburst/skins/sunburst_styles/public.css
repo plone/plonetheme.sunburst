@@ -1,7 +1,5 @@
 /* @override 
-	http://localhost:8080/sunburst/portal_css/Sunburst%20Theme/public.css
 	http://localhost:8080/4/portal_css/Sunburst%20Theme/public.css
-	http://localhost:8080/pathbartest/portal_css/Sunburst%20Theme/public.css
 */
 
 /* @group CSS Reset */
@@ -334,7 +332,7 @@ a.managePortletsFallback {
 	-moz-border-radius: 0.5em;
 }
 
-.documentContent a.managePortletsFallback {
+#content a.managePortletsFallback {
 	display: block;
 	border-bottom: none !important;    	
 }
@@ -397,7 +395,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 	font-size: 80%;
 }
 
-.documentContent h1 {	
+#content h1 {	
 	margin-top: 0.5em;
 }
 
@@ -405,44 +403,44 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 	margin-top: 0;
 }
 
-.documentContent h2,
-.documentContent h3,
-.documentContent h4 {
+#content h2,
+#content h3,
+#content h4 {
 	margin-top: 0.5em;
 	color: #444;	
 }
 
 
-.documentContent p,
-.documentContent ul,
-.documentContent ol,
-.documentContent table,
-.documentContent dl,
+#content p,
+#content ul,
+#content ol,
+#content table,
+#content dl,
 dl.portlet p,
 dl.portlet {
 	margin-bottom: 1em;
 }
 
-.documentContent a:link,
+#content a:link,
 dl.portlet a:link {
 	color: #205c90;
 	border-bottom: 0.1em solid #ccc;
 }
 
-.documentContent a:visited, 
+#content a:visited, 
 dl.portlet a:visited {
 	color: #427597;
 	border-bottom: 0.1em solid #ccc;
 }
-.documentContent a:hover,
+#content a:hover,
 dl.portlet a:hover {
 	color: #75ad0a !important; /* This one gets an !important because it should always activate in the content area, even when state coloring is active */
 }
-.documentContent a:target {
+#content a:target {
 	background-color: #ffb;
 }
 
-.documentContent a.link-category {
+#content a.link-category {
 	color: black;
 	padding: 0.25em 0.5em;
 	background: #ddd;
@@ -450,44 +448,44 @@ dl.portlet a:hover {
 	-webkit-border-radius: 0.5em;
 	-moz-border-radius: 0.5em;
 }
-.documentContent a.link-category:hover {
+#content a.link-category:hover {
 	background: #205c90;
 	color: White;
 	border-color: #205c90;
 }
 
-.documentContent img {
+#content img {
 	max-width: 100%;
 }
 
-.documentContent ul {
+#content ul {
 	list-style-type: disc;
 	margin-left: 2em;
 }
 
-.documentContent ol,
+#content ol,
 dl.portlet ol {
 	list-style-type: decimal;
 	margin-left: 2em;
 }
 
-.documentContent li,
+#content li,
 dl.portlet li {
 	margin-bottom: 0.25em;
 	line-height: 1.5em;
 	display: list-item;
 }
 
-.documentContent dt {
+#content dt {
 	font-weight: bold;
 	margin-bottom: 0;
 	margin-right: 0;
 }
-.documentContent dd {
+#content dd {
 	margin: 0 0 1em 1em;
 }
 
-.documentContent pre {
+#content pre {
 	background-color: #222;
 	color: White;
 	font-family: Consolas, Inconsolata, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;	
@@ -498,7 +496,7 @@ dl.portlet li {
 	line-height: 1em;
 }
 
-.documentContent code {
+#content code {
 	font-family: Consolas, Inconsolata, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;	
 }
 
@@ -509,18 +507,18 @@ dl.portlet li {
 	color: #666;
 }
 
-.documentContent .discreet,
+#content .discreet,
 #sidebar .discreet {
 	color: #666;
 	font-size: 85%;
 	font-weight: normal;
 }
 
-.documentContent .visualHighlight {
+#content .visualHighlight {
     background-color: #ffb;
 }
 
-.documentContent .pullquote {
+#content .pullquote {
     padding: 0 1em 0 1em;
     margin: 0 0 1em 1em;
     font-weight: bold;
@@ -530,7 +528,7 @@ dl.portlet li {
     border-left: 0.1em solid #888;
 	color: #888;
 }
-.documentContent .callout {
+#content .callout {
     color: #666;
     padding: 1em;
 	border: 0.1em solid #666;
@@ -539,25 +537,25 @@ dl.portlet li {
 }
 
 
-.documentContent table {
+#content table {
 	text-align: left;
 }
 
-.documentContent .documentDescription,
-.documentContent #description {
+#content .documentDescription,
+#content #description {
 	color: #666;
 	font: bold 1.25em "Helvetica Neue", Arial, FreeSans, sans-serif;
 	margin-left: 0;
 }
 
-.documentContent img.tileImage,
-.documentContent div.newsImageContainer {
+#content img.tileImage,
+#content div.newsImageContainer {
 	float: right;
 	margin: 0 1em 0.5em 1em;
 }
-.documentContent div.newsImageContainer {
+#content div.newsImageContainer {
 }
-.documentContent div.newsImageContainer p.discreet {
+#content div.newsImageContainer p.discreet {
 	margin: 0;
 	padding: 0.5em;
 	background-color: #666;
