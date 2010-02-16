@@ -542,7 +542,7 @@ dl.portlet li {
 }
 
 #content .documentDescription,
-#content #description {
+#description {
 	color: #666;
 	font: bold 1.25em "Helvetica Neue", Arial, FreeSans, sans-serif;
 	margin-left: 0;
@@ -552,8 +552,6 @@ dl.portlet li {
 #content div.newsImageContainer {
 	float: right;
 	margin: 0 1em 0.5em 1em;
-}
-#content div.newsImageContainer {
 }
 #content div.newsImageContainer p.discreet {
 	margin: 0;
@@ -1436,32 +1434,32 @@ dl.toc dd ol {
 
 /* @group Sitemap */
 
-#content #portal-sitemap {
+#portal-sitemap {
     list-style: none;
     margin-left: 0;
     font-size: 130%;
     font-weight: bold;    
 }
 
-#content #portal-sitemap li {
+#portal-sitemap li {
     list-style: none;
     margin-left: 0;
 }
 
-#content #portal-sitemap a {
+#portal-sitemap a {
     border-bottom: none;
     display: block;
 }
 
-#content #portal-sitemap > li {   
+#portal-sitemap > li {   
     border-bottom:0.1em dotted #ddd;
     line-height:1.8em;
     padding:0.25em 1em;
     margin-bottom: 0;
 }
 
-#content #portal-sitemap .navTreeLevel2,
-#content #portal-sitemap .navTreeLevel2 ul {
+#portal-sitemap .navTreeLevel2,
+#portal-sitemap .navTreeLevel2 ul {
     font-size: 85%;
     font-weight: normal;  
     margin-bottom: 0;  
