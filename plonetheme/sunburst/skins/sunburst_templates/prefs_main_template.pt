@@ -2,7 +2,8 @@
   <tal:block metal:use-macro="context/main_template/macros/master">
 
     <metal:block fill-slot="top_slot"
-                 tal:define="dummy python:request.set('disable_border',1)" />
+                 tal:define="dummy python:request.set('disable_border',1);
+                             disable_column_two python:request.set('disable_plone.rightcolumn',1); " />
 
     <metal:override fill-slot="column_one_slot">
         <metal:override define-slot="column_one_slot">
@@ -12,11 +13,9 @@
         </metal:override>
     </metal:override>
 
-    <metal:override fill-slot="column_two_slot" />
-
     <metal:override fill-slot="content">
         <metal:slot define-slot="prefs_configlet_wrapper">
-          <div id="portal-column-content" class="cell position-1:4 width-3:4">
+          <div class="cell position-1:4 width-3:4">
           <metal:slot define-slot="prefs_configlet_content">
           
             <metal:block metal:use-macro="context/main_template/macros/content">
