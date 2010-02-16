@@ -4,6 +4,10 @@ Changelog
 1.0b1 - Unreleased
 ------------------
 
+- Wrapped .contentViews and .contentActions with <div id="edit-bar"> in
+  author.pt.
+  [spliter]
+
 - Add html id to personal bar actions.
   [paul_r]
 

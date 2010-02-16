@@ -60,32 +60,26 @@
             tal:define="isOwner python:member.getId()==author;
                         isAnon context/@@plone_portal_state/anonymous;">
 
-        <h5 class="hiddenStructure"
-            tal:condition="isOwner">Views</h5>
-        
-        <div id="edit-bar">
-        <ul id="content-views"
-            class="contentViews"
-            tal:condition="isOwner">
-          <li class="selected">
-            <a href=""
-                tal:define="url_quote_plus python:modules['Products.PythonScripts.standard'].url_quote_plus;
-                            memberurl python:url_quote_plus(member.getId())"
-               tal:attributes="href string:${portal_url}/author/${memberurl}"
-               i18n:translate="label_view">View</a>
-          </li>
-          <li>
-            <a href=""
-               tal:attributes="href string:${portal_url}/personalize_form"
-               i18n:translate="label_edit">Edit</a>
-          </li>
-        </ul>
-
-        <div class="contentActions"
-             tal:condition="isOwner">
-          &nbsp;
-        </div>
-        </div>
+            <div id="edit-bar" tal:condition="isOwner">
+                <h5 class="hiddenStructure">Views</h5>
+                <ul id="content-views"
+                    class="contentViews">
+                  <li class="selected">
+                    <a href=""
+                        tal:define="url_quote_plus python:modules['Products.PythonScripts.standard'].url_quote_plus;
+                                    memberurl python:url_quote_plus(member.getId())"
+                       tal:attributes="href string:${portal_url}/author/${memberurl}"
+                       i18n:translate="label_view">View</a>
+                  </li>
+                  <li>
+                    <a href=""
+                       tal:attributes="href string:${portal_url}/personalize_form"
+                       i18n:translate="label_edit">Edit</a>
+                  </li>
+                </ul>
+                <div class="contentActions">&nbsp;</div>
+                 <!-- end simulated tabs -->
+            </div>
 
 
         <div id="content">
