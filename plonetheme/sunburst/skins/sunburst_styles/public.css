@@ -542,7 +542,7 @@ dl.portlet li {
 	text-align: left;
 }
 
-.documentContent p.documentDescription,
+.documentContent .documentDescription,
 .documentContent #description {
 	color: #666;
 	font: bold 1.25em "Helvetica Neue", Arial, FreeSans, sans-serif;
