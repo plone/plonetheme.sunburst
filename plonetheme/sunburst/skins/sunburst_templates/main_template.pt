@@ -64,7 +64,7 @@
         </div>
     <div id="portal-columns" class="row">
 
-        <!-- TODO: There is probably be a more elegant way to do this ;) -->
+        <!-- TODO: Someone, anyone, please write a view method that does this logic in Python and spits out the right class name! ;) -->
         <div id="portal-column-content" metal:define-slot="content"
             tal:omit-tag="python: not (sl and sr)" class="cell width-1:2 position-1:4">
         <div id="portal-column-content" metal:define-slot="content"
