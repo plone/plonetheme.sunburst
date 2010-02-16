@@ -1,4 +1,7 @@
-/* @override http://localhost:8080/sunburst/portal_css/Sunburst%20Theme/public.css */
+/* @override 
+	http://localhost:8080/sunburst/portal_css/Sunburst%20Theme/public.css
+	http://localhost:8080/4/portal_css/Sunburst%20Theme/public.css
+*/
 
 /* @group CSS Reset */
 
@@ -76,13 +79,6 @@ input {
 q {
     quotes: "“" "”" "‘" "’"
 }
-
-/* @end */
-
-/* @group Accessibility elements, applied by JS */
-
-body.largeText { font-size: 125%; }
-body.smallText { font-size: 85%; }
 
 /* @end */
 
@@ -233,7 +229,7 @@ body.smallText { font-size: 85%; }
 /* @end */
 
 
-/* @group Bread Crumb */
+/* @group Path indicator (breadcrumbs) */
 
 #breadcrumbs-you-are-here,
 #breadcrumbs-home,
@@ -249,6 +245,8 @@ body.smallText { font-size: 85%; }
 	border-bottom: none;
 	color: #666;
 }
+/* @end */
+
 
 /* @group Site actions */
 
@@ -1345,8 +1343,6 @@ tr.selected {
 
 #fieldset-openid-login input, #login-form input {
     font-size: 150%;
-    width: 60%;
-    margin-right: 5px;
 }
 
 body.template-register #content input,
@@ -1357,7 +1353,7 @@ body.template-new-user #content input {
 
 #fieldset-openid-login label, #login-form label {
     float:left;
-    width:30%;
+    width:10em;
     margin-right:0.5em;
     padding-top:0.2em;
     text-align:right;    
@@ -1368,7 +1364,7 @@ body.template-new-user #content input {
 }
 
 #fieldset-openid-login .formControls, #login-form .formControls {
-    padding-left: 15%;
+    padding-left: 10em;
     margin-left: 0.5em;
 }
 
@@ -1518,7 +1514,7 @@ dl.toc dd ol {
     height: 3.6em;
 }
 
-/* @group */
+/* @end */
 
 /* @group Invisibles */
 
@@ -1537,6 +1533,13 @@ dl.toc dd ol {
 .visualClear {
 	clear: both;
 }
+
+/* @end */
+
+/* @group Accessibility elements, applied by JS */
+
+body.largeText { font-size: 125%; }
+body.smallText { font-size: 85%; }
 
 /* @end */
 
