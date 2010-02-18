@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0b1 - Unreleased
+1.0b1 - 2010-02-18
 ------------------
 
 - Added example CSS to ploneCustom.css on how to enable the first levels of breadcrumbs.
