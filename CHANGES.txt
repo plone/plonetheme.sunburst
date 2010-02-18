@@ -6,15 +6,19 @@ Changelog
 
 - Added example CSS to ploneCustom.css on how to enable the first levels of breadcrumbs.
   This fixes http://dev.plone.org/plone/ticket/9987
+  [limi]
+
+- Removed #region-content and .documentContent from all templates, as they are redundant.
+  See http://dev.plone.org/plone/ticket/10231 for details.
 
 - Updated prefs_main_template.pt and personalize_form.pt to the recent markup
   conventions.
-  References http://dev.plone.org/old/plone/ticket/9981
+  References http://dev.plone.org/plone/ticket/9981
   [spliter]
   
 - Moved 'content' slot to the same place as it is in CMFPlone's
   main_template.pt. Having the same slot in different places is confusing.
-  References http://dev.plone.org/old/plone/ticket/9981
+  References http://dev.plone.org/plone/ticket/9981
   [spliter]
 
 - Wrapped .contentViews and .contentActions with <div id="edit-bar"> in
@@ -38,7 +42,7 @@ Changelog
   [emanlove]
 
 - Some sunburst for the site actions.
-  Refs https://dev.plone.org/plone/ticket/10176
+  Refs http://dev.plone.org/plone/ticket/10176
   [pelle]
 
 - Remove common CSS registries. 
