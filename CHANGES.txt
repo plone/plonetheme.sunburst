@@ -4,6 +4,9 @@ Changelog
 1.0b1 - Unreleased
 ------------------
 
+- Added example CSS to ploneCustom.css on how to enable the first levels of breadcrumbs.
+  This fixes http://dev.plone.org/plone/ticket/9987
+
 - Updated prefs_main_template.pt and personalize_form.pt to the recent markup
   conventions.
   References http://dev.plone.org/old/plone/ticket/9981
