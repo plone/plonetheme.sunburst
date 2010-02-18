@@ -652,17 +652,17 @@ div.listingBar a:hover {
 
 /* @group Status messages */
 
-#content dl.portalMessage {
+dl.portalMessage {
     margin: 1em 0;
-	font-size: 90%;
+	font-size: 80%;
 	border: 1px solid #996;
 	background-color: #ffffe3; 
 }
-#content dl.portalMessage a {
+dl.portalMessage a {
     color: black;
 	border-color: black;
 }
-#content dl.portalMessage dt {
+dl.portalMessage dt {
     background-color: #996; 
     font-weight: bold;
     float: left;
@@ -671,41 +671,51 @@ div.listingBar a:hover {
     color: White;
     line-height: 1.25em;
 }
-#content dl.portalMessage dd {
+dl.portalMessage dd {
     padding: 0.5em 0.5em; 
     margin: 0;
     line-height: 1.25em;
 }
-#content dl.warning {
+dl.warning {
     border-color: #d80;
 }
-#content dl.warning dt {
+dl.warning dt {
     background-color: #d80;
 }
-#content dl.error {
+dl.error {
     border-color: #d00;    
 }
-#content dl.error dt {
+dl.error dt {
     background-color: #d00; 
 }
-#content dl.warning {
+dl.warning {
     border-color: #d80;    
 }
-#content dl.warning dd {
+dl.warning dd {
     background-color: #fd7; 
 }
-#content dl.error {
+dl.error {
     border-color: red;    
 }
-#content dl.error dd {
+dl.error dd {
     background-color: #fdc; 
 }
-#content dl.warning a,
-#content dl.error a {
+dl.warning a,
+dl.error a {
     text-decoration: underline;
 }
 
-
+/* Additional specificity for when status is shown inside #content */
+#content dl.portalMessage {
+	font-size: 100%;
+}
+#content dl.portalMessage dt {
+    margin: 0 0.5em 0 0;
+    padding: 0.5em 0.75em;
+}
+#content dl.portalMessage dd {
+    margin: 0;
+}
 
 /* @end */
 
@@ -1367,18 +1377,6 @@ body.template-new-user #content input {
 #fieldset-openid-login .formControls input, #login-form .formControls input {
 margin-left: 0.25em;
 }
-
-/* @group TinyMCE styles */
-
-/* we want to make TinyMCE to follow the theme's styles. But it doesn't make 
-   sense to put these styles for TinyMCE product globally  */
-body#tinymce {
-    font-size:116%;
-    line-height:1.5em;
-}
-
-/* @end */
-
 
 /* @end */
 

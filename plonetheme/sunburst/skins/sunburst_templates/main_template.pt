@@ -87,11 +87,12 @@
                         tal:condition="show_border"
                         tal:content="structure provider:plone.contentviews" />
 
+                    <div metal:use-macro="context/global_statusmessage/macros/portal_message">
+                     Status message
+                    </div>
+
                     <metal:slot define-slot="body">
                         <div id="content">
-                            <div metal:use-macro="context/global_statusmessage/macros/portal_message">
-                             Portal status message
-                            </div>
 
                             <metal:header define-slot="header" tal:content="nothing">
                             Visual Header
