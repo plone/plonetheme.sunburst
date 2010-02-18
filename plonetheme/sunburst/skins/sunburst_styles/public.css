@@ -1338,31 +1338,34 @@ tr.selected {
 
 /* @group Login form */
 
+body.template-logged_out #content,
+body.template-login_form #content,
+.pb-ajax #login-form {
+	text-align: center;
+}
+
 #fieldset-openid-login input, #login-form input {
     font-size: 150%;
 }
+
 
 body.template-register #content input,
 body.template-new-user #content input {
     font-size: 150%;
     width: inherit;
+
 }
 
 #fieldset-openid-login label, #login-form label {
-    float:left;
-    width:10em;
     margin-right:0.5em;
     padding-top:0.2em;
     text-align:right;    
+	width: 6em;
+	display: inline-block;
 }
 
-.pb-ajax #fieldset-openid-login label, .pb-ajax #login-form label {
-    padding-top:0.4em;
-}
-
-#fieldset-openid-login .formControls, #login-form .formControls {
-    padding-left: 10em;
-    margin-left: 0.5em;
+#fieldset-openid-login .formControls input, #login-form .formControls input {
+margin-left: 0.25em;
 }
 
 /* @group TinyMCE styles */
