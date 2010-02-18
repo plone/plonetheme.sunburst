@@ -652,17 +652,17 @@ div.listingBar a:hover {
 
 /* @group Status messages */
 
-dl.portalMessage {
+#content dl.portalMessage {
     margin: 1em 0;
-	font-size: 80%;
+	font-size: 90%;
 	border: 1px solid #996;
 	background-color: #ffffe3; 
 }
-dl.portalMessage a {
+#content dl.portalMessage a {
     color: black;
 	border-color: black;
 }
-dl.portalMessage dt {
+#content dl.portalMessage dt {
     background-color: #996; 
     font-weight: bold;
     float: left;
@@ -671,37 +671,37 @@ dl.portalMessage dt {
     color: White;
     line-height: 1.25em;
 }
-dl.portalMessage dd {
+#content dl.portalMessage dd {
     padding: 0.5em 0.5em; 
     margin: 0;
     line-height: 1.25em;
 }
-dl.warning {
+#content dl.warning {
     border-color: #d80;
 }
-dl.warning dt {
+#content dl.warning dt {
     background-color: #d80;
 }
-dl.error {
+#content dl.error {
     border-color: #d00;    
 }
-dl.error dt {
+#content dl.error dt {
     background-color: #d00; 
 }
-dl.warning {
+#content dl.warning {
     border-color: #d80;    
 }
-dl.warning dd {
+#content dl.warning dd {
     background-color: #fd7; 
 }
-dl.error {
+#content dl.error {
     border-color: red;    
 }
-dl.error dd {
+#content dl.error dd {
     background-color: #fdc; 
 }
-dl.warning a,
-dl.error a {
+#content dl.warning a,
+#content dl.error a {
     text-decoration: underline;
 }
 
