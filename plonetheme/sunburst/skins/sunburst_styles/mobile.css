@@ -1,11 +1,5 @@
 /* For devices with narrow screens, phones, tablets, etc. */
 
-/*
-Temporarily disabled until we get the issues with ie8.js fixed, see
-http://code.google.com/p/ie7-js/issues/detail?id=197 for more info.
-*/
-
-/*
 #portal-column-one, 
 #portal-column-two,
 #portal-column-content { 
@@ -28,4 +22,4 @@ input {
 #portal-globalnav li a {
 	min-width: 4.9em !important;
 }
-*/
+
