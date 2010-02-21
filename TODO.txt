@@ -1,9 +1,7 @@
 Remaining/known issues:
 
-- Resolve the #content vs #region-content mess
-
-- Add support for the jQuery Tools dialog for login + deletion once both these 
-  PLIPs have been merged.
+- Add support for the jQuery Tools dialog for deletion — both from the actions 
+  menu and from folder_contents
 
 - Unify viewlet positions in plonetheme.classic and this theme, essentially add 
   pulldown support + bottom site actions to the classic theme once we have
@@ -11,10 +9,6 @@ Remaining/known issues:
 
 - Fix formlib forms to insert a div with class="formControls" on its submit
   buttons.
-
-- When going to the Sharing form on the front page, it says "You are adjusting 
-  the sharing privileges for a default view in a container. To adjust them for 
-  the entire container, go here" — but there is no link to "here" :)
 
 - Look in main_template for TODO markers; I'm hoping we can simplify or remove
   some of the more complex TAL expressions, or move them to views. 
@@ -26,10 +20,6 @@ Remaining/known issues:
 
 - Personal bar is missing Profile link, prefs should link directly to the
   preferences, not to the intermediate page.
-
-- The plan is to get rid of most of the unnecessary icons (copy/paste, etc), and 
-  possibly make the standard folder/page icons etc more color-neutral 
-  (black & white is one option).
 
 - The searchField/inputLabel JS should apply the type="search" dynamically using
   Martijn's script for this.
@@ -54,11 +44,3 @@ Need more testing:
   trust Denys on these things, though. :)
 
 - Limited RTL testing/updates done, need more eyes on this.
-
-Known issues that are upstream bugs:
-
-- The theme is using Dean Edwards' "ie8.js" to compensate for deficiencies in 
-  IE6/7 CSS support. Currently, there's a bug in this script that applies the 
-  mobile phone styling on IE6/7, but it's being looked into:
-  http://code.google.com/p/ie7-js/issues/detail?id=197
-
