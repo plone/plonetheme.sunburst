@@ -1,7 +1,17 @@
 Remaining/known issues:
 
+- Look in main_template for TODO markers; I'm hoping we can simplify or remove
+  some of the more complex TAL expressions, or move them to views. 
+  Help appreciated. :)
+
 - Add support for the jQuery Tools dialog for deletion — both from the actions 
   menu and from folder_contents
+
+- Figure out whether we can get rid of the prefs_main_template now; having a
+  special main_template just for the pref panels shouldn't be necessary.
+
+- Move code to views where possible, and move the KSS spinner to a viewlet or
+  something.
 
 - Unify viewlet positions in plonetheme.classic and this theme, essentially add 
   pulldown support + bottom site actions to the classic theme once we have
@@ -9,10 +19,6 @@ Remaining/known issues:
 
 - Fix formlib forms to insert a div with class="formControls" on its submit
   buttons.
-
-- Look in main_template for TODO markers; I'm hoping we can simplify or remove
-  some of the more complex TAL expressions, or move them to views. 
-  Help appreciated. :)
 
 - Theme is not split up in multiple files yet — we'll probably do a simple 
   public/edit interface split to encourage reuse, but not as many files as Plone 
@@ -29,14 +35,9 @@ Remaining/known issues:
 
 - Remove the "Subfolder" tab from Collections, "Contents" does the same thing.
 
-- Figure out whether we can get rid of the prefs_main_template now; having a
-  special main_template just for the pref panels shouldn't be necessary.
-
 - Profile and dashboard pages are not styled yet, need to see if we can make
   these use the standard templates.
 
-- Move code to views where possible, and move the KSS spinner to a viewlet or
-  something.
 
 Need more testing:
 
