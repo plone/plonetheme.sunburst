@@ -51,7 +51,7 @@
 
 /* Status messages */
 
-#region-content dl.portalMessage dt {
+#content dl.portalMessage dt {
     float: right;
     margin: 0 0 0 0.5em;
 }

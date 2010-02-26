@@ -4,6 +4,10 @@ Changelog
 1.0b2 - Unreleased
 ------------------
 
+- Replaced references to redundant #region-content to #content in stylesheets.
+  References http://dev.plone.org/plone/ticket/10231
+  [spliter]
+
 1.0b1 - 2010-02-18
 ------------------
 

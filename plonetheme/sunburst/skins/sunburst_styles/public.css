@@ -173,7 +173,7 @@ q {
 	font-size: 80%;
 }
 
-#region-content input.searchField {
+#content input.searchField {
 	margin-bottom: 1em;
 }
 
@@ -1257,7 +1257,7 @@ label {
     font-weight:bold;
 }
 
-#region-content label {
+#content label {
 }
 
 input[type="checkbox"] + label:hover {
