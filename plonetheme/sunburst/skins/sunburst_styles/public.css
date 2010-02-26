@@ -1607,4 +1607,9 @@ div.overlay div.close span {
 
 div.overlay textarea { width: 100%; }
 
+/* Hide form elements that don't make sense within an overlay. */
+div.overlay .link-parent { display: none; }
+div.overlay #createGroup legend { display: none; }
+div.overlay #createGroup fieldset { border: none; }
+
 /* @end */

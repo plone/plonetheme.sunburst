@@ -4,6 +4,12 @@ Changelog
 1.0b2 - Unreleased
 ------------------
 
+- Hide the "up to groups overview" link and fieldset border in the "add group"
+  overlay. 
+  Closes http://dev.plone.org/plone/ticket/10149
+  Closes http://dev.plone.org/plone/ticket/10150
+  [stuttle]
+
 - Replaced references to redundant #region-content to #content in stylesheets.
   References http://dev.plone.org/plone/ticket/10231
   [spliter]
