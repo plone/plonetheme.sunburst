@@ -13,7 +13,7 @@
     <!-- Viewlets registration -->
     <browser:viewlet
         name="plonetheme.sunburst.personal_bar"
-        manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
         class="plone.app.layout.viewlets.common.PersonalBarViewlet"
         template="templates/personal_bar.pt"
         permission="zope2.View" 
@@ -28,7 +28,6 @@
         layer=".interfaces.IThemeSpecific"
         />
 
-
     <browser:viewlet
         name="plonetheme.sunburst.site_actions"
         manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
@@ -36,5 +35,13 @@
         permission="zope2.View" 
         layer=".interfaces.IThemeSpecific"
         />
+        
+    <browser:viewlet  
+        name="plone.app.i18n.locales.languageselector"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class="plone.app.i18n.locales.browser.selector.LanguageSelector"
+        permission="zope2.View" 
+        layer=".interfaces.IThemeSpecific"
+        />        
 
 </configure>

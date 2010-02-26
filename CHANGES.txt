@@ -4,6 +4,11 @@ Changelog
 1.0b2 - Unreleased
 ------------------
 
+- Moved language selector and personal tools viewlets into plone.portalheader
+  viewlet manager and re-positioned them relatively instead of absolute.
+  Closes http://dev.plone.org/plone/ticket/10252
+  [spliter]
+
 - Hide the "up to groups overview" link and fieldset border in the "add group"
   overlay. 
   Closes http://dev.plone.org/plone/ticket/10149

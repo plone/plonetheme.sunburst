@@ -2,22 +2,30 @@
 <object>
  <hidden manager="plone.portaltop" skinname="Sunburst Theme">
      <viewlet name="plone.personal_bar" />
+     <viewlet name="plone.path_bar" />
+     <viewlet name="plone.app.i18n.locales.languageselector" />     
  </hidden>
  <hidden manager="plone.portalheader" skinname="Sunburst Theme">
    <viewlet name="plone.site_actions" />
  </hidden>
- <hidden manager="plone.portaltop" skinname="Sunburst Theme">
-     <viewlet name="plone.path_bar" />
- </hidden>
 
  <order manager="plone.portaltop" skinname="Sunburst Theme">
      <viewlet name="plone.header" />
-     <viewlet name="plonetheme.sunburst.personal_bar" insert-after="plone.header" />
  </order>
+ <order manager="plone.portalheader" skinname="Sunburst Theme">
+     <viewlet name="plone.skip_links" />
+     <viewlet name="plonetheme.sunburst.personal_bar"/>
+     <viewlet name="plone.app.i18n.locales.languageselector" />     
+     <viewlet name="plone.searchbox" />
+     <viewlet name="plone.logo" />
+     <viewlet name="plone.global_sections" />     
+ </order> 
  <order manager="plone.portalfooter" skinname="Sunburst Theme">
      <viewlet name="plone.footer" />
      <viewlet name="plone.colophon" />
      <viewlet name="plonetheme.sunburst.site_actions" />
- </order>
+ </order> 
 </object>
+
+
 
