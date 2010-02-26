@@ -4,6 +4,10 @@ Changelog
 1.0b2 - Unreleased
 ------------------
 
+- Added some padding to a <fieldset> in order to have better-looking forms.
+  References http://dev.plone.org/plone/ticket/9824
+  [spliter]
+
 - Moved language selector and personal tools viewlets into plone.portalheader
   viewlet manager and re-positioned them relatively instead of absolute.
   Closes http://dev.plone.org/plone/ticket/10252
