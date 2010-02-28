@@ -144,7 +144,7 @@ q {
 	background: #e3e3e3;
 	position: relative;
 	top: 0;
-	right: 1em;
+	right: 1px;
 	z-index: 3; /* portal-header has 2 and we need to be above to be clickable */
 	padding: 0.25em 0.5em;
 	font-size: 80%;
