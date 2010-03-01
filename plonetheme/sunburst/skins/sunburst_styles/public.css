@@ -1184,20 +1184,15 @@ input.searchPage {
 }
 /*note: the tricky thing here is that image-inline|image-left|image-right
 can both be on an image and a wrapper element e.g. a dl tag*/
-img.image-inline,
 img.image-left,
 img.image-right,
 .captioned img {
-    border:1px solid #ddd;
-    -moz-border-radius:4px;
-    -webkit-border-radius:4px;
-    background-color:#fff;
-    padding:2px;
+    border: 1px solid #ddd;
 }
 dd.image-caption {
-    text-align:left;
+    text-align: left;
     padding: 0 0 0 3px; /*image padding+border with*/
-    margin:0;
+    margin: 0;
     color: #666;
     font-size: 85%;
 }
