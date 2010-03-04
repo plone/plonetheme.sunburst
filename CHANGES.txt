@@ -4,6 +4,15 @@ Changelog
 1.0b2 - Unreleased
 ------------------
 
+- Established Sunburst-specific browser view similar to ploneview and moved
+  out the logic of applying special width/position CSS class on
+  #portal-column-content from main_template.pt to that view.
+  Closes http://dev.plone.org/plone/ticket/10292
+  [spliter]
+  
+- Set up testing environment for the package
+  [spliter]
+
 - Added some padding to a <fieldset> in order to have better-looking forms.
   References http://dev.plone.org/plone/ticket/9824
   [spliter]

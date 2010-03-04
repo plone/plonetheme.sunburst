@@ -49,7 +49,8 @@
 <body tal:define="isRTL portal_state/is_rtl;
                   sl python:plone_view.have_portlets('plone.leftcolumn', view);
                   sr python:plone_view.have_portlets('plone.rightcolumn', view);
-                  body_class python:plone_view.bodyClass(template, view);"
+                  body_class python:plone_view.bodyClass(template, view);
+                  sunburst_view python:context.restrictedTraverse('@@sunburstview')"
     tal:attributes="class body_class;
                     dir python:isRTL and 'rtl' or 'ltr'">
 
@@ -64,17 +65,7 @@
         </div>
     <div id="portal-columns" class="row">
 
-        <!-- TODO: Someone, anyone, please write a view method that does this logic in Python and spits out the right class name! ;) -->
-        <div id="portal-column-content"
-            tal:omit-tag="python: not (sl and sr)" class="cell width-1:2 position-1:4">
-        <div id="portal-column-content"
-            tal:omit-tag="python: not (not sl and sr)" class="cell width-3:4 position-0"
-                tal:attributes="class python:isRTL and 'cell width-3:4 position-1:4' or 'cell width-3:4 position-0'">
-        <div id="portal-column-content"
-            tal:omit-tag="python: not (sl and not sr)" class="cell width-3:4 position-1:4"
-                tal:attributes="class python:isRTL and 'cell width-3:4 position-0' or 'cell width-3:4 position-1:4'">
-        <div id="portal-column-content"
-            tal:omit-tag="python: not (not sl and not sr)" class="cell width-full position-0">
+        <div id="portal-column-content" class="cell" tal:attributes="class sunburst_view/getColumnsClass">
 
             <div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" />
             
@@ -142,7 +133,7 @@
             </metal:block>
         
             <div id="viewlet-below-content" tal:content="structure provider:plone.belowcontent" />
-        </div></div></div></div>
+        </div>
 
         <div id="portal-column-one" 
             class="cell width-1:4 position-0"

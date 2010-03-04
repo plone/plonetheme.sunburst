@@ -42,6 +42,15 @@
         class="plone.app.i18n.locales.browser.selector.LanguageSelector"
         permission="zope2.View" 
         layer=".interfaces.IThemeSpecific"
-        />        
+        />
+        
+    <!-- Sunburst special view -->
+    <browser:page
+        for="*"
+        name="sunburstview"
+        class=".sunburstview.SunburstView"
+        permission="zope.Public"
+        allowed_interface=".interfaces.ISunburstView"
+        />                
 
 </configure>

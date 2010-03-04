@@ -2,6 +2,8 @@ from setuptools import setup, find_packages
 
 version = '1.0b2'
 
+tests_require = ['collective.testcaselayer']
+
 setup(name='plonetheme.sunburst',
       version=version,
       description="New theme for Plone 4.0",
@@ -23,6 +25,8 @@ setup(name='plonetheme.sunburst',
       install_requires=[
           'setuptools',
       ],
+      tests_require=tests_require,
+      extras_require={'tests': tests_require},      
       entry_points="""
       # -*- Entry points: -*-
       [z3c.autoinclude.plugin]
