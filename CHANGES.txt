@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0b2 - Unreleased
+1.0b2 - 2010-03-05
 ------------------
 
 - Established Sunburst-specific browser view similar to ploneview and moved
@@ -9,9 +9,16 @@ Changelog
   #portal-column-content from main_template.pt to that view.
   Closes http://dev.plone.org/plone/ticket/10292
   [spliter]
-  
+
 - Set up testing environment for the package
   [spliter]
+
+- Inline images should not have borders (makes it hard to insert graphics that
+  are part of a sentence, or similar), and we don't have any other round
+  elements in the basic design (the edit bar is special, and is round to
+  differentiate itself from the "stable elements"), so removed the rounded
+  corners for image frames.
+  [limi]
 
 - Added some padding to a <fieldset> in order to have better-looking forms.
   References http://dev.plone.org/plone/ticket/9824
@@ -31,6 +38,15 @@ Changelog
 - Replaced references to redundant #region-content to #content in stylesheets.
   References http://dev.plone.org/plone/ticket/10231
   [spliter]
+
+- Adding back IE8.js to fix Sunburst for IE6/7, re-enabling mobile device
+  support.
+  [limi]
+
+- Adding IE8.js v2.1 beta, this should resolve the issues with @media selectors,
+  and let us re-enable the mobile support again. Thanks to Dean Edwards for
+  fixing this.
+  [limi]
 
 1.0b1 - 2010-02-18
 ------------------
