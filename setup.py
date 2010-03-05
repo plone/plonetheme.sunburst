@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = '1.0b2'
+version = '1.0b3'
 
 tests_require = ['collective.testcaselayer']
 
@@ -26,7 +26,7 @@ setup(name='plonetheme.sunburst',
           'setuptools',
       ],
       tests_require=tests_require,
-      extras_require={'tests': tests_require},      
+      extras_require={'tests': tests_require},
       entry_points="""
       # -*- Entry points: -*-
       [z3c.autoinclude.plugin]
