@@ -4,6 +4,9 @@ Changelog
 1.0b3 - unreleased
 ------------------
 
+- Fixed help_biography message.
+  [vincentfretin]
+
 
 1.0b2 - 2010-03-05
 ------------------
