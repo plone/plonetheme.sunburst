@@ -1233,7 +1233,7 @@ fieldset,
 }
 
 div.formControls {
-	margin: 1em;
+	margin: 1em 0;
 }
 input[type="text"]:focus,
 input[type="password"]:focus,
