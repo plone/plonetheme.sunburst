@@ -609,17 +609,24 @@ table.listing tbody tr td {
 }
 table.listing tbody tr.odd td { 
 	background: #eee;
-	border: 0.1em solid #fff;
 }
 table.listing a { 
 	border: none;
 }
 
 table.listing td.draggable {
-	cursor: move;	
-	/*cursor: ns-resize;*/
+	text-shadow: White 1px 1px 1px;
+	background: #ddd !important;
+	border-bottom: 1px solid white;
+	padding: 0.4em 0.4em 0 0.5em;
+}
+.dragindicator {
+	outline: 2px solid #FFD700;
 }
 
+#foldercontents-order-column {
+	padding: 0;
+}
 
 div.listingBar {
 	font-size: 80%;	
