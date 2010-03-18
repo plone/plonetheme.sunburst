@@ -659,10 +659,11 @@ div.listingBar a:hover {
 /* @group Status messages */
 
 dl.portalMessage {
-    margin: 1em 0;
+	margin: 1em 0;
 	font-size: 80%;
 	border: 1px solid #996;
-	background-color: #ffffe3; 
+	background-color: #ffffe3;
+	clear:both;
 }
 dl.portalMessage a {
     color: black;
