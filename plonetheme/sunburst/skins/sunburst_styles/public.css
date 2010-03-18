@@ -610,7 +610,6 @@ table.listing tbody tr td {
 table.listing tbody tr.odd td { 
 	background: #eee;
 	border: 0.1em solid #fff;
-	border-style: none solid none none;	
 }
 table.listing a { 
 	border: none;
