@@ -1538,6 +1538,11 @@ dl.toc dd ol {
     width: 1px;
 }
 
+#content .visualNoMarker {
+	list-style:none;
+	margin-left: 0;
+}
+
 .visualClear {
 	clear: both;
 }
