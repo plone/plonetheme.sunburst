@@ -1344,6 +1344,10 @@ div.error {
 .error .fieldRequired {
     color: #d00;
 }
+div.error.warning {
+	background-color: transparent;
+}
+
 input.inputLabelActive {
     color: #76797c;
 }
@@ -1626,5 +1630,69 @@ div.overlay textarea { width: 100%; }
 div.overlay .link-parent { display: none; }
 div.overlay #createGroup legend { display: none; }
 div.overlay #createGroup fieldset { border: none; }
+
+/* @end */
+
+/* @group Content History */
+
+#content-history #history dd {
+	margin-top: 0.8em;
+}
+
+#content-history div.historyRecord {
+	font-size: 90%;
+	margin-bottom: 10px;
+}
+
+
+#content-history div.historyTools ul {
+	float: right;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin-top: 0;
+}
+
+#content-history div.historyTools ul li {
+	display: inline;
+}
+
+#content-history div.historyTools ul li a{
+	border-bottom: none;
+}
+
+
+#content-history .historyAction {
+	color: &dtml-contentViewFontColor;;
+}
+
+#content-history .historyByLine {
+	margin-bottom: 1em;
+}
+#content-history div.historyComment {
+	background-color: &dtml-globalBackgroundColor;;
+	padding: 0.25em 1em;
+}
+
+#content-history div.historyComment p {
+	color: &dtml-fontColor;;
+	margin: 0;
+	padding-top: 1px;	
+}
+
+#content-history a.historyComparePrevious {
+	border-bottom: medium none;
+	border-top: 1px dotted &dtml-globalBorderColor;;
+	display: block;
+	margin-bottom: -15px;
+	margin-top: 11px;
+}
+
+#content-history dl div.historyRecord a.historyComparePrevious span {
+	background-color: white;
+	left: 50%;
+	position: relative;
+	top: -1em;
+}
 
 /* @end */
