@@ -4,6 +4,10 @@ Changelog
 1.0b3 - unreleased
 ------------------
 
+- Repositioned the searchbox for RTL scripts.
+  Fixes http://dev.plone.org/plone/ticket/10367.
+  [emanlove]
+
 - Stop hiding the (now) non-existing sendto action.
   Refs http://dev.plone.org/plone/ticket/8800.
   [dukebody]

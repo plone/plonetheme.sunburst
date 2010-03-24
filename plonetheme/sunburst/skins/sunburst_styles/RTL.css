@@ -27,7 +27,7 @@
 }
 
 #portal-personaltools {
-    position: absolute;
+    float: left;
     right: auto;
     left: 0;
 }
