@@ -15,7 +15,6 @@
 
     <metal:override fill-slot="content">
         <metal:slot define-slot="prefs_configlet_wrapper">
-          <div class="cell position-1:4 width-3:4">
           <metal:slot define-slot="prefs_configlet_content">
           
             <metal:block metal:use-macro="context/main_template/macros/content">
@@ -27,7 +26,6 @@
             </metal:block>
       
           </metal:slot>
-          </div>      
         </metal:slot>
     </metal:override>
 

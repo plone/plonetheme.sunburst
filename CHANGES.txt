@@ -4,6 +4,9 @@ Changelog
 1.0b3 - unreleased
 ------------------
 
+- Fix columns in prefs_main_template.
+  [davisagli]
+
 - Pass the current view to getColumnsClass.  This is needed if the view is not
   the @@plone view and it has different portlets (such as on the portlet
   management views).  This closes http://dev.plone.org/plone/ticket/10320.
