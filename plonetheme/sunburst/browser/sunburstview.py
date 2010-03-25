@@ -1,19 +1,9 @@
-from plone.app.content.browser.folderfactories import _allowedTypes
-from plone.memoize.view import memoize
 from zope.interface import implements
 from zope.component import getMultiAdapter
 
 from Acquisition import aq_inner
-from Products.CMFCore.permissions import AddPortalContent
-from Products.CMFCore.permissions import DeleteObjects
-from Products.CMFCore.permissions import ListFolderContents
-from Products.CMFCore.permissions import ModifyPortalContent
-from Products.CMFCore.permissions import ReviewPortalContent
-from Products.CMFCore.utils import _checkPermission
-from Products.CMFCore.utils import getToolByName
 from Products.Five import BrowserView
 
-from Products.CMFPlone import utils
 from plonetheme.sunburst.browser.interfaces import ISunburstView
 
 _marker = []
@@ -45,11 +35,11 @@ class SunburstView(BrowserView):
             # We have right column and we are in RTL language
             return "cell width-3:4 position-1:4"
         elif (sr and not sl) and (not portal_state.is_rtl()):
-            # We have right column and we are NOT in RTL language            
+            # We have right column and we are NOT in RTL language
             return "cell width-3:4 position-0"
         elif (sl and not sr) and (portal_state.is_rtl()):
-            # We have left column and we are in RTL language                        
+            # We have left column and we are in RTL language
             return "cell width-3:4 position-0"
         elif (sl and not sr) and (not portal_state.is_rtl()):
-            # We have left column and we are in NOT RTL language                                    
+            # We have left column and we are in NOT RTL language
             return "cell width-3:4 position-1:4"
