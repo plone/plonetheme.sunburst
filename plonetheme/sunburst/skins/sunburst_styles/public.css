@@ -412,13 +412,16 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 
 
 #content p,
-#content ul,
-#content ol,
 #content table,
 #content dl,
 dl.portlet p,
 dl.portlet {
 	margin-bottom: 1em;
+}
+
+#content ul,
+#content ol {
+	
 }
 
 #content a:link,
@@ -1403,17 +1406,17 @@ margin-left: 0.25em;
 dl.toc {
 	float: right;
     width: 35%;
-	font-size: 70%;
-    margin: 0 0 0.5em 1.5em;
-	border-left: 0.1em solid #666;
+	font-size: 100%;
+    margin: 1em 0 0.5em 1.5em;
 }
 dl.toc dt {
-	margin-left: 3em;
+	margin-left: 1em;
 	font-weight: normal;
 	text-transform: uppercase;
 }
 dl.toc dd {
 	margin-bottom: 0;
+	padding-left: 2em;
 }
 dl.toc dd ol {
 	margin-left: 1.5em;
