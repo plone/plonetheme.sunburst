@@ -4,6 +4,9 @@ Changelog
 1.0b3 - unreleased
 ------------------
 
+- Improved call-out and pull-quote styling.
+  [limi]
+
 - Improved general overlay styling.
   [limi]
 

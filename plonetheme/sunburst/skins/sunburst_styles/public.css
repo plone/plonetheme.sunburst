@@ -522,21 +522,21 @@ dl.portlet li {
 }
 
 #content .pullquote {
-    padding: 0 1em 0 1em;
-    margin: 0 0 1em 1em;
+    margin: 0 1em 0.5em 0.5em;
     font-weight: bold;
+    line-height: 1.25em;
     float: right;
     width: 35%;
     clear: right;
-    border-left: 0.1em solid #888;
-	color: #888;
+	color: #444;
+	font-size: 1.6em;
+	letter-spacing: -0.08em !important;
 }
 #content .callout {
-    color: #666;
+    background: #eee;
     padding: 1em;
-	border: 0.1em solid #666;
-	border-style: solid none;
-	clear:  both;
+	border-left: 1em solid #ccc;
+	clear: both;
 }
 
 
