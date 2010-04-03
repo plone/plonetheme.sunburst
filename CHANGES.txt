@@ -4,6 +4,10 @@ Changelog
 1.0b3 - unreleased
 ------------------
 
+- Updated styling for breadcrumbs, tags/keywords, and added styles for the
+  currently selected nav tree item.
+  [limi]
+
 - Adjusted viewlets so that Sunburst uses the viewlet configuration from
   plone.app.layout.viewlets.
   [davisagli]

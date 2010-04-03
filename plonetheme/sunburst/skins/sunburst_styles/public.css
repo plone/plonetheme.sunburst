@@ -238,8 +238,8 @@ q {
 	display: none;
 }
 #portal-breadcrumbs {
-	margin-bottom: -0.75em;
-	font-size: 90%;
+	font-size: 80%;
+	margin: 0.25em 0;
 }
 #portal-breadcrumbs a {
 	border-bottom: none;
@@ -382,7 +382,10 @@ dl.portlet ul.navTreeLevel1 .navTreeItem {
 }
 
 dl.portlet ul.navTree .navTreeCurrentItem {
-
+	background: #ddd;
+	border-left: 1em solid #ddd;
+	margin-left: -1em;
+	margin-right: -1em;
 }
 
 /* @end */
@@ -443,7 +446,14 @@ dl.portlet a:hover {
 	background-color: #ffb;
 }
 
-#content a.link-category {
+#category {
+	font-size: 75%;
+	margin-bottom: 1em;
+	color: #444;
+	text-align: right;
+}
+
+#category a.link-category {
 	color: black;
 	padding: 0.25em 0.5em;
 	background: #ddd;
@@ -451,10 +461,13 @@ dl.portlet a:hover {
 	-webkit-border-radius: 0.5em;
 	-moz-border-radius: 0.5em;
 }
-#content a.link-category:hover {
+#category a.link-category:hover {
 	background: #205c90;
 	color: White;
 	border-color: #205c90;
+}
+#category .separator {
+	display: none;
 }
 
 #content img {
