@@ -4,6 +4,9 @@ Changelog
 1.0b3 - unreleased
 ------------------
 
+- Improved history pop-up styling.
+  [limi]
+
 - Fix columns in prefs_main_template.
   [davisagli]
 
