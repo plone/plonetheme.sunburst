@@ -4,6 +4,10 @@ Changelog
 1.0b3 - unreleased
 ------------------
 
+- Adjusted viewlets so that Sunburst uses the viewlet configuration from
+  plone.app.layout.viewlets.
+  [davisagli]
+
 - Improved call-out and pull-quote styling.
   [limi]
 

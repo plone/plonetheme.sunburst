@@ -34,14 +34,12 @@ dl.actionMenu a {
 
 /* If you want the full path bar to show (aka. breadcrumbs), uncomment the below: */
 
-/* 
 #breadcrumbs-you-are-here,
 #breadcrumbs-home,
 #breadcrumbs-current,
 #breadcrumbs-1 {
 	display: inherit;
 }
-*/
 
 /* If you want variables in the CSS (for example for colors that are used     *
  * in several locations), Plone has a built-in facility for this. An example  *

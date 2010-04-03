@@ -13,10 +13,6 @@ Remaining/known issues:
 - Move code to views where possible, and move the KSS spinner to a viewlet or
   something.
 
-- Unify viewlet positions in plonetheme.classic and this theme, essentially add 
-  pulldown support + bottom site actions to the classic theme once we have
-  merged.
-
 - Fix formlib forms to insert a div with class="formControls" on its submit
   buttons.
 
