@@ -1442,8 +1442,7 @@ dl.toc dd ol {
 #portal-footer {
 	font-size: 75%;
 	background: #ddd;
-	padding: 1em 0; 
-	text-align: center;
+	padding: 1em; 
 	margin: 1em 0;
 }
 
