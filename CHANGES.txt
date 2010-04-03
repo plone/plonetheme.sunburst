@@ -4,6 +4,9 @@ Changelog
 1.0b3 - unreleased
 ------------------
 
+- Improved general overlay styling.
+  [limi]
+
 - Improved history pop-up styling.
   [limi]
 

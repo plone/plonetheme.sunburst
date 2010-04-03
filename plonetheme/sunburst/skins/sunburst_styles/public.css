@@ -1563,7 +1563,7 @@ body.smallText { font-size: 85%; }
 
 /* @end */
 
-/* @group overlays */
+/* @group Overlay windows */
 
 /* styling for overlays (popups) */
 
@@ -1593,8 +1593,8 @@ div.overlay-iframe {
     div.overlay div.close {
     background-image: url(pb_close.png);
     position: absolute;
-    left: -15px;
-    top: -15px;
+    right: -14px;
+    top: -14px;
     cursor: pointer;
     height: 30px;
     width: 30px;
@@ -1602,12 +1602,8 @@ div.overlay-iframe {
 
 .pb-ajax, .pb-image {
     white-space: normal;
-    border:0.5em solid #205C90;
-
-    -moz-border-radius:0.35em;
-    -webkit-border-radius:0.35em;
-    -moz-box-shadow:0 0 1em #888;
-    -webkit-box-shadow:0 0 1em #888;
+    -moz-box-shadow:0 0 3em 0.5em #666;
+    -webkit-box-shadow:0 0 3em #666;
 }
 
 .pb-ajax > * {
