@@ -3,6 +3,9 @@ Changelog
 
 1.0b3 - unreleased
 ------------------
+- Less disruptive styling for inline validation, it no longer shifts the form
+  around in a significant way.
+  [limi]
 
 - Remove unused personalize_form template and unneeded copies of the author
   template and prefs_main_template.
