@@ -1367,9 +1367,12 @@ div.error {
 div.error.warning {
 	background-color: transparent;
 	border: none;
-	outline: 2px solid red;
 	margin-top: 0;
 	padding: 0;
+}
+
+div.error.warning input {
+	border: 2px solid red;
 }
 
 input.inputLabelActive {
