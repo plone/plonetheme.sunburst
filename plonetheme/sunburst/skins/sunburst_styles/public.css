@@ -943,6 +943,10 @@ dl.actionMenu.activated dd div {
 
 /* @group Control panel */
 
+#setup-link {
+	font-size: 90%;
+}
+
 #content ul.configlets {
     margin: 1em 0;
     list-style-image: none;
