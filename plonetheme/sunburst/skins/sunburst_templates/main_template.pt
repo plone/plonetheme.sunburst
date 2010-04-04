@@ -127,7 +127,7 @@
 
                     <metal:sub define-slot="sub" tal:content="nothing">
                        This slot is here for backwards compatibility only. 
-                       Don't copy it in custom templates.
+                       Don't use it in your custom templates.
                     </metal:sub>
                 </div>
             </metal:block>
@@ -156,21 +156,12 @@
         </div>
     </div>
 
-<div class="visualClear"></div> <!-- TODO: Temporary workaround -->
 
     <metal:block i18n:domain="plone">
-<div class="row"> <!-- TODO: Also temporary, should be in the proper template -->
-    <div class="cell width-full position-0">
         <div tal:replace="structure provider:plone.portalfooter" />
-    </div>
-</div>
     </metal:block>
 
 </div>
-
-<!-- TODO: This needs to go away. -->
-<!-- <div id="kss-spinner"><img tal:attributes="src string:${portal_url}/spinner.png" alt="" /></div> -->
-
 </body>
 </html>
 
