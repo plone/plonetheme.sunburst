@@ -7,12 +7,6 @@ Remaining/known issues:
 - Add support for the jQuery Tools dialog for deletion — both from the actions 
   menu and from folder_contents
 
-- Figure out whether we can get rid of the prefs_main_template now; having a
-  special main_template just for the pref panels shouldn't be necessary.
-
-- Move code to views where possible, and move the KSS spinner to a viewlet or
-  something.
-
 - Fix formlib forms to insert a div with class="formControls" on its submit
   buttons.
 
@@ -20,14 +14,12 @@ Remaining/known issues:
   public/edit interface split to encourage reuse, but not as many files as Plone 
   3.
 
-- Personal bar is missing Profile link, prefs should link directly to the
-  preferences, not to the intermediate page.
+- Personal bar is missing My Profile link, prefs should link directly to the
+  preferences, not to the intermediate page - and probably be named 
+  My Preferences.
 
 - The searchField/inputLabel JS should apply the type="search" dynamically using
   Martijn's script for this.
-
-- The sortableTable script should insert the utf-8 characters for up/down
-  instead of using images.
 
 - Remove the "Subfolder" tab from Collections, "Contents" does the same thing.
 
