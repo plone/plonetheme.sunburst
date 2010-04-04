@@ -681,7 +681,8 @@ dl.portalMessage {
 	background-color: #ffffe3;
 	clear:both;
 }
-dl.portalMessage a {
+dl.portalMessage a,
+#content dl.portalMessage a {
     color: black;
 	border-color: black;
 }
@@ -722,10 +723,6 @@ dl.error {
 }
 dl.error dd {
     background-color: #fdc; 
-}
-dl.warning a,
-dl.error a {
-    text-decoration: underline;
 }
 
 /* Additional specificity for when status is shown inside #content */
