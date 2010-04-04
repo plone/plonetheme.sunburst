@@ -297,11 +297,17 @@ div.portletAssignments {
 	line-height: 2em;
 }
 
+div.portletAssignments a {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
 div.portletAssignments .managedPortletActions {
 	float: right;
 }
 div.portletAssignments .managedPortletActions a {
 	margin: 0 0.25em;
+	border: none;
 }
 
 dl.portlet dt a:link,
@@ -1728,3 +1734,4 @@ div.overlay #createGroup fieldset { border: none; }
 }
 
 /* @end */
+
