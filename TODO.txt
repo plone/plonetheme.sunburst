@@ -23,8 +23,7 @@ Remaining/known issues:
 
 - Remove the "Subfolder" tab from Collections, "Contents" does the same thing.
 
-- Profile and dashboard pages are not styled yet, need to see if we can make
-  these use the standard templates.
+- Dashboard page needs some improvements and updates.
 
 
 Need more testing:
