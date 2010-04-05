@@ -55,6 +55,5 @@ div.overlay {
 }
 div.overlay-iframe,
 div.overlay-ajax {
-	top: 6em !important; 
+	width: 90%;
 }
-
