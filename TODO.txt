@@ -4,6 +4,9 @@ Remaining/known issues:
   some of the more complex TAL expressions, or move them to views. 
   Help appreciated. :)
 
+- Pulldown menus should be display: none by default, then add a display
+  property once they are clicked, so you don't get the "menu flashing" on load
+
 - Add support for the jQuery Tools dialog for deletion — both from the actions 
   menu and from folder_contents
 

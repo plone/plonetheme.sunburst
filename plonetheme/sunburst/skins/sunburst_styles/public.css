@@ -1608,6 +1608,8 @@ div.overlay-ajax {
     width: 60%;
     min-height: 100px;
     z-index: 99; /* overlays should be above everything */
+	/* Change the defaults */
+	top: 10em !important; 
 }
 
 div.overlay-iframe {
