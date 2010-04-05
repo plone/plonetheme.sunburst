@@ -48,7 +48,10 @@
 input {
 	font-size: 140% !important;
 }
-
+div.managePortletsLink,
+a.managePortletsFallback {
+	font-size: 140%;
+}
 div.overlay {
 	font-size: 120%;
 }
