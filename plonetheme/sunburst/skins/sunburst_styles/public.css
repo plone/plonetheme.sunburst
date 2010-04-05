@@ -690,7 +690,7 @@ dl.portalMessage {
 dl.portalMessage a,
 #content dl.portalMessage a {
     color: black;
-	border-color: black;
+	border-bottom: 1px solid black;
 }
 dl.portalMessage dt {
     background-color: #996; 
