@@ -1,5 +1,3 @@
-@media handheld, screen and (max-device-width: 480px) {
-
 /* For devices with narrow screens, phones, tablets, etc. */
 	
 #portal-column-one, 
@@ -60,4 +58,3 @@ div.overlay-ajax {
 	top: 6em !important; 
 }
 
-}
