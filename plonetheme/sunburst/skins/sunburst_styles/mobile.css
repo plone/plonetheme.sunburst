@@ -29,21 +29,28 @@
 #portal-searchbox input {
 	font-size: 100% !important;
 }
-#content-views a, #content li.formTab a {
+#content-views a {
 	font-size: 150%;
 	line-height: 2em !important;
+	padding: 0.5em;
+}
+#content li.formTab a {
+	font-size: 140%;
+	line-height: 2em !important;
+	padding: 0.25em;
 }
 #edit-bar {
-	min-height: 3em;
+	min-height: 5em;
 }
-#contentActionMenus {
+
+#contentActionMenus a {
 	width: 100%;
 	line-height: 2em !important;
-}
-#contentActionMenus li a {
 	font-size: 150%;
 }
-input {
+
+
+input, textarea {
 	font-size: 140% !important;
 }
 div.managePortletsLink,
