@@ -885,7 +885,7 @@ dl.error dd {
 }
 #contentActionMenus dl.actionMenu.activated dd a:hover,
 #contentActionMenus dl.actionMenu.activated dd .actionMenuSelected {
-	background: White;
+	background-color: White !important;
 	color: #666;
 }
 #contentActionMenus dl.actionMenu a,
@@ -1735,3 +1735,48 @@ div.overlay #createGroup fieldset { border: none; }
 
 /* @end */
 
+/* @group Content types */
+
+
+/* Content type icons using sprites, uncomment these and clear 
+   out the icon expressions in portal_types to test
+
+.contenttype-document {
+	background: no-repeat transparent 3px 4px url(contenttypes-sprite.png);
+	padding-left: 23px !important;
+}
+.contenttype-event {
+	background: no-repeat transparent 3px -62px url(contenttypes-sprite.png);
+	padding-left: 23px !important;
+}
+.contenttype-file {
+	background: no-repeat transparent 3px -128px url(contenttypes-sprite.png);
+	padding-left: 23px !important;
+}
+.contenttype-folder {
+	background: no-repeat transparent 3px -194px url(contenttypes-sprite.png);
+	padding-left: 23px !important;
+}
+.contenttype-image {
+	background: no-repeat transparent 3px -260px url(contenttypes-sprite.png);
+	padding-left: 23px !important;
+}
+.contenttype-link {
+	background: no-repeat transparent 3px -326px url(contenttypes-sprite.png);
+	padding-left: 23px !important;
+}
+.contenttype-news-item {
+	background: no-repeat transparent 3px -392px url(contenttypes-sprite.png);
+	padding-left: 23px !important;
+}
+.contenttype-topic {
+	background: no-repeat transparent 3px -458px url(contenttypes-sprite.png);
+	padding-left: 23px !important;
+}
+
+*/
+
+
+
+
+/* @end */
