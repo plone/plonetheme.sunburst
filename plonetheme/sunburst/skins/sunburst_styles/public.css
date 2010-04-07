@@ -274,6 +274,9 @@ a.link-anchor {
 	color: Black !important;
 	cursor: default !important;
 }
+#content a.link-overlay {
+	border-bottom: 1px dotted #205c90 !important;
+}
 
 /* @end */
 
