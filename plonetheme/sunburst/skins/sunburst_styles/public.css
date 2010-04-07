@@ -1,5 +1,6 @@
 /* @override 
 	http://localhost:8080/4/portal_css/Sunburst%20Theme/public.css
+	http://localhost:8080/sprites/portal_css/Sunburst%20Theme/public.css
 */
 
 /* @group CSS Reset */
@@ -600,6 +601,7 @@ table.listing td,
 table.listing th {
 	padding: 0.5em 1em;
 	vertical-align: top;
+	line-height: 2em;
 }
 
 table.listing td.listingCheckbox, 
@@ -633,7 +635,9 @@ table.listing tbody tr.odd td {
 	background: #eee;
 }
 table.listing a { 
+	line-height: 2em;
 	border: none;
+	display: inline-block;
 }
 
 table.listing td.draggable {
@@ -1737,11 +1741,7 @@ div.overlay #createGroup fieldset { border: none; }
 
 /* @end */
 
-/* @group Content types */
-
-
-/* Content type icons using sprites, uncomment these and clear 
-   out the icon expressions in portal_types to test
+/* @group Core content type sprites */
 
 .contenttype-document {
 	background: no-repeat transparent 3px 4px url(contenttypes-sprite.png);
@@ -1775,10 +1775,5 @@ div.overlay #createGroup fieldset { border: none; }
 	background: no-repeat transparent 3px -458px url(contenttypes-sprite.png);
 	padding-left: 23px !important;
 }
-
-*/
-
-
-
 
 /* @end */
