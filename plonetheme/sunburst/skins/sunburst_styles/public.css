@@ -389,7 +389,7 @@ dl.portlet ul.navTreeLevel1 .navTreeItem {
 }
 
 dl.portlet ul.navTree .navTreeCurrentItem {
-	background: #ddd;
+	background-color: #ddd;
 	border-left: 1em solid #ddd;
 	margin-left: -1em;
 	margin-right: -1em;
@@ -1771,8 +1771,12 @@ div.overlay #createGroup fieldset { border: none; }
 	background: no-repeat transparent 3px -392px url(contenttypes-sprite.png);
 	padding-left: 23px !important;
 }
+.contenttype-plone-site {	
+	background: no-repeat transparent 3px -456px url(contenttypes-sprite.png);
+	padding-left: 23px !important;
+}
 .contenttype-topic {
-	background: no-repeat transparent 3px -458px url(contenttypes-sprite.png);
+	background: no-repeat transparent 3px -524px url(contenttypes-sprite.png);
 	padding-left: 23px !important;
 }
 
