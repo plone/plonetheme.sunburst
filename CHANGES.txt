@@ -1,8 +1,9 @@
 Changelog
 =========
 
-1.0b3 - unreleased
+1.0b3 - 2010-04-10
 ------------------
+
 - Improved mobile styling.
   [limi]
 
@@ -49,7 +50,6 @@ Changelog
 
 - Fixed help_biography message.
   [vincentfretin]
-
 
 1.0b2 - 2010-03-05
 ------------------
@@ -101,12 +101,13 @@ Changelog
 1.0b1 - 2010-02-18
 ------------------
 
-- Added example CSS to ploneCustom.css on how to enable the first levels of breadcrumbs.
-  This fixes http://dev.plone.org/plone/ticket/9987
+- Added example CSS to ploneCustom.css on how to enable the first levels of
+  breadcrumbs. This fixes http://dev.plone.org/plone/ticket/9987
   [limi]
 
-- Removed #region-content and .documentContent from all templates, as they are redundant.
-  See http://dev.plone.org/plone/ticket/10231 for details.
+- Removed #region-content and .documentContent from all templates, as they are
+  redundant. See http://dev.plone.org/plone/ticket/10231 for details.
+  [limi]
 
 - Updated prefs_main_template.pt and personalize_form.pt to the recent markup
   conventions.
@@ -288,7 +289,6 @@ Changelog
 
 - Remove non-ascii character in README that prevented distribution.
   [esteele]
-
 
 1.0a1 - 2009-11-18
 ------------------
