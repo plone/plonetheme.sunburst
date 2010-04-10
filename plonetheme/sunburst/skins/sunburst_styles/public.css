@@ -1666,6 +1666,31 @@ div.overlay .link-parent { display: none; }
 div.overlay #createGroup legend { display: none; }
 div.overlay #createGroup fieldset { border: none; }
 
+/* lets play nice with paragraphs, links, tabbed pages in overlay e.g. when plone.openid is installed */
+div.overlay p {
+    margin-bottom: 1em;
+}
+div.overlay label {
+    margin-bottom: 0.25em;
+}
+div.overlay a:hover {
+    color: #75ad0a;
+}
+div.overlay a.selected {
+    color: #000000;
+}
+div.overlay .formTab {
+    margin-right:1em;
+    font-weight: bold;
+}
+div.overlay .formTab.lastFormTab {
+    margin-right:0em;
+}
+div.overlay .formControls a { 
+    display: block;
+    margin: 0.75em;
+}
+
 /* @end */
 
 /* @group Content History */

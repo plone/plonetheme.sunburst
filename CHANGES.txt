@@ -4,6 +4,10 @@ Changelog
 1.0b4 - unreleased
 ------------------
 
+- Improved overlay styling e.g. for openid overlay.
+  Done when stepping trough #10035 and it's tried to make as general as possible.
+  [pelle]
+
 
 1.0b3 - 2010-04-10
 ------------------
