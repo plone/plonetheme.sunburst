@@ -4,6 +4,11 @@ Changelog
 1.0b4 - unreleased
 ------------------
 
+- Be carefull with adding ie hacks to IEFixes.css since Sunburst Theme 
+  uses IE8.js.
+  Fixes http://dev.plone.org/plone/ticket/10417.
+  [pelle]
+
 - Improved overlay styling e.g. for openid overlay.
   Done when stepping trough #10035 and it's tried to make as general as possible.
   [pelle]
