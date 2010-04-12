@@ -4,6 +4,9 @@ Changelog
 1.0b4 - unreleased
 ------------------
 
+- Improved style of blocked portlets.
+  [igbun]
+
 - Be carefull with adding ie hacks to IEFixes.css since Sunburst Theme 
   uses IE8.js.
   Fixes http://dev.plone.org/plone/ticket/10417.

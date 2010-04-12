@@ -3,7 +3,9 @@
 }
 
 .blockedPortlet .portletHeader {
-    background: #eee !important;
+    border: 1px dashed #ddd;
+    margin: -1px;
+    background: none !important;
 }
 
 .blockedPortlet .portletHeader a {
@@ -11,7 +13,7 @@
 }
 
 .blockedPortlet .portletBlockedMessage {
-    color: #eee;
+    color: white;
     display: inline;
 }
 
