@@ -89,3 +89,10 @@
 .ploneCalendar .todaynoevent {
     border: 2px solid #205C90;
 }
+
+.portletItemDetails { 
+	font-size: 85%;
+    line-height: 2em;
+    margin-left: 1em;
+    display: block;
+} 
