@@ -32,14 +32,14 @@ dl.actionMenu a {
 }
 */
 
-/* If you want to hide the path bar (aka. breadcrumbs), uncomment the below: */
+/* If you want the full path bar to show (aka. breadcrumbs), uncomment the below: */ 
 
 /*
 #breadcrumbs-you-are-here,
 #breadcrumbs-home,
 #breadcrumbs-current,
 #breadcrumbs-1 {
-	display: none;
+        display: inline; 
 }
 */
 
