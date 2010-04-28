@@ -232,11 +232,11 @@ q {
 
 /* @group Path indicator (breadcrumbs) */
 
-#breadcrumbs-you-are-here {}
+#breadcrumbs-you-are-here,
 #breadcrumbs-home,
 #breadcrumbs-current,
 #breadcrumbs-1 {
-    display: inline;
+	display: none;
 }
 #portal-breadcrumbs {
 	font-size: 80%;
