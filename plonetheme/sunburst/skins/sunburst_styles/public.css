@@ -1600,9 +1600,9 @@ div.overlay {
     width: auto;
     height: auto;
     /* initially overlay is hidden */
-    display:none;
+    display: none;
     /* some padding to layout nested elements nicely  */
-    margin:1em;
+    margin: 1em;
 	font-size: 80%;
 }
 
@@ -1631,9 +1631,9 @@ div.overlay-iframe {
 
 .pb-ajax, .pb-image {
     white-space: normal;
-    box-shadow:0 0 3em 0.5em #666;
-    -moz-box-shadow:0 0 3em 0.5em #666;
-    -webkit-box-shadow:0 0 3em #666;
+    box-shadow: 0 0 3em 0.5em #666;
+    -moz-box-shadow: 0 0 3em 0.5em #666;
+    -webkit-box-shadow: 0 0 3em #666;
 }
 
 .pb-ajax > * {
@@ -1645,12 +1645,12 @@ div.overlay-iframe {
 .pb-ajax .documentActions {display:none}
 
 div.overlay div.close span {
-    display:block;
-    height:1px;
-    margin:-1px 0 0 -1px;
-    overflow:hidden;
-    padding:0;
-    width:1px;
+    display: block;
+    height: 1px;
+    margin: -1px 0 0 -1px;
+    overflow: hidden;
+    padding: 0;
+    width: 1px;
 }
 
 div.overlay textarea { width: 100%; }
