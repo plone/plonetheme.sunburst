@@ -12,7 +12,8 @@
         dummy python: plone_view.mark_view(view);
         portal_url portal_state/portal_url;
         checkPermission nocall: context/portal_membership/checkPermission;
-        site_properties context/portal_properties/site_properties;"
+        site_properties context/portal_properties/site_properties;
+        ajax_load request/ajax_load | nothing"
     tal:attributes="lang lang;">
 
     <metal:cache use-macro="context/global_cache_settings/macros/cacheheaders">
@@ -29,19 +30,21 @@
         <base tal:attributes="href plone_view/renderBase" /><!--[if lt IE 7]></base><![endif]-->
     </metal:baseslot>
 
-    <div tal:replace="structure provider:plone.htmlhead" />
-    <link tal:replace="structure provider:plone.htmlhead.links" />
+    <tal:notajax tal:condition="not:ajax_load">
+        <div tal:replace="structure provider:plone.htmlhead" />
+        <link tal:replace="structure provider:plone.htmlhead.links" />
 
-    <tal:comment replace="nothing"> 
-        Various slots where you can insert elements in the header from a template.
-    </tal:comment>
-    <metal:topslot define-slot="top_slot" />
-    <metal:headslot define-slot="head_slot" />
-    <metal:styleslot define-slot="style_slot" />
-    <metal:javascriptslot define-slot="javascript_head_slot" />
+        <tal:comment replace="nothing"> 
+            Various slots where you can insert elements in the header from a template.
+        </tal:comment>
+        <metal:topslot define-slot="top_slot" />
+        <metal:headslot define-slot="head_slot" />
+        <metal:styleslot define-slot="style_slot" />
+        <metal:javascriptslot define-slot="javascript_head_slot" />
 
-    <meta name="viewport" content="width=device-width; initial-scale=0.6666; maximum-scale=1.0; minimum-scale=0.6666" />
-    <meta name="generator" content="Plone - http://plone.org" />
+        <meta name="viewport" content="width=device-width; initial-scale=0.6666; maximum-scale=1.0; minimum-scale=0.6666" />
+        <meta name="generator" content="Plone - http://plone.org" />
+    </tal:notajax>
 </head>
 
 <body tal:define="isRTL portal_state/is_rtl;
@@ -56,7 +59,8 @@
 
         <div id="portal-top"
             class="row"
-            i18n:domain="plone">
+            i18n:domain="plone"
+            tal:condition="not:ajax_load">
 <div class="cell width-full position-0"> <!-- TODO: Temporary, this one should be in the template that is inserted -->
             <div tal:replace="structure provider:plone.portaltop" />
 </div>
@@ -65,11 +69,11 @@
 
         <div id="portal-column-content" class="cell" tal:attributes="class python:sunburst_view.getColumnsClass(view)">
 
-            <div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" />
+            <div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" tal:condition="not:ajax_load" />
             
             <metal:block define-slot="content">
                 <div metal:define-macro="content"
-                    tal:define="show_border context/@@plone/showEditableBorder"
+                    tal:define="show_border context/@@plone/showEditableBorder; show_border python:show_border and not ajax_load"
                     tal:attributes="class python:show_border and 'documentEditable' or ''">
 
                     <div id="edit-bar" 
@@ -89,7 +93,7 @@
 
                             <metal:bodytext define-slot="main">                                                            
 
-                             <div tal:replace="structure provider:plone.abovecontenttitle" />                             
+                             <div tal:replace="structure provider:plone.abovecontenttitle" tal:condition="not:ajax_load" />                             
                              <metal:title define-slot="content-title">                              
                                  <metal:comment tal:content="nothing">
                                      If you write a custom title always use 
@@ -99,7 +103,7 @@
                                      Generic KSS Title. Is rendered with class="documentFirstHeading".                    
                                  </h1>                                                                                    
                              </metal:title>                                                                               
-                             <div tal:replace="structure provider:plone.belowcontenttitle" />                             
+                             <div tal:replace="structure provider:plone.belowcontenttitle" tal:condition="not:ajax_load" />                             
 
                              <metal:description define-slot="content-description">                  
                                  <metal:comment tal:content="nothing">
@@ -111,13 +115,13 @@
                                  </div>                                                                                     
                              </metal:description>                                                                         
 
-                             <div tal:replace="structure provider:plone.abovecontentbody" />                              
+                             <div tal:replace="structure provider:plone.abovecontentbody" tal:condition="not:ajax_load" />                              
                              <div id="content-core">                                                                      
                                  <metal:text define-slot="content-core" tal:content="nothing">                            
                                      Page body text                                                                       
                                  </metal:text>                                                                            
                              </div>                                                                                       
-                             <div tal:replace="structure provider:plone.belowcontentbody" />                              
+                             <div tal:replace="structure provider:plone.belowcontentbody" tal:condition="not:ajax_load" />                              
 
                             </metal:bodytext>
                         </div>
@@ -130,9 +134,10 @@
                 </div>
             </metal:block>
         
-            <div id="viewlet-below-content" tal:content="structure provider:plone.belowcontent" />
+            <div id="viewlet-below-content" tal:content="structure provider:plone.belowcontent" tal:condition="not:ajax_load" />
         </div>
 
+        <tal:notajax tal:condition="not:ajax_load">
         <div id="portal-column-one" 
             class="cell width-1:4 position-0"
             metal:define-slot="column_one_slot" 
@@ -152,10 +157,11 @@
                 <tal:block replace="structure provider:plone.rightcolumn" />
             </metal:portlets>
         </div>
+        </tal:notajax>
     </div>
 
 
-    <metal:block i18n:domain="plone">
+    <metal:block i18n:domain="plone" tal:condition="not:ajax_load">
         <div tal:replace="structure provider:plone.portalfooter" />
     </metal:block>
 

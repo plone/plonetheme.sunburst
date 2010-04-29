@@ -4,6 +4,12 @@ Changelog
 1.0b4 - unreleased
 ------------------
 
+- Added tests for "ajax_load" query string in main_template. When found, skip
+  anything expensive that isn't going to show in an ajax overlay.
+  The plone.app.jquerytools overlay helper sets the ajax_load query string
+  to prevent browser caching.
+  [smcmahon]
+
 - Removed fixed vertical position for overlays. This needs to be computed on
   display so that overlays don't display out of the viewport on long pages.
   [smcmahon]
