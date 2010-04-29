@@ -96,9 +96,8 @@ q {
 
 #portal-globalnav {
 	clear: both;
-    font-size: 80%;
+	font-size: 80%;
 	background: #ddd;
-	margin-bottom: 1em;
 }
 #portal-globalnav li {
 }
@@ -240,10 +239,15 @@ q {
 }
 #portal-breadcrumbs {
 	font-size: 80%;
-	margin: 0.25em 0;
+	background: #ddd;
+	margin-top: 1px;
+	margin-bottom: 1em;
+	padding: 0 0.5em;
 }
 #portal-breadcrumbs a {
 	border-bottom: none;
+	padding: 0.25em 0;
+	display: inline-block;
 }
 /* @end */
 
