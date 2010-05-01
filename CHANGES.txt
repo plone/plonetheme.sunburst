@@ -4,6 +4,11 @@ Changelog
 1.0b4 - unreleased
 ------------------
 
+- Always enable breadcrumbs on all levels. ploneCustom contains an example on
+  how to disable them on the first levels. This closes
+  http://dev.plone.org/plone/ticket/9987 again.
+  [elvix, hannosch]
+
 - Added tests for "ajax_load" query string in main_template. When found, skip
   anything expensive that isn't going to show in an ajax overlay.
   The plone.app.jquerytools overlay helper sets the ajax_load query string
@@ -132,7 +137,7 @@ Changelog
 ------------------
 
 - Added example CSS to ploneCustom.css on how to enable the first levels of
-  breadcrumbs. This fixes http://dev.plone.org/plone/ticket/9987
+  breadcrumbs. This fixes http://dev.plone.org/plone/ticket/9987.
   [limi]
 
 - Removed #region-content and .documentContent from all templates, as they are
