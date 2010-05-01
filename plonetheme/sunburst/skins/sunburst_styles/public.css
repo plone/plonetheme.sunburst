@@ -233,9 +233,8 @@ q {
 
 #breadcrumbs-you-are-here {}
 #breadcrumbs-home,
-#breadcrumbs-current,
-#breadcrumbs-1 {
-    display: inline;
+#breadcrumbs-current {
+    display: none;
 }
 #portal-breadcrumbs {
 	font-size: 80%;
