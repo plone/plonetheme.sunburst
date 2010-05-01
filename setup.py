@@ -2,8 +2,6 @@ from setuptools import setup, find_packages
 
 version = '1.0b4'
 
-tests_require = ['collective.testcaselayer']
-
 setup(name='plonetheme.sunburst',
       version=version,
       description="New theme for Plone 4.0",
@@ -15,7 +13,7 @@ setup(name='plonetheme.sunburst',
         ],
       keywords='web zope plone theme',
       author='Plone Foundation',
-      author_email='product-developers@lists.plone.org',
+      author_email='plone-developers@lists.sourceforge.net',
       url='http://pypi.python.org/pypi/plonetheme.sunburst',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
@@ -25,10 +23,8 @@ setup(name='plonetheme.sunburst',
       install_requires=[
           'setuptools',
       ],
-      tests_require=tests_require,
-      extras_require={'tests': tests_require},
+      extras_require={'test': ['collective.testcaselayer']},
       entry_points="""
-      # -*- Entry points: -*-
       [z3c.autoinclude.plugin]
       target = plone
       """,

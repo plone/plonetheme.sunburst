@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0b4 - unreleased
+1.0b4 - 2010-05-01
 ------------------
 
 - Always enable breadcrumbs on all levels. ploneCustom contains an example on
