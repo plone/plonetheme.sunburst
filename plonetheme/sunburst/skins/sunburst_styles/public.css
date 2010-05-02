@@ -98,6 +98,8 @@ q {
 	clear: both;
 	font-size: 80%;
 	background: #ddd;
+    /* ensure top navigation dont touches portlets, content etc.. #10491 */
+	margin: 0 0 1em 0;
 }
 #portal-globalnav li {
 }
@@ -248,7 +250,18 @@ q {
 	padding: 0.25em 0;
 	display: inline-block;
 }
+
+
+/*#portal-column-one {
+    padding: 1em 0 0 0;
+}
+*/
+
+
 /* @end */
+
+
+
 
 
 /* @group Site actions */

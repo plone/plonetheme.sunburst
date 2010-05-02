@@ -3,6 +3,9 @@ Changelog
 
 1.0b5 - unreleased
 ------------------
+- Fix for global navigation colliding with portlets, bread crumb etc. 
+  http://dev.plone.org/plone/ticket/10491
+  [pelle]
 
 
 1.0b4 - 2010-05-01
