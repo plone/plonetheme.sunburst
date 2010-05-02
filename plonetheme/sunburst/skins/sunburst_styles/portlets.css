@@ -47,6 +47,7 @@
     margin: 0 -.5em;
 }
 
+.portletCalendar a, .portletCalendar a:focus,
 .portletCalendar a, .portletCalendar a:hover {
     text-decoration: none;
 }

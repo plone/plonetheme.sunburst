@@ -3,6 +3,13 @@ Changelog
 
 1.0b5 - unreleased
 ------------------
+
+- Improved :focus which is an accessibility requirement, a level 2 priority 
+  point/AA. This was removed entirely due to the reset css in use, so 
+  specifying :hover then remember :focus as well.
+  Fixes: http://dev.plone.org/plone/ticket/10472
+  [pelle]
+
 - Fix for global navigation colliding with portlets, bread crumb etc. 
   http://dev.plone.org/plone/ticket/10491
   [pelle]

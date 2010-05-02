@@ -69,6 +69,9 @@ p {
 a:link, a:visited {
 	color: #205c90;
 }
+a:focus img { 
+    outline: thin dotted;
+}
 dt {
 	font-weight: bold;
 }
@@ -115,9 +118,15 @@ q {
 }
 
 #portal-globalnav .selected a,
+#portal-globalnav a:focus,
 #portal-globalnav a:hover {
 	background: #205c90;
 	color: White;
+}
+#portal-globalnav .selected a:focus,
+#portal-globalnav .selected a:hover {
+	background: #ddd;
+	color: #205c90;
 }
 
 
@@ -267,6 +276,7 @@ q {
 #portal-siteactions li {
     margin-right: 0.5em;
 }
+#portal-siteactions li a:focus,
 #portal-siteactions li a:hover {
     color: #75ad0a
 }
@@ -325,6 +335,7 @@ div.portletAssignments .managedPortletActions a {
 
 dl.portlet dt a:link,
 dl.portlet dt a:visited,
+dl.portlet dt a:focus,
 dl.portlet dt a:hover {
 	color: black;
 	display: block;
@@ -377,6 +388,7 @@ dl.portlet ul.navTree li a {
 	display: block;
 }
 
+dl.portlet ul.navTree li a:focus,
 dl.portlet ul.navTree li a:hover {
 
 }
@@ -453,7 +465,9 @@ dl.portlet a:visited {
 	color: #427597;
 	border-bottom: 0.1em solid #ccc;
 }
+#content a:focus,
 #content a:hover,
+dl.portlet a:focus,
 dl.portlet a:hover {
 	color: #75ad0a !important; /* This one gets an !important because it should always activate in the content area, even when state coloring is active */
 }
@@ -683,6 +697,7 @@ div.listingBar a {
 	border: 0.1em solid #ccc;
 }
 
+div.listingBar a:focus,
 div.listingBar a:hover {
 	color: White;
 	background-color: #329fd7;
@@ -813,16 +828,20 @@ dl.error dd {
 	font-weight: bold;
 	margin: 0 ;
 }
-#content-views li.selected a,
-#content-views li a:hover,
+#content-views li.selected a, 
+#content-views li a:focus, 
+#content-views li a:hover, 
 #content li.formTab a.selected,
+#content li.formTab a:focus,
 #content li.formTab a:hover {
     background: White;
     color: Black;
 }
 #content-views li.selected a,
+#content-views li a:focus,
 #content-views li a:hover,
 #content li.formTab a.selected,
+#content li.formTab a:focus,
 #content li.formTab a:hover {
 	border-top-right-radius: 0.5em;
 	border-top-left-radius: 0.5em;
@@ -861,6 +880,10 @@ dl.error dd {
 #portal-personaltools dt {
 	font-weight: normal;
 }
+#portal-personaltools dt.actionMenuHeader a:focus,
+#portal-personaltools dt.actionMenuHeader a:hover {
+    color: #000000;
+}
 #portal-personaltools dt.actionMenuHeader a:after {
 	content: " ▼";
 }
@@ -876,6 +899,7 @@ dl.error dd {
 	line-height: 2em;
 	padding: 0 0.75em;
 }
+#portal-personaltools dd a:focus,
 #portal-personaltools dd a:hover {
 	background: #205c90;
 	color: White;
@@ -892,10 +916,15 @@ dl.error dd {
 	font-weight: bold;
 	z-index: 5;
 }
+#contentActionMenus dl.actionMenu a:focus,
+#contentActionMenus dl.actionMenu a:hover {
+    color: #000000;
+}
 #contentActionMenus dl.actionMenu.activated dd {
 	border-bottom: 0.5em solid #75ad0a;
         right: -3px;
 }
+#contentActionMenus dl.actionMenu.activated dd a:focus,
 #contentActionMenus dl.actionMenu.activated dd a:hover,
 #contentActionMenus dl.actionMenu.activated dd .actionMenuSelected {
 	background-color: White !important;
@@ -1677,6 +1706,7 @@ div.overlay p {
 div.overlay label {
     margin-bottom: 0.25em;
 }
+div.overlay a:focus,
 div.overlay a:hover {
     color: #75ad0a;
 }
