@@ -4,6 +4,10 @@ Changelog
 1.0b5 - unreleased
 ------------------
 
+- Dtml vars removed.
+  Fixes: http://dev.plone.org/plone/ticket/10492
+  [pelle]
+
 - Improved :focus which is an accessibility requirement, a level 2 priority 
   point/AA. This was removed entirely due to the reset css in use, so 
   specifying :hover then remember :focus as well.

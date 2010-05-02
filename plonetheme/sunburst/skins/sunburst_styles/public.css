@@ -1581,7 +1581,7 @@ dl.toc dd ol {
 .photoAlbumEntry a {
     display: block;
     text-decoration: none;
-    font-size: &dtml-fontSmallSize;;
+    font-size: 90%;
     height: 169px;
     width: 130px;
     margin: 16px auto 0px;
@@ -1591,7 +1591,7 @@ dl.toc dd ol {
     background-repeat: no-repeat;
 }
 .photoAlbumEntryTitle {
-    color: &dtml-discreetColor;;
+    color: #76797c;
     display: block;
     width: 128px;
     height: 3.6em;
