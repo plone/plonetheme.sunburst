@@ -1,9 +1,12 @@
 Changelog
 =========
 
-1.0b6 - Unreleased
+1.0b6 - 2010-05-03
 ------------------
 
+- Remove styling of path_bar. Breadcrumbs should now behave in a manner
+  similar to that of Plone 3.
+  [esteele]
 
 1.0b5 - 2010-05-03
 ------------------
