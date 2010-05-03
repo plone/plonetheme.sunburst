@@ -242,17 +242,10 @@ q {
 
 /* @group Path indicator (breadcrumbs) */
 
-#breadcrumbs-you-are-here {}
-#breadcrumbs-home {
-    display: none;
-}
 #portal-breadcrumbs {
 	font-size: 80%;
-    line-height: 2.5em;
-	background: #ddd;
 	margin-top: 1px;
 	margin-bottom: 1em;
-	padding: 0 0.5em;
 
 }
 #portal-breadcrumbs a {
