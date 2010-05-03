@@ -4,6 +4,10 @@ Changelog
 1.0b5 - unreleased
 ------------------
 
+- Show current page in breadcrumbs, give the surrounding div the same height
+  as our portal-headers for consistency.
+  [esteele]
+
 - Dtml vars removed.
   Fixes: http://dev.plone.org/plone/ticket/10492
   [pelle]
