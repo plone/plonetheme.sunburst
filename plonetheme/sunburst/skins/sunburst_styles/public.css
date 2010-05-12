@@ -1650,16 +1650,20 @@ div.overlay-iframe {
     height: 60%;
 }
 
-/* default close button positioned on upper right corner */
-    div.overlaybg div.close,
-    div.overlay div.close {
+/* default close button positioned on upper-left corner */
+div.overlaybg div.close,
+div.overlay div.close {
     background-image: url(pb_close.png);
     position: absolute;
-    right: -14px;
+    left: -14px;
     top: -14px;
     cursor: pointer;
     height: 30px;
     width: 30px;
+}
+
+.pb-ajax {
+    overflow-y: auto;
 }
 
 .pb-ajax, .pb-image {

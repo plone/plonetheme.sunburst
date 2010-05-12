@@ -4,6 +4,14 @@ Changelog
 1.0b7 - Unreleased
 ------------------
 
+- Moved overlay close button to upper-left to get it off the vertical
+  scrollbar when a an ajax overlay is longer than the viewport.
+  [stevem]
+
+- Set overflow-y:auto on ajax overlays to support forms longer than the
+  viewport.
+  [stevem]
+
 1.0b6 - 2010-05-03
 ------------------
 
