@@ -1667,16 +1667,16 @@ div.overlay div.close {
 }
 
 .pb-ajax, .pb-image {
+    background-color: #fff;
     white-space: normal;
     box-shadow: 0 0 3em 0.5em #666;
     -moz-box-shadow: 0 0 3em 0.5em #666;
     -webkit-box-shadow: 0 0 3em #666;
 }
 
-.pb-ajax > * {
-    background-color: #fff;
-    padding: 1em;
-    white-space: normal;
+.pb-ajax > div {
+    width: 95%;
+    padding: 2%;
 }
 
 .pb-ajax .documentActions {display:none}
