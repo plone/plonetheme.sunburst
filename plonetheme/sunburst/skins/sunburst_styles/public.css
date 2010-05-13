@@ -1675,8 +1675,8 @@ div.overlay div.close {
 }
 
 .pb-ajax > div {
-    width: 95%;
-    padding: 2%;
+    width: 92%;
+    padding: 1em;
 }
 
 .pb-ajax .documentActions {display:none}
