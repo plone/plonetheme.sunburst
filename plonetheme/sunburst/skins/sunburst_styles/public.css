@@ -581,8 +581,8 @@ dl.portlet li {
 }
 
 #content .documentDescription,
-#content #description,
-#content .description {
+#content #description
+{
 	color: #666;
 	font: bold 1.25em "Helvetica Neue", Arial, FreeSans, sans-serif;
 	margin-left: 0;
