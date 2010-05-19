@@ -1123,6 +1123,7 @@ dl.collapsedBlockCollapsible {
     height: 1em;
     width: auto;
 }
+dl.collapsedInlineCollapsible dt.collapsibleHeader,
 dl.collapsedBlockCollapsible dt.collapsibleHeader {
     float: none;
     position: relative;
