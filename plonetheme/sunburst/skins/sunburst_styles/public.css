@@ -94,7 +94,7 @@ q {
 
 #portal-logo {
 	display: inline-block;
-	margin: 1em 0;
+	margin: 1.375em 0;
 }
 
 #portal-globalnav {
@@ -171,7 +171,7 @@ q {
 	float: right;
 	text-align: left;
 	clear: right;
-	margin-top: 0.8em;
+	margin-top: 1.2em;
 	font-size: 80%;
 }
 
