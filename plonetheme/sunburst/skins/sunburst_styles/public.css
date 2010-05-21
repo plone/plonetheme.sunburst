@@ -171,7 +171,7 @@ q {
 	float: right;
 	text-align: left;
 	clear: right;
-	margin-top: 1.2em;
+	margin: 1.2em 0;
 	font-size: 80%;
 }
 
@@ -181,6 +181,13 @@ q {
 
 #searchGadget {
 	width: 13em;
+}
+#searchGadget,
+.LSBox input.searchButton {
+	font-size: 100%;
+}
+
+.LSBox .searchSection {
 	font-size: 80%;
 }
 
