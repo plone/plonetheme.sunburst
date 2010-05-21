@@ -38,20 +38,22 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Helvetica Neue", Arial, FreeSans, sans-serif; 
 	font-weight: bold;
-	line-height: 150%;
+	line-height: normal;
 	color: Black;
 }
-h1, h2 {
-	letter-spacing: -0.05em;
+h1, h2, h4 {
+	letter-spacing: -0.02em;
+	font-weight: normal;
 }
 h1 {
-	font-size: 2em; 
+	font-size: 2.66em; 
 }
 h2 {
-	font-size: 1.75em; 
+	font-size: 1.64em; 
 }
 h3 {
-	font-size: 1.5em; 
+    font-size: 1.25em;
+	font-weight: bold;    
 }
 h4 {
 	font-size: 1.25em; 
@@ -77,6 +79,7 @@ dt {
 }
 input {
 	font-family: "Lucida Grande", Arial, FreeSans;
+    font-size:1em;
 }
 
 q {
@@ -108,7 +111,7 @@ q {
 }
 #portal-globalnav li a {
 	display: inline-block;
-	padding: 0.5em 2em 2em 0.5em;	
+	padding: 0.7em 2em 1.06em 0.7em;	
 	background: #ddd;
 	min-width: 6em;
 	white-space: normal;
@@ -251,7 +254,6 @@ q {
 
 #portal-breadcrumbs {
 	font-size: 80%;
-	margin-top: 1px;
 	margin-bottom: 1em;
 
 }
@@ -296,6 +298,14 @@ a.link-anchor {
 }
 #content a.link-overlay {
 	border-bottom: 1px dotted #205c90 !important;
+}
+
+dl dt .documentByLine {
+	font-weight: normal;
+}
+
+dl dt span.summary a {
+    border: none !important;
 }
 
 /* @end */
@@ -362,7 +372,9 @@ a.managePortletsFallback {
 	-webkit-border-radius: 0.5em;
 	-moz-border-radius: 0.5em;
 }
-
+a.managePortletsFallback {
+    display:inline-block; /* in order for our vertical margins to work on inline element */
+}
 #content a.managePortletsFallback {
 	display: block;
 	border-bottom: none !important;    	
@@ -424,6 +436,12 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 	line-height: 1.5em;
 	clear: both;
 	font-size: 80%;
+	margin: 1em 0 2em;
+}
+
+/* Special case of #content - TinyMCE */
+body#content {
+    margin: 1em;
 }
 
 #content h1 {	
@@ -437,8 +455,13 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 #content h2,
 #content h3,
 #content h4 {
-	margin-top: 0.5em;
+	margin: 1em 0 0.38em;
 	color: #444;	
+}
+#content h2 a,
+#content h3 a,
+#content h4 a {
+    border-bottom: none !important;
 }
 
 
@@ -447,7 +470,8 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 #content dl,
 dl.portlet p,
 dl.portlet {
-	margin-bottom: 1em;
+    margin-top: 0.625em;
+	margin-bottom: 0.625em;
 }
 
 #content ul,
@@ -524,11 +548,12 @@ dl.portlet li {
 
 #content dt {
 	font-weight: bold;
-	margin-bottom: 0;
+	margin-bottom: 0.625em;
+	margin-top: 1em;
 	margin-right: 0;
 }
 #content dd {
-	margin: 0 0 1em 1em;
+	margin: 0 0 0.625em 1.64em;
 }
 
 #content pre {
@@ -549,7 +574,6 @@ dl.portlet li {
 #content div.documentByLine {
 	font-size: 85%;
 	display: block;
-	margin-top: -0.5em;
 	color: #666;
 }
 
@@ -585,20 +609,26 @@ dl.portlet li {
 
 #content table {
 	text-align: left;
+	border-collapse: collapse;
+	border-spacing: 0px;
 }
 
 #content .documentDescription,
 #content #description
 {
 	color: #666;
-	font: bold 1.25em "Helvetica Neue", Arial, FreeSans, sans-serif;
 	margin-left: 0;
+	font-size: 1.25em;
+	margin: 0.5em 0 1.31em;
 }
 
 #content img.tileImage,
 #content div.newsImageContainer {
 	float: right;
 	margin: 0 1em 0.5em 1em;
+}
+#content div.newsImageContainer a {
+    border-bottom: none;
 }
 #content div.newsImageContainer p.discreet {
 	margin: 0;
@@ -617,15 +647,24 @@ dl.portlet li {
 
 /* @group Data tables */
 
-table.listing {
-	border-spacing: 0; 
+table.listing,
+table.plain {
+	border-spacing: 0;
+	border-collapse: collapse; 
 }
 
+table.invisible td, 
+table.invisible th,
+table.plain td, 
+table.plain th,
 table.listing td, 
 table.listing th {
 	padding: 0.5em 1em;
 	vertical-align: top;
-	line-height: 2em;
+}
+table.plain th,
+table.plain td {
+    border: 1px solid #ddd;
 }
 
 table.listing td.listingCheckbox, 
@@ -633,7 +672,7 @@ table.listing th.listingCheckbox {
 	text-align: center;
 }
 
-table.listing thead th {
+table.listing th {
 	text-align: left;
 	color: #666;
 	border: 0.1em solid #e7e7e7;
@@ -662,6 +701,7 @@ table.listing a {
 	line-height: 2em;
 	border: none;
 	display: inline-block;
+	border-bottom: none !important;
 }
 
 table.listing td.draggable {
@@ -826,7 +866,6 @@ dl.error dd {
     padding: 0 0.75em;
     text-decoration: none;
 	border: none;
-	font-weight: bold;
 	margin: 0 ;
 }
 #content-views li.selected a, 
@@ -914,7 +953,6 @@ dl.error dd {
 #contentActionMenus dl.actionMenu.activated dd {
 	background-color: #75ad0a;
 	color: White;
-	font-weight: bold;
 	z-index: 5;
 }
 #contentActionMenus dl.actionMenu a:focus,
@@ -961,6 +999,12 @@ dl.actionMenu div {
     display: block;
     white-space: nowrap;
 	padding: 0 0.25em;
+}
+dl.actionMenu dt {
+	font-weight: normal;    
+}
+span.arrowDownAlternative {
+    font-size: 90%;
 }
 dl.actionMenu.deactivated dt {
 	margin: 0 0.25em;
@@ -1299,12 +1343,19 @@ fieldset,
 /* Emulates the styling from the h1 tag */
 #archetypes-fieldname-title input {
 	font-family: "Helvetica Neue", Arial, FreeSans, sans-serif; 
-	font-weight: bold;
 	line-height: 125%;
 	color: Black;
-	letter-spacing: -0.05em;
-	font-size: 1.625em; /* 26px equiv */
+	letter-spacing: -0.02em;
+	font-size: 2.66em; /* 26px equiv */
 }
+
+/* Emulates styling from the description's view */
+#archetypes-fieldname-description textarea#description {
+    font-family: Arial,FreeSans,sans-serif;
+    color:#666666;
+    font-size:1.25em;
+}
+
 
 div.formControls {
 	margin: 1em 0;
