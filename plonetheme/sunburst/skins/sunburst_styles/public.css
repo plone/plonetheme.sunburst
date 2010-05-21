@@ -1337,16 +1337,6 @@ label {
 #content label {
 }
 
-input[type="checkbox"] + label:hover {
-	background: #ddd;
-	outline: 0.1em solid #ddd;
-/* TODO: This should work, but creates flicker in all browsers. Figure out why.
-	position: relative;
-	left: -1.5em;
-	padding-left: 1.5em;
-*/
-}
-
 #content optgroup {
     font-style: normal;
     font-weight: bold;
