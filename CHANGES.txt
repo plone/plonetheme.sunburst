@@ -4,6 +4,9 @@ Changelog
 1.0b7 - Unreleased
 ------------------
 
+- Improved typography and vertical rhythm of the theme to improve UX.
+  [spliter]
+
 - Moved overlay close button to upper-left to get it off the vertical
   scrollbar when a an ajax overlay is longer than the viewport.
   [stevem]
