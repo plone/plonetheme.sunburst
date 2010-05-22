@@ -64,6 +64,17 @@ h5 {
 h6 {
 	font-size: 0.8em; 
 }
+h2,
+h3,
+h4 {
+	margin: 1em 0 0.38em;
+	color: #444;	
+}
+h2 a,
+h3 a,
+h4 a {
+    border-bottom: none !important;
+}
 
 p {
 }
@@ -451,19 +462,6 @@ body#content {
 #content h1.documentFirstHeading {	
 	margin-top: 0;
 }
-
-#content h2,
-#content h3,
-#content h4 {
-	margin: 1em 0 0.38em;
-	color: #444;	
-}
-#content h2 a,
-#content h3 a,
-#content h4 a {
-    border-bottom: none !important;
-}
-
 
 #content p,
 #content table,
