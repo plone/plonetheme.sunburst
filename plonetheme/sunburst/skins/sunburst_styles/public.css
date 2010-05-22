@@ -322,9 +322,9 @@ dl.portletError {
 
 dl.portlet dt,
 div.portletAssignments div.portletHeader {
-	padding: 0em 1em;
+	padding: 0.42em 1em;
 	background: #ddd;
-	line-height: 2.5em;
+	line-height: normal;
 }
 div.portletAssignments {
 	font-size: 0.8em;
