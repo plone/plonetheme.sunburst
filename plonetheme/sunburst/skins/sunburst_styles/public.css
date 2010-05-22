@@ -342,11 +342,6 @@ div.portletAssignments {
 	line-height: 2em;
 }
 
-div.portletAssignments a {
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-}
-
 div.portletAssignments .managedPortletActions {
 	float: right;
 }
