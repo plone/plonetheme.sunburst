@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0b7 - Unreleased
+1.0b7 - 2010-05-31
 ------------------
 
 - Improved typography and vertical rhythm of the theme to improve UX.
