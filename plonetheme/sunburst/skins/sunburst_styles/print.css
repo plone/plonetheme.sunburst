@@ -1,14 +1,14 @@
-/* Removes certain elements when printing, and apply basic font styles 
+/* Removes certain elements when printing, and apply basic font styles
    for the remaining content. */
 
 body {
-	font-family: "Helvetica Neue", Arial, FreeSans, sans-serif; 
+	font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Helvetica Neue", Arial, FreeSans, sans-serif; 
+	font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
 	font-weight: bold;
 	line-height: 125%;
-	page-break-inside: avoid; 
+	page-break-inside: avoid;
 	page-break-after: avoid;
 }
 h1, h2 {
@@ -46,7 +46,7 @@ div.pageBreak {
 
 /* Uncomment these if you want link addresses inserted along with the link text
    when you print.
-#content a:link:after, 
+#content a:link:after,
 #content a:visited:after {
    content: " [" attr(href) "] ";
 }
@@ -86,7 +86,8 @@ div.top,
 .link-presentation,
 input.standalone,
 .overlay,
-.close, 
+.managePortletsFallback,
+.close,
 .visualNoPrint {
 	display: none;
 }
