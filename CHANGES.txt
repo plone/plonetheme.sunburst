@@ -3,6 +3,9 @@ Changelog
 
 1.0b8 - unreleased
 ------------------
+- Restore some of the headline/description styling that was lost when 
+  Denys' branch was merged.
+  [limi]
 
 - Adding a border to the dialog boxes, so it doesn't appear borderless on
   browsers that don't support box-shadow, like Internet Explorer.
