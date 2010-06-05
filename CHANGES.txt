@@ -4,6 +4,10 @@ Changelog
 1.0b8 - unreleased
 ------------------
 
+- Adding a border to the dialog boxes, so it doesn't appear borderless on
+  browsers that don't support box-shadow, like Internet Explorer.
+  Fixes http://dev.plone.org/plone/ticket/10630.
+  [limi]
 
 1.0b7 - 2010-05-31
 ------------------
