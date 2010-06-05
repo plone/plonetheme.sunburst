@@ -3,7 +3,13 @@ Changelog
 
 1.0b8 - unreleased
 ------------------
-- Restore some of the headline/description styling that was lost when 
+
+- Improved printing :
+  hide some UI,
+  better document and listing views print
+  [tdesvenain]
+
+- Restore some of the headline/description styling that was lost when
   Denys' branch was merged.
   [limi]
 
@@ -44,13 +50,13 @@ Changelog
   Fixes: http://dev.plone.org/plone/ticket/10492
   [pelle]
 
-- Improved :focus which is an accessibility requirement, a level 2 priority 
-  point/AA. This was removed entirely due to the reset css in use, so 
+- Improved :focus which is an accessibility requirement, a level 2 priority
+  point/AA. This was removed entirely due to the reset css in use, so
   specifying :hover then remember :focus as well.
   Fixes: http://dev.plone.org/plone/ticket/10472
   [pelle]
 
-- Fix for global navigation colliding with portlets, bread crumb etc. 
+- Fix for global navigation colliding with portlets, bread crumb etc.
   http://dev.plone.org/plone/ticket/10491
   [pelle]
 
@@ -79,7 +85,7 @@ Changelog
 - Improved style of blocked portlets.
   [igbun]
 
-- Be carefull with adding ie hacks to IEFixes.css since Sunburst Theme 
+- Be carefull with adding ie hacks to IEFixes.css since Sunburst Theme
   uses IE8.js.
   Fixes http://dev.plone.org/plone/ticket/10417.
   [pelle]
@@ -168,7 +174,7 @@ Changelog
   [spliter]
 
 - Hide the "up to groups overview" link and fieldset border in the "add group"
-  overlay. 
+  overlay.
   Closes http://dev.plone.org/plone/ticket/10149
   Closes http://dev.plone.org/plone/ticket/10150
   [stuttle]
@@ -201,7 +207,7 @@ Changelog
   conventions.
   References http://dev.plone.org/plone/ticket/9981
   [spliter]
-  
+
 - Moved 'content' slot to the same place as it is in CMFPlone's
   main_template.pt. Having the same slot in different places is confusing.
   References http://dev.plone.org/plone/ticket/9981
@@ -231,7 +237,7 @@ Changelog
   Refs http://dev.plone.org/plone/ticket/10176
   [pelle]
 
-- Remove common CSS registries. 
+- Remove common CSS registries.
   Refs http://dev.plone.org/plone/ticket/9988.
   [dukebody]
 
@@ -253,7 +259,7 @@ Changelog
 - Remove the ability for anonymous to send author feedback again. A quick
   survey of integrators showed that this wasn't desirable.
   [esteele]
-  
+
 - Avoid the test function in the main_template. It doesn't exist in view page
   template files.
   [hannosch]
@@ -270,37 +276,37 @@ Changelog
 - Follow the getSectionFromURL change in CMFPlone.
   [hannosch]
 
-- Just a markup polishing - <metal> tags don't need explicit "metal" for 
+- Just a markup polishing - <metal> tags don't need explicit "metal" for
   defining slots.
   [spliter]
 
 - Copied preferred structure of 'main' slot from default main_template
   [spliter]
 
-- Moved plone.abovecontent and plone.belowcontent viewlet managers actually 
-  above and below content respectively for Sunburst. 
+- Moved plone.abovecontent and plone.belowcontent viewlet managers actually
+  above and below content respectively for Sunburst.
   References http://dev.plone.org/plone/ticket/10081
   [spliter]
 
 - Support various image alignment classes and image caption.
-  Based on the classic theme but with a slight sunburst touch. 
+  Based on the classic theme but with a slight sunburst touch.
   http://dev.plone.org/plone/ticket/10043
-  [pelle]  
+  [pelle]
 
-- Don't limit the styling of portal messages etc. to the 
+- Don't limit the styling of portal messages etc. to the
   #region-content, portal messages might also appear out side
   that area in an overlay, portlet etc.
   Fixes http://dev.plone.org/plone/ticket/10069
-  [pelle]  
+  [pelle]
 
 - Move search results to the left for RTL scripts.
   Fixes http://dev.plone.org/plone/ticket/10015.
   [emanlove]
 
-- Port changes to author.pt from 
+- Port changes to author.pt from
   http://dev.plone.org/plone/changeset/32858
   [esteele]
-  
+
 - Limit the caption width to 200px.
   Fixes http://dev.plone.org/plone/ticket/9992.
   [dukebody]
@@ -312,7 +318,7 @@ Changelog
 - Removed underline from "Manage portlets" fallback link
   [spliter]
 
-- Adjust login overlay position and width. Refs 
+- Adjust login overlay position and width. Refs
   http://dev.plone.org/plone/ticket/9869
   [dukebody]
 
@@ -355,16 +361,16 @@ Changelog
 - Add selectors for openid login form section to login styles.
   [smcmahon]
 
-- Sunburst has it's own table-less prefs_main_template.pt to 
-  keep validation of control panels for both sunburst and 
+- Sunburst has it's own table-less prefs_main_template.pt to
+  keep validation of control panels for both sunburst and
   plonetheme.classic
   [spliter]
 
-- removed negative margin from #contentActionMenus - it broke 
+- removed negative margin from #contentActionMenus - it broke
   the rounded corner of #edit-bar
   [spliter]
 
-- moved "Manage portlets" fallback link out of main_template to 
+- moved "Manage portlets" fallback link out of main_template to
   plone.manage_portlets_fallback viewlet
   http://dev.plone.org/plone/ticket/9808
   [spliter]

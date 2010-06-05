@@ -31,17 +31,33 @@ pre {
 	white-space: pre;
 	font-size: 8pt;
 	overflow: auto;
-	padding: 1em 0;
+	padding: 1em;
 }
 table.listing,
 table.listing td {
 	border: 1pt solid black;
 	border-collapse: collapse;
 }
+table.listing td,
+table.listing th {
+    padding: 6px;
+}
 
 /* Page break class for use when printing */
 div.pageBreak {
 	page-break-before: always;
+}
+
+/* Basic styles for listing and document views */
+#content dt {
+	margin:1em 0 0.625em;
+}
+#content p, #content table {
+	margin-bottom:0.625em;
+	margin-top:0.625em;
+}
+#content .documentDescription, #content #description {
+    margin:0.5em 0 1.31em;
 }
 
 /* Uncomment these if you want link addresses inserted along with the link text
@@ -88,6 +104,10 @@ input.standalone,
 .overlay,
 .managePortletsFallback,
 .close,
+.link-parent,
+.draggingHook,
+#foldercontents-order-column,
+input.context,
 .visualNoPrint {
 	display: none;
 }
