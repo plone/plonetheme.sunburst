@@ -1479,8 +1479,8 @@ body.template-new-user #content input {
 #fieldset-openid-login label, #login-form label {
     margin-right:0.5em;
     padding-top:0.2em;
-    text-align:right;    
-	width: 7em;
+    text-align:right;
+	width: 10em;
 	display: inline-block;
 }
 
