@@ -1833,37 +1833,38 @@ div.overlay .formControls a {
 
 /* @group Core content type sprites */
 
-.contenttype-document {
+.icons-on .contenttype-document {
 	background: no-repeat transparent 0px 4px url(contenttypes-sprite.png);
 }
-.contenttype-event {
+.icons-on .contenttype-event {
 	background: no-repeat transparent 0px -62px url(contenttypes-sprite.png);
 }
-.contenttype-folder {
+.icons-on .contenttype-folder {
 	background: no-repeat transparent 0px -194px url(contenttypes-sprite.png);
 }
-.contenttype-link {
+.icons-on .contenttype-link {
 	background: no-repeat transparent 0px -326px url(contenttypes-sprite.png);
 }
-.contenttype-news-item {
+.icons-on .contenttype-news-item {
 	background: no-repeat transparent 0px -392px url(contenttypes-sprite.png);
 }
-.contenttype-plone-site {	
+.icons-on .contenttype-plone-site {	
 	background: no-repeat transparent 0px -456px url(contenttypes-sprite.png);
 }
-.contenttype-topic {
+.icons-on .contenttype-topic {
 	background: no-repeat transparent 0px -524px url(contenttypes-sprite.png);
 }
 
-.contenttype-document,
-.contenttype-event,
-.contenttype-folder,
-.contenttype-link,
-.contenttype-news-item,
-.contenttype-plone-site,
-.contenttype-topic {
+.icons-on .contenttype-document,
+.icons-on .contenttype-event,
+.icons-on .contenttype-folder,
+.icons-on .contenttype-link,
+.icons-on .contenttype-news-item,
+.icons-on .contenttype-plone-site,
+.icons-on .contenttype-topic {
 	line-height: 2em;
 	display: inline-block;
 	padding-left: 20px !important;
 }
+
 /* @end */

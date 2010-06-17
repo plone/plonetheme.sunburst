@@ -4,6 +4,10 @@ Changelog
 1.0b8 - unreleased
 ------------------
 
+- Only add content type icons when they are enabled.
+  Fixes http://dev.plone.org/plone/ticket/10541
+  [davisagli]
+
 - Remove the sprited icons for the file and image content types, to avoid
   double icons. Fixes http://dev.plone.org/plone/ticket/10501.
   [davisagli]
