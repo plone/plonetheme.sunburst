@@ -975,7 +975,7 @@ dl.actionMenu {
 }
 dl.actionMenu a,
 dl.actionMenu div {
-    display: block;
+    display: block !important;
     white-space: nowrap;
 	padding: 0 0.25em;
 }
