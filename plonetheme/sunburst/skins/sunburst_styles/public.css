@@ -1834,44 +1834,36 @@ div.overlay .formControls a {
 /* @group Core content type sprites */
 
 .contenttype-document {
-	background: no-repeat transparent 3px 4px url(contenttypes-sprite.png);
+	background: no-repeat transparent 0px 4px url(contenttypes-sprite.png);
 }
 .contenttype-event {
-	background: no-repeat transparent 3px -62px url(contenttypes-sprite.png);
-}
-.contenttype-file {
-	background: no-repeat transparent 3px -128px url(contenttypes-sprite.png);
+	background: no-repeat transparent 0px -62px url(contenttypes-sprite.png);
 }
 .contenttype-folder {
-	background: no-repeat transparent 3px -194px url(contenttypes-sprite.png);
-}
-.contenttype-image {
-	background: no-repeat transparent 3px -260px url(contenttypes-sprite.png);
+	background: no-repeat transparent 0px -194px url(contenttypes-sprite.png);
 }
 .contenttype-link {
-	background: no-repeat transparent 3px -326px url(contenttypes-sprite.png);
+	background: no-repeat transparent 0px -326px url(contenttypes-sprite.png);
 }
 .contenttype-news-item {
-	background: no-repeat transparent 3px -392px url(contenttypes-sprite.png);
+	background: no-repeat transparent 0px -392px url(contenttypes-sprite.png);
 }
 .contenttype-plone-site {	
-	background: no-repeat transparent 3px -456px url(contenttypes-sprite.png);
+	background: no-repeat transparent 0px -456px url(contenttypes-sprite.png);
 }
 .contenttype-topic {
-	background: no-repeat transparent 3px -524px url(contenttypes-sprite.png);
+	background: no-repeat transparent 0px -524px url(contenttypes-sprite.png);
 }
 
 .contenttype-document,
 .contenttype-event,
-.contenttype-file,
 .contenttype-folder,
-.contenttype-image,
 .contenttype-link,
 .contenttype-news-item,
 .contenttype-plone-site,
 .contenttype-topic {
 	line-height: 2em;
 	display: inline-block;
-	padding-left: 23px !important;
+	padding-left: 20px !important;
 }
 /* @end */

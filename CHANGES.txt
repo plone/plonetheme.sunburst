@@ -4,9 +4,11 @@ Changelog
 1.0b8 - unreleased
 ------------------
 
-- Improved printing :
-  hide some UI,
-  better document and listing views print
+- Remove the sprited icons for the file and image content types, to avoid
+  double icons. Fixes http://dev.plone.org/plone/ticket/10501.
+  [davisagli]
+
+- Improved printing: hide some UI, better document and listing views
   [tdesvenain]
 
 - Restore some of the headline/description styling that was lost when
