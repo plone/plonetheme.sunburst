@@ -4,6 +4,10 @@ Changelog
 1.0b8 - unreleased
 ------------------
 
+- Increased space between icons in the sprite to 200px to make collisions
+  unlikely. This fixes http://dev.plone.org/plone/ticket/10633.
+  [limi]
+
 - Only add content type icons when they are enabled.
   Fixes http://dev.plone.org/plone/ticket/10541
   [davisagli]

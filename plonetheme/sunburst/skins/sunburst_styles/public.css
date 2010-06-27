@@ -1833,26 +1833,48 @@ div.overlay .formControls a {
 
 /* @group Core content type sprites */
 
+/* Generated using http://spritegen.website-performance.org, with the following
+   parameters:
+   - Build direction: Vertical
+   - Horizontal offset: (doesn't matter, but can't be 0)
+   - Vertical offset: 200px
+   - Compress image with OptiPNG: yes
+   - Class prefix: contenttype-
+   - Display width and height: no
+  Then, add 4 px to the background-position to line up the icons to text.
+
+.contenttype-document_icon { background-position: 0 0;  } 
+.contenttype-event_icon { background-position: 0 -216px;  } 
+.contenttype-file_icon { background-position: 0 -432px;  } 
+.contenttype-folder_icon { background-position: 0 -648px;  } 
+.contenttype-image_icon { background-position: 0 -864px;  } 
+.contenttype-link_icon { background-position: 0 -1080px;  } 
+.contenttype-newsitem_icon { background-position: 0 -1296px;  } 
+.contenttype-site_icon { background-position: 0 -1512px;  } 
+.contenttype-topic_icon { background-position: 0 -1728px;  } 
+
+*/
+
 .icons-on .contenttype-document {
 	background: no-repeat transparent 0px 4px url(contenttypes-sprite.png);
 }
 .icons-on .contenttype-event {
-	background: no-repeat transparent 0px -62px url(contenttypes-sprite.png);
+	background: no-repeat transparent 0px -212px url(contenttypes-sprite.png);
 }
 .icons-on .contenttype-folder {
-	background: no-repeat transparent 0px -194px url(contenttypes-sprite.png);
+	background: no-repeat transparent 0px -644px url(contenttypes-sprite.png);
 }
 .icons-on .contenttype-link {
-	background: no-repeat transparent 0px -326px url(contenttypes-sprite.png);
+	background: no-repeat transparent 0px -1076px url(contenttypes-sprite.png);
 }
 .icons-on .contenttype-news-item {
-	background: no-repeat transparent 0px -392px url(contenttypes-sprite.png);
+	background: no-repeat transparent 0px -1292px url(contenttypes-sprite.png);
 }
 .icons-on .contenttype-plone-site {	
-	background: no-repeat transparent 0px -456px url(contenttypes-sprite.png);
+	background: no-repeat transparent 0px -1508px url(contenttypes-sprite.png);
 }
 .icons-on .contenttype-topic {
-	background: no-repeat transparent 0px -524px url(contenttypes-sprite.png);
+	background: no-repeat transparent 0px -1724px url(contenttypes-sprite.png);
 }
 
 .icons-on .contenttype-document,
