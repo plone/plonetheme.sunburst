@@ -5,7 +5,7 @@ Changelog
 ------------------
 
 - Lining up the edges of the main layout elements, this fixes
-  http://dev.plone.org/plone/ticket/10540.
+  http://dev.plone.org/plone/ticket/10465.
   [limi]
 
 - Increased space between icons in the sprite to 200px to make collisions
