@@ -115,7 +115,7 @@ q {
 }
 #portal-globalnav li a {
 	display: inline-block;
-	padding: 0.5em 2em 2em 0.5em;    
+	padding: 0.5em 1em 2em 1em;    
 	background: #ddd;
 	min-width: 6em;
 	white-space: normal;
@@ -256,7 +256,7 @@ q {
 #portal-breadcrumbs {
 	font-size: 80%;
 	margin-bottom: 1em;
-
+	margin-left: 0.25em;
 }
 #portal-breadcrumbs a {
 	border-bottom: none;
@@ -429,7 +429,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 	line-height: 1.5em;
 	clear: both;
 	font-size: 80%;
-	margin: 1em 0 2em;
+	margin: 1em 0.25em 2em 0.25em;
 }
 
 /* Special case of #content - TinyMCE */
@@ -926,9 +926,6 @@ dl.error dd {
 	color: White;
 	z-index: 5;
 }
-#contentActionMenus dl.actionMenu a:hover {
-    color: #000000;
-}
 #contentActionMenus dl.actionMenu.activated dd {
 	border-bottom: 0.5em solid #75ad0a;
         right: -3px;
@@ -968,16 +965,20 @@ dl.error dd {
 	-moz-border-radius-topleft: 0;
 }
 
+.actionMenuContent {
+	padding: 0 0.25em;
+}
+
 dl.actionMenu {
 	float: right;
 	white-space: nowrap;
     position: relative;
+	margin-left: 0.5em;
 }
 dl.actionMenu a,
 dl.actionMenu div {
     display: block !important;
     white-space: nowrap;
-	padding: 0 0.25em;
 }
 dl.actionMenu dt {
 	font-weight: normal;    
@@ -1325,6 +1326,7 @@ fieldset,
 	line-height: 125%;
 	color: Black;
 	letter-spacing: -0.05em;
+	margin: inherit -0.05em;
 	font-size: 2em; /* 26px equiv */
 	font-weight: bold;
 }
