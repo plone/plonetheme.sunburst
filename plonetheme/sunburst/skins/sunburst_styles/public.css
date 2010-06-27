@@ -83,7 +83,6 @@ dt {
 }
 input {
 	font-family: "Lucida Grande", Arial, FreeSans;
-    font-size:1em;
 }
 
 q {
@@ -189,7 +188,6 @@ q {
 }
 #searchGadget,
 .LSBox input.searchButton {
-	font-size: 100%;
 }
 
 .LSBox .searchSection {
@@ -1357,7 +1355,7 @@ fieldset,
 
 
 div.formControls {
-	margin: 1em 0;
+	margin: 1em;
 }
 input[type="text"]:focus,
 input[type="password"]:focus,
@@ -1375,7 +1373,7 @@ textarea:focus {
 #content fieldset {
     border: 0.1em solid #329fd7;
     border-style: solid none none none;
-}
+} 
 #content legend {
     padding: 0.5em;
     font-size: 85%;
