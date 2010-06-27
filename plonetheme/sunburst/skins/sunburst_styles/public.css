@@ -907,9 +907,6 @@ dl.error dd {
 #portal-personaltools dt {
 	font-weight: normal;
 }
-#portal-personaltools dt.actionMenuHeader a:hover {
-    color: #000000;
-}
 #portal-personaltools dt.actionMenuHeader a:after {
 	content: " ▼";
 }
