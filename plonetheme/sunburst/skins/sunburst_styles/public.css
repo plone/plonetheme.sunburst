@@ -615,6 +615,12 @@ dl.portlet li {
         width: 190px;
 	top: -3em;
 }
+.eventDetails {
+    float: right;
+    clear: right;
+    margin: 0 0 0.5em 1em;
+}
+
 /* @end */
 
 
@@ -683,6 +689,16 @@ table.listing td.draggable {
 	background: #ddd !important;
 	border-bottom: 1px solid white;
 	padding: 0.4em 0.4em 0 0.5em;
+}
+/* Vertical table data listings */
+table.vertical {
+}
+table.vertical th {
+	text-align: right;
+}
+table.vertical td {
+	border-top: 0.1em solid #e7e7e7;
+	padding: 0.5em;
 }
 .dragindicator {
 	outline: 2px solid #FFD700;

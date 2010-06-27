@@ -4,6 +4,9 @@ Changelog
 1.0b8 - unreleased
 ------------------
 
+- Adding eventDetails styling and vertical table styles, this fixes 
+  http://dev.plone.org/plone/ticket/10540.
+
 - Lining up the edges of the main layout elements, this fixes
   http://dev.plone.org/plone/ticket/10465.
   [limi]
