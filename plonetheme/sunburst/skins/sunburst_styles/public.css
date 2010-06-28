@@ -505,10 +505,6 @@ dl.portlet a:hover {
 	display: none;
 }
 
-#content img {
-	max-width: 100%;
-}
-
 #content ul {
 	list-style-type: disc;
 	margin-left: 2em;
