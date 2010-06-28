@@ -3,6 +3,10 @@ Changelog
 
 1.0b8 - unreleased
 ------------------
+- Cleaned up the Dashboard CSS. This fixes 
+  http://dev.plone.org/plone/ticket/10516.
+  [limi]
+  
 - Adding max-width for the language selector, so it works even with
   a ridiculous amount of languages. 
   This fixes http://dev.plone.org/plone/ticket/10452.
