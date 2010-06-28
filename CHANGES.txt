@@ -3,12 +3,19 @@ Changelog
 
 1.0b8 - unreleased
 ------------------
+- Adding max-width for the language selector, so it works even with
+  a ridiculous amount of languages. 
+  This fixes http://dev.plone.org/plone/ticket/10452.
+  [limi]
+  
 - Improved default rendering for Python code listings when using the
   syntax coloring, and improved the overall typography for code.
   This fixes http://dev.plone.org/plone/ticket/10692.
-
+  [limi]
+  
 - Adding eventDetails styling and vertical table styles, this fixes 
   http://dev.plone.org/plone/ticket/10540.
+  [limi]
 
 - Lining up the edges of the main layout elements, this fixes
   http://dev.plone.org/plone/ticket/10465.

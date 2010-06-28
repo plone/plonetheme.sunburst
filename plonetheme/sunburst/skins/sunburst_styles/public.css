@@ -169,6 +169,7 @@ q {
 	-webkit-border-bottom-left-radius: 0.5em;
 	-moz-border-radius-bottomleft: 0.5em;
 	-moz-border-radius-bottomright: 0.5em;
+	max-width: 50%;
 }
 
 #portal-searchbox {
