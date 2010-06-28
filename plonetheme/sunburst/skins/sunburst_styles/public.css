@@ -1562,6 +1562,7 @@ dl.toc dd ol {
 	background: #ddd;
 	padding: 1em; 
 	margin: 1em 0;
+	line-height: 2em;
 }
 
 #portal-colophon {
