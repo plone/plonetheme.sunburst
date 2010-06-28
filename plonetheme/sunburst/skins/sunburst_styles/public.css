@@ -1915,13 +1915,25 @@ div.overlay .formControls a {
 	background: no-repeat transparent 0px -1724px url(contenttypes-sprite.png);
 }
 
+/* These should only appear in the add menu */
+.icons-on #plone-contentmenu-factories .contenttype-file {
+	background: no-repeat transparent 0px -428px url(contenttypes-sprite.png);
+}
+.icons-on #plone-contentmenu-factories .contenttype-image {
+	background: no-repeat transparent 0px -860px url(contenttypes-sprite.png);
+}
+
+
+
 .icons-on .contenttype-document,
 .icons-on .contenttype-event,
 .icons-on .contenttype-folder,
 .icons-on .contenttype-link,
 .icons-on .contenttype-news-item,
 .icons-on .contenttype-plone-site,
-.icons-on .contenttype-topic {
+.icons-on .contenttype-topic,
+.icons-on #plone-contentmenu-factories .contenttype-file,
+.icons-on #plone-contentmenu-factories .contenttype-image {
 	line-height: 2em;
 	display: inline-block;
 	padding-left: 20px !important;
