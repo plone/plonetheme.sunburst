@@ -197,6 +197,11 @@ q {
 	margin-bottom: 1em;
 }
 
+input.searchField {
+/*	-webkit-appearance: searchfield;*/
+	-moz-appearance: searchfield;
+}
+
 /* Collapsible elements in search_form */
 
 .collapsible .collapser.collapsed {
