@@ -13,21 +13,21 @@ Changelog
 - Removed IE9.js from Sunburst for now.
   [spliter]
 
-- Cleaned up the Dashboard CSS. This fixes 
+- Cleaned up the Dashboard CSS. This fixes
   http://dev.plone.org/plone/ticket/10516.
   [limi]
-  
+
 - Adding max-width for the language selector, so it works even with
-  a ridiculous amount of languages. 
+  a ridiculous amount of languages.
   This fixes http://dev.plone.org/plone/ticket/10452.
   [limi]
-  
+
 - Improved default rendering for Python code listings when using the
   syntax coloring, and improved the overall typography for code.
   This fixes http://dev.plone.org/plone/ticket/10692.
   [limi]
-  
-- Adding eventDetails styling and vertical table styles, this fixes 
+
+- Adding eventDetails styling and vertical table styles, this fixes
   http://dev.plone.org/plone/ticket/10540.
   [limi]
 
