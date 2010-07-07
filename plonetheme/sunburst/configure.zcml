@@ -8,7 +8,6 @@
   <include package=".browser" />
 
   <cmf:registerDirectory name="sunburst_images"/>
-  <cmf:registerDirectory name="sunburst_js"/>
   <cmf:registerDirectory name="sunburst_styles"/>
   <cmf:registerDirectory name="sunburst_templates"/>
 
