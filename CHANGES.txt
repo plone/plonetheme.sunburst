@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0.1 - unreleased
+1.0.1 - 2010-07-07
 ------------------
 
 - Removed remaining references to empty ``sunburst_js`` folder.
