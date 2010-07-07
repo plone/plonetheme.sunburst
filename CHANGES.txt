@@ -3,6 +3,10 @@ Changelog
 
 1.0b8 - unreleased
 ------------------
+
+- Removed IE9.js from Sunburst for now.
+  [spliter]
+
 - Cleaned up the Dashboard CSS. This fixes 
   http://dev.plone.org/plone/ticket/10516.
   [limi]
