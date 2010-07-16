@@ -4,6 +4,8 @@ Changelog
 1.0.2 - unreleased
 ------------------
 
+- Update license to GPL version 2 only.
+  [hannosch]
 
 1.0.1 - 2010-07-07
 ------------------
