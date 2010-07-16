@@ -1537,22 +1537,6 @@ tr.selected {
     background-color: #ffa;
 }
 
-/* widget on @@member-registration */
-.ordered-selection-field {
-    margin-top: 1em;
-}
-
-.ordered-selection-field select {
-    padding-left: 5px;
-    height: 200px;
-    width: 200px;
-}
-
-.ordered-selection-field button {
-    font-size: 100%;
-    margin: 0 10px 10px;
-}
-
 /* @group Login form */
 
 body.template-logged_out #content,
