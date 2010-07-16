@@ -4,6 +4,10 @@ Changelog
 1.0.2 - unreleased
 ------------------
 
+- Add globe icon to external links when "Mark External Links"
+  is checked.
+  [cwainwright]
+
 - Update license to GPL version 2 only.
   [hannosch]
 
