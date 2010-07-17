@@ -4,6 +4,10 @@ Changelog
 1.0.2 - unreleased
 ------------------
 
+- Fixed anonymous personal bar spacing with multiple entries. This closes
+  http://dev.plone.org/plone/ticket/10743.
+  [hannosch]
+
 - Fixed bulleted / numbered lists out of text area in right to left. This
   closes http://dev.plone.org/plone/ticket/9658.
   [emanlove, hannosch]
