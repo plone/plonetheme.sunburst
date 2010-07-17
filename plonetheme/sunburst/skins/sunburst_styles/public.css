@@ -1,6 +1,6 @@
 /* @override
-	http://localhost:8080/4/portal_css/Sunburst%20Theme/public.css
-	http://localhost:8080/sprites/portal_css/Sunburst%20Theme/public.css
+    http://localhost:8080/4/portal_css/Sunburst%20Theme/public.css
+    http://localhost:8080/sprites/portal_css/Sunburst%20Theme/public.css
 */
 
 /* @group CSS Reset */
@@ -29,41 +29,41 @@ img { vertical-align: text-bottom; }
 /* @group Basics */
 
 body {
-	font: 100% Arial, FreeSans, sans-serif;
-	background: White;
-	color: Black;
-	/* width: 58em; margin: 1em auto; */
+    font: 100% Arial, FreeSans, sans-serif;
+    background: White;
+    color: Black;
+    /* width: 58em; margin: 1em auto; */
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
-	font-weight: bold;
-	color: Black;
-	line-height: 1.5em;
+    font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
+    font-weight: bold;
+    color: Black;
+    line-height: 1.5em;
 }
 h1, h2 {
-	letter-spacing: -0.05em;
+    letter-spacing: -0.05em;
 }
 h1 {
-	font-size: 2em;
+    font-size: 2em;
 }
 h2 {
-	font-size: 1.75em;
+    font-size: 1.75em;
 }
 h3 {
     font-size: 1.25em;
 }
 h4 {
-	font-size: 1.25em;
+    font-size: 1.25em;
 }
 h5 {
-	font-size: 1em;
+    font-size: 1em;
 }
 h6 {
-	font-size: 0.8em;
+    font-size: 0.8em;
 }
 h2, h3, h4, h5, h6 {
-	color: #444;
+    color: #444;
 }
 h2 a, h3 a, h4 a {
     border-bottom: none !important;
@@ -73,16 +73,16 @@ p {
 }
 
 a:link, a:visited {
-	color: #205c90;
+    color: #205c90;
 }
 a:focus img {
     outline: thin dotted;
 }
 dt {
-	font-weight: bold;
+    font-weight: bold;
 }
 input {
-	font-family: "Lucida Grande", Arial, FreeSans;
+    font-family: "Lucida Grande", Arial, FreeSans;
 }
 
 q {
@@ -99,93 +99,93 @@ q {
 }
 
 #portal-logo {
-	display: inline-block;
-	margin: 1.375em 0;
+    display: inline-block;
+    margin: 1.375em 0;
 }
 
 #portal-globalnav {
-	clear: both;
-	font-size: 80%;
-	background: #ddd;
+    clear: both;
+    font-size: 80%;
+    background: #ddd;
     /* ensure top navigation dont touches portlets, content etc.. #10491 */
-	margin: 0 0 1em 0;
+    margin: 0 0 1em 0;
 }
 #portal-globalnav li {
 }
 #portal-globalnav li a {
-	display: inline-block;
-	padding: 0.5em 1em 2em 1em;
-	background: #ddd;
-	min-width: 6em;
-	white-space: normal;
-	/*TODO: Once we have removed the whitespace from the nav template, this can be put back*/
-	/*border-bottom: 0.1em solid White;*/
-	border-right: 0.1em solid white;
+    display: inline-block;
+    padding: 0.5em 1em 2em 1em;
+    background: #ddd;
+    min-width: 6em;
+    white-space: normal;
+    /*TODO: Once we have removed the whitespace from the nav template, this can be put back*/
+    /*border-bottom: 0.1em solid White;*/
+    border-right: 0.1em solid white;
 }
 
 #portal-globalnav .selected a,
 #portal-globalnav a:hover {
-	background: #205c90;
-	color: White;
+    background: #205c90;
+    color: White;
 }
 #portal-globalnav .selected a:hover {
-	background: #ddd;
-	color: #205c90;
+    background: #ddd;
+    color: #205c90;
 }
 
 
 #portal-personaltools {
-	float: right;
-	background: #e3e3e3;
-	position: relative;
-	z-index: 3; /* personaltools should be above #portal-header (with z-index: 2) */
-	top: 0;
-	right: 0;
-	padding: 0.25em 0.5em;
-	font-size: 80%;
-	border-bottom-right-radius: 0.5em;
-	border-bottom-left-radius: 0.5em;
-	-webkit-border-bottom-right-radius: 0.5em;
-	-webkit-border-bottom-left-radius: 0.5em;
-	-moz-border-radius-bottomleft: 0.5em;
-	-moz-border-radius-bottomright: 0.5em;
+    float: right;
+    background: #e3e3e3;
+    position: relative;
+    z-index: 3; /* personaltools should be above #portal-header (with z-index: 2) */
+    top: 0;
+    right: 0;
+    padding: 0.25em 0.5em;
+    font-size: 80%;
+    border-bottom-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    -webkit-border-bottom-right-radius: 0.5em;
+    -webkit-border-bottom-left-radius: 0.5em;
+    -moz-border-radius-bottomleft: 0.5em;
+    -moz-border-radius-bottomright: 0.5em;
 }
 #portal-personaltools #anon-personalbar a {
     float: left;
 }
 
 #portal-languageselector {
-	float: right;
-	background: #e3e3e3;
-	position: relative;
-	top: 0;
-	right: 1px;
-	z-index: 3; /* portal-header has 2 and we need to be above to be clickable */
-	padding: 0.25em 0.5em;
-	font-size: 80%;
-	border-bottom-right-radius: 0.5em;
-	border-bottom-left-radius: 0.5em;
-	-webkit-border-bottom-right-radius: 0.5em;
-	-webkit-border-bottom-left-radius: 0.5em;
-	-moz-border-radius-bottomleft: 0.5em;
-	-moz-border-radius-bottomright: 0.5em;
-	max-width: 50%;
+    float: right;
+    background: #e3e3e3;
+    position: relative;
+    top: 0;
+    right: 1px;
+    z-index: 3; /* portal-header has 2 and we need to be above to be clickable */
+    padding: 0.25em 0.5em;
+    font-size: 80%;
+    border-bottom-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    -webkit-border-bottom-right-radius: 0.5em;
+    -webkit-border-bottom-left-radius: 0.5em;
+    -moz-border-radius-bottomleft: 0.5em;
+    -moz-border-radius-bottomright: 0.5em;
+    max-width: 50%;
 }
 
 #portal-searchbox {
-	float: right;
-	text-align: left;
-	clear: right;
-	margin: 1.2em 0;
-	font-size: 80%;
+    float: right;
+    text-align: left;
+    clear: right;
+    margin: 1.2em 0;
+    font-size: 80%;
 }
 
 #portal-searchbox label {
-	font-weight: normal;
+    font-weight: normal;
 }
 
 #searchGadget {
-	width: 13em;
+    width: 13em;
 }
 #searchGadget,
 .LSBox input.searchButton {
@@ -195,12 +195,12 @@ q {
 }
 
 #content input.searchField {
-	margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 input.searchField {
-/*	-webkit-appearance: searchfield;*/
-	-moz-appearance: searchfield;
+/*  -webkit-appearance: searchfield;*/
+    -moz-appearance: searchfield;
 }
 
 /* Collapsible elements in search_form */
@@ -219,15 +219,15 @@ input.searchField {
 /* @group LiveSearch */
 
 #LSResult {
-	position: absolute;
-	right: 0;
-	background: White;
-	margin: -1.5em 0 0 -7em;
+    position: absolute;
+    right: 0;
+    background: White;
+    margin: -1.5em 0 0 -7em;
 }
 
 #LSResult fieldset {
-	padding: 1em 0 0;
-	border: 0.1em solid #ccc;
+    padding: 1em 0 0;
+    border: 0.1em solid #ccc;
 }
 
 #livesearchLegend {
@@ -236,8 +236,8 @@ input.searchField {
 }
 
 #LSResult .LSDescr {
-	font-size: 85%;
-	color: #666;
+    font-size: 85%;
+    color: #666;
 }
 
 .LSRow,
@@ -258,14 +258,14 @@ input.searchField {
 /* @group Path indicator (breadcrumbs) */
 
 #portal-breadcrumbs {
-	font-size: 80%;
-	margin-bottom: 1em;
-	margin-left: 0.25em;
+    font-size: 80%;
+    margin-bottom: 1em;
+    margin-left: 0.25em;
 }
 #portal-breadcrumbs a {
-	border-bottom: none;
-	padding: 0.25em 0;
-	display: inline-block;
+    border-bottom: none;
+    padding: 0.25em 0;
+    display: inline-block;
 }
 
 /* @end */
@@ -277,9 +277,9 @@ input.searchField {
 /* @group Site actions */
 
 #portal-siteactions {
-	font-size: 85%;
-	padding-bottom: 2em;
-	text-align: center;
+    font-size: 85%;
+    padding-bottom: 2em;
+    text-align: center;
 }
 #portal-siteactions li {
     margin-right: 0.5em;
@@ -296,16 +296,16 @@ a.link-parent {
 }
 
 a.link-anchor {
-	border: none !important;
-	color: Black !important;
-	cursor: default !important;
+    border: none !important;
+    color: Black !important;
+    cursor: default !important;
 }
 #content a.link-overlay {
-	border-bottom: 1px dotted #205c90 !important;
+    border-bottom: 1px dotted #205c90 !important;
 }
 
 dl dt .documentByLine {
-	font-weight: normal;
+    font-weight: normal;
 }
 
 dl dt span.summary a {
@@ -317,8 +317,8 @@ dl dt span.summary a {
 /* @group Portlets */
 
 dl.portlet {
-	margin: 0 0 1em;
-	font-size: 80%;
+    margin: 0 0 1em;
+    font-size: 80%;
 }
 dl.portletError {
     background-color: #FFA500;
@@ -326,72 +326,72 @@ dl.portletError {
 
 dl.portlet dt,
 div.portletAssignments div.portletHeader {
-	padding: 0.42em 1em;
-	background: #ddd;
-	line-height: normal;
+    padding: 0.42em 1em;
+    background: #ddd;
+    line-height: normal;
 }
 div.portletAssignments {
-	font-size: 0.8em;
-	line-height: 2em;
+    font-size: 0.8em;
+    line-height: 2em;
 }
 
 div.portletAssignments .managedPortletActions {
-	float: right;
+    float: right;
 }
 div.portletAssignments .managedPortletActions a {
-	margin: 0 0.25em;
-	border: none;
+    margin: 0 0.25em;
+    border: none;
 }
 
 dl.portlet dt a:link,
 dl.portlet dt a:visited,
 dl.portlet dt a:hover {
-	color: black;
-	display: block;
-	border: none;
+    color: black;
+    display: block;
+    border: none;
 }
 
 dl.portlet dd.portletItem,
 dl.portlet dd.portletFooter,
 dl.portletError dd {
-	padding: 1em;
+    padding: 1em;
 }
 
 
 
 div.managePortletsLink,
 a.managePortletsFallback {
-	text-align: center;
-	padding: 0.25em 0.5em;
-	font-size: 80%;
-	margin: 0 auto 1em;
-	background: #ddd;
-	border-radius: 0.5em;
-	-webkit-border-radius: 0.5em;
-	-moz-border-radius: 0.5em;
+    text-align: center;
+    padding: 0.25em 0.5em;
+    font-size: 80%;
+    margin: 0 auto 1em;
+    background: #ddd;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
 }
 a.managePortletsFallback {
     display:inline-block; /* in order for our vertical margins to work on inline element */
 }
 #content a.managePortletsFallback {
-	display: block;
-	border-bottom: none !important;
+    display: block;
+    border-bottom: none !important;
 }
 
 #portlet-prefs a {
-	border: none;
-	line-height: 2em;
+    border: none;
+    line-height: 2em;
 }
 
 #visual-portal-wrapper dl.portletCalendar dd {
-	padding: 0;
+    padding: 0;
 }
 
 #dashboard-portlets1,
 #dashboard-portlets2,
 #dashboard-portlets3,
 #dashboard-portlets4 {
-	display: inline-block;
+    display: inline-block;
 }
 
 /* @end */
@@ -399,8 +399,8 @@ a.managePortletsFallback {
 /* @group Navigation portlet */
 
 dl.portlet ul.navTree li a {
-	border: none;
-	display: block;
+    border: none;
+    display: block;
 }
 
 dl.portlet ul.navTree li a:hover {
@@ -408,25 +408,25 @@ dl.portlet ul.navTree li a:hover {
 }
 
 dl.portletNavigationTree dd.portletItem {
-	padding: 0;
+    padding: 0;
 }
 
 dl.portlet ul.navTreeLevel0 > .navTreeItem {
-	padding: 0.25em 1em;
-	border-bottom: 0.1em dotted #ddd;
-	line-height: 2em;
+    padding: 0.25em 1em;
+    border-bottom: 0.1em dotted #ddd;
+    line-height: 2em;
 }
 
 dl.portlet ul.navTreeLevel1 .navTreeItem {
-	padding-left: 0.5em;
-	line-height: 2em;
+    padding-left: 0.5em;
+    line-height: 2em;
 }
 
 dl.portlet ul.navTree .navTreeCurrentItem {
-	background-color: #ddd;
-	border-left: 1em solid #ddd;
-	margin-left: -1em;
-	margin-right: -1em;
+    background-color: #ddd;
+    border-left: 1em solid #ddd;
+    margin-left: -1em;
+    margin-right: -1em;
 }
 
 /* @end */
@@ -434,10 +434,10 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 /* @group Content Area */
 
 #content {
-	line-height: 1.5em;
-	clear: both;
-	font-size: 80%;
-	margin: 1em 0.25em 2em 0.25em;
+    line-height: 1.5em;
+    clear: both;
+    font-size: 80%;
+    margin: 1em 0.25em 2em 0.25em;
 }
 
 /* Special case of #content - TinyMCE */
@@ -446,11 +446,11 @@ body#content {
 }
 
 #content h1 {
-	margin-top: 0.5em;
+    margin-top: 0.5em;
 }
 
 #content h1.documentFirstHeading {
-	margin-top: 0;
+    margin-top: 0;
 }
 
 #content p,
@@ -458,7 +458,7 @@ body#content {
 #content dl,
 dl.portlet p,
 dl.portlet {
- 	margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 #content ul,
@@ -468,21 +468,21 @@ dl.portlet {
 
 #content a:link,
 dl.portlet a:link {
-	color: #205c90;
-	border-bottom: 0.1em solid #ccc;
+    color: #205c90;
+    border-bottom: 0.1em solid #ccc;
 }
 
 #content a:visited,
 dl.portlet a:visited {
-	color: #427597;
-	border-bottom: 0.1em solid #ccc;
+    color: #427597;
+    border-bottom: 0.1em solid #ccc;
 }
 #content a:hover,
 dl.portlet a:hover {
-	color: #75ad0a !important; /* This one gets an !important because it should always activate in the content area, even when state coloring is active */
+    color: #75ad0a !important; /* This one gets an !important because it should always activate in the content area, even when state coloring is active */
 }
 #content a:target {
-	background-color: #ffb;
+    background-color: #ffb;
 }
 #content span.link-external a {
     background: transparent url(link_icon.png) 0px 1px no-repeat;
@@ -490,85 +490,85 @@ dl.portlet a:hover {
 }
 
 #category {
-	font-size: 75%;
-	margin-bottom: 1em;
-	color: #666;
-	text-align: right;
+    font-size: 75%;
+    margin-bottom: 1em;
+    color: #666;
+    text-align: right;
 }
 
 #category a.link-category {
-	color: black;
-	padding: 0.25em 0.5em;
-	background: #ddd;
-	border-radius: 0.5em;
-	-webkit-border-radius: 0.5em;
-	-moz-border-radius: 0.5em;
+    color: black;
+    padding: 0.25em 0.5em;
+    background: #ddd;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
 }
 #category a.link-category:hover {
-	background: #205c90;
-	color: White;
-	border-color: #205c90;
+    background: #205c90;
+    color: White;
+    border-color: #205c90;
 }
 #category .separator {
-	display: none;
+    display: none;
 }
 
 #content ul {
-	list-style-type: disc;
-	margin-left: 2em;
+    list-style-type: disc;
+    margin-left: 2em;
 }
 
 #content ol,
 dl.portlet ol {
-	list-style-type: decimal;
-	margin-left: 2em;
+    list-style-type: decimal;
+    margin-left: 2em;
 }
 
 #content li,
 dl.portlet li {
-	margin-bottom: 0.25em;
-	line-height: 1.5em;
-	display: list-item;
+    margin-bottom: 0.25em;
+    line-height: 1.5em;
+    display: list-item;
 }
 
 #content dt {
-	font-weight: bold;
-	margin-bottom: 0;
-	margin-right: 0;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-right: 0;
 }
 #content dd {
-	margin: 0 0 1em 2em;
+    margin: 0 0 1em 2em;
 }
 
 #content pre {
-	background-color: #222;
-	color: White;
-	font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
-	padding: 1em;
-	overflow-x: auto;
-	font-size: 90%;
-	margin-bottom: 1em;
-	line-height: 1.25em;
+    background-color: #222;
+    color: White;
+    font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
+    padding: 1em;
+    overflow-x: auto;
+    font-size: 90%;
+    margin-bottom: 1em;
+    line-height: 1.25em;
 }
 #content pre.python {
-	background-color: White;
+    background-color: White;
 }
 
 #content code {
-	font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
+    font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
 }
 
 #content div.documentByLine {
-	font-size: 85%;
-	display: block;
-	color: #666;
+    font-size: 85%;
+    display: block;
+    color: #666;
 }
 
 #content .discreet,
 #sidebar .discreet {
-	color: #666;
-	font-size: 85%;
-	font-weight: normal;
+    color: #666;
+    font-size: 85%;
+    font-weight: normal;
 }
 
 #content .visualHighlight {
@@ -582,49 +582,49 @@ dl.portlet li {
     float: right;
     width: 35%;
     clear: right;
-	color: #444;
-	font-size: 1.6em;
-	letter-spacing: -0.08em !important;
+    color: #444;
+    font-size: 1.6em;
+    letter-spacing: -0.08em !important;
 }
 #content .callout {
     background: #eee;
     padding: 1em;
-	border-left: 1em solid #ccc;
-	clear: both;
+    border-left: 1em solid #ccc;
+    clear: both;
 }
 
 
 #content table {
-	text-align: left;
-	border-collapse: collapse;
-	border-spacing: 0px;
+    text-align: left;
+    border-collapse: collapse;
+    border-spacing: 0px;
 }
 
 #content .documentDescription,
 #content #description {
-	color: #666;
-	margin-left: 0;
+    color: #666;
+    margin-left: 0;
     font: bold 1.25em "Helvetica Neue", Arial, FreeSans, sans-serif;
 }
 
 #content img.tileImage,
 #content div.newsImageContainer {
-	float: right;
-	margin: 0 1em 0.5em 1em;
+    float: right;
+    margin: 0 1em 0.5em 1em;
 }
 #content div.newsImageContainer a {
     border-bottom: none;
 }
 #content div.newsImageContainer p.discreet {
-	margin: 0;
-	padding: 0.5em;
-	background-color: #666;
-	background-color: rgba(40,40,40,0.7);
-	color: White;
-	font-weight: bold;
-	position: relative;
+    margin: 0;
+    padding: 0.5em;
+    background-color: #666;
+    background-color: rgba(40,40,40,0.7);
+    color: White;
+    font-weight: bold;
+    position: relative;
         width: 190px;
-	top: -3em;
+    top: -3em;
 }
 .eventDetails {
     float: right;
@@ -640,8 +640,8 @@ dl.portlet li {
 
 table.listing,
 table.plain {
-	border-spacing: 0;
-	border-collapse: collapse;
+    border-spacing: 0;
+    border-collapse: collapse;
 }
 
 table.invisible td,
@@ -650,8 +650,8 @@ table.plain td,
 table.plain th,
 table.listing td,
 table.listing th {
-	padding: 0.5em 1em;
-	vertical-align: top;
+    padding: 0.5em 1em;
+    vertical-align: top;
 }
 table.plain th,
 table.plain td {
@@ -660,89 +660,89 @@ table.plain td {
 
 table.listing td.listingCheckbox,
 table.listing th.listingCheckbox {
-	text-align: center;
+    text-align: center;
 }
 
 table.listing th {
-	text-align: left;
-	color: #666;
-	border: 0.1em solid #e7e7e7;
-	border-style: solid none none;
+    text-align: left;
+    color: #666;
+    border: 0.1em solid #e7e7e7;
+    border-style: solid none none;
 }
 table.listing tr.odd th {
-	border: 0.1em solid #fff;
-	border-style: solid solid none none;
+    border: 0.1em solid #fff;
+    border-style: solid solid none none;
 }
 table.listing tbody th {
-	font-weight: bold;
+    font-weight: bold;
 }
 table.listing tbody tr {
-	text-align:left;
+    text-align:left;
 }
 table.listing tbody tr.odd {
-	background: #eee;
+    background: #eee;
 }
 table.listing tbody tr td {
-	background: transparent;
+    background: transparent;
 }
 table.listing tbody tr.odd td {
-	background: #eee;
+    background: #eee;
 }
 table.listing a {
-	line-height: 2em;
-	border: none;
-	display: inline-block;
-	border-bottom: none !important;
+    line-height: 2em;
+    border: none;
+    display: inline-block;
+    border-bottom: none !important;
 }
 
 table.listing td.draggable {
-	text-shadow: White 1px 1px 1px;
-	background: #ddd !important;
-	border-bottom: 1px solid white;
-	padding: 0.4em 0.4em 0 0.5em;
+    text-shadow: White 1px 1px 1px;
+    background: #ddd !important;
+    border-bottom: 1px solid white;
+    padding: 0.4em 0.4em 0 0.5em;
 }
 /* Vertical table data listings */
 table.vertical {
 }
 table.vertical th {
-	text-align: right;
+    text-align: right;
 }
 table.vertical td {
-	border-top: 0.1em solid #e7e7e7;
-	padding: 0.5em;
+    border-top: 0.1em solid #e7e7e7;
+    padding: 0.5em;
 }
 .dragindicator {
-	outline: 2px solid #FFD700;
+    outline: 2px solid #FFD700;
 }
 
 #foldercontents-order-column {
-	padding: 0;
+    padding: 0;
 }
 
 div.listingBar {
-	font-size: 80%;
-	margin: 1em 0;
+    font-size: 80%;
+    margin: 1em 0;
 }
 
 div.listingBar .next {
-	display: inline-block;
-	float: right;
+    display: inline-block;
+    float: right;
 }
 
 div.listingBar .previous {
-	display: inline-block;
+    display: inline-block;
 }
 
 div.listingBar a {
-	display: inline-block;
-	padding: 0.25em 0.5em;
-	border: 0.1em solid #ccc;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    border: 0.1em solid #ccc;
 }
 
 div.listingBar a:hover {
-	color: White;
-	background-color: #329fd7;
-	border-color: #329fd7;
+    color: White;
+    background-color: #329fd7;
+    border-color: #329fd7;
 }
 
 /* @end */
@@ -750,16 +750,16 @@ div.listingBar a:hover {
 /* @group Status messages */
 
 dl.portalMessage {
-	margin: 1em 0;
-	font-size: 80%;
-	border: 1px solid #996;
-	background-color: #ffffe3;
-	clear:both;
+    margin: 1em 0;
+    font-size: 80%;
+    border: 1px solid #996;
+    background-color: #ffffe3;
+    clear:both;
 }
 dl.portalMessage a,
 #content dl.portalMessage a {
     color: black;
-	border-bottom: 1px solid #888;
+    border-bottom: 1px solid #888;
 }
 dl.portalMessage dt {
     background-color: #996;
@@ -802,7 +802,7 @@ dl.error dd {
 
 /* Additional specificity for when status is shown inside #content */
 #content dl.portalMessage {
-	font-size: 100%;
+    font-size: 100%;
 }
 #content dl.portalMessage dt {
     margin: 0 0.5em 0 0;
@@ -820,40 +820,40 @@ dl.error dd {
 
 /* Color differences between the two tab types */
 #content ul.formTabs {
-	background-color: #ddd;
-	border: 0.3em solid #ddd;
+    background-color: #ddd;
+    border: 0.3em solid #ddd;
 }
 #edit-bar {
-	background-color: #75ad0a;
-	border: 0.25em solid #75ad0a;
-	font-size: 80%;
-	min-height: 2em;
-	margin-bottom: 1em;
+    background-color: #75ad0a;
+    border: 0.25em solid #75ad0a;
+    font-size: 80%;
+    min-height: 2em;
+    margin-bottom: 1em;
 }
 #content-views {
-	float: left;
-	background-color: #75ad0a;
+    float: left;
+    background-color: #75ad0a;
 }
 #content-views a {
-	color: White;
+    color: White;
 }
 
 /* Shared CSS between the two tab types */
 #edit-bar,
 #content ul.formTabs {
     display: block;
-	border-style: solid solid none solid;
-	margin-left: 0;
-	border-top-right-radius: 0.5em;
-	border-top-left-radius: 0.5em;
-	-webkit-border-top-right-radius: 0.5em;
-	-webkit-border-top-left-radius: 0.5em;
-	-moz-border-radius-topleft: 0.5em;
-	-moz-border-radius-topright: 0.5em;
+    border-style: solid solid none solid;
+    margin-left: 0;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    -webkit-border-top-right-radius: 0.5em;
+    -webkit-border-top-left-radius: 0.5em;
+    -moz-border-radius-topleft: 0.5em;
+    -moz-border-radius-topright: 0.5em;
 }
 #content li.formTab {
     display: inline;
-	margin-right:0.25em;
+    margin-right:0.25em;
 }
 #content-views a,
 #content li.formTab a {
@@ -862,15 +862,15 @@ dl.error dd {
 }
 #content-views a,
 #content li.formTab a {
-	line-height: 2em;
+    line-height: 2em;
     padding: 0 0.75em;
     text-decoration: none;
-	border: none;
-	margin: 0 ;
+    border: none;
+    margin: 0 ;
 }
 #content-views li.selected a,
 #content li.formTab a.selected {
-	font-weight: bold;
+    font-weight: bold;
 }
 #content-views li.selected a,
 #content-views li a:hover,
@@ -883,12 +883,12 @@ dl.error dd {
 #content-views li a:hover,
 #content li.formTab a.selected,
 #content li.formTab a:hover {
-	border-top-right-radius: 0.5em;
-	border-top-left-radius: 0.5em;
-	-webkit-border-top-right-radius: 0.5em;
-	-webkit-border-top-left-radius: 0.5em;
-	-moz-border-radius-topleft: 0.5em;
-	-moz-border-radius-topright: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    -webkit-border-top-right-radius: 0.5em;
+    -webkit-border-top-left-radius: 0.5em;
+    -moz-border-radius-topleft: 0.5em;
+    -moz-border-radius-topright: 0.5em;
 }
 #content li.formTab a.notify {
     background-color: red;
@@ -901,7 +901,7 @@ dl.error dd {
     padding-right: 1em;
 }
 #content fieldset.formPanel {
-	border: none;
+    border: none;
 }
 #content fieldset.formPanel.hidden {
     display: none;
@@ -918,26 +918,26 @@ dl.error dd {
 #portal-personaltools dl {
 }
 #portal-personaltools dt {
-	font-weight: normal;
+    font-weight: normal;
 }
 #portal-personaltools dt.actionMenuHeader a:after {
-	content: " ▼";
+    content: " ▼";
 }
 #portal-personaltools dd {
-	right: 0;
-	padding-top: 0.5em;
+    right: 0;
+    padding-top: 0.5em;
 }
 #portal-personaltools dd {
-	background: #e3e3e3;
-	padding-bottom: 0.5em;
+    background: #e3e3e3;
+    padding-bottom: 0.5em;
 }
 #portal-personaltools dd a {
-	line-height: 2em;
-	padding: 0 0.75em;
+    line-height: 2em;
+    padding: 0 0.75em;
 }
 #portal-personaltools dd a:hover {
-	background: #205c90;
-	color: White;
+    background: #205c90;
+    color: White;
 }
 
 /* @end */
@@ -946,22 +946,22 @@ dl.error dd {
 
 #contentActionMenus dl.actionMenu a,
 #contentActionMenus dl.actionMenu.activated dd {
-	background-color: #75ad0a;
-	color: White;
-	z-index: 5;
+    background-color: #75ad0a;
+    color: White;
+    z-index: 5;
 }
 #contentActionMenus dl.actionMenu.activated dd {
-	border-bottom: 0.5em solid #75ad0a;
+    border-bottom: 0.5em solid #75ad0a;
         right: -3px;
 }
 #contentActionMenus dl.actionMenu.activated dd a:hover,
 #contentActionMenus dl.actionMenu.activated dd .actionMenuSelected {
-	background-color: White !important;
-	color: #666;
+    background-color: White !important;
+    color: #666;
 }
 #contentActionMenus dl.actionMenu a,
 #contentActionMenus dl.actionMenu div {
-	line-height: 2em;
+    line-height: 2em;
 }
 
 #folderHeader, #contextHeader {
@@ -974,30 +974,30 @@ dl.error dd {
 /* @end */
 
 #contentActionMenus {
-	float: right;
-	background: #75ad0a;
-	margin: 0;
-	position: relative;
-	top: -0.23em;
-	right:-0.24em;
-	padding: 0.1em 0.24em 0 0;
+    float: right;
+    background: #75ad0a;
+    margin: 0;
+    position: relative;
+    top: -0.23em;
+    right:-0.24em;
+    padding: 0.1em 0.24em 0 0;
     border-radius: 0.5em;
-	border-top-left-radius: 0;
-	-webkit-border-radius: 0.5em;
-	-webkit-border-top-left-radius: 0;
-	-moz-border-radius: 0.5em;
-	-moz-border-radius-topleft: 0;
+    border-top-left-radius: 0;
+    -webkit-border-radius: 0.5em;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius: 0.5em;
+    -moz-border-radius-topleft: 0;
 }
 
 .actionMenuContent {
-	padding: 0 0.25em;
+    padding: 0 0.25em;
 }
 
 dl.actionMenu {
-	float: right;
-	white-space: nowrap;
+    float: right;
+    white-space: nowrap;
     position: relative;
-	margin-left: 0.5em;
+    margin-left: 0.5em;
 }
 dl.actionMenu a,
 dl.actionMenu div {
@@ -1005,13 +1005,13 @@ dl.actionMenu div {
     white-space: nowrap;
 }
 dl.actionMenu dt {
-	font-weight: normal;
+    font-weight: normal;
 }
 span.arrowDownAlternative {
     font-size: 80%;
 }
 dl.actionMenu.deactivated dt {
-	margin: 0 0.25em;
+    margin: 0 0.25em;
 }
 dl.actionMenu.deactivated dd {
     display: none;
@@ -1020,17 +1020,17 @@ dl.actionMenu.activated dd {
     position: absolute;
     width: auto;
     min-width: 100%;
-	border-bottom-right-radius: 0.5em;
-	border-bottom-left-radius: 0.5em;
-	-webkit-border-bottom-right-radius: 0.5em;
-	-webkit-border-bottom-left-radius: 0.5em;
-	-moz-border-radius-bottomleft: 0.5em;
-	-moz-border-radius-bottomright: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    -webkit-border-bottom-right-radius: 0.5em;
+    -webkit-border-bottom-left-radius: 0.5em;
+    -moz-border-radius-bottomleft: 0.5em;
+    -moz-border-radius-bottomright: 0.5em;
 }
 dl.actionMenu.activated dt a,
 dl.actionMenu.activated dd a,
 dl.actionMenu.activated dd div {
-	margin: 0 0.25em;
+    margin: 0 0.25em;
 }
 
 /* @end */
@@ -1038,7 +1038,7 @@ dl.actionMenu.activated dd div {
 /* @group Control panel */
 
 #setup-link {
-	font-size: 90%;
+    font-size: 90%;
 }
 
 #content ul.configlets {
@@ -1076,7 +1076,7 @@ dl.actionMenu.activated dd div {
     display: inline;
 }
 #content ul.configletDetails li a {
-	text-decoration: none;
+    text-decoration: none;
 }
 #content ul.configletDetails li label {
     font-weight: bold;
@@ -1214,27 +1214,27 @@ dl.collapsedInlineCollapsible dt.collapsibleHeader {
 
 .comment {
     margin-top: 1.5em;
-	font-size: 80%;
+    font-size: 80%;
 }
 
 .comment .documentByLine {
-	margin-left: 1em;
+    margin-left: 1em;
 }
 
 .comment .formControls {
-	margin-left: 0;
+    margin-left: 0;
 }
 
 .commentTime {
-	color: #666;
+    color: #666;
 }
 
 .commentBody {
     padding: 1em;
-	margin: 0.5em 0;
-	border-radius: 0.5em;
-	-webkit-border-radius: 0.5em;
-	-moz-border-radius: 0.5em;
+    margin: 0.5em 0;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
     box-shadow: 0 0 1em 0 #888;
     -moz-box-shadow: 0 0 0.5em 0 #888;
     -webkit-box-shadow: 0 0 0.5em #888;
@@ -1353,17 +1353,17 @@ dd.image-caption {
 }
 
 #dashboard {
-	font-size: 125%;
-	line-height: 1em;
+    font-size: 125%;
+    line-height: 1em;
 }
 
 #dashboard dd {
-	margin: 0;
+    margin: 0;
 }
 
 
 #dashboard dl.portlet a:link {
-	border-bottom: none;
+    border-bottom: none;
 }
 
 #dashboard-portlets1,
@@ -1401,13 +1401,13 @@ fieldset,
 
 /* Emulates the styling from the h1 tag */
 #archetypes-fieldname-title input {
-	font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
-	line-height: 125%;
-	color: Black;
-	letter-spacing: -0.05em;
-	margin: inherit -0.05em;
-	font-size: 2em; /* 26px equiv */
-	font-weight: bold;
+    font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
+    line-height: 125%;
+    color: Black;
+    letter-spacing: -0.05em;
+    margin: inherit -0.05em;
+    font-size: 2em; /* 26px equiv */
+    font-weight: bold;
 }
 
 /* Emulates styling from the description's view */
@@ -1420,12 +1420,12 @@ fieldset,
 
 
 div.formControls {
-	margin: 1em;
+    margin: 1em;
 }
 input[type="text"]:focus,
 input[type="password"]:focus,
 textarea:focus {
-	background-color: #ffffe0;
+    background-color: #ffffe0;
 }
 
 #content textarea {
@@ -1478,10 +1478,10 @@ dl.enableFormTabbing dd {
     margin-bottom: 1em;
 }
 .field input[type="text"] {
-	/*width: 100%;*/
+    /*width: 100%;*/
 }
 input#title {
-	width: 100%;
+    width: 100%;
 }
 .error input#title {
     width:99%;
@@ -1502,8 +1502,8 @@ input#title {
     margin-right: 0.75em
 }
 .formHelp {
-	color: #555;
-	margin: 0 0 0.2em 0;
+    color: #555;
+    margin: 0 0 0.2em 0;
 }
 div.error {
     background-color: #fdc;
@@ -1515,14 +1515,14 @@ div.error {
     color: #d00;
 }
 div.error.warning {
-	background-color: transparent;
-	border: none;
-	margin-top: 0;
-	padding: 0;
+    background-color: transparent;
+    border: none;
+    margin-top: 0;
+    padding: 0;
 }
 
 div.error.warning input {
-	border: 2px solid red;
+    border: 2px solid red;
 }
 
 input.inputLabelActive {
@@ -1542,7 +1542,7 @@ tr.selected {
 body.template-logged_out #content,
 body.template-login_form #content,
 .pb-ajax #login-form {
-	text-align: center;
+    text-align: center;
 }
 
 #fieldset-openid-login input, #login-form input {
@@ -1561,8 +1561,8 @@ body.template-new-user #content input {
     margin-right:0.5em;
     padding-top:0.2em;
     text-align:right;
-	width: 10em;
-	display: inline-block;
+    width: 10em;
+    display: inline-block;
 }
 
 #fieldset-openid-login .formControls input, #login-form .formControls input {
@@ -1578,22 +1578,22 @@ margin-left: 0.25em;
  /*Table of Contents styling - essentially a portlet with smaller fonts and aligned right + limited in width*/
 
 dl.toc {
-	float: right;
+    float: right;
     width: 35%;
-	font-size: 100%;
+    font-size: 100%;
     margin: 1em 0 0.5em 1.5em;
 }
 dl.toc dt {
-	margin-left: 1em;
-	font-weight: normal;
-	text-transform: uppercase;
+    margin-left: 1em;
+    font-weight: normal;
+    text-transform: uppercase;
 }
 dl.toc dd {
-	margin-bottom: 0;
-	padding-left: 2em;
+    margin-bottom: 0;
+    padding-left: 2em;
 }
 dl.toc dd ol {
-	margin-left: 1.5em;
+    margin-left: 1.5em;
 }
 
 /* @end */
@@ -1601,17 +1601,17 @@ dl.toc dd ol {
 /* @group Footer */
 
 #portal-footer {
-	font-size: 75%;
-	background: #ddd;
-	padding: 1em;
-	margin: 1em 0;
-	line-height: 2em;
+    font-size: 75%;
+    background: #ddd;
+    padding: 1em;
+    margin: 1em 0;
+    line-height: 2em;
 }
 
 #portal-colophon {
-	font-size: 70%;
-	text-align: center;
-	margin-bottom: 1em;
+    font-size: 70%;
+    text-align: center;
+    margin-bottom: 1em;
 }
 
 #portal-colophon li {
@@ -1619,7 +1619,7 @@ dl.toc dd ol {
 }
 
 #portal-colophon a {
-	color: #444;
+    color: #444;
 }
 
 /* @end */
@@ -1720,12 +1720,12 @@ dl.toc dd ol {
 }
 
 #content .visualNoMarker {
-	list-style:none;
-	margin-left: 0;
+    list-style:none;
+    margin-left: 0;
 }
 
 .visualClear {
-	clear: both;
+    clear: both;
 }
 
 /* @end */
@@ -1748,7 +1748,7 @@ div.overlay {
     display: none;
     /* some padding to layout nested elements nicely  */
     margin: 1em;
-	font-size: 80%;
+    font-size: 80%;
 }
 
 div.overlay-iframe,
@@ -1843,26 +1843,26 @@ div.overlay .formControls a {
 }
 
 #content-history div.historyRecord {
-	margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 
 #content-history div.historyTools ul {
-	float: right;
-	margin: 0.5em 1em;
+    float: right;
+    margin: 0.5em 1em;
 }
 
 #content-history div.historyTools ul li {
-	display: inline;
-	padding: 0 0.015em;
+    display: inline;
+    padding: 0 0.015em;
 }
 
 #content-history div.historyTools ul li a{
-	border-bottom: none;
+    border-bottom: none;
 }
 
 #content-history div.historyTools form {
-	display: inline;
+    display: inline;
 }
 
 #content-history .historyAction {
@@ -1870,45 +1870,45 @@ div.overlay .formControls a {
 }
 
 #content-history .historyByLine {
-	background: #ddd;
-	padding: 0.5em;
-	border-top-right-radius: 0.5em;
-	border-top-left-radius: 0.5em;
-	-webkit-border-top-right-radius: 0.5em;
-	-webkit-border-top-left-radius: 0.5em;
-	-moz-border-radius-topleft: 0.5em;
-	-moz-border-radius-topright: 0.5em;
+    background: #ddd;
+    padding: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    -webkit-border-top-right-radius: 0.5em;
+    -webkit-border-top-left-radius: 0.5em;
+    -moz-border-radius-topleft: 0.5em;
+    -moz-border-radius-topright: 0.5em;
 }
 
 #content-history div.historyLinks {
-	float: right;
-	clear: right;
-	margin: 0.5em 1em 0 0;
+    float: right;
+    clear: right;
+    margin: 0.5em 1em 0 0;
 }
 
 
 #content-history div.historyComment {
-	padding: 0.5em 1em;
-	border: 1px solid #ddd;
+    padding: 0.5em 1em;
+    border: 1px solid #ddd;
 }
 
 #content-history div.historyComment p {
-	margin: 0;
-	padding-top: 1px;
+    margin: 0;
+    padding-top: 1px;
 }
 
 #content-history a.historyComparePrevious {
-	border-top: 1px dotted #ccc;
-	display: block;
-	margin-top: 3em;
-	text-align: center;
+    border-top: 1px dotted #ccc;
+    display: block;
+    margin-top: 3em;
+    text-align: center;
 }
 
 #content-history a.historyComparePrevious span {
-	background-color: white;
-	position: relative;
-	top: -0.75em;
-	padding: 0 0.5em;
+    background-color: white;
+    position: relative;
+    top: -0.75em;
+    padding: 0 0.5em;
 }
 
 /* @end */
@@ -1938,33 +1938,33 @@ div.overlay .formControls a {
 */
 
 .icons-on .contenttype-document {
-	background: no-repeat transparent 0px 4px url(contenttypes-sprite.png);
+    background: no-repeat transparent 0px 4px url(contenttypes-sprite.png);
 }
 .icons-on .contenttype-event {
-	background: no-repeat transparent 0px -212px url(contenttypes-sprite.png);
+    background: no-repeat transparent 0px -212px url(contenttypes-sprite.png);
 }
 .icons-on .contenttype-folder {
-	background: no-repeat transparent 0px -644px url(contenttypes-sprite.png);
+    background: no-repeat transparent 0px -644px url(contenttypes-sprite.png);
 }
 .icons-on .contenttype-link {
-	background: no-repeat transparent 0px -1076px url(contenttypes-sprite.png);
+    background: no-repeat transparent 0px -1076px url(contenttypes-sprite.png);
 }
 .icons-on .contenttype-news-item {
-	background: no-repeat transparent 0px -1292px url(contenttypes-sprite.png);
+    background: no-repeat transparent 0px -1292px url(contenttypes-sprite.png);
 }
 .icons-on .contenttype-plone-site {
-	background: no-repeat transparent 0px -1508px url(contenttypes-sprite.png);
+    background: no-repeat transparent 0px -1508px url(contenttypes-sprite.png);
 }
 .icons-on .contenttype-topic {
-	background: no-repeat transparent 0px -1724px url(contenttypes-sprite.png);
+    background: no-repeat transparent 0px -1724px url(contenttypes-sprite.png);
 }
 
 /* These should only appear in the add menu */
 .icons-on #plone-contentmenu-factories .contenttype-file {
-	background: no-repeat transparent 0px -428px url(contenttypes-sprite.png);
+    background: no-repeat transparent 0px -428px url(contenttypes-sprite.png);
 }
 .icons-on #plone-contentmenu-factories .contenttype-image {
-	background: no-repeat transparent 0px -860px url(contenttypes-sprite.png);
+    background: no-repeat transparent 0px -860px url(contenttypes-sprite.png);
 }
 
 
@@ -1978,9 +1978,9 @@ div.overlay .formControls a {
 .icons-on .contenttype-topic,
 .icons-on #plone-contentmenu-factories .contenttype-file,
 .icons-on #plone-contentmenu-factories .contenttype-image {
-	line-height: 2em;
-	display: inline-block;
-	padding-left: 20px !important;
+    line-height: 2em;
+    display: inline-block;
+    padding-left: 20px !important;
 }
 
 /* @end */
