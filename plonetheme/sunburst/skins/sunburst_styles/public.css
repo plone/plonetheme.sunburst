@@ -1,4 +1,4 @@
-/* @override 
+/* @override
 	http://localhost:8080/4/portal_css/Sunburst%20Theme/public.css
 	http://localhost:8080/sprites/portal_css/Sunburst%20Theme/public.css
 */
@@ -18,7 +18,7 @@
 * ul,ol { list-style:none; }
 * li { display: inline; }
 * h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; }
-* a img,:link img,:visited img { border:none } 
+* a img,:link img,:visited img { border:none }
 a { outline: none; }
 table { border-spacing: 0; }
 img { vertical-align: text-bottom; }
@@ -28,7 +28,7 @@ img { vertical-align: text-bottom; }
 
 /* @group Basics */
 
-body { 
+body {
 	font: 100% Arial, FreeSans, sans-serif;
 	background: White;
 	color: Black;
@@ -36,7 +36,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Helvetica Neue", Arial, FreeSans, sans-serif; 
+	font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
 	font-weight: bold;
 	color: Black;
 	line-height: 1.5em;
@@ -45,25 +45,25 @@ h1, h2 {
 	letter-spacing: -0.05em;
 }
 h1 {
-	font-size: 2em; 
+	font-size: 2em;
 }
 h2 {
-	font-size: 1.75em; 
+	font-size: 1.75em;
 }
 h3 {
     font-size: 1.25em;
 }
 h4 {
-	font-size: 1.25em; 
+	font-size: 1.25em;
 }
 h5 {
-	font-size: 1em; 
+	font-size: 1em;
 }
 h6 {
-	font-size: 0.8em; 
+	font-size: 0.8em;
 }
 h2, h3, h4, h5, h6 {
-	color: #444;	
+	color: #444;
 }
 h2 a, h3 a, h4 a {
     border-bottom: none !important;
@@ -75,7 +75,7 @@ p {
 a:link, a:visited {
 	color: #205c90;
 }
-a:focus img { 
+a:focus img {
     outline: thin dotted;
 }
 dt {
@@ -114,7 +114,7 @@ q {
 }
 #portal-globalnav li a {
 	display: inline-block;
-	padding: 0.5em 1em 2em 1em;    
+	padding: 0.5em 1em 2em 1em;
 	background: #ddd;
 	min-width: 6em;
 	white-space: normal;
@@ -208,12 +208,12 @@ input.searchField {
 .collapsible .collapser.collapsed {
     padding-right: 14px;
     background: url('arrowRight.png') center right no-repeat;
-} 
+}
 
 .collapsible .collapser.expanded {
     padding-right: 14px;
     background: url('arrowDown.png') center right no-repeat;
-} 
+}
 /* @end */
 
 /* @group LiveSearch */
@@ -375,7 +375,7 @@ a.managePortletsFallback {
 }
 #content a.managePortletsFallback {
 	display: block;
-	border-bottom: none !important;    	
+	border-bottom: none !important;
 }
 
 #portlet-prefs a {
@@ -445,11 +445,11 @@ body#content {
     margin: 1em;
 }
 
-#content h1 {	
+#content h1 {
 	margin-top: 0.5em;
 }
 
-#content h1.documentFirstHeading {	
+#content h1.documentFirstHeading {
 	margin-top: 0;
 }
 
@@ -463,7 +463,7 @@ dl.portlet {
 
 #content ul,
 #content ol {
-	
+
 }
 
 #content a:link,
@@ -472,7 +472,7 @@ dl.portlet a:link {
 	border-bottom: 0.1em solid #ccc;
 }
 
-#content a:visited, 
+#content a:visited,
 dl.portlet a:visited {
 	color: #427597;
 	border-bottom: 0.1em solid #ccc;
@@ -543,7 +543,7 @@ dl.portlet li {
 #content pre {
 	background-color: #222;
 	color: White;
-	font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;	
+	font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
 	padding: 1em;
 	overflow-x: auto;
 	font-size: 90%;
@@ -555,7 +555,7 @@ dl.portlet li {
 }
 
 #content code {
-	font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;	
+	font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
 }
 
 #content div.documentByLine {
@@ -641,14 +641,14 @@ dl.portlet li {
 table.listing,
 table.plain {
 	border-spacing: 0;
-	border-collapse: collapse; 
+	border-collapse: collapse;
 }
 
-table.invisible td, 
+table.invisible td,
 table.invisible th,
-table.plain td, 
+table.plain td,
 table.plain th,
-table.listing td, 
+table.listing td,
 table.listing th {
 	padding: 0.5em 1em;
 	vertical-align: top;
@@ -658,7 +658,7 @@ table.plain td {
     border: 1px solid #ddd;
 }
 
-table.listing td.listingCheckbox, 
+table.listing td.listingCheckbox,
 table.listing th.listingCheckbox {
 	text-align: center;
 }
@@ -682,13 +682,13 @@ table.listing tbody tr {
 table.listing tbody tr.odd {
 	background: #eee;
 }
-table.listing tbody tr td { 
+table.listing tbody tr td {
 	background: transparent;
 }
-table.listing tbody tr.odd td { 
+table.listing tbody tr.odd td {
 	background: #eee;
 }
-table.listing a { 
+table.listing a {
 	line-height: 2em;
 	border: none;
 	display: inline-block;
@@ -720,7 +720,7 @@ table.vertical td {
 }
 
 div.listingBar {
-	font-size: 80%;	
+	font-size: 80%;
 	margin: 1em 0;
 }
 
@@ -762,7 +762,7 @@ dl.portalMessage a,
 	border-bottom: 1px solid #888;
 }
 dl.portalMessage dt {
-    background-color: #996; 
+    background-color: #996;
     font-weight: bold;
     float: left;
     margin: 0 0.5em 0 0;
@@ -771,7 +771,7 @@ dl.portalMessage dt {
     line-height: 1.25em;
 }
 dl.portalMessage dd {
-    padding: 0.5em 0.5em; 
+    padding: 0.5em 0.5em;
     margin: 0;
     line-height: 1.25em;
 }
@@ -782,22 +782,22 @@ dl.warning dt {
     background-color: #d80;
 }
 dl.error {
-    border-color: #d00;    
+    border-color: #d00;
 }
 dl.error dt {
-    background-color: #d00; 
+    background-color: #d00;
 }
 dl.warning {
-    border-color: #d80;    
+    border-color: #d80;
 }
 dl.warning dd {
-    background-color: #fd7; 
+    background-color: #fd7;
 }
 dl.error {
-    border-color: red;    
+    border-color: red;
 }
 dl.error dd {
-    background-color: #fdc; 
+    background-color: #fdc;
 }
 
 /* Additional specificity for when status is shown inside #content */
@@ -842,7 +842,7 @@ dl.error dd {
 #edit-bar,
 #content ul.formTabs {
     display: block;
-	border-style: solid solid none solid; 
+	border-style: solid solid none solid;
 	margin-left: 0;
 	border-top-right-radius: 0.5em;
 	border-top-left-radius: 0.5em;
@@ -868,12 +868,12 @@ dl.error dd {
 	border: none;
 	margin: 0 ;
 }
-#content-views li.selected a, 
+#content-views li.selected a,
 #content li.formTab a.selected {
 	font-weight: bold;
 }
-#content-views li.selected a, 
-#content-views li a:hover, 
+#content-views li.selected a,
+#content-views li a:hover,
 #content li.formTab a.selected,
 #content li.formTab a:hover {
     background: White;
@@ -982,10 +982,10 @@ dl.error dd {
 	right:-0.24em;
 	padding: 0.1em 0.24em 0 0;
     border-radius: 0.5em;
-	border-top-left-radius: 0;    
-	-webkit-border-radius: 0.5em;	
+	border-top-left-radius: 0;
+	-webkit-border-radius: 0.5em;
 	-webkit-border-top-left-radius: 0;
-	-moz-border-radius: 0.5em;	
+	-moz-border-radius: 0.5em;
 	-moz-border-radius-topleft: 0;
 }
 
@@ -1005,7 +1005,7 @@ dl.actionMenu div {
     white-space: nowrap;
 }
 dl.actionMenu dt {
-	font-weight: normal;    
+	font-weight: normal;
 }
 span.arrowDownAlternative {
     font-size: 80%;
@@ -1186,7 +1186,7 @@ dl.collapsedBlockCollapsible dt.collapsibleHeader {
     padding: 0 0.5em 0 2em;
     line-height: 1.2em;
     cursor: pointer;
-    background: White url(treeCollapsed.png) no-repeat 0.5em 50%;    
+    background: White url(treeCollapsed.png) no-repeat 0.5em 50%;
 }
 dl.collapsedInlineCollapsible dd.collapsibleContent,
 dl.collapsedBlockCollapsible dd.collapsibleContent {
@@ -1243,7 +1243,7 @@ dl.collapsedInlineCollapsible dt.collapsibleHeader {
 .comment h1,
 .comment h2,
 .comment h3,
-.comment h4, 
+.comment h4,
 .comment h5,
 .comment h6 {
     font-weight: normal;
@@ -1271,7 +1271,7 @@ dl.collapsedInlineCollapsible dt.collapsibleHeader {
     background-color: #dee7ec;
     font-weight: normal;
     font-size: 90%;
-} 
+}
 
 /* for highlighting of search terms */
 .highlightedSearchTerm {
@@ -1401,7 +1401,7 @@ fieldset,
 
 /* Emulates the styling from the h1 tag */
 #archetypes-fieldname-title input {
-	font-family: "Helvetica Neue", Arial, FreeSans, sans-serif; 
+	font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
 	line-height: 125%;
 	color: Black;
 	letter-spacing: -0.05em;
@@ -1438,7 +1438,7 @@ textarea:focus {
 #content fieldset {
     border: 0.1em solid #329fd7;
     border-style: solid none none none;
-} 
+}
 #content legend {
     padding: 0.5em;
     font-size: 85%;
@@ -1575,7 +1575,7 @@ margin-left: 0.25em;
 
 /* @group Table of Contents */
 
- /*Table of Contents styling - essentially a portlet with smaller fonts and aligned right + limited in width*/ 
+ /*Table of Contents styling - essentially a portlet with smaller fonts and aligned right + limited in width*/
 
 dl.toc {
 	float: right;
@@ -1603,7 +1603,7 @@ dl.toc dd ol {
 #portal-footer {
 	font-size: 75%;
 	background: #ddd;
-	padding: 1em; 
+	padding: 1em;
 	margin: 1em 0;
 	line-height: 2em;
 }
@@ -1630,7 +1630,7 @@ dl.toc dd ol {
     list-style: none;
     margin-left: 0;
     font-size: 130%;
-    font-weight: bold;    
+    font-weight: bold;
 }
 
 #portal-sitemap li {
@@ -1643,7 +1643,7 @@ dl.toc dd ol {
     display: block;
 }
 
-#portal-sitemap > li {   
+#portal-sitemap > li {
     border-bottom:0.1em dotted #ddd;
     line-height:1.8em;
     padding:0.25em 1em;
@@ -1653,8 +1653,8 @@ dl.toc dd ol {
 #portal-sitemap .navTreeLevel2,
 #portal-sitemap .navTreeLevel2 ul {
     font-size: 85%;
-    font-weight: normal;  
-    margin-bottom: 0;  
+    font-weight: normal;
+    margin-bottom: 0;
     padding: 0.25em 0;
 }
 
@@ -1830,7 +1830,7 @@ div.overlay .formTab {
 div.overlay .formTab.lastFormTab {
     margin-right:0em;
 }
-div.overlay .formControls a { 
+div.overlay .formControls a {
     display: block;
     margin: 0.75em;
 }
@@ -1849,7 +1849,7 @@ div.overlay .formControls a {
 
 #content-history div.historyTools ul {
 	float: right;
-	margin: 0.5em 1em;	
+	margin: 0.5em 1em;
 }
 
 #content-history div.historyTools ul li {
@@ -1894,7 +1894,7 @@ div.overlay .formControls a {
 
 #content-history div.historyComment p {
 	margin: 0;
-	padding-top: 1px;	
+	padding-top: 1px;
 }
 
 #content-history a.historyComparePrevious {
@@ -1925,15 +1925,15 @@ div.overlay .formControls a {
    - Display width and height: no
   Then, add 4 px to the background-position to line up the icons to text.
 
-.contenttype-document_icon { background-position: 0 0;  } 
-.contenttype-event_icon { background-position: 0 -216px;  } 
-.contenttype-file_icon { background-position: 0 -432px;  } 
-.contenttype-folder_icon { background-position: 0 -648px;  } 
-.contenttype-image_icon { background-position: 0 -864px;  } 
-.contenttype-link_icon { background-position: 0 -1080px;  } 
-.contenttype-newsitem_icon { background-position: 0 -1296px;  } 
-.contenttype-site_icon { background-position: 0 -1512px;  } 
-.contenttype-topic_icon { background-position: 0 -1728px;  } 
+.contenttype-document_icon { background-position: 0 0;  }
+.contenttype-event_icon { background-position: 0 -216px;  }
+.contenttype-file_icon { background-position: 0 -432px;  }
+.contenttype-folder_icon { background-position: 0 -648px;  }
+.contenttype-image_icon { background-position: 0 -864px;  }
+.contenttype-link_icon { background-position: 0 -1080px;  }
+.contenttype-newsitem_icon { background-position: 0 -1296px;  }
+.contenttype-site_icon { background-position: 0 -1512px;  }
+.contenttype-topic_icon { background-position: 0 -1728px;  }
 
 */
 
@@ -1952,7 +1952,7 @@ div.overlay .formControls a {
 .icons-on .contenttype-news-item {
 	background: no-repeat transparent 0px -1292px url(contenttypes-sprite.png);
 }
-.icons-on .contenttype-plone-site {	
+.icons-on .contenttype-plone-site {
 	background: no-repeat transparent 0px -1508px url(contenttypes-sprite.png);
 }
 .icons-on .contenttype-topic {
