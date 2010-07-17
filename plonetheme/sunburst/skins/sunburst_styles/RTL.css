@@ -8,22 +8,22 @@
 */
 
 
-/*                                             RTL overides of member.css */
+/* RTL overides of member.css */
 
 
 
 
-/*                                               RTL overides of base.css */
+/* RTL overides of base.css */
 
 
 
 
-/*                                             RTL overides of public.css */
+/* RTL overides of public.css */
 
 
 #portal-globalnav li a {
     border-right: none;
-    border-left: 0.1em solid white;    
+    border-left: 0.1em solid white;
 }
 
 #portal-personaltools {
@@ -66,8 +66,8 @@
 /* Personal tools pulldown */
 
 #portal-personaltools dd {
-	right: auto;
-	left: 0;
+    right: auto;
+    left: 0;
 }
 
 /* Content pulldowns */
@@ -91,34 +91,34 @@ dd.actionMenuContent ul {
     direction: rtl;
 }
 
-/*                                            RTL overides of columns.css */
+/* RTL overides of columns.css */
 
 
 
 
-/*                                          RTL overides of authoring.css */
+/* RTL overides of authoring.css */
 
 
 
 
-/*                                           RTL overides of portlets.css */
+/* RTL overides of portlets.css */
 
 
 
 
-/*                                       RTL overides of controlpanel.css */
+/* RTL overides of controlpanel.css */
 
 
 
 
-/*                                              RTL overides of print.css */
+/* RTL overides of print.css */
 
 
 
 
-/*                                             RTL overides of mobile.css */
+/* RTL overides of mobile.css */
 
 
 
 
-/*                                            RTL overides of navtree.css */
+/* RTL overides of navtree.css */
