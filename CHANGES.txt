@@ -4,6 +4,10 @@ Changelog
 1.0.2 - unreleased
 ------------------
 
+- Fixed bulleted / numbered lists out of text area in right to left. This
+  closes http://dev.plone.org/plone/ticket/9658.
+  [emanlove, hannosch]
+
 - Added back styles for grid listings. This refs
   http://dev.plone.org/plone/ticket/10331.
   [hannosch]
