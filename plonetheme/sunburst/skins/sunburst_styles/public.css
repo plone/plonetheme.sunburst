@@ -623,7 +623,7 @@ dl.portlet li {
     color: White;
     font-weight: bold;
     position: relative;
-        width: 190px;
+    width: 190px;
     top: -3em;
 }
 .eventDetails {
@@ -711,6 +711,13 @@ table.vertical td {
     border-top: 0.1em solid #e7e7e7;
     padding: 0.5em;
 }
+/* Grid table listings */
+table.grid td,
+table.grid th {
+    border: 1px solid #e7e7e7;
+    padding: 0.5em;
+}
+
 .dragindicator {
     outline: 2px solid #FFD700;
 }

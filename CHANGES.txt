@@ -4,8 +4,11 @@ Changelog
 1.0.2 - unreleased
 ------------------
 
-- Add globe icon to external links when "Mark External Links"
-  is checked.
+- Added back styles for grid listings. This refs
+  http://dev.plone.org/plone/ticket/10331.
+  [hannosch]
+
+- Add globe icon to external links when "Mark External Links" is checked.
   [cwainwright]
 
 - Update license to GPL version 2 only.
