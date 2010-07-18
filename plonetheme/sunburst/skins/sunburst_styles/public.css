@@ -836,6 +836,7 @@ dl.error dd {
     font-size: 80%;
     min-height: 2em;
     margin-bottom: 1em;
+    padding-top: 0.05em;
 }
 #content-views {
     float: left;
