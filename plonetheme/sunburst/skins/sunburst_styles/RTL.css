@@ -21,11 +21,9 @@
 /* RTL overides of public.css */
 
 /* Fix to get bulleted and numbered lists to stay inside the content area */
-#content ol {
-    margin-right: 1.5em;
-}
+#content ol,
 #content ul {
-    margin-right: 1em;
+    list-style-position: inside;
 }
 
 #portal-globalnav li a {
