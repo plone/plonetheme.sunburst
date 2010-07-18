@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0.2 - unreleased
+1.0.2 - 2010-07-18
 ------------------
 
 - Fixed problems with content menus sticking out of the edit bar under various
