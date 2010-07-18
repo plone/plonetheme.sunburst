@@ -4,8 +4,8 @@ Changelog
 1.0.2 - unreleased
 ------------------
 
-- Fixed problems content menus sticking out of the edit bar under various font
-  sizes. This closes http://dev.plone.org/plone/ticket/10736.
+- Fixed problems with content menus sticking out of the edit bar under various
+  font sizes. This closes http://dev.plone.org/plone/ticket/10736.
   [hannosch]
 
 - Fixed anonymous personal bar spacing with multiple entries. This closes
