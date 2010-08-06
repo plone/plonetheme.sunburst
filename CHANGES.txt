@@ -4,6 +4,18 @@ Changelog
 1.0.3 - unreleased
 ------------------
 
+- Worked on fixing up styles for IE7
+ * removed padding on breadcrumb links, so all breadcrumb text
+   displays on one level
+ * put in hack to make links with content icons 'display: block' in IE.
+   This fixes the Add New dropdown display, but breaks icon display on
+   .navTreeCurrentItem, so I added zoom to the links.
+   (fyi - the hack was the only way I could find to make this work to
+   override the inline-block, did not work in IEFixes.css)
+ * adjusted styles on logo so IE displays it in the correct place
+ refs #1087
+ [cwainwright]
+
 
 1.0.2 - 2010-07-18
 ------------------

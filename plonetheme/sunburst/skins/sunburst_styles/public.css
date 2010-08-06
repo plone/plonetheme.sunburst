@@ -99,8 +99,8 @@ q {
 }
 
 #portal-logo {
-    display: inline-block;
-    margin: 1.375em 0;
+    display: block;
+    float: left;
 }
 
 #portal-globalnav {
@@ -264,7 +264,6 @@ input.searchField {
 }
 #portal-breadcrumbs a {
     border-bottom: none;
-    padding: 0.25em 0;
     display: inline-block;
 }
 
@@ -401,6 +400,7 @@ a.managePortletsFallback {
 dl.portlet ul.navTree li a {
     border: none;
     display: block;
+    zoom: 1;
 }
 
 dl.portlet ul.navTree li a:hover {
@@ -1975,8 +1975,6 @@ div.overlay .formControls a {
     background: no-repeat transparent 0px -860px url(contenttypes-sprite.png);
 }
 
-
-
 .icons-on .contenttype-document,
 .icons-on .contenttype-event,
 .icons-on .contenttype-folder,
@@ -1988,6 +1986,7 @@ div.overlay .formControls a {
 .icons-on #plone-contentmenu-factories .contenttype-image {
     line-height: 2em;
     display: inline-block;
+    *display: block;
     padding-left: 20px !important;
 }
 
