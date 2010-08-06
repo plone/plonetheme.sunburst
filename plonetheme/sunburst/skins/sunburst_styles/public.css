@@ -1716,7 +1716,7 @@ dl.toc dd ol {
 /* @group Invisibles */
 
 .hiddenStructure {
-    display: none;
+    display: block;
     background: transparent;
     background-image: none; /* safari bug */
     border: none;
