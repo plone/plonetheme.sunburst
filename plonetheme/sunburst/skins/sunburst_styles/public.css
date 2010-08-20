@@ -967,8 +967,7 @@ dl.error dd {
     background-color: White !important;
     color: #666;
 }
-#contentActionMenus dl.actionMenu a,
-#contentActionMenus dl.actionMenu div {
+#contentActionMenus dl.actionMenu {
     line-height: 2em;
 }
 

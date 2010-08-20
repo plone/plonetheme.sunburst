@@ -4,6 +4,9 @@ Changelog
 1.0.3 - unreleased
 ------------------
 
+- Fixed state position in the state/transitions menu when it is no clickable.
+  [vincentfretin]
+
 - Worked on fixing up styles for IE7
  * removed padding on breadcrumb links, so all breadcrumb text
    displays on one level
