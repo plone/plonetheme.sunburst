@@ -4,6 +4,11 @@ Changelog
 1.0.3 - unreleased
 ------------------
 
+- Moved language selector to the left for RTL scripts. Also reversed margin
+  of the actionMenu for RTL scripts. This fixes
+  http://dev.plone.org/plone/ticket/10955.
+  [emanlove]
+
 - Fixed state position in the state/transitions menu when it is no clickable.
   [vincentfretin]
 

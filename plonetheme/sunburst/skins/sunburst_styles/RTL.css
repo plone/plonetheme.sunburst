@@ -37,7 +37,13 @@
     left: 0;
 }
 
-/* Searchbox style and positioning */
+/* Navigation and Search */
+
+#portal-languageselector {
+    float: left;
+    right: auto;
+    left: 1px;
+}
 
 #portal-searchbox {
     padding: 0 0 0 2em;
@@ -68,11 +74,18 @@
     float: right;
 }
 
+/* Pulldown menus */
+
 /* Personal tools pulldown */
 
 #portal-personaltools dd {
     right: auto;
     left: 0;
+}
+
+dl.actionMenu {
+    margin-left: auto;
+    margin-right: 0.5em;
 }
 
 /* Content pulldowns */
