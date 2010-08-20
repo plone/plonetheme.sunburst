@@ -109,6 +109,51 @@ dd.actionMenuContent ul {
     direction: rtl;
 }
 
+/* Core content type sprites */
+
+.icons-on .contenttype-document {
+    background: no-repeat transparent right 4px url(contenttypes-sprite.png);
+}
+.icons-on .contenttype-event {
+    background: no-repeat transparent right -212px url(contenttypes-sprite.png);
+}
+.icons-on .contenttype-folder {
+    background: no-repeat transparent right -644px url(contenttypes-sprite.png);
+}
+.icons-on .contenttype-link {
+    background: no-repeat transparent right -1076px url(contenttypes-sprite.png);
+}
+.icons-on .contenttype-news-item {
+    background: no-repeat transparent right -1292px url(contenttypes-sprite.png);
+}
+.icons-on .contenttype-plone-site {
+    background: no-repeat transparent right -1508px url(contenttypes-sprite.png);
+}
+.icons-on .contenttype-topic {
+    background: no-repeat transparent right -1724px url(contenttypes-sprite.png);
+}
+
+/* These should only appear in the add menu */
+.icons-on #plone-contentmenu-factories .contenttype-file {
+    background: no-repeat transparent right -428px url(contenttypes-sprite.png);
+}
+.icons-on #plone-contentmenu-factories .contenttype-image {
+    background: no-repeat transparent right -860px url(contenttypes-sprite.png);
+}
+
+.icons-on .contenttype-document,
+.icons-on .contenttype-event,
+.icons-on .contenttype-folder,
+.icons-on .contenttype-link,
+.icons-on .contenttype-news-item,
+.icons-on .contenttype-plone-site,
+.icons-on .contenttype-topic,
+.icons-on #plone-contentmenu-factories .contenttype-file,
+.icons-on #plone-contentmenu-factories .contenttype-image {
+    padding-left: auto !important;
+    padding-right: 20px !important;
+}
+
 /* RTL overides of columns.css */
 
 

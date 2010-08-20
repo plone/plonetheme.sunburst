@@ -4,6 +4,10 @@ Changelog
 1.0.3 - unreleased
 ------------------
 
+- Moved icons in drop down "Add new..." menu to right of text for RTL
+  scripts. This fixes http://dev.plone.org/plone/ticket/10954.
+  [emanlove]
+
 - Moved language selector to the left for RTL scripts. Also reversed margin
   of the actionMenu for RTL scripts. This fixes
   http://dev.plone.org/plone/ticket/10955.
