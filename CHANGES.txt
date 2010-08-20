@@ -4,6 +4,10 @@ Changelog
 1.0.3 - unreleased
 ------------------
 
+- Removed "line-height: 2em;" from "table.listing a" css rule so the vertical
+  alignment of linked text and non linked text is the same.
+  [vincentfretin]
+
 - Moved icons in drop down "Add new..." menu to right of text for RTL
   scripts. This fixes http://dev.plone.org/plone/ticket/10954.
   [emanlove]
