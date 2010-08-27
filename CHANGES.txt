@@ -3,6 +3,10 @@ Changelog
 
 1.0.3 - unreleased
 ------------------
+- removed padding from navigation portlet header when it is hidden,
+  so we won't see a small chunk of it This fixes #10800
+  [cwainwright]
+
 - * put previous logo settings back (float messes with rtl)
   * put in IE spacing fixes (logo, hiddenStructure)
   * removed float from div.cell, so livesearch and display menu don't fall

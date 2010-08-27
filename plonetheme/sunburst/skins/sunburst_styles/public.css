@@ -329,6 +329,9 @@ div.portletAssignments div.portletHeader {
     background: #ddd;
     line-height: normal;
 }
+dl.portlet dt.hiddenStructure {
+    padding: 0;
+}
 div.portletAssignments {
     font-size: 0.8em;
     line-height: 2em;
