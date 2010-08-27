@@ -6,3 +6,20 @@
     https://dev.plone.org/plone/ticket/10417
 */
 
+/* removes extra space above logo */
+#portal-logo {
+    margin-top: 0;
+}
+
+/* ensures hidden elements don't take up space */
+.hiddenStructure {
+    position: absolute;
+}
+
+/* IE8: keeps livesearch from falling behind content area,
+   and display menu from falling behind footer
+   Keeping float for IE7, so the portlets don't fall */
+div.cell {
+    float: none;
+    *float: left;
+}

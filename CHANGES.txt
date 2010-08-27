@@ -3,6 +3,11 @@ Changelog
 
 1.0.3 - unreleased
 ------------------
+- * put previous logo settings back (float messes with rtl)
+  * put in IE spacing fixes (logo, hiddenStructure)
+  * removed float from div.cell, so livesearch and display menu don't fall
+  behind other items in IE8 http://dev.plone.org/plone/ticket/10872
+  [cwainwright]
 
 - Removed "line-height: 2em;" from "table.listing a" css rule so the vertical
   alignment of linked text and non linked text is the same.

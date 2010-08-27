@@ -99,8 +99,8 @@ q {
 }
 
 #portal-logo {
-    display: block;
-    float: left;
+    display: inline-block;
+    margin: 1.375em 0;
 }
 
 #portal-globalnav {
