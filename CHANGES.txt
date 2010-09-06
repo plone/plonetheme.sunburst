@@ -3,13 +3,15 @@ Changelog
 
 1.0.3 - unreleased
 ------------------
-- removed padding from navigation portlet header when it is hidden,
+
+- Removed padding from navigation portlet header when it is hidden,
   so we won't see a small chunk of it This fixes #10800
   [cwainwright]
 
 - * put previous logo settings back (float messes with rtl)
   * put in IE spacing fixes (logo, hiddenStructure)
   * removed float from div.cell, so livesearch and display menu don't fall
+
   behind other items in IE8 http://dev.plone.org/plone/ticket/10872
   [cwainwright]
 
@@ -29,17 +31,19 @@ Changelog
 - Fixed state position in the state/transitions menu when it is no clickable.
   [vincentfretin]
 
-- Worked on fixing up styles for IE7
- * removed padding on breadcrumb links, so all breadcrumb text
-   displays on one level
- * put in hack to make links with content icons 'display: block' in IE.
-   This fixes the Add New dropdown display, but breaks icon display on
-   .navTreeCurrentItem, so I added zoom to the links.
-   (fyi - the hack was the only way I could find to make this work to
-   override the inline-block, did not work in IEFixes.css)
- * adjusted styles on logo so IE displays it in the correct place
- refs #1087
- [cwainwright]
+- Worked on fixing up styles for IE7:
+
+  * removed padding on breadcrumb links, so all breadcrumb text
+    displays on one level
+  * put in hack to make links with content icons 'display: block' in IE.
+    This fixes the Add New dropdown display, but breaks icon display on
+    .navTreeCurrentItem, so I added zoom to the links.
+    (fyi - the hack was the only way I could find to make this work to
+    override the inline-block, did not work in IEFixes.css)
+  * adjusted styles on logo so IE displays it in the correct place
+ 
+  refs #1087
+  [cwainwright]
 
 
 1.0.2 - 2010-07-18
