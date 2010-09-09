@@ -4,15 +4,18 @@ Changelog
 1.0.3 - unreleased
 ------------------
 
-- Removed padding from navigation portlet header when it is hidden,
-  so we won't see a small chunk of it This fixes #10800
+- Removed padding from navigation portlet header when it is hidden, so we won't
+  see a small chunk of it. This fixes http://dev.plone.org/plone/ticket/10800.
   [cwainwright]
 
-- * put previous logo settings back (float messes with rtl)
+- Worked on fixing up styles for IE8:
+
+  * put previous logo settings back (float messes with rtl)
   * put in IE spacing fixes (logo, hiddenStructure)
   * removed float from div.cell, so livesearch and display menu don't fall
+    behind other items in IE8.
 
-  behind other items in IE8 http://dev.plone.org/plone/ticket/10872
+  Closes http://dev.plone.org/plone/ticket/10872.
   [cwainwright]
 
 - Removed "line-height: 2em;" from "table.listing a" css rule so the vertical
@@ -41,10 +44,9 @@ Changelog
     (fyi - the hack was the only way I could find to make this work to
     override the inline-block, did not work in IEFixes.css)
   * adjusted styles on logo so IE displays it in the correct place
- 
-  refs #1087
-  [cwainwright]
 
+  Refs http://dev.plone.org/plone/ticket/10872.
+  [cwainwright]
 
 1.0.2 - 2010-07-18
 ------------------
