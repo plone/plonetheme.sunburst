@@ -180,6 +180,10 @@ q {
     font-size: 80%;
 }
 
+#portal-searchbox form {
+    white-space: nowrap;
+}
+
 #portal-searchbox label {
     font-weight: normal;
 }
