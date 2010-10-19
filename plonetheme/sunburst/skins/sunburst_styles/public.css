@@ -670,11 +670,22 @@ table.listing th.listingCheckbox {
     text-align: center;
 }
 
+
+table.listing {
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+table.listing .top {
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
 table.listing th {
     text-align: left;
     color: #666;
     border: 0.1em solid #e7e7e7;
-    border-style: solid none none;
+    border-style: solid solid none;
+    background: #ddd;
 }
 table.listing tr.odd th {
     border: 0.1em solid #fff;
@@ -694,6 +705,9 @@ table.listing tbody tr td {
 }
 table.listing tbody tr.odd td {
     background: #eee;
+}
+table.listing td {
+    border-right: 1px solid #ddd;
 }
 table.listing a {
     border: none;

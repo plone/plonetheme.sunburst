@@ -4,6 +4,8 @@ Changelog
 1.0.4 - unreleased
 ------------------
 
+- Restore more of the table.listing (Fancy listing) CSS. Refs #10331.
+  [rossp]
 
 1.0.3 - 2010-09-09
 ------------------
