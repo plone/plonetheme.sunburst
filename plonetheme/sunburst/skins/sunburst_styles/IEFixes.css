@@ -1,7 +1,7 @@
-/* 
-    note: 
-    take care here since the Sunburst Theme uses IE8.js - 
-    ie hacks like: div {height:0.1%} 
+/*
+    note:
+    take care here since the Sunburst Theme uses IE8.js -
+    ie hacks like: div {height:0.1%}
     will actually result in height 0.1% of that element
     https://dev.plone.org/plone/ticket/10417
 */
