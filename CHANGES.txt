@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0.4 - unreleased
+1.0.4 - 2010-11-15
 ------------------
 
 - Restore more of the table.listing (Fancy listing) CSS. Refs #10331.
