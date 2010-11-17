@@ -6,6 +6,11 @@
     https://dev.plone.org/plone/ticket/10417
 */
 
+/* fix shift on content views list under ie6 */
+*html ul#content-views{
+    margin: -2px -3px 0px -3px;
+}
+
 /* removes extra space above logo */
 #portal-logo {
     margin-top: 0;

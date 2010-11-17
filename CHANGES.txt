@@ -4,6 +4,10 @@ Changelog
 1.0.5 - Unreleased
 ------------------
 
+- Fixed content views list shift under ie6.
+  This fixes http://dev.plone.org/plone/ticket/11280.
+  [thomasdesvenain]
+
 1.0.4 - 2010-11-15
 ------------------
 
