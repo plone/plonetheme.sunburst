@@ -1,0 +1,2 @@
+This file is used as a flag to make sure that this product's custom import 
+handler only runs when this profile is imported.

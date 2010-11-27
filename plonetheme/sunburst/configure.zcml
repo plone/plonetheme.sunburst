@@ -21,4 +21,12 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+  <genericsetup:importStep
+      name="plonetheme.sunburst-various"
+      title="Sunburst Theme Configuration"
+      description="Custom configuration for plonetheme.sunburst"
+      handler=".setuphandlers.importVarious">
+    <genericsetup:depends name="actions"/>
+  </genericsetup:importStep>
+
 </configure>

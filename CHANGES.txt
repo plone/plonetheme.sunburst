@@ -1,6 +1,15 @@
 Changelog
 =========
 
+1.0.6 - Unreleased
+------------------
+
+- Copy the plone_setup action to the user action category via a custom
+  setuphandler rather than in actions.xml, so that we don't have to hardcode
+  the various action settings here.  This provides forward compatibility with
+  Plone 4.1, where the URL and permission change.
+  [davisagli]
+
 1.0.5 - Unreleased
 ------------------
 
