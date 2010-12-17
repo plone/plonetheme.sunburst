@@ -4,6 +4,9 @@ Changelog
 1.0.6 - Unreleased
 ------------------
 
+- Added ajax_include_head request parameter for use with cross domain iframe.
+  [elro]
+
 - Copy the plone_setup action to the user action category via a custom
   setuphandler rather than in actions.xml, so that we don't have to hardcode
   the various action settings here.  This provides forward compatibility with
