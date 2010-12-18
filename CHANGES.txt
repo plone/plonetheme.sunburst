@@ -4,6 +4,9 @@ Changelog
 1.0.6 - Unreleased
 ------------------
 
+- Added iframe to style reset.
+  [elro]
+
 - Added ajax_include_head request parameter for use with cross domain iframe.
   [elro]
 

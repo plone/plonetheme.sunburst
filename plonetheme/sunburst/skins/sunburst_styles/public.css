@@ -22,6 +22,7 @@
 a { outline: none; }
 table { border-spacing: 0; }
 img { vertical-align: text-bottom; }
+iframe { border-width: 0; border-style:none; }
 
 
 /* @end */
