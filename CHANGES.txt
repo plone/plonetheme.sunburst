@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0.6 - Unreleased
+1.0.5 - 2011-01-04
 ------------------
 
 - Added iframe to style reset.
@@ -15,9 +15,6 @@ Changelog
   the various action settings here.  This provides forward compatibility with
   Plone 4.1, where the URL and permission change.
   [davisagli]
-
-1.0.5 - Unreleased
-------------------
 
 - Fixed content views list shift under ie6.
   This fixes http://dev.plone.org/plone/ticket/11280.
