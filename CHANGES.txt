@@ -4,6 +4,9 @@ Changelog
 1.0.6 - Unreleased
 ------------------
 
+- Added styling for dexterity title and description fields.
+  [elro]
+
 1.0.5 - 2011-01-04
 ------------------
 

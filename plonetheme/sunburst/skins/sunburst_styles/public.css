@@ -1428,6 +1428,7 @@ fieldset,
 }
 
 /* Emulates the styling from the h1 tag */
+#formfield-form-widgets-IDublinCore-title input,
 #archetypes-fieldname-title input {
     font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
     line-height: 125%;
@@ -1439,6 +1440,7 @@ fieldset,
 }
 
 /* Emulates styling from the description's view */
+#formfield-form-widgets-IDublinCore-description textarea#form-widgets-IDublinCore-description,
 #archetypes-fieldname-description textarea#description {
     font-family: Arial,FreeSans,sans-serif;
     color:#666666;
@@ -1508,9 +1510,11 @@ dl.enableFormTabbing dd {
 .field input[type="text"] {
     /*width: 100%;*/
 }
+input#form-widgets-IDublinCore-title,
 input#title {
     width: 100%;
 }
+.error input#form-widgets-IDublinCore-title,
 .error input#title {
     width:99%;
 }
