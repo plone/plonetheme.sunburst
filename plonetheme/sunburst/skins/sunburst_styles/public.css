@@ -1537,7 +1537,7 @@ input#title {
     color: #555;
     margin: 0 0 0.2em 0;
 }
-div.error {
+div.field.error {
     background-color: #fdc;
     border:  1px solid red;
     padding: 0.5em;

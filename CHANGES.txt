@@ -4,7 +4,10 @@ Changelog
 1.0.6 - Unreleased
 ------------------
 
-- Added styling for dexterity title and description fields.
+- Tightened selector for error fields to avoid z3cform inner div.error.
+  [elro]
+
+- Added styling for z3cform title and description fields.
   [elro]
 
 1.0.5 - 2011-01-04
