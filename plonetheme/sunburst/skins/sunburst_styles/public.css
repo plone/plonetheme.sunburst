@@ -1428,7 +1428,7 @@ fieldset,
 }
 
 /* Emulates the styling from the h1 tag */
-#formfield-form-widgets-IDublinCore-title input,
+#content .field input[type="text"][name$=".title"],
 #archetypes-fieldname-title input {
     font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
     line-height: 125%;
@@ -1440,7 +1440,7 @@ fieldset,
 }
 
 /* Emulates styling from the description's view */
-#formfield-form-widgets-IDublinCore-description textarea#form-widgets-IDublinCore-description,
+#content .field textarea[name$=".description"],
 #archetypes-fieldname-description textarea#description {
     font-family: Arial,FreeSans,sans-serif;
     color:#666666;
@@ -1510,11 +1510,11 @@ dl.enableFormTabbing dd {
 .field input[type="text"] {
     /*width: 100%;*/
 }
-input#form-widgets-IDublinCore-title,
+.field input[type="text"][name$=".title"],
 input#title {
     width: 100%;
 }
-.error input#form-widgets-IDublinCore-title,
+.field.error input[type="text"][name$=".title"],
 .error input#title {
     width:99%;
 }
