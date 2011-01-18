@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0.6 - Unreleased
+1.0.6 - 2011-01-18
 ------------------
 
 - Adjust the new setuphandler introduced in 1.0.5 to avoid using copy/paste,
