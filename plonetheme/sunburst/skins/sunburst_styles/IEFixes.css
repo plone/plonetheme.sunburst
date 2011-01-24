@@ -28,3 +28,10 @@ div.cell {
     float: none;
     *float: left;
 }
+/* IE7: fixes super-wide div for JavaScript Tag selector */
+div.multiSelectOptions {
+    !width: 50%;
+}
+.multiSelectOptions input {
+    !margin: 0px !important;
+}
