@@ -504,7 +504,7 @@ dl.portlet a:hover {
     text-align: right;
 }
 
-#category a.link-category {
+#category a.link-category, span.selectedTag {
     color: black;
     padding: 0.25em 0.5em;
     background: #ddd;
@@ -2017,36 +2017,10 @@ div.overlay .formControls a {
 /* @end */
 
 /* @group jQuery Tag multiple selector */
-a.multiSelect {
-    position: relative;
-    cursor: default;
-    text-decoration: none;
-    color: black;
-    display: -moz-inline-stack;
-    display: inline-block;
-    vertical-align: top;
-}
-
-a.multiSelect:link, a.multiSelect:visited, a.multiSelect:hover, a.multiSelect:active {
-    color: black;
-    text-decoration: none;
-}
-
-a.multiSelect span
-{
-    overflow: hidden;
-    display: -moz-inline-stack;
-    display: inline-block;
-    white-space: nowrap;
-    text-align: right;
-    color: #777777;
-}
-
 .multiSelectOptions {
-    margin-top: -1px;
     overflow-y: auto;
     border: solid 1px #999999;
-    background: #FFF;
+    background: #FFFFFF;
     height: 14em;
     width: 100%;
 }
@@ -2056,41 +2030,18 @@ a.multiSelect span
     line-height: 1em;
     font-weight: normal;
 }
-
-.multiSelectOptions LABEL.optGroup
-{
-    font-weight: bold;
-}
-
-.multiSelectOptions .optGroupContainer LABEL
-{
-    padding-left: 10px;
-}
-
-.multiSelectOptions.optGroupHasCheckboxes .optGroupContainer LABEL
-{
-    padding-left: 18px;
-}
-
 .multiSelectOptions input{
     vertical-align: middle;
     margin: 1px 4px 4px 6px;
 }
-
 .multiSelectOptions LABEL.checked {
-    background-color: #EEE;
+    background-color: #EEEEEE;
 }
-
-.multiSelectOptions LABEL.selectAll {
-    border-bottom: dotted 1px #CCC;
-}
-
 .multiSelectOptions LABEL.hover {
-    background-color: #777;
-    color: white;
+    background-color: #777777;
+    color: #FFFFFF;
 }
-
-.formHelp {
+#archetypes-fieldname-subject .formHelp {
     font-weight: normal !important;
 }
 #existingTagsSection {
@@ -2101,39 +2052,23 @@ a.multiSelect span
     float: left;
     width: 50%;
 }
-#content dd {
-    margin-bottom: 1px;
+#existingTags dd {
+    margin-bottom: 1px !important;
     margin-left: 0;
+}
+#selectedTags, #newTags {
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
 }
 #selectedTagsSection {
     margin-left: 3em;
     float: left;
     width: 43%;
-    margin-bottom: 0em !important;
-}
-#selectedTags {
-    margin-bottom: 1em;
+    margin-bottom: 0 !important;
 }
 #newTagsSection {
-    width: 49%;
+    width: 48%;
     margin-left: 3em;
-}
-span.selectedTag {
-    -moz-background-clip:border;
-    -moz-background-origin:padding;
-    -moz-background-size:auto auto;
-    -moz-border-radius:0.5em;
-    border-radius:0.5em;
-    background-attachment:scroll;
-    background-color:#DDDDDD;
-    background-image:none;
-    background-position:0 0;
-    background-repeat:repeat;
-    color:black;
-    padding-bottom:0.25em;
-    padding-left:0.5em;
-    padding-right:0.5em;
-    padding-top:0.25em;
 }
 p.selectedTag {
     margin-bottom: .4em !important;
