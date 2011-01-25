@@ -2042,7 +2042,7 @@ div.overlay .formControls a {
     color: #FFFFFF;
 }
 #archetypes-fieldname-subject .formHelp {
-    font-weight: normal !important;
+    font-weight: normal;
 }
 #existingTagsSection {
     position: relative;
@@ -2052,26 +2052,26 @@ div.overlay .formControls a {
     float: left;
     width: 50%;
 }
-#existingTags dd {
-    margin-bottom: 1px !important;
+#content #existingTags dd {
+    margin-bottom: 1px;
     margin-left: 0;
 }
-#selectedTags, #newTags {
-    margin-bottom: 0 !important;
-    margin-left: 0 !important;
+#content #selectedTags, #content #newTags {
+    margin-bottom: 0;
+    margin-left: 0;
 }
-#selectedTagsSection {
+#content #selectedTagsSection {
     margin-left: 3em;
     float: left;
     width: 43%;
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
 }
 #newTagsSection {
     width: 48%;
     margin-left: 3em;
 }
-p.selectedTag {
-    margin-bottom: .4em !important;
+#content p.selectedTag {
+    margin-bottom: .4em;
 }
 #existingTagsTitle, #newTagsTitle {
     float: left;
