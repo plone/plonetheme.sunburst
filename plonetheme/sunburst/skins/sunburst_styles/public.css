@@ -2017,27 +2017,27 @@ div.overlay .formControls a {
 /* @end */
 
 /* @group jQuery Tag multiple selector */
-.multiSelectOptions {
+.optionsBox {
     overflow-y: auto;
     border: solid 1px #999999;
     background: #FFFFFF;
     height: 14em;
     width: 100%;
 }
-.multiSelectOptions LABEL {
+.optionsBox LABEL {
     padding: 2px 0 0 0;
     display: block;
     line-height: 1em;
     font-weight: normal;
 }
-.multiSelectOptions input{
+.optionsBox input{
     vertical-align: middle;
     margin: 1px 4px 4px 6px;
 }
-.multiSelectOptions LABEL.checked {
+.optionsBox LABEL.checked {
     background-color: #EEEEEE;
 }
-.multiSelectOptions LABEL.hover {
+.optionsBox LABEL.hover {
     background-color: #777777;
     color: #FFFFFF;
 }
