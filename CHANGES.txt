@@ -1,8 +1,12 @@
 Changelog
 =========
 
-1.1.1 - Unreleased
+1.1.1 - 2011-02-10
 ------------------
+
+- Renamed options box in IEFixes for keyword multiple select enhancement PLIP.
+  Refs http://dev.plone.org/plone/ticket/11017.
+  [rmattb]
 
 1.1 - 2011-02-04
 ----------------
@@ -14,7 +18,8 @@ Changelog
 ------------------
 
 - Adjust the new setuphandler introduced in 1.0.5 to avoid using copy/paste,
-  which introduced unwanted additional security checks. [hannosch]
+  which introduced unwanted additional security checks. 
+  [hannosch]
 
 - Tightened selector for error fields to avoid z3cform inner div.error.
   [elro]
