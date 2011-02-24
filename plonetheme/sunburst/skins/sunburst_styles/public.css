@@ -1519,7 +1519,7 @@ input#title {
 }
 .field.error input[type="text"][name$=".title"],
 .error input#title {
-    width:99%;
+    width: 99%;
 }
 
 .fieldRequired {
