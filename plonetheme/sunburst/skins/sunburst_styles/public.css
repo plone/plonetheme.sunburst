@@ -1508,7 +1508,10 @@ dl.enableFormTabbing dd {
     margin-bottom: 1em;
 }
 .field input[type="text"] {
-    /*width: 100%;*/
+   width: 20em;
+}
+.field input[type="text"][size] {
+   width: auto;
 }
 .field input[type="text"][name$=".title"],
 input#title {

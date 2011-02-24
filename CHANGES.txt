@@ -4,6 +4,9 @@ Changelog
 1.1.2 - Unreleased
 ------------------
 
+- Make text input fields have a default width of 20em when no size is set.
+  [elro]
+
 - Hide plone.app.discussion comment viewlet from print.
   [timo]
 
