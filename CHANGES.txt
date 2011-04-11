@@ -1,7 +1,13 @@
 Changelog
 =========
+
+
 1.1.3 - Unreleased
 ------------------
+
+- Add MANIFEST.in.
+  [WouterVH]
+
 
 1.1.2 - 2011-03-02
 ------------------
@@ -12,6 +18,7 @@ Changelog
 - Hide plone.app.discussion comment viewlet from print.
   [timo]
 
+
 1.1.1 - 2011-02-10
 ------------------
 
@@ -19,12 +26,14 @@ Changelog
   Refs http://dev.plone.org/plone/ticket/11017.
   [rmattb]
 
+
 1.1 - 2011-02-04
 ----------------
 
 - Merge PLIP 11017: Tags MultiSelectionWidget w/scrollbar & checkboxes.
   [esteele]
-  
+
+
 1.0.6 - 2011-01-18
 ------------------
 
@@ -37,6 +46,7 @@ Changelog
 
 - Added styling for z3cform title and description fields.
   [elro]
+
 
 1.0.5 - 2011-01-04
 ------------------
@@ -57,11 +67,13 @@ Changelog
   This fixes http://dev.plone.org/plone/ticket/11280.
   [thomasdesvenain]
 
+
 1.0.4 - 2010-11-15
 ------------------
 
 - Restore more of the table.listing (Fancy listing) CSS. Refs #10331.
   [rossp]
+
 
 1.0.3 - 2010-09-09
 ------------------
@@ -110,6 +122,7 @@ Changelog
   Refs http://dev.plone.org/plone/ticket/10872.
   [cwainwright]
 
+
 1.0.2 - 2010-07-18
 ------------------
 
@@ -135,11 +148,13 @@ Changelog
 - Update license to GPL version 2 only.
   [hannosch]
 
+
 1.0.1 - 2010-07-07
 ------------------
 
 - Removed remaining references to empty ``sunburst_js`` folder.
   [hannosch]
+
 
 1.0 - 2010-07-07
 ----------------
@@ -193,6 +208,7 @@ Changelog
   Fixes http://dev.plone.org/plone/ticket/10630.
   [limi]
 
+
 1.0b7 - 2010-05-31
 ------------------
 
@@ -207,12 +223,14 @@ Changelog
   viewport.
   [stevem]
 
+
 1.0b6 - 2010-05-03
 ------------------
 
 - Remove styling of path_bar. Breadcrumbs should now behave in a manner
   similar to that of Plone 3.
   [esteele]
+
 
 1.0b5 - 2010-05-03
 ------------------
@@ -234,6 +252,7 @@ Changelog
 - Fix for global navigation colliding with portlets, bread crumb etc.
   http://dev.plone.org/plone/ticket/10491
   [pelle]
+
 
 1.0b4 - 2010-05-01
 ------------------
@@ -320,6 +339,7 @@ Changelog
 - Fixed help_biography message.
   [vincentfretin]
 
+
 1.0b2 - 2010-03-05
 ------------------
 
@@ -366,6 +386,7 @@ Changelog
   and let us re-enable the mobile support again. Thanks to Dean Edwards for
   fixing this.
   [limi]
+
 
 1.0b1 - 2010-02-18
 ------------------
@@ -418,6 +439,7 @@ Changelog
 
 - Copied updated structure of 'main' slot from classic theme to Sunburst
   [spliter]
+
 
 1.0a5 - 2010-02-01
 ------------------
@@ -509,6 +531,7 @@ Changelog
   folder. This closes http://dev.plone.org/plone/ticket/9894
   [dukebody, thanks cewing]
 
+
 1.0a4 - 2009-12-21
 ------------------
 
@@ -529,6 +552,7 @@ Changelog
 - On author.cpt, only display the "log in to add comments" button if mailhost
   is defined. Only show the mailhost warning if user is authenticated.
   [esteele]
+
 
 1.0a3 - 2009-12-02
 ------------------
@@ -553,11 +577,13 @@ Changelog
 - Update styles to reflect the move to @@register and @@new-user
   [esteele]
 
+
 1.0a2 - 2009-11-18
 ------------------
 
 - Remove non-ascii character in README that prevented distribution.
   [esteele]
+
 
 1.0a1 - 2009-11-18
 ------------------
