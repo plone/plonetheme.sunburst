@@ -3,7 +3,10 @@ Sunburst, a theme for Plone 4
 
 Sunburst is a modern, minimalist, grid-based theme for Plone 4.
 
-Goals:
+.. contents:: Table of contents
+
+Goals
+-----
 
 - Keep the theme color-neutral (black, white, grays), so it meshes with any
   company logo and doesn't feel like it requires color adjustment for doing the
