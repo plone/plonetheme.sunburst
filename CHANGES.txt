@@ -5,6 +5,9 @@ Changelog
 1.1.3 - Unreleased
 ------------------
 
+- Updated base_properties values with new sunburst theme css values.
+  [thomasdesvenain]
+
 - Removed clear:both on .image-left and .image-right rules.
   [vincentfretin]
 
