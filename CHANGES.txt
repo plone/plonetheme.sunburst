@@ -5,6 +5,9 @@ Changelog
 1.1.3 - Unreleased
 ------------------
 
+- Removed clear:both on .image-left and .image-right rules.
+  [vincentfretin]
+
 - Add MANIFEST.in.
   [WouterVH]
 
