@@ -40,8 +40,8 @@ textTransform:string=none
 evenRowBackgroundColor:string=#eef3f5 
 oddRowBackgroundColor:string=transparent
 
-notifyBorderColor:string=#ffa500
-notifyBackgroundColor:string=#ffce7b
+notifyBorderColor:string=#9C6E3D
+notifyBackgroundColor:string=#ffffe3
 
 discreetColor:string=#76797c
 helpBackgroundColor:string=#ffffe1
