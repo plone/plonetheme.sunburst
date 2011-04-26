@@ -4,11 +4,11 @@ plone_skin:string=Sunburst Theme
 
 logoName:string=logo.png
 
-fontFamily:string="Helvetica Neue", Arial, FreeSans, sans-serif; 
+fontFamily:string="Helvetica Neue", Arial, FreeSans, sans-serif;
 linkColor:string=#205c90
 editBarColor:string=#75ad0a
 
-compatibilityClassic:string=The below values are copied directly from the old Plone theme to make sure that products that rely on them don't break. 
+compatibilityClassic:string=The below values are copied directly from the old Plone theme to make sure that products that rely on them don't break.
 
 fontBaseSize:string=69%
 fontColor:string=Black
@@ -37,7 +37,7 @@ inputFontColor:string=Black
 
 textTransform:string=none
 
-evenRowBackgroundColor:string=#eef3f5 
+evenRowBackgroundColor:string=#eef3f5
 oddRowBackgroundColor:string=transparent
 
 notifyBorderColor:string=#9C6E3D
@@ -47,5 +47,5 @@ discreetColor:string=#76797c
 helpBackgroundColor:string=#ffffe1
 
 portalMinWidth:string=70em
-columnOneWidth:string=16em
-columnTwoWidth:string=16em
+columnOneWidth:string=22.75%
+columnTwoWidth:string=22.75%
