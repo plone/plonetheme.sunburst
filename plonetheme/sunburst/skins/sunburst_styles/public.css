@@ -1570,6 +1570,18 @@ tr.selected {
     background-color: #ffa;
 }
 
+.multi-widget-field {
+    padding-left: 0.5em;
+    border-left: 1.5em solid #DDD;
+}
+
+.multi-widget-checkbox {
+    margin-left: -2em;
+    margin-right: 0.5em;
+    width: 1.5em;
+    display: inline-block;
+}
+
 /* @group Login form */
 
 body.template-logged_out #content,

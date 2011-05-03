@@ -5,6 +5,9 @@ Changelog
 1.1.3 - Unreleased
 ------------------
 
+- Add styling for z3cform multi-widget.
+  [elro]
+
 - Optimize images and icon file sizes.
   [hannosch]
 
