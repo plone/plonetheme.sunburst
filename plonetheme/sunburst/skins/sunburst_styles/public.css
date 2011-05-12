@@ -1566,10 +1566,15 @@ textarea#form\.description {
     width: 99%;
 }
 table.listing tbody tr.odd.selected td,
+table.listing tbody tr.odd.dragging td,
+tr.dragging,
 tr.selected {
     background-color: #ffa;
 }
-
+table.listing tbody tr.odd.error td,
+tr.error {
+    background-color: #fdc;
+}
 .multi-widget-field {
     padding-left: 0.5em;
     border-left: 1.5em solid #DDD;
