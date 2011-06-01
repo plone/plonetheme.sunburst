@@ -4,6 +4,9 @@ Changelog
 1.1.5 - Unreleased
 ------------------
 
+- Fixed: spinner is back in main_template.
+  [thomasdesvenain]
+
 1.1.4 - 2011-05-13
 ------------------
 
@@ -58,7 +61,7 @@ Changelog
 ------------------
 
 - Adjust the new setuphandler introduced in 1.0.5 to avoid using copy/paste,
-  which introduced unwanted additional security checks. 
+  which introduced unwanted additional security checks.
   [hannosch]
 
 - Tightened selector for error fields to avoid z3cform inner div.error.
