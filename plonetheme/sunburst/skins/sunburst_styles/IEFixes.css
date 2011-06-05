@@ -1,11 +1,3 @@
-/*
-    note:
-    take care here since the Sunburst Theme uses IE8.js -
-    ie hacks like: div {height:0.1%}
-    will actually result in height 0.1% of that element
-    https://dev.plone.org/plone/ticket/10417
-*/
-
 /* fix shift on content views list under ie6 */
 *html ul#content-views{
     margin: -2px -3px 0px -3px;

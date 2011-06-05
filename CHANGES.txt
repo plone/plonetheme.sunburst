@@ -4,6 +4,9 @@ Changelog
 1.1.5 - Unreleased
 ------------------
 
+- Removed comment in IEFixes.css concerning the now removed IE8.js.
+  [elro]
+
 - Fixed: spinner is back in main_template.
   [thomasdesvenain]
 
