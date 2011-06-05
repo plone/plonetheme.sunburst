@@ -4,6 +4,9 @@ Changelog
 1.1.5 - Unreleased
 ------------------
 
+- Add IEFixes.css to CSS registry incase plonetheme.classic is not installed.
+  [elro]
+
 - Removed comment in IEFixes.css concerning the now removed IE8.js.
   [elro]
 
