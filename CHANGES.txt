@@ -4,7 +4,7 @@ Changelog
 1.1.5 - Unreleased
 ------------------
 
-- Fixed: siteactions background-color was applied to whole page
+- Fixed: siteactions background-color was applied to whole page.
   Add a clear: left.
   [thomasdesvenain]
 
