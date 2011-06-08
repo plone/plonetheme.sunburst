@@ -284,6 +284,7 @@ input.searchField {
     font-size: 85%;
     padding-bottom: 2em;
     text-align: center;
+    clear: left;
 }
 #portal-siteactions li {
     margin-right: 0.5em;
