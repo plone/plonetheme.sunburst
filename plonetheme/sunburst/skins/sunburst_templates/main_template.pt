@@ -94,7 +94,7 @@
 
                             <metal:bodytext define-slot="main">
 
-                             <div tal:replace="structure provider:plone.abovecontenttitle" tal:condition="not:ajax_load" />
+                             <div id="viewlet-above-content-title" tal:content="structure provider:plone.abovecontenttitle" tal:condition="not:ajax_load" />
                              <metal:title define-slot="content-title">
                                  <metal:comment tal:content="nothing">
                                      If you write a custom title always use
@@ -104,7 +104,7 @@
                                      Generic KSS Title. Is rendered with class="documentFirstHeading".
                                  </h1>
                              </metal:title>
-                             <div tal:replace="structure provider:plone.belowcontenttitle" tal:condition="not:ajax_load" />
+                             <div id="viewlet-below-content-title" tal:content="structure provider:plone.belowcontenttitle" tal:condition="not:ajax_load" />
 
                              <metal:description define-slot="content-description">
                                  <metal:comment tal:content="nothing">
@@ -116,13 +116,13 @@
                                  </div>
                              </metal:description>
 
-                             <div tal:replace="structure provider:plone.abovecontentbody" tal:condition="not:ajax_load" />
+                             <div id="viewlet-above-content-body" tal:content="structure provider:plone.abovecontentbody" tal:condition="not:ajax_load" />
                              <div id="content-core">
                                  <metal:text define-slot="content-core" tal:content="nothing">
                                      Page body text
                                  </metal:text>
                              </div>
-                             <div tal:replace="structure provider:plone.belowcontentbody" tal:condition="not:ajax_load" />
+                             <div id="viewlet-below-content-body" tal:content="structure provider:plone.belowcontentbody" tal:condition="not:ajax_load" />
 
                             </metal:bodytext>
                         </div>

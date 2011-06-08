@@ -4,6 +4,9 @@ Changelog
 1.1.5 - Unreleased
 ------------------
 
+- Add ids on content core viewlet managers.
+  [thomasdesvenain]
+
 - Fixed: siteactions background-color was applied to whole page.
   Add a clear: left.
   [thomasdesvenain]
