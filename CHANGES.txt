@@ -4,6 +4,9 @@ Changelog
 1.1.5 - Unreleased
 ------------------
 
+- Clean up HTML comments in main_template.
+  [davisagli]
+
 - Add ids on content core viewlet managers.
   [thomasdesvenain]
 
