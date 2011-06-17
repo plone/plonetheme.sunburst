@@ -4,6 +4,9 @@ Changelog
 1.1.5 - Unreleased
 ------------------
 
+- Fixed: portal footer is in a 'row' div.
+  [thomasdesvenain]
+
 - Clean up HTML comments in main_template.
   [davisagli]
 
