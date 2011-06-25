@@ -1829,7 +1829,7 @@ div.overlay div.close {
     overflow-y: auto;
 }
 
-.pb-ajax, .pb-image {
+.pb-ajax, .pb-image, .overlay iframe {
     background-color: #fff;
     border: 1px solid #999;
     white-space: normal;

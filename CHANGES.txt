@@ -4,6 +4,9 @@ Changelog
 1.1.5 - Unreleased
 ------------------
 
+- Add shadow and border for iframe overlays to match images and ajax overlays.
+  [smcmahon]
+
 - Fixed: portal footer is in a 'row' div.
   [thomasdesvenain]
 
