@@ -20,6 +20,13 @@ div.cell {
     float: none;
     *float: left;
 }
+
+/* IE8: prevent ghost top-margin in folder summary listing */
+h2.tileHeadline {
+    display: block;
+    *display: inline;
+}
+
 /* IE7: fixes super-wide div for JavaScript Tag selector */
 div.optionsBox {
     !width: 50%;

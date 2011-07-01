@@ -4,6 +4,10 @@ Changelog
 1.1.5 - Unreleased
 ------------------
 
+- Fixed IE8 issue where a ghost top-margin would appear above the
+  headline in the folder summary listing.
+  [malthe]
+
 - Add shadow and border for iframe overlays to match images and ajax overlays.
   [smcmahon]
 
