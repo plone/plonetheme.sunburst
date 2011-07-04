@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.1.5 - Unreleased
+1.1.5 - 2011-07-04
 ------------------
 
 - Fixed IE8 issue where a ghost top-margin would appear above the
@@ -24,7 +24,7 @@ Changelog
   Add a clear: left.
   [thomasdesvenain]
 
-- Add IEFixes.css to CSS registry incase plonetheme.classic is not installed.
+- Add IEFixes.css to CSS registry in case plonetheme.classic is not installed.
   [elro]
 
 - Removed comment in IEFixes.css concerning the now removed IE8.js.
