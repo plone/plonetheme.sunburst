@@ -1,9 +1,16 @@
 Changelog
 =========
 
-1.1.6 - unreleased
+1.2 - unreleased
 ------------------
 
+- Merge PLIP 9352. 
+  [esteele]
+  
+- Applied styles for search filter on search results page.
+  References http://dev.plone.org/plone/ticket/9352
+  [spliter]
+  
 1.1.5 - 2011-07-04
 ------------------
 
