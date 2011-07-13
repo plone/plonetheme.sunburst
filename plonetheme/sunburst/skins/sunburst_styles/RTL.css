@@ -129,6 +129,9 @@ dd.actionMenuContent ul {
 .icons-on .contenttype-plone-site {
     background: no-repeat transparent right -1508px url(contenttypes-sprite.png);
 }
+.icons-on .contenttype-collection {
+    background: no-repeat transparent right -1724px url(contenttypes-sprite.png);
+}
 .icons-on .contenttype-topic {
     background: no-repeat transparent right -1724px url(contenttypes-sprite.png);
 }
