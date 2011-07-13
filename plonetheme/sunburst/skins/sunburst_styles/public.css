@@ -1349,17 +1349,33 @@ input.searchPage {
 	float: left;
 	line-height: 3em;
 }
-#search-filter fieldset {
+#search-results-bar .actionMenuContent {
+    margin-top: 1em;
+    padding: 0;
+}
+#search-filter {
+    background: #ddd;
+    margin: 0;
+    padding: 0;
+}
+#content #search-filter fieldset {
     border: none !important;
     position: relative;
     padding: 0;
-    margin-top: 1px;
+    margin: 0;
 }        
-#search-filter fieldset .field,
-#search-filter .formControls {
+#content #search-filter legend {
+    font-size: 1.1em;
+    padding: 0.5em 0.9em;
+    font-weight: bold;
+}
+#search-filter .field {
     background: #eee;
-    margin: 0 0 1px;
     padding: 1em 1.5em;
+    margin: 0;
+}
+#search-filter .field label {
+    font-weight: normal;
 }
 #search-filter .formControls {
     text-align:center
