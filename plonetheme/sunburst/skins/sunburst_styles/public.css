@@ -1421,6 +1421,9 @@ form.searchPage h1.documentFirstHeading .highlightedSearchTerm {
 #search-results-bar dt.actionMenuHeader a::after {
 	content: " ▼";
 }
+#ajax-search-res {
+    display: none;
+}
 
 /* @end */
 
