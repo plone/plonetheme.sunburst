@@ -1363,8 +1363,9 @@ input.searchPage {
     position: relative;
     padding: 0;
     margin: 0;
-}        
+}
 #content #search-filter legend {
+    background: transparent;
     font-size: 1.1em;
     padding: 0.5em 0.9em;
     font-weight: bold;
