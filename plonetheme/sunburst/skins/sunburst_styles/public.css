@@ -1397,7 +1397,7 @@ form.searchPage h1.documentFirstHeading .highlightedSearchTerm {
     float: left;
 }
 #searchResultsSort{ 
-	float:right
+	float:right;
 }
 #search-results-bar {
     position: relative;
@@ -1420,6 +1420,12 @@ form.searchPage h1.documentFirstHeading .highlightedSearchTerm {
 }
 #search-results-bar dt.actionMenuHeader a::after {
 	content: " ▼";
+}
+#search-results {
+    padding: 1em;
+}
+.searchResults {
+    margin-top: 0;
 }
 #ajax-search-res {
     display: none;
