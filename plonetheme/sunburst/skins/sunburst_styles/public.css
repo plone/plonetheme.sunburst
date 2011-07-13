@@ -103,6 +103,13 @@ q {
     display: inline-block;
     margin: 1.375em 0;
 }
+/* removes extra space above logo in IE6 and IE7 */
+/* .ie6 and .ie7 is set on <html> by Modernizr library */
+.ie6 #portal-logo,
+.ie7 #portal-logo {
+    margin-top: 0;
+}
+
 
 #portal-globalnav {
     clear: both;
@@ -863,6 +870,11 @@ dl.error dd {
 #content-views {
     float: left;
     background-color: #75ad0a;
+}
+/* fix shift on content views list under ie6 */
+/* .ie6 is set on <html> by Modernizr library */
+.ie6 ul#content-views{
+    margin: -2px -3px 0px -3px;
 }
 #content-views a {
     color: White;
@@ -1827,6 +1839,12 @@ dl.toc dd ol {
     margin: -0.1em 0 0 -0.1em;
     width: 1px;
 }
+/* ensures hidden elements don't take up space */
+/* .ie6 is set on <html> by Modernizr library */
+.ie6 .hiddenStructure,
+.ie7 .hiddenStructure {
+    position: absolute;
+}
 
 #content .visualNoMarker {
     list-style:none;
@@ -2101,6 +2119,11 @@ div.overlay .formControls a {
     height: 14em;
     width: 100%;
 }
+/* IE7: fixes super-wide div for JavaScript Tag selector */
+/* .ie7 is set on <html> by Modernizr library */
+.ie7 div.optionsBox {
+    width: 50%;
+}
 .optionsBox LABEL {
     padding: 2px 0 0 0;
     display: block;
@@ -2110,6 +2133,11 @@ div.overlay .formControls a {
 .optionsBox input{
     vertical-align: middle;
     margin: 1px 4px 4px 6px;
+}
+/* IE7: fixes super-wide div for JavaScript Tag selector */
+/* .ie7 is set on <html> by Modernizr library */
+.ie7 .optionsBox input {
+    margin: 0px;
 }
 .optionsBox LABEL.checked {
     background-color: #EEEEEE;

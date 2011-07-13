@@ -18,6 +18,12 @@ div.cell {
   float: left;
   left: 100%;
 }
+/* IE8: keeps livesearch from falling behind content area,
+   and display menu from falling behind footer
+   Keeping float for IE7, so the portlets don't fall */
+.ie6 div.cell {
+    float: none;
+}
 
 /* Width classes. 
    For a given cell width, the calculation is: width: (6.25*n - 2.25)% */

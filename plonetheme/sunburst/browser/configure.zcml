@@ -17,6 +17,6 @@
         class=".sunburstview.SunburstView"
         permission="zope.Public"
         allowed_interface=".interfaces.ISunburstView"
-        />                
+        />
 
 </configure>

@@ -4,6 +4,13 @@ Changelog
 1.2 - unreleased
 ------------------
 
+- Switch to HTML5 doctype. References http://dev.plone.org/plone/ticket/11300
+  [spliter]
+
+- Deprecated iefixes.js and IEFixes.css after we have introduced Modernizr.
+  References http://dev.plone.org/plone/ticket/11300
+  [spliter]
+
 - Merge PLIP 9352. 
   [esteele]
   
