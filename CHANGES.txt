@@ -1,8 +1,8 @@
 Changelog
 =========
 
-1.2 - unreleased
-------------------
+1.2 - 2011-07-19
+----------------
 
 - Switch to HTML5 doctype. References http://dev.plone.org/plone/ticket/11300
   [spliter]
