@@ -1401,7 +1401,7 @@ form.searchPage h1.documentFirstHeading .highlightedSearchTerm {
 }
 #search-results-bar {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     float: left;
     width: 100%;
     border-top: 1px solid #DDD;
