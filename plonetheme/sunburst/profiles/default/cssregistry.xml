@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<object name="portal_css" meta_type="Stylesheets Registry">
+ <stylesheet id="portlets.css" insert-after="columns.css"/>
+ <stylesheet id="navtree.css" insert-after="portlets.css"/>
+ <stylesheet title="" applyPrefix="False" authenticated="False"
+    cacheable="True" compression="safe" conditionalcomment="" cookable="True"
+    enabled="1" expression="" id="content.css" media="screen" 
+    rel="stylesheet" rendering="link" insert-after="navtree.css"/>
+ <stylesheet id="authoring.css" insert-after="content.css"/>
+ <stylesheet id="controlpanel.css" insert-after="authoring.css"/>
+ <stylesheet id="forms.css" insert-after="controlpanel.css"/>
+ <stylesheet id="invisibles.css" insert-after="forms.css"/>
+ <stylesheet title="" applyPrefix="False" authenticated="False"
+    cacheable="True" compression="safe" conditionalcomment="" cookable="True"
+    enabled="1" expression="" id="javascript.css" media="screen"
+    rel="stylesheet" rendering="link" insert-after="invisibles.css"/>
+</object>
