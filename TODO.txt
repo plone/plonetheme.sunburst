@@ -13,10 +13,6 @@ Remaining/known issues:
 - Fix formlib forms to insert a div with class="formControls" on its submit
   buttons.
 
-- Theme is not split up in multiple files yet — we'll probably do a simple 
-  public/edit interface split to encourage reuse, but not as many files as Plone 
-  3.
-
 - Personal bar is missing My Profile link, prefs should link directly to the
   preferences, not to the intermediate page - and probably be named 
   My Preferences.
