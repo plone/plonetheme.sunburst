@@ -232,40 +232,6 @@ dl dt span.summary a {
 
 /* @end */
 
-/* Moved CSS
- * *********
- * 
- * portlets.css
- *   @group Portlets
- * 
- * navtree.css
- *   @group Navigation portlet
- * 
- * content.css
- *   @group Content Area
- *   @group Data tables
- *   @group Status messages
- *   @group Comments
- *   @group Search results page
- *   @group Image alignment classes
- *   @group Table of Contents
- * 
- * authoring.css
- *   @group Editing
- *     @group Tabs
- *     @group Pulldown menus
- *       @group Personal tools pulldown
- *       @group Content pulldowns
- *     @group Collapsible
- * 
- * controlpanel.css 
- *   @group Control panel
- *   @group Dashboard
- * 
- * javascript.css
- *   @group Accessibility elements, applied by JS
- */
-
 /* @group Footer */
 
 #portal-footer {
