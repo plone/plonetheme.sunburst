@@ -442,49 +442,6 @@ dl.error dd {
 
 /* @end */
 
-.reviewHistory,
-.contentHistory {
-    display: inline;
-    color: Black;
-}
-.spacer {
-    margin: 1em;
-}
-
-.label {
-    font-weight: bold;
-    display: inline;
-    padding-right: 0.5em;
-}
-.optionsToggle {
-    border: 0.1em solid #8cacbb;
-    color: Black;
-    background-color: #dee7ec;
-    font-weight: normal;
-    font-size: 90%;
-}
-
-/* for highlighting of search terms */
-.highlightedSearchTerm {
-   background-color: #ffa;
-}
-dl.searchResults .highlightedSearchTerm {
-    background-color: transparent;
-    font-weight: bold;
-}
-/* for greying out inherited roles */
-.noInheritedRoles {
-    color: #a0a0a0;
-}
-/* for highlighting current items, like the language or today in the calendar */
-.currentItem {
-    border-collapse: collapse;
-    border: 0.2em solid #ffa500;
-    padding: 0.1em;
-}
-
-/* @end */
-
 /* @group Search results page */
 
 fieldset#search-field {

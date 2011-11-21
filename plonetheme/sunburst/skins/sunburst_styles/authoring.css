@@ -246,83 +246,6 @@ dl.actionMenu.activated dd div {
 
 /* @end */
 
-/* @group Collapsible */
-dl.collapsible {
-    border: 0.1em solid #8cacbb;
-    margin: 1em 0;
-    padding: 0;
-}
-dl.collapsible dt.collapsibleHeader {
-    display: block;
-    float: left;
-    background: White;
-    line-height: 1.2em;
-    vertical-align: middle;
-    font-size: 90%;
-    position: relative;
-    top: -0.6em;
-    width: auto;
-    margin: 0 0 -0.6em 1em;
-    padding: 0 0.5em;
-}
-dl.collapsible dd.collapsibleContent {
-    margin: 0;
-    padding: 0 1em 0.4em;
-    clear: left;
-}
-
-/* for IE the following isn't needed, that's why the css2 selector is used */
-dl.collapsible dd.collapsibleContent > dl {
-    margin: 0;
-    padding: 0;
-}
-
-dl.expandedInlineCollapsible dt.collapsibleHeader,
-dl.expandedBlockCollapsible dt.collapsibleHeader {
-    padding: 0 0.5em 0 2em;
-    background: White url(treeExpanded.png) no-repeat 0.5em 50%;
-    cursor: pointer;
-}
-
-dl.collapsedBlockCollapsible {
-    border: none;
-    height: 1em;
-    width: auto;
-}
-dl.collapsedInlineCollapsible dt.collapsibleHeader,
-dl.collapsedBlockCollapsible dt.collapsibleHeader {
-    float: none;
-    position: relative;
-    margin: 0 0 0 1em;
-    padding: 0 0.5em 0 2em;
-    line-height: 1.2em;
-    cursor: pointer;
-    background: White url(treeCollapsed.png) no-repeat 0.5em 50%;
-}
-dl.collapsedInlineCollapsible dd.collapsibleContent,
-dl.collapsedBlockCollapsible dd.collapsibleContent {
-    display: none;
-}
-dl.collapsedInlineCollapsible {
-    border: none;
-    height: 1em;
-    width: auto;
-    display: inline;
-}
-dl.collapsedInlineCollapsible dt.collapsibleHeader {
-    position: static;
-    float: none;
-    margin: 0;
-    padding: 0 0 0 2em;
-    line-height: 1em;
-    cursor: pointer;
-    display: inline;
-}
-
-/* @end */
-
-/* @end */
-
 /* @group Control panel */
 
 #setup-link {
@@ -420,6 +343,124 @@ table.controlpanel-listing th.smallcolumn {
 .rule-updown, .rule-operations {
     float:right;
     padding-top:0.8em;
+}
+
+/* @end */
+
+/* @group Collapsible */
+dl.collapsible {
+    border: 0.1em solid #8cacbb;
+    margin: 1em 0;
+    padding: 0;
+}
+dl.collapsible dt.collapsibleHeader {
+    display: block;
+    float: left;
+    background: White;
+    line-height: 1.2em;
+    vertical-align: middle;
+    font-size: 90%;
+    position: relative;
+    top: -0.6em;
+    width: auto;
+    margin: 0 0 -0.6em 1em;
+    padding: 0 0.5em;
+}
+dl.collapsible dd.collapsibleContent {
+    margin: 0;
+    padding: 0 1em 0.4em;
+    clear: left;
+}
+
+/* for IE the following isn't needed, that's why the css2 selector is used */
+dl.collapsible dd.collapsibleContent > dl {
+    margin: 0;
+    padding: 0;
+}
+
+dl.expandedInlineCollapsible dt.collapsibleHeader,
+dl.expandedBlockCollapsible dt.collapsibleHeader {
+    padding: 0 0.5em 0 2em;
+    background: White url(treeExpanded.png) no-repeat 0.5em 50%;
+    cursor: pointer;
+}
+
+dl.collapsedBlockCollapsible {
+    border: none;
+    height: 1em;
+    width: auto;
+}
+dl.collapsedInlineCollapsible dt.collapsibleHeader,
+dl.collapsedBlockCollapsible dt.collapsibleHeader {
+    float: none;
+    position: relative;
+    margin: 0 0 0 1em;
+    padding: 0 0.5em 0 2em;
+    line-height: 1.2em;
+    cursor: pointer;
+    background: White url(treeCollapsed.png) no-repeat 0.5em 50%;
+}
+dl.collapsedInlineCollapsible dd.collapsibleContent,
+dl.collapsedBlockCollapsible dd.collapsibleContent {
+    display: none;
+}
+dl.collapsedInlineCollapsible {
+    border: none;
+    height: 1em;
+    width: auto;
+    display: inline;
+}
+dl.collapsedInlineCollapsible dt.collapsibleHeader {
+    position: static;
+    float: none;
+    margin: 0;
+    padding: 0 0 0 2em;
+    line-height: 1em;
+    cursor: pointer;
+    display: inline;
+}
+
+/* @end */
+
+.reviewHistory,
+.contentHistory {
+    display: inline;
+    color: Black;
+}
+.spacer {
+    margin: 1em;
+}
+
+.label {
+    font-weight: bold;
+    display: inline;
+    padding-right: 0.5em;
+}
+.optionsToggle {
+    border: 0.1em solid #8cacbb;
+    color: Black;
+    background-color: #dee7ec;
+    font-weight: normal;
+    font-size: 90%;
+}
+
+/* for highlighting of search terms */
+.highlightedSearchTerm {
+   background-color: #ffa;
+}
+dl.searchResults .highlightedSearchTerm {
+    background-color: transparent;
+    font-weight: bold;
+}
+/* for greying out inherited roles */
+.noInheritedRoles {
+    color: #a0a0a0;
+}
+/* for highlighting current items, like the language or today in the calendar */
+.currentItem {
+    border-collapse: collapse;
+    border: 0.2em solid #ffa500;
+    padding: 0.1em;
 }
 
 /* @end */
