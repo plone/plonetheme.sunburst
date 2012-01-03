@@ -50,7 +50,7 @@ class SunburstTestCase(Sandboxed, ptc.PloneTestCase):
     """ Base class used for test cases """
 
     layer = layer
-    
+
 class FunctionalTestCase(ptc.FunctionalTestCase):
 
     layer = layer
