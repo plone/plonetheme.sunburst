@@ -47,5 +47,5 @@ discreetColor:string=#76797c
 helpBackgroundColor:string=#ffffe1
 
 portalMinWidth:string=70em
-columnOneWidth:string=22.75%
-columnTwoWidth:string=22.75%
+columnOneWidth:string=17.75%
+columnTwoWidth:string=17.75%

@@ -4,6 +4,10 @@ Changelog
 1.1.6 - unreleased
 ------------------
 
+- Updated column width values in base_properties,
+  for third part products that uses it.
+  [thomasdesvenain]
+
 1.1.5 - 2011-07-04
 ------------------
 
