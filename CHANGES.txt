@@ -4,7 +4,13 @@ Changelog
 1.2.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Seperate the styles into different css files based on @group comment hints. 
+  The stylesheet public.css contains all sunburst-layout specific style 
+  definitions, while the others contain styles for authoring, member area, etc.
+  and useful for any other theme. Themes, based on sunburst now can just drop
+  public.css, have this way to do less Plone specific overloading while still
+  all the styles needed for authoring.
+  [thet]
 
 
 1.2.1 (2011-08-25)
