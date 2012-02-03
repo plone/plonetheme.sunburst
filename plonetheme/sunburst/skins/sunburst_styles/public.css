@@ -1890,37 +1890,37 @@ div.overlay .formControls a {
 
 /* @group Content History */
 
-#content-history #history dd {
+#history dd {
 }
 
-#content-history div.historyRecord {
+div.historyRecord {
     margin-bottom: 1em;
 }
 
 
-#content-history div.historyTools ul {
+div.historyTools ul {
     float: right;
     margin: 0.5em 1em;
 }
 
-#content-history div.historyTools ul li {
+div.historyTools ul li {
     display: inline;
     padding: 0 0.015em;
 }
 
-#content-history div.historyTools ul li a{
+div.historyTools ul li a{
     border-bottom: none;
 }
 
-#content-history div.historyTools form {
+div.historyTools form {
     display: inline;
 }
 
-#content-history .historyAction {
+.historyAction {
 
 }
 
-#content-history .historyByLine {
+.historyByLine {
     background: #ddd;
     padding: 0.5em;
     border-top-right-radius: 0.5em;
@@ -1931,31 +1931,31 @@ div.overlay .formControls a {
     -moz-border-radius-topright: 0.5em;
 }
 
-#content-history div.historyLinks {
+div.historyLinks {
     float: right;
     clear: right;
     margin: 0.5em 1em 0 0;
 }
 
 
-#content-history div.historyComment {
+div.historyComment {
     padding: 0.5em 1em;
     border: 1px solid #ddd;
 }
 
-#content-history div.historyComment p {
+div.historyComment p {
     margin: 0;
     padding-top: 1px;
 }
 
-#content-history a.historyComparePrevious {
+a.historyComparePrevious {
     border-top: 1px dotted #ccc;
     display: block;
     margin-top: 3em;
     text-align: center;
 }
 
-#content-history a.historyComparePrevious span {
+a.historyComparePrevious span {
     background-color: white;
     position: relative;
     top: -0.75em;
