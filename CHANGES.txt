@@ -4,7 +4,9 @@ Changelog
 1.2.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix the styling of the standalone @@historyview view used when
+  overlays are turned off.
+  [rossp]
 
 
 1.2.1 (2011-08-25)
