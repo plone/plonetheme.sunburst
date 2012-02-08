@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.1.6 - unreleased
+1.1.6 (2012-02-07)
 ------------------
 
 - Fix the styling of the standalone @@historyview view used when
