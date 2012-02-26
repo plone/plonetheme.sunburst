@@ -4,6 +4,9 @@ Changelog
 1.2.3 (unreleased)
 ------------------
 
+- fix 'device-width;" for key "width" not recognized in chrome' in javascript console  
+  [eleedy]
+
 - Fix view windw error in chrome
   [plone konferenz coding dojo]
 
