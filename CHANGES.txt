@@ -5,7 +5,7 @@ Changelog
 ------------------
 
 - fix 'device-width;" for key "width" not recognized in chrome' in javascript console  
-  [eleedy]
+  [eleddy]
 
 - Fix view windw error in chrome
   [plone konferenz coding dojo]
