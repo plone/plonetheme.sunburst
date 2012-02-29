@@ -3,6 +3,20 @@
     http://localhost:8080/sprites/portal_css/Sunburst%20Theme/public.css
 */
 
+/* +++++++++++++++++++++++++++++++
+ * SUNBURST SPECIFIC DEISGN STYLES
+ * +++++++++++++++++++++++++++++++
+ */
+
+/*
+ * state-publlished is the state, anonymous users are able to see. editors
+ * should also see content, which is designated for anonymous users, in the
+ * same color anonymous users see it. therefore, this one is moved in here, to
+ * be able to drop this style when dropping public.css. */
+.state-published {
+	color: #436976 !important;
+}
+
 /* @group Basics */
 
 body {
