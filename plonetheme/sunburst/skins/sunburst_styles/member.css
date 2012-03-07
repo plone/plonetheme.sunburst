@@ -8,9 +8,6 @@
 .state-visible {
 	color: #74AE0B !important;
 }
-.state-published {
-	color: #436976 !important;
-}
 .state-pending {
 	color: #FFA500 !important;
 }
