@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.4 (unreleased)
+1.2.3 (unreleased)
 ------------------
 
 - Seperate the styles into different css files based on @group comment hints. 
@@ -11,6 +11,12 @@ Changelog
   public.css, have this way to do less Plone specific overloading while still
   all the styles needed for authoring.
   [thet]
+
+- fix 'device-width;" for key "width" not recognized in chrome' in javascript console  
+  [eleddy]
+
+- Fix view windw error in chrome
+  [plone konferenz coding dojo]
 
 
 1.2.2 (2012-02-07)
