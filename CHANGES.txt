@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.2.2 (unreleased)
+1.4 (unreleased)
 ------------------
 
 - Seperate the styles into different css files based on @group comment hints. 
@@ -11,6 +11,13 @@ Changelog
   public.css, have this way to do less Plone specific overloading while still
   all the styles needed for authoring.
   [thet]
+
+
+1.2.2 (unreleased)
+------------------
+- Fix the styling of the standalone @@historyview view used when
+  overlays are turned off.
+  [rossp]
 
 
 1.2.1 (2011-08-25)
