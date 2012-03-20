@@ -162,12 +162,15 @@
         class="row"
         i18n:domain="plone"
         tal:condition="not:ajax_load">
-        <div
-            tal:replace="structure provider:plone.portalfooter" />
-        <div id="kss-spinner">
-            <img tal:attributes="src string:${portal_url}/spinner.gif" alt="" />
+        <div class="cell width-full position-0">
+            <div tal:replace="structure provider:plone.portalfooter" />
+            <div id="kss-spinner">
+                <img tal:attributes="src string:${portal_url}/spinner.gif" alt="" />
+            </div>
         </div>
     </div>
+
+
 
 </div>
 </body>
