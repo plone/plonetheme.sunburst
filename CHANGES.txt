@@ -4,6 +4,10 @@ Changelog
 1.2.3 (unreleased)
 ------------------
 
+- Move .row and .cell styles from footer.pt to Sunburst main_template.
+  Fixes https://dev.plone.org/ticket/12156
+  [agnogueira]
+
 - fix 'device-width;" for key "width" not recognized in chrome' in javascript console  
   [eleddy]
 
