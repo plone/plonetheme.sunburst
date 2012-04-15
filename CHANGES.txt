@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.2.3 (unreleased)
+1.2.3 (2012-04-15)
 ------------------
 
 - Move .row and .cell styles from footer.pt to Sunburst main_template.
