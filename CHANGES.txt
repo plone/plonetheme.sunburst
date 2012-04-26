@@ -4,7 +4,8 @@ Changelog
 1.2.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add selector for AT required field icon
+  [tom_gross]
 
 
 1.2.3 (2012-04-15)
