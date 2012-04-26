@@ -936,7 +936,8 @@ dl.error dd {
     background-color: red;
     color: White;
 }
-#content li.formTab a.required span {
+#content li.formTab a.required span,
+div.field span.required{
     background-image: url(required.png);
     background-position: center right;
     background-repeat: no-repeat;
