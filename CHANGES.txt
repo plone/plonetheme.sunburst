@@ -7,6 +7,8 @@ Changelog
 - Add selector for AT required field icon
   [tom_gross]
 
+- Use CSS :content selector to inject required icon instead of image
+  [tom_gross]
 
 1.2.3 (2012-04-15)
 ------------------

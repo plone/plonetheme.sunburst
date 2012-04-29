@@ -936,12 +936,11 @@ dl.error dd {
     background-color: red;
     color: White;
 }
-#content li.formTab a.required span,
-div.field span.required{
-    background-image: url(required.png);
-    background-position: center right;
-    background-repeat: no-repeat;
-    padding-right: 1em;
+#content li.formTab a.required span:after, 
+div.field span.required:after {
+    content: "■";
+    color: Red;
+    padding-left: 0.2em;
 }
 #content fieldset.formPanel {
     border: none;
