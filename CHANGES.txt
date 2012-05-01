@@ -4,6 +4,10 @@ Changelog
 1.2.4 (unreleased)
 ------------------
 
+- Change form tab style selectors from '#content' to '#content-core' so form
+  tabs work in both content and overlays.
+  [davidjb]
+
 - Add selector for AT required field icon
   [tom_gross]
 
