@@ -4,15 +4,13 @@ Changelog
 1.2.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Change form tab style selectors from '#content' to '#content-core' so form
+  tabs work in both content and overlays.
+  [davidjb]
 
 
 1.2.4 (2012-05-07)
 ------------------
-
-- Change form tab style selectors from '#content' to '#content-core' so form
-  tabs work in both content and overlays.
-  [davidjb]
 
 - Add selector for AT required field icon
   [tom_gross]
