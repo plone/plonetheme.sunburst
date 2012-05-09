@@ -1,7 +1,13 @@
 Changelog
 =========
 
-1.2.4 (unreleased)
+1.2.5 (unreleased)
+------------------
+
+- Nothing changed yet.
+
+
+1.2.4 (2012-05-07)
 ------------------
 
 - Change form tab style selectors from '#content' to '#content-core' so form
