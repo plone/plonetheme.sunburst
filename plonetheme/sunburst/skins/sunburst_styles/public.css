@@ -882,6 +882,7 @@ dl.error dd {
 
 /* Shared CSS between the two tab types */
 #edit-bar,
+#content ul.formTabs,
 #content-core ul.formTabs {
     display: block;
     border-style: solid solid none solid;
@@ -893,16 +894,19 @@ dl.error dd {
     -moz-border-radius-topleft: 0.5em;
     -moz-border-radius-topright: 0.5em;
 }
+#content li.formTab,
 #content-core li.formTab {
     display: inline;
     margin-right:0.25em;
 }
 #content-views a,
+#content li.formTab a,
 #content-core li.formTab a {
     /* this isn't supported by all browsers, so we keep it in a separate rule */
     display: inline-block;
 }
 #content-views a,
+#content li.formTab a,
 #content-core li.formTab a {
     line-height: 2em;
     padding: 0 0.75em;
@@ -911,20 +915,18 @@ dl.error dd {
     margin: 0 ;
 }
 #content-views li.selected a,
+#content li.formTab a.selected,
 #content-core li.formTab a.selected {
     font-weight: bold;
 }
 #content-views li.selected a,
 #content-views li a:hover,
+#content li.formTab a.selected,
+#content li.formTab a:hover,
 #content-core li.formTab a.selected,
 #content-core li.formTab a:hover {
     background: White;
     color: Black;
-}
-#content-views li.selected a,
-#content-views li a:hover,
-#content-core li.formTab a.selected,
-#content-core li.formTab a:hover {
     border-top-right-radius: 0.5em;
     border-top-left-radius: 0.5em;
     -webkit-border-top-right-radius: 0.5em;
@@ -932,22 +934,27 @@ dl.error dd {
     -moz-border-radius-topleft: 0.5em;
     -moz-border-radius-topright: 0.5em;
 }
+#content li.formTab a.notify,
 #content-core li.formTab a.notify {
     background-color: red;
     color: White;
 }
+#content li.formTab a.required span:after, 
 #content-core li.formTab a.required span:after, 
 div.field span.required:after {
     content: "■";
     color: Red;
     padding-left: 0.2em;
 }
+#content fieldset.formPanel,
 #content-core fieldset.formPanel {
     border: none;
 }
+#content fieldset.formPanel.hidden,
 #content-core fieldset.formPanel.hidden {
     display: none;
 }
+#content div.formControls input.hidden,
 #content-core div.formControls input.hidden {
     display: none;
 }
