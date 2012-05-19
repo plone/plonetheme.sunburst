@@ -8,6 +8,9 @@ Changelog
   tabs work in both content and overlays.
   [davidjb]
 
+- style fixes for new style of portlet manager buttons
+  [vangheem]
+
 
 1.2.4 (2012-05-07)
 ------------------
