@@ -357,9 +357,16 @@ div.portletAssignments {
 div.portletAssignments .managedPortletActions {
     float: right;
 }
-div.portletAssignments .managedPortletActions a {
+div.portletAssignments .managedPortletActions button {
     margin: 0 0.25em;
     border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: #205C90;
+}
+
+div.portletAssignments .managedPortletActions form {
+    display: inline;
 }
 
 dl.portlet dt a:link,
