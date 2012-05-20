@@ -1000,17 +1000,33 @@ div.field span.required:after {
 
 /* @group Content pulldowns */
 
+#contentActionMenus dl.actionMenu button,
+#contentActionMenus dl.actionMenu.activated dd form:hover {
+    cursor: pointer;
+}
+
 #contentActionMenus dl.actionMenu a,
+#contentActionMenus dl.actionMenu button,
 #contentActionMenus dl.actionMenu.activated dd {
     background-color: #75ad0a;
     color: White;
     z-index: 5;
+    border: none;
 }
+
+#contentActionMenus dl.actionMenu dd button {
+    background-color: transparent;
+    color: inherit;
+    width: 100%;
+    text-align: left;
+}
+
 #contentActionMenus dl.actionMenu.activated dd {
     border-bottom: 0.5em solid #75ad0a;
-        right: -3px;
+    right: -3px;
 }
 #contentActionMenus dl.actionMenu.activated dd a:hover,
+#contentActionMenus dl.actionMenu.activated dd form:hover,
 #contentActionMenus dl.actionMenu.activated dd .actionMenuSelected {
     background-color: White !important;
     color: #666;
@@ -1020,7 +1036,7 @@ div.field span.required:after {
 }
 
 #folderHeader, #contextHeader {
-        border-bottom: 2px solid white;
+    border-bottom: 2px solid white;
 }
 
 #contextHeader { margin-top: 5px; }
@@ -1054,7 +1070,18 @@ dl.actionMenu {
     position: relative;
     margin-left: 0.5em;
 }
+
+dl.actionMenu form button {
+    font-size: 13px;
+    font-family: Arial, FreeSans, sans-serif;
+}
+
+dl.actionMenu dt.actionMenuHeader form button span {
+    line-height: 2em;
+}
+
 dl.actionMenu a,
+dl.actionMenu form,
 dl.actionMenu div {
     display: block !important;
     white-space: nowrap;
@@ -1084,6 +1111,8 @@ dl.actionMenu.activated dd {
 }
 dl.actionMenu.activated dt a,
 dl.actionMenu.activated dd a,
+dl.actionMenu.activated dt form,
+dl.actionMenu.activated dd form,
 dl.actionMenu.activated dd div {
     margin: 0 0.25em;
 }
