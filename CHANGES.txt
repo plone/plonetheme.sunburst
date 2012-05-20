@@ -11,6 +11,10 @@ Changelog
 - style fixes for new style of portlet manager buttons
   [vangheem]
 
+- Fix vertical alignment of listing table cells when content type icons are 
+  enabled.
+  [esteele]
+
 
 1.2.4 (2012-05-07)
 ------------------

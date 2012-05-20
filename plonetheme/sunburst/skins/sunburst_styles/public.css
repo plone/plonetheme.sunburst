@@ -725,6 +725,9 @@ table.listing tbody tr.odd td {
 table.listing td {
     border-right: 1px solid #ddd;
 }
+.icons-on table.listing td {
+    line-height: 2em;
+}
 table.listing a {
     border: none;
     display: inline-block;
