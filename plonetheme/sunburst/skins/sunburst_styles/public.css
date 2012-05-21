@@ -1071,11 +1071,10 @@ dl.actionMenu {
     float: right;
     white-space: nowrap;
     position: relative;
-    margin-left: 0.5em;
 }
 
 dl.actionMenu form button {
-    font-size: 13px;
+    font-size: 100%;
     font-family: Arial, FreeSans, sans-serif;
 }
 
