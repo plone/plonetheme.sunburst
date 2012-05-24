@@ -1644,6 +1644,8 @@ input#title {
 .formHelp {
     color: #555;
     margin: 0 0 0.2em 0;
+    display: block;
+    font-weight: normal;
 }
 div.field.error {
     background-color: #fdc;

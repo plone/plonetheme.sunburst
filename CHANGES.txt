@@ -4,6 +4,11 @@ Changelog
 1.2.5 (unreleased)
 ------------------
 
+- Set "display: block; font-weight:normal" on .formHelp in forms.css.dtml to 
+  assure that field help displays well even if it is formatted as a span 
+  inside the label for accessibility.
+  [smcmahon]
+
 - Change form tab style selectors from '#content' to '#content-core' so form
   tabs work in both content and overlays.
   [davidjb]
