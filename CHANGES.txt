@@ -4,10 +4,6 @@ Changelog
 1.2.5 (unreleased)
 ------------------
 
-- Put back an empty `cssregistry.xml` to trigger re-cooking of resources,
-  after the theme has been added and as such a new RR bundle is available.
-  [hannosch]
-
 - Set "display: block; font-weight:normal" on .formHelp in forms.css.dtml to 
   assure that field help displays well even if it is formatted as a span 
   inside the label for accessibility.
