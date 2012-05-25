@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.2.5 (unreleased)
+1.2.5 (2012-05-25)
 ------------------
 - For event view template, changed headerless table to headings and divs for better accessibility. See bug #13181
   [hmharter]
