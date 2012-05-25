@@ -651,7 +651,40 @@ dl.portlet li {
     clear: right;
     margin: 0 0 0.5em 1em;
 }
+/* For event view template, changed headerless table to headings and divs,
+ * for better accessibility.  */
 
+#content .eventDetails {
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 0.08em;
+    width: 22em;
+    margin-top: 1em;
+}
+#content .eventDetails h2 {
+    background-color: #DDDDDD;
+    font-size: 100%;
+    letter-spacing: 0;
+    padding: 0.5em;
+    padding-left: 1em;
+}
+#content .eventDetails .eventDetail {
+    clear: both;
+}
+#content .eventDetails .eventDetail h3,
+#content .eventDetails .eventDetail div {
+    padding: 2%;
+}
+#content .eventDetails .eventDetail h3 {
+    float: left;
+    font-size: 100%;
+    text-align: right;
+    width: 37%;
+}
+#content .eventDetails .eventDetail div {
+    float: left;
+    width: 55%;
+} 
 /* @end */
 
 

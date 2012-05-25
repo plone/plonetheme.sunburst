@@ -3,6 +3,8 @@ Changelog
 
 1.2.5 (unreleased)
 ------------------
+- For event view template, changed headerless table to headings and divs for better accessibility. See bug #13181
+  [hmharter]
 
 - define class .breadcrumbSeparator, which is referred to in plone.app.layout
   and plone.app.search, but wasn't in Sunburst. Set a color on it, because
