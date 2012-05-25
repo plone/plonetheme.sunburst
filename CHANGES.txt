@@ -4,6 +4,12 @@ Changelog
 1.2.5 (unreleased)
 ------------------
 
+- define class .breadcrumbSeparator, which is referred to in plone.app.layout
+  and plone.app.search, but wasn't in Sunburst. Set a color on it, because
+  the separator character was changed (see https://dev.plone.org/ticket/12904)
+  The color chosen is WCAG2.0 compliant in contrast.
+  [polyester]
+
 - Set "display: block; font-weight:normal" on .formHelp in forms.css.dtml to 
   assure that field help displays well even if it is formatted as a span 
   inside the label for accessibility.
