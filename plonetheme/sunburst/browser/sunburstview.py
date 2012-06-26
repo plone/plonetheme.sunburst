@@ -41,7 +41,7 @@ class SunburstView(BrowserView):
             # width and the rest 50% is spread between the columns
             columns['one'] = "width-1:4 position-0"
             columns['content'] = "width-1:2 position-1:4"
-            columns['two'] = "width-1:4 position-0"
+            columns['two'] = "width-1:4 position-3:4"
 
         elif (sr and not sl) and isRTL:
             # We have right column and we are in RTL language
