@@ -48,7 +48,7 @@
                   sl python:plone_view.have_portlets('plone.leftcolumn', view);
                   sr python:plone_view.have_portlets('plone.rightcolumn', view);
                   body_class python:plone_view.bodyClass(template, view);
-                  sunburst_view python:context.restrictedTraverse('@@sunburstview')"
+                  classes python:context.restrictedTraverse('@@sunburstview').getColumnsClass(view)"
     tal:attributes="class body_class;
                     dir python:isRTL and 'rtl' or 'ltr'">
 
@@ -64,7 +64,7 @@
         </div>
     <div id="portal-columns" class="row">
 
-        <div id="portal-column-content" class="cell" tal:attributes="class python:sunburst_view.getColumnsClass(view)">
+        <div id="portal-column-content" class="cell" tal:attributes="class classes/content">
 
             <div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" tal:condition="not:ajax_load" />
 
@@ -139,7 +139,7 @@
             class="cell width-1:4 position-0"
             metal:define-slot="column_one_slot"
             tal:condition="sl"
-            tal:attributes="class python:isRTL and 'cell width-1:4 position-3:4' or 'cell width-1:4 position-0'">
+            tal:attributes="class classes/one">
             <metal:portlets define-slot="portlets_one_slot">
                 <tal:block replace="structure provider:plone.leftcolumn" />
             </metal:portlets>
@@ -149,7 +149,7 @@
             class="cell width-1:4 position-3:4"
             metal:define-slot="column_two_slot"
             tal:condition="sr"
-            tal:attributes="class python:isRTL and 'cell width-1:4 position-0' or 'cell width-1:4 position-3:4'">
+            tal:attributes="class classes/two">
             <metal:portlets define-slot="portlets_two_slot">
                 <tal:block replace="structure provider:plone.rightcolumn" />
             </metal:portlets>

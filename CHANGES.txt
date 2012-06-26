@@ -4,7 +4,10 @@ Changelog
 1.2.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Use sunburst_view to generate portal-column-one and portal-column-two
+  classes as it is already done for portal-column-content.
+  Fixes: https://dev.plone.org/ticket/12995
+  [saily]
 
 
 1.2.5 (2012-05-25)
@@ -18,8 +21,8 @@ Changelog
   The color chosen is WCAG2.0 compliant in contrast.
   [polyester]
 
-- Set "display: block; font-weight:normal" on .formHelp in forms.css.dtml to 
-  assure that field help displays well even if it is formatted as a span 
+- Set "display: block; font-weight:normal" on .formHelp in forms.css.dtml to
+  assure that field help displays well even if it is formatted as a span
   inside the label for accessibility.
   [smcmahon]
 
@@ -27,7 +30,7 @@ Changelog
   tabs work in both content and overlays.
   [davidjb]
 
-- Fix vertical alignment of listing table cells when content type icons are 
+- Fix vertical alignment of listing table cells when content type icons are
   enabled.
   [esteele]
 
@@ -48,7 +51,7 @@ Changelog
   Fixes https://dev.plone.org/ticket/12156
   [agnogueira]
 
-- fix 'device-width;" for key "width" not recognized in chrome' in javascript console  
+- fix 'device-width;" for key "width" not recognized in chrome' in javascript console
   [eleddy]
 
 - Fix view windw error in chrome
@@ -66,9 +69,9 @@ Changelog
 1.2.1 (2011-08-25)
 ------------------
 
-- Put #search-results-bar on a lower CSS layer to not overlap the livesearch 
+- Put #search-results-bar on a lower CSS layer to not overlap the livesearch
   [spliter]
- 
+
 1.2 - 2011-07-19
 ----------------
 
@@ -79,13 +82,13 @@ Changelog
   References http://dev.plone.org/plone/ticket/11300
   [spliter]
 
-- Merge PLIP 9352. 
+- Merge PLIP 9352.
   [esteele]
-  
+
 - Applied styles for search filter on search results page.
   References http://dev.plone.org/plone/ticket/9352
   [spliter]
-  
+
 1.1.5 - 2011-07-04
 ------------------
 
