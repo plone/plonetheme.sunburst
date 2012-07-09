@@ -4,7 +4,10 @@ Changelog
 1.2.7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Move new CSS class generation into new function called ``getColumnClasses``
+  to let the old and deprecated one return column content CSS class only. This
+  is important to keep all previously customized main_templates working.
+  [saily]
 
 
 1.2.6 (2012-06-29)

@@ -14,7 +14,7 @@ class SunburstView(BrowserView):
 
     # Utility methods
 
-    def getColumnsClass(self, view=None):
+    def getColumnsClasses(self, view=None):
         """Determine whether a column should be shown. The left column is
         called plone.leftcolumn; the right column is called plone.rightcolumn.
         """
@@ -68,3 +68,10 @@ class SunburstView(BrowserView):
             columns[key] = "cell " + value
 
         return columns
+
+    def getColumnsClass(self, view=None):
+        """XXX: Keep old customized main_templates working, this should be
+           marked as deprecated in future."""
+
+        return self.getColumnsClasses(view).get('content')
+

@@ -48,7 +48,7 @@
                   sl python:plone_view.have_portlets('plone.leftcolumn', view);
                   sr python:plone_view.have_portlets('plone.rightcolumn', view);
                   body_class python:plone_view.bodyClass(template, view);
-                  classes python:context.restrictedTraverse('@@sunburstview').getColumnsClass(view)"
+                  classes python:context.restrictedTraverse('@@sunburstview').getColumnsClasses(view)"
     tal:attributes="class body_class;
                     dir python:isRTL and 'rtl' or 'ltr'">
 
