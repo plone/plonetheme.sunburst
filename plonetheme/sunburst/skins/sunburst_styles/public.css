@@ -458,6 +458,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     clear: both;
     font-size: 80%;
     margin: 1em 0.25em 2em 0.25em;
+    word-break: break-all;
 }
 
 /* Special case of #content - TinyMCE */
