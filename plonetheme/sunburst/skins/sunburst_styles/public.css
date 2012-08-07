@@ -1351,7 +1351,6 @@ dl.collapsedInlineCollapsible dt.collapsibleHeader {
 .label {
     font-weight: bold;
     display: inline;
-    padding-right: 0.5em;
 }
 .optionsToggle {
     border: 0.1em solid #8cacbb;
