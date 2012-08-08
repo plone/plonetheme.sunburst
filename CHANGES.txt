@@ -4,6 +4,9 @@ Changelog
 1.2.7 (unreleased)
 ------------------
 
+- Fixes and improvements on history popup with diff.
+  [thomasdesvenain]
+
 - Move new CSS class generation into new function called ``getColumnClasses``
   to let the old and deprecated one return column content CSS class only. This
   is important to keep all previously customized main_templates working.
