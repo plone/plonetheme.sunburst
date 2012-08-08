@@ -2021,6 +2021,9 @@ div.overlay label {
 div.overlay a:hover {
     color: #75ad0a;
 }
+div.overlay a:hover label{
+    cursor: pointer;
+}
 div.overlay a.selected {
     color: #000000;
 }

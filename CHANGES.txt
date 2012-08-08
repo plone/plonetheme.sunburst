@@ -4,6 +4,11 @@ Changelog
 1.2.7 (unreleased)
 ------------------
 
+- Fixes: in overlays, and especially in reference browser,
+  label in an anchor link has a cursor pointer.
+  Improves navigation experience in reference browser widget.
+  [thomasdesvenain]
+
 - Fixes: compare previous link margin with history records
   is smaller.
   [thomasdesvenain]
