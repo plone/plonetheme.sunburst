@@ -4,6 +4,10 @@ Changelog
 1.2.7 (unreleased)
 ------------------
 
+- Fixes: compare previous link margin with history records
+  is smaller.
+  [thomasdesvenain]
+
 - Fixes and improvements on history popup with diff.
   [thomasdesvenain]
 
