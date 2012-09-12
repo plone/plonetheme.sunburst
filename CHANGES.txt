@@ -4,9 +4,7 @@ Changelog
 1.2.8 (unreleased)
 ------------------
 
-- Add a slot to main_template, "viewport", to allow overriding the viewport
-  settings.
-  [esteele]
+- Nothing changed yet.
 
 
 1.2.7 (2012-08-11)
