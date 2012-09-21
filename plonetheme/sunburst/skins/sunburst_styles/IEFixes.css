@@ -42,3 +42,7 @@ div.optionsBox {
 #portal-top {
     z-index: 2;
 }
+/* IE7: set z-indexes on content menus for narrow browsers #10872 */
+#contentActionMenus #plone-contentmenu-workflow {
+    z-index: 6;
+}
