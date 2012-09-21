@@ -1352,6 +1352,9 @@ dl.collapsedInlineCollapsible dt.collapsibleHeader {
     font-weight: bold;
     display: inline;
 }
+.label .fieldErrorBox {
+    font-weight: normal;
+}
 .optionsToggle {
     border: 0.1em solid #8cacbb;
     color: Black;
@@ -1616,6 +1619,9 @@ textarea:focus {
 }
 label {
     font-weight:bold;
+}
+label .fieldErrorBox {
+    font-weight: normal;
 }
 
 #content label {
