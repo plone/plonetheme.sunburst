@@ -34,3 +34,11 @@ div.optionsBox {
 .optionsBox input {
     !margin: 0px;
 }
+/* IE7: Display menu falls under footer (see Events page) (IE7) #10872 */
+#portal-columns {
+    z-index: 1;
+}
+/* IE7: Live search appears under content action menu (IE7/IE8) #10872 */
+#portal-top {
+    z-index: 2;
+}
