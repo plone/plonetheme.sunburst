@@ -539,13 +539,15 @@ dl.portlet a:hover {
 }
 
 #content ol,
-dl.portlet ol {
+dl.portlet ol,
+div.portletStaticText ol {
     list-style-type: decimal;
     margin-left: 2em;
 }
 
 #content li,
-dl.portlet li {
+dl.portlet li,
+div.portletStaticText li {
     margin-bottom: 0.25em;
     line-height: 1.5em;
     display: list-item;
@@ -684,7 +686,7 @@ dl.portlet li {
 #content .eventDetails .eventDetail div {
     float: left;
     width: 55%;
-} 
+}
 /* @end */
 
 
@@ -979,8 +981,8 @@ dl.error dd {
     background-color: red;
     color: White;
 }
-#content li.formTab a.required span:after, 
-#content-core li.formTab a.required span:after, 
+#content li.formTab a.required span:after,
+#content-core li.formTab a.required span:after,
 div.field span.required:after {
     content: "■";
     color: Red;
@@ -1431,7 +1433,7 @@ input.searchPage {
     margin-top: 1em;
 }
 form.searchPage h1.documentFirstHeading {
-    font-weight:normal; 
+    font-weight:normal;
     letter-spacing:0;
 	float: left;
 	margin-right: 0.8em;
@@ -1442,7 +1444,7 @@ form.searchPage h1.documentFirstHeading .highlightedSearchTerm {
 #search-results-bar > * {
     float: left;
 }
-#searchResultsSort{ 
+#searchResultsSort{
 	float:right;
 }
 #search-results-bar {
@@ -1451,7 +1453,7 @@ form.searchPage h1.documentFirstHeading .highlightedSearchTerm {
     float: left;
     width: 100%;
     border-top: 1px solid #DDD;
-    border-bottom: 1px solid #DDD;    
+    border-bottom: 1px solid #DDD;
     padding: 1em 0;
 }
 #search-results-bar dl.actionMenu {
