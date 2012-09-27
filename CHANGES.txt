@@ -9,6 +9,14 @@ Changelog
 
 1.2.7 (2012-08-11)
 ------------------
+- fixes: Display menu falls under footer (see Events page) (IE7) 
+  [maartenkling]
+
+- fixes: Live search appears under content action menu (IE7)
+  [maartenkling]
+
+- style ol/li in statictext portlet having omit border true
+  [maartenkling]
 
 - Fixes: in overlays, and especially in reference browser,
   label in an anchor link has a cursor pointer.
