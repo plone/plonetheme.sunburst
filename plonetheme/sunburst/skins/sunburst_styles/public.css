@@ -357,7 +357,7 @@ div.portletAssignments {
 div.portletAssignments .managedPortletActions {
     float: right;
 }
-div.portletAssignments .managedPortletActions button {
+div.portletAssignments .managedPortletActions a, div.portletAssignments .managedPortletActions button {
     margin: 0 0.25em;
     border: none;
     cursor: pointer;
