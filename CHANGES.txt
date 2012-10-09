@@ -4,7 +4,10 @@ Changelog
 1.2.8 (unreleased)
 ------------------
 
-- style fixes for new style of portlet manager buttons
+- Style #ajax-spinner rather than inserting #kss-spinner in main_template.
+  [davisagli]
+
+- Style fixes for new style of portlet manager buttons.
   [vangheem]
 
 
