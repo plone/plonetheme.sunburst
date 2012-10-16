@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.2.8 (unreleased)
+1.2.8 (2012-10-16)
 ------------------
 
 - style fixes for new style of portlet manager buttons
