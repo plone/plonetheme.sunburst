@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.2.8 (unreleased)
+1.3.0 (unreleased)
 ------------------
 
 - Style #ajax-spinner rather than inserting #kss-spinner in main_template.
