@@ -27,6 +27,7 @@ iframe { border-width: 0; border-style:none; }
 
 /* @end */
 
+
 /* @group Basics */
 
 body {
@@ -718,6 +719,9 @@ table.listing th {
 table.plain th,
 table.plain td {
     border: 1px solid #ddd;
+}
+table.plain th {
+    text-align: left;
 }
 
 table.listing td.listingCheckbox,
