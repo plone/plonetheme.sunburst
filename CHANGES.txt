@@ -4,8 +4,11 @@ Changelog
 1.3.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- style reset on th for table.plain and IE9, fixes #11589
+  [maartenkling]
 
+- more specific Sunburst CSS on content-core dd, fixes #11840
+  [maartenkling]
 
 1.3.0 (2012-10-16)
 ------------------
@@ -19,7 +22,7 @@ Changelog
 
 1.2.7 (2012-08-11)
 ------------------
-- fixes: Display menu falls under footer (see Events page) (IE7) 
+- fixes: Display menu falls under footer (see Events page) (IE7)
   [maartenkling]
 
 - fixes: Live search appears under content action menu (IE7)
@@ -771,4 +774,3 @@ Changelog
 ------------------
 
 - Initial release
-
