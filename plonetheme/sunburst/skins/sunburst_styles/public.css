@@ -91,6 +91,22 @@ q {
     quotes: "“" "”" "‘" "’";
 }
 
+sup,
+sub {
+    height: 0;
+    line-height: 1;
+    vertical-align: baseline;
+    _vertical-align: bottom;
+    position: relative;
+    
+}
+sup {
+    bottom: 1ex;
+}
+sub {
+    top: 0.5ex;
+}
+
 /* @end */
 
 /* @group Navigation/search */
