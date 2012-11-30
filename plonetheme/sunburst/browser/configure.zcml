@@ -10,13 +10,4 @@
         name="Sunburst Theme"
         />
 
-    <!-- Sunburst special view -->
-    <browser:page
-        for="*"
-        name="sunburstview"
-        class=".sunburstview.SunburstView"
-        permission="zope.Public"
-        allowed_interface=".interfaces.ISunburstView"
-        />
-
 </configure>
