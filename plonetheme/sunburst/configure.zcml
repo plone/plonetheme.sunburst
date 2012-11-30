@@ -1,18 +1,16 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
-    xmlns:cmf="http://namespaces.zope.org/cmf"
     xmlns:five="http://namespaces.zope.org/five"
+    xmlns:plone="http://namespaces.plone.org/plone"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="plone">
 
   <include package=".browser" />
 
-  <cmf:registerDirectory name="sunburst_images"/>
-  <cmf:registerDirectory name="sunburst_styles"/>
-  <cmf:registerDirectory name="sunburst_templates"/>
-
   <five:registerPackage package="." />
 
+  <plone:static directory="static" type="theme" />
+  
   <genericsetup:registerProfile
       name="default"
       title="Sunburst Theme"
