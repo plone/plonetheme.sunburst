@@ -10,6 +10,12 @@
  */
 
 
+/* workflow state color "published". Other definitions in member.css */
+.state-published {
+	color: #436976 !important;
+}
+
+
 /* @group Basics */
 
 body {

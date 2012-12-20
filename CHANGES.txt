@@ -4,6 +4,11 @@ Changelog
 1.4 (unreleased)
 ----------------
 
+- Move workflow color definition for state "published" to public.css. The
+  "published" color definition is propably something to be excluded with
+  public.css in custom designs to avoid coloring of all normally visible links.
+  [thet]
+
 - Seperate css rules based on @group hints to dedicated, already existing files
   and leave only Sunburst design-specific styles in public.css. This way, your
   own theme can depend on Sunburst but exclude the public.css file, which leads
