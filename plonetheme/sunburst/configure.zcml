@@ -29,4 +29,18 @@
     <genericsetup:depends name="actions"/>
   </genericsetup:importStep>
 
+  <genericsetup:upgradeSteps
+    source="2"
+    destination="3"
+    profile="plonetheme.sunburst:default">
+
+    <genericsetup:upgradeStep
+      title="Upgrade to plonetheme.sunburst 1.4"
+      description="Migrate to plonetheme.sunburst with seperated styles and register new reset.css."
+      handler=".setuphandlers.upgrade_step_2_3"
+      />
+
+  </genericsetup:upgradeSteps>
+
+
 </configure>
