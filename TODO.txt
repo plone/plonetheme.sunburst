@@ -1,20 +1,20 @@
 Remaining/known issues:
 
 - Look in main_template for TODO markers; I'm hoping we can simplify or remove
-  some of the more complex TAL expressions, or move them to views. 
+  some of the more complex TAL expressions, or move them to views.
   Help appreciated. :)
 
 - Pulldown menus should be display: none by default, then add a display
   property once they are clicked, so you don't get the "menu flashing" on load
 
-- Add support for the jQuery Tools dialog for deletion — both from the actions 
+- Add support for the jQuery Tools dialog for deletion — both from the actions
   menu and from folder_contents
 
 - Fix formlib forms to insert a div with class="formControls" on its submit
   buttons.
 
 - Personal bar is missing My Profile link, prefs should link directly to the
-  preferences, not to the intermediate page - and probably be named 
+  preferences, not to the intermediate page - and probably be named
   My Preferences.
 
 - The searchField/inputLabel JS should apply the type="search" dynamically using

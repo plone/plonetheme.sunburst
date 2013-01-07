@@ -12,7 +12,7 @@ Set up and log in
     >>> self.loginAsPortalOwner()
     >>> from zope.component import getUtility
     >>> from plone.portlets.interfaces import IPortletType
-    >>> portlet = getUtility(IPortletType, name='portlets.Calendar')    
+    >>> portlet = getUtility(IPortletType, name='portlets.Calendar')
 
 
 Sunburst view
@@ -56,7 +56,7 @@ Left column only
 ~~~~~~~~~~~~~~~~
 
 First we need to add a portlet that would definitely be visible right after
-adding it like Calendar portlet. 
+adding it like Calendar portlet.
 
     >>> mapping = self.portal.restrictedTraverse('++contextportlets++plone.leftcolumn')
     >>> addview = mapping.restrictedTraverse('+/' + portlet.addview)
@@ -64,7 +64,7 @@ adding it like Calendar portlet.
     ''
     >>> browser.reload()
 
-In this case we should have the left column. But not the right one. 
+In this case we should have the left column. But not the right one.
 
     >>> 'id="portal-column-one"' in browser.contents
     True
@@ -159,7 +159,7 @@ when there is no left column
 Changes aren't pick up immediately. We need to reload
 
     >>> 'dir="ltr"' in browser.contents
-    False 
+    False
     >>> browser.reload()
     >>> 'dir="ltr"' in browser.contents
     True
