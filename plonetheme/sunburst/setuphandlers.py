@@ -24,6 +24,7 @@ def importVarious(context):
 
 
 def upgrade_step_2_3(context):
-    context.runImportStepFromProfile(PROFILE, 'cssregistry')
+    context.runImportStepFromProfile(PROFILE, 'cssregistry',
+                                     run_dependencies=False)
     cssregistry = getToolByName(context, 'portal_css')
     cssregistry.cookResources()
