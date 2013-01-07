@@ -5,6 +5,9 @@ Changelog
 1.4 (unreleased)
 ----------------
 
+- Move documentation from .txt to .rst files for syntax highlighting.
+  [thet]
+
 - Move workflow color definition for state "published" to public.css. The
   "published" color definition is propably something to be excluded with
   public.css in custom designs to avoid coloring of all normally visible links.
