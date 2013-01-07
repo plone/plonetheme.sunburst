@@ -1,6 +1,7 @@
 Changelog
 =========
 
+
 1.4 (unreleased)
 ----------------
 
@@ -16,6 +17,10 @@ Changelog
   (edit-bars, tables, forms, etc). Fixes pull-requests #1 and #2. Upgrade step
   included (upgrade_step_2_3).
   [thet, TH-code]
+
+
+1.3.1 (2013-01-01)
+------------------
 
 - Apply .portalMessage styling to reST admonitions
   https://github.com/plone/plonetheme.sunburst/pull/4
