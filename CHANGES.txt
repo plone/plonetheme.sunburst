@@ -13,7 +13,7 @@ Changelog
 - Seperate css rules based on @group hints to dedicated, already existing files
   and leave only Sunburst design-specific styles in public.css. This way, your
   own theme can depend on Sunburst but exclude the public.css file, which leads
-  to way less style overrides while still having a Plone-like User interface
+  to way less style overrides while still having a Plone-like user interface
   (edit-bars, tables, forms, etc). Fixes pull-requests #1 and #2. Upgrade step
   included (upgrade_step_2_3).
   [thet, TH-code]
