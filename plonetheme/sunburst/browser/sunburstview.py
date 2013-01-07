@@ -1,8 +1,6 @@
-from zope.interface import implements
-from zope.component import getMultiAdapter
-
-from Acquisition import aq_inner
 from Products.Five import BrowserView
+from zope.component import getMultiAdapter
+from zope.interface import implements
 
 from plonetheme.sunburst.browser.interfaces import ISunburstView
 

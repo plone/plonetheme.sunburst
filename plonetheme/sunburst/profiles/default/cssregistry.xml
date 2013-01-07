@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<object name="portal_css" meta_type="Stylesheets Registry">
+
+  <stylesheet
+    insert-before="*"
+    cacheable="True"
+    compression="safe"
+    cookable="True"
+    enabled="on"
+    expression=""
+    id="reset.css"
+    media="screen"
+    rel="stylesheet"
+    rendering="link"/>
+
+</object>

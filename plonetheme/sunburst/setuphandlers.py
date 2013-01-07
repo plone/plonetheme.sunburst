@@ -1,6 +1,7 @@
 from Products.CMFCore.ActionInformation import Action
 from Products.CMFCore.utils import getToolByName
 
+PROFILE = 'profile-plonetheme.sunburst:default'
 
 def importVarious(context):
     # Make sure this import step only runs for the sunburst profile.
@@ -20,3 +21,10 @@ def importVarious(context):
 
     position = user_category.getObjectPosition('preferences') + 1
     user_category.moveObjectToPosition('plone_setup', position)
+
+
+def upgrade_step_2_3(context):
+    context.runImportStepFromProfile(PROFILE, 'cssregistry',
+                                     run_dependencies=False)
+    cssregistry = getToolByName(context, 'portal_css')
+    cssregistry.cookResources()

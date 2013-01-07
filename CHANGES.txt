@@ -1,10 +1,22 @@
 Changelog
 =========
 
-1.3.2 (unreleased)
-------------------
 
-- Nothing changed yet.
+1.4 (unreleased)
+----------------
+
+- Move workflow color definition for state "published" to public.css. The
+  "published" color definition is propably something to be excluded with
+  public.css in custom designs to avoid coloring of all normally visible links.
+  [thet]
+
+- Seperate css rules based on @group hints to dedicated, already existing files
+  and leave only Sunburst design-specific styles in public.css. This way, your
+  own theme can depend on Sunburst but exclude the public.css file, which leads
+  to way less style overrides while still having a Plone-like user interface
+  (edit-bars, tables, forms, etc). Fixes pull-requests #1 and #2. Upgrade step
+  included (upgrade_step_2_3).
+  [thet, TH-code]
 
 
 1.3.1 (2013-01-01)
@@ -19,6 +31,7 @@ Changelog
 
 - more specific Sunburst CSS on content-core dd, fixes #11840
   [maartenkling]
+
 
 1.3.0 (2012-10-16)
 ------------------

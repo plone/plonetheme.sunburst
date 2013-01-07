@@ -1,11 +1,11 @@
 /* For devices with narrow screens, phones, tablets, etc. */
-	
-#portal-column-one, 
+
+#portal-column-one,
 #portal-column-two,
-#portal-column-content { 
-	clear: both; 
-	width: 97.75%; 
-	margin-left: -98.875%; 
+#portal-column-content {
+	clear: both;
+	width: 97.75%;
+	margin-left: -98.875%;
 }
 
 #portal-logo {
