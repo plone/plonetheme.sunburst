@@ -5,7 +5,7 @@ Changelog
 1.4 (unreleased)
 ----------------
 
-- Move documentation from .txt to .rst files for syntax highlighting.
+- Move documentation from .txt to .rst files for ReST syntax highlighting.
   [thet]
 
 - Move workflow color definition for state "published" to public.css. The
