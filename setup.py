@@ -8,12 +8,9 @@ def read(*rnames):
 version = '1.4.dev'
 
 long_description = (
-    read('README.txt')
-    + '\n' +
-    read('plonetheme', 'sunburst', 'README.txt')
-    + '\n' +
-    read('CHANGES.txt')
-    + '\n'
+    read('README.rst') + '\n' +
+    read('plonetheme', 'sunburst', 'README.rst') + '\n' +
+    read('CHANGES.rst') + '\n'
     )
 
 setup(name='plonetheme.sunburst',

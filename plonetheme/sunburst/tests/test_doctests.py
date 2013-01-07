@@ -11,7 +11,7 @@ optionflags = (doctest.NORMALIZE_WHITESPACE|
 
 def test_suite():
     suite = ZopeTestCase.FunctionalDocFileSuite(
-        'README.txt', package='plonetheme.sunburst',
+        'README.rst', package='plonetheme.sunburst',
         optionflags=optionflags,
         test_class=FunctionalTestCase)
     suite.layer = layer
