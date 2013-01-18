@@ -84,6 +84,13 @@
 
 #dashboard-portlets1,
 #dashboard-portlets2,
+#dashboard-portlets3,
+#dashboard-portlets4 {
+    display: inline-block;
+}
+
+#dashboard-portlets1,
+#dashboard-portlets2,
 #dashboard-portlets3 {
     float:left;
     width:23%;
