@@ -5,7 +5,11 @@ Changelog
 1.4.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- More cleanup. Move following remaining portlet styles out of public.css:
+  - Dashboard styles to member.css,
+  - Portlet management styles to controlpanel.css,
+  - Other portlet styles to portlet.css.
+  [thet]
 
 
 1.4 (2013-01-17)
