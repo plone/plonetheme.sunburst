@@ -1,52 +1,3 @@
-/* @group Portlets management */
-
-div.portletAssignments {
-    font-size: 0.8em;
-    line-height: 2em;
-}
-
-div.portletAssignments .managedPortletActions {
-    float: right;
-}
-div.portletAssignments .managedPortletActions a, div.portletAssignments .managedPortletActions button {
-    margin: 0 0.25em;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-    color: #205C90;
-}
-
-div.portletAssignments .managedPortletActions form {
-    display: inline;
-}
-
-div.managePortletsLink,
-a.managePortletsFallback {
-    text-align: center;
-    padding: 0.25em 0.5em;
-    font-size: 80%;
-    margin: 0 auto 1em;
-    background: #ddd;
-    border-radius: 0.5em;
-    -webkit-border-radius: 0.5em;
-    -moz-border-radius: 0.5em;
-}
-a.managePortletsFallback {
-    display:inline-block; /* in order for our vertical margins to work on inline element */
-}
-#content a.managePortletsFallback {
-    display: block;
-    border-bottom: none !important;
-}
-
-#portlet-prefs a {
-    border: none;
-    line-height: 2em;
-}
-
-/* @end */
-
-
 /* @group Portlets */
 
 dl.portlet {
@@ -57,8 +8,7 @@ dl.portletError {
     background-color: #FFA500;
 }
 
-dl.portlet dt,
-div.portletAssignments div.portletHeader {
+dl.portlet dt {
     padding: 0.42em 1em;
     background: #ddd;
     line-height: normal;
@@ -79,10 +29,6 @@ dl.portlet dd.portletItem,
 dl.portlet dd.portletFooter,
 dl.portletError dd {
     padding: 1em;
-}
-
-.managedPortlet {
-    margin: 0.8em 0;
 }
 
 .blockedPortlet .portletHeader {
@@ -106,6 +52,11 @@ dl.portletError dd {
     line-height: 1.5em;
     margin-left: 1em;
     display: block;
+}
+
+#portlet-prefs a {
+    border: none;
+    line-height: 2em;
 }
 
 /* @end */
