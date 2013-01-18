@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.4 (unreleased)
+1.4 (2013-01-17)
 ----------------
 
 - Move documentation from .txt to .rst files for ReST syntax highlighting.
