@@ -146,7 +146,7 @@ table.listing tbody tr.odd td {
 table.listing td {
     border-right: 1px solid #ddd;
 }
-.icons-on table.listing td {
+.icons-on #listing-table td {
     line-height: 2em;
 }
 table.listing a {

@@ -5,6 +5,11 @@ Changelog
 1.4.1 (unreleased)
 ------------------
 
+- change line height of listing table class to only apply to folder contents
+  listing where it's affected instead of it applying to styles globally.
+  fixes #13420
+  [vangheem]
+
 - More cleanup. Move following remaining portlet styles out of public.css:
   - Dashboard styles to member.css,
   - Portlet management styles to controlpanel.css,
