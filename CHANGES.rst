@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.4.1 (unreleased)
+1.4.1 (2013-03-05)
 ------------------
 
 - fix navigation items having more height than bar in chrome
