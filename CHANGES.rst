@@ -5,7 +5,10 @@ Changelog
 1.4.1 (unreleased)
 ------------------
 
-- fix green line showing under current select for green bar items
+- fix navigation items having more height than bar in chrome
+  [vangheem]
+
+- fix green line showing under current select for green bar items in chrome
   [vangheem]
 
 - change line height of listing table class to only apply to folder contents
