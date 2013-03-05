@@ -5,6 +5,9 @@ Changelog
 1.4.1 (unreleased)
 ------------------
 
+- fix green line showing under current select for green bar items
+  [vangheem]
+
 - change line height of listing table class to only apply to folder contents
   listing where it's affected instead of it applying to styles globally.
   fixes #13420
