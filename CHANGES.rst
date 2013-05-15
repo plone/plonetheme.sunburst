@@ -2,10 +2,13 @@ Changelog
 =========
 
 
-1.4.2 (unreleased)
-------------------
+1.4.2dev (unreleased)
+---------------------
 
-- Nothing changed yet.
+- Remove font-weight bold for monthdays and font-weight normal for table header
+  in portlet calendar. Set div.portletCalendar with to auto instead of
+  unnecessary 100% + margin.
+  [thet]
 
 
 1.4.1 (2013-03-05)

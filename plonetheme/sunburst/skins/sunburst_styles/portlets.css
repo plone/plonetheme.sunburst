@@ -102,7 +102,6 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 /* @group Calendar portlet */
 
 .portletCalendar {
-    width: 100%;
     margin: 1px 0 1em 0;
 }
 
@@ -136,18 +135,15 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 }
 
 .portletCalendar a, .portletCalendar a:focus,
-.portletCalendar a, .portletCalendar a:hover {
+.portletCalendar a, .portletCalendar a:hover,
+.ploneCalendar a {
     text-decoration: none;
+    border-bottom: none !important;
 }
 
 .ploneCalendar {
     border-spacing: 0;
-    width: 100%;
-}
-
-.ploneCalendar a {
-    text-decoration: none;
-    border-bottom: none !important;
+    width:100%;
 }
 
 .ploneCalendar td {
@@ -161,18 +157,15 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     background-color: #eee;
     text-align: center;
     padding: 2px;
-    font-weight: normal;
 }
 
 .ploneCalendar .event {
     background-color: #eee;
-    font-weight: bold;
 }
 
 .ploneCalendar .todayevent {
     background-color: #eee;
     border: 2px solid #205C90;
-    font-weight: bold;
 }
 
 .ploneCalendar .todaynoevent {
