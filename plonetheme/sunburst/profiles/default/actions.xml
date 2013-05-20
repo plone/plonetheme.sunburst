@@ -8,7 +8,7 @@
         <property name="icon_expr"></property>
         <property name="available_expr">python:member is not None</property>
         <property name="permissions">
-         <element value="Portlets: Manage own portlets"/>
+         <element value="Portlets: View dashboard"/>
         </property>
         <property name="visible">True</property>
        </object>

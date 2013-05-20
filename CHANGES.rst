@@ -10,6 +10,10 @@ Changelog
   unnecessary 100% + margin.
   [thet]
 
+- Users only require dashboard view - not edit - permission to get a 'Dashboard'
+  link in the actions menu.
+  [danjacka]
+
 
 1.4.1 (2013-03-05)
 ------------------
