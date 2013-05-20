@@ -37,7 +37,12 @@ setup(name='plonetheme.sunburst',
       install_requires=[
           'setuptools',
       ],
-      extras_require={'test': ['collective.testcaselayer']},
+      extras_require={
+          'test': [
+              'Products.PloneTestCase',
+              'collective.testcaselayer',
+          ]
+      },
       entry_points="""
       [z3c.autoinclude.plugin]
       target = plone
