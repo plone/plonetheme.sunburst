@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-1.4.2dev (unreleased)
----------------------
+1.4.2 (2013-05-23)
+------------------
 
 - Remove font-weight bold for monthdays and font-weight normal for table header
   in portlet calendar. Set div.portletCalendar with to auto instead of
