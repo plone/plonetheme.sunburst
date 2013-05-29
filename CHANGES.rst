@@ -5,7 +5,9 @@ Changelog
 1.4.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Revert dashboard permission change from 1.4.2. The dashboard works best when
+  editable - linking to an uneditable dashboard should not be default.
+  [danjacka]
 
 
 1.4.2 (2013-05-23)
