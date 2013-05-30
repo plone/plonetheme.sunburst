@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.4.3 (unreleased)
+1.4.3 (2013-05-30)
 ------------------
 
 - Revert dashboard permission change from 1.4.2. The dashboard works best when
