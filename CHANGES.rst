@@ -5,7 +5,9 @@ Changelog
 1.4.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- fix green line showing under current select for green bar items in Firefox, 
+  Checked in Firefox, Chrome and IE8.
+  [gbastien, vangheem]
 
 
 1.4.3 (2013-05-30)
