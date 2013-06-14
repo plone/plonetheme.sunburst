@@ -48,10 +48,8 @@ have columns, at least not on the left.
 
 In Plone 4.4 we have a calendar portlet on the right though.
 
-    >>> try:
-    ...     from plone.app.upgrade import v44
-    ... except ImportError:
-    ...     v44 = None
+    >>> from Products.CMFPlone.utils import getFSVersionTuple
+    >>> v44 = getFSVersionTuple() >= (4, 4)
     >>> if v44:
     ...     'id="portal-column-two"' in browser.contents
     ... else:
