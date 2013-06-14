@@ -5,7 +5,9 @@ Changelog
 1.4.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix tests to pass on Plone 4.4 (which currently has a Calendar
+  portlet on the right by default) and keep them running on 4.3 too.
+  [maurits]
 
 
 1.4.4 (2013-06-13)
