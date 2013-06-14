@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.4.4 (unreleased)
+1.4.4 (2013-06-13)
 ------------------
 
 - fix green line showing under current select for green bar items in Firefox, 
