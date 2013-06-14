@@ -74,9 +74,11 @@ immediately visible, on Plone 4.4 we get an add form.
     >>> mapping = self.portal.restrictedTraverse('++contextportlets++plone.leftcolumn')
     >>> addview = mapping.restrictedTraverse('+/' + portlet.addview)
     >>> if v44:
-    ...     addview.createAndAdd({})
+    ...     result = addview.createAndAdd({})
     ... else:
-    ...     addview()
+    ...     result = addview()
+    >>> bool(result)  # None or empty string
+    False
     >>> browser.reload()
 
 In this case we should have the left column. In Plone 4.4  also the right one.
@@ -131,9 +133,11 @@ be there, but it is fine to have two.
     >>> mapping = self.portal.restrictedTraverse('++contextportlets++plone.rightcolumn')
     >>> addview = mapping.restrictedTraverse('+/' + portlet.addview)
     >>> if v44:
-    ...     addview.createAndAdd({})
+    ...     result = addview.createAndAdd({})
     ... else:
-    ...     addview()
+    ...     result = addview()
+    >>> bool(result)  # None or empty string
+    False
     >>> browser.reload()
 
 In this case we should have both columns visible.
