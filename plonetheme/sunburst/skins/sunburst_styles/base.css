@@ -279,29 +279,25 @@ div.warning > .last {
     margin: 0;
     line-height: 1.25em;
 }
-.warning {
+
+dl.warning {
     border-color: #d80;
 }
-.warning > dt,
+dl.warning > dt,
 .warning > .admonition-title {
     background-color: #d80;
 }
-.error {
-    border-color: #d00;
+
+dl.error {
+    border-color: red;
 }
-.error > dt,
+dl.error > dt,
 .error > .admonition-title {
     background-color: #d00;
-}
-.warning {
-    border-color: #d80;
 }
 .warning > dd,
 .warning > .last {
     background-color: #fd7;
-}
-.error {
-    border-color: red;
 }
 .error > dd,
 .error > .last {
