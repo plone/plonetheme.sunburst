@@ -8,10 +8,10 @@ Changelog
 - Fix tests to pass on Plone 4.4 (which currently has a Calendar
   portlet on the right by default) and keep them running on 4.3 too.
   [maurits]
+
 - Make portal messages display correctly (colors).
   https://dev.plone.org/ticket/13658
   [gbastien]
-
 
 
 1.4.4 (2013-06-13)
