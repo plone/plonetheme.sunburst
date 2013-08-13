@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.4.5 (unreleased)
+1.4.5 (2013-08-14)
 ------------------
 
 - Fix tests to pass on Plone 4.4 (which currently has a Calendar
