@@ -10,10 +10,15 @@ Set up and log in
     >>> portal_url = self.portal.absolute_url()
     >>> self.portal.error_log._ignored_exceptions = ()
     >>> self.loginAsPortalOwner()
+
+Get the Plone version
+    >>> from Products.CMFPlone.utils import getFSVersionTuple
+    >>> v50 = getFSVersionTuple() > (4, 3)
+
+Example portlet
     >>> from zope.component import getUtility
     >>> from plone.portlets.interfaces import IPortletType
-    >>> portlet = getUtility(IPortletType, name='portlets.Calendar')
-
+    >>> portlet = getUtility(IPortletType, name='portlets.Search')
 
 Sunburst view
 -------------
@@ -40,40 +45,28 @@ No columns
 
 Originally on a fresh site we don't have portlets on the top level
 (login portlet has been disabled in Plone 4) and thus we should not
-have columns, at least not on the left.
+have any columns.
 
     >>> browser.open('http://nohost/plone/front-page')
-    >>> 'id="portal-column-one"' in browser.contents
-    False
-
-In Plone 4.4 we have a calendar portlet on the right though.
-
-    >>> from Products.CMFPlone.utils import getFSVersionTuple
-    >>> v44 = getFSVersionTuple() >= (4, 4)
-    >>> if v44:
-    ...     'id="portal-column-two"' in browser.contents
-    ... else:
-    ...     'id="portal-column-two"' not in browser.contents
+    >>> 'id="portal-column-one"' not in browser.contents
+    True
+    >>> 'id="portal-column-two"' not in browser.contents
     True
 
 In this case content column should take the whole width of the site
 
-    >>> if v44:
-    ...     '<div id="portal-column-content" class="cell width-3:4 position-0">' in browser.contents
-    ... else:
-    ...     '<div id="portal-column-content" class="cell width-full position-0"' in browser.contents
+    >>> '<div id="portal-column-content" class="cell width-full position-0"' in browser.contents
     True
 
 Left column only
 ~~~~~~~~~~~~~~~~
 
-First we need to add a portlet that would definitely be visible right after
-adding it like Calendar portlet.  Well, on Plone 4.3 it was
-immediately visible, on Plone 4.4 we get an add form.
+First we need to add a portlet that would definitely be visible. Well, on Plone
+4.3 it was immediately visible, on Plone 5.0 we get an add form.
 
     >>> mapping = self.portal.restrictedTraverse('++contextportlets++plone.leftcolumn')
     >>> addview = mapping.restrictedTraverse('+/' + portlet.addview)
-    >>> if v44:
+    >>> if v50:
     ...     result = addview.createAndAdd({})
     ... else:
     ...     result = addview()
@@ -81,22 +74,16 @@ immediately visible, on Plone 4.4 we get an add form.
     False
     >>> browser.reload()
 
-In this case we should have the left column. In Plone 4.4  also the right one.
+In this case we should have the left column.
 
     >>> 'id="portal-column-one"' in browser.contents
     True
-    >>> if v44:
-    ...     'id="portal-column-two"' in browser.contents
-    ... else:
-    ...     'id="portal-column-two"' not in browser.contents
+    >>> 'id="portal-column-two"' not in browser.contents
     True
 
 And the class on id="portal-column-content" is changed
 
-    >>> if v44:
-    ...     '<div id="portal-column-content" class="cell width-1:2 position-1:4">' in browser.contents
-    ... else:
-    ...     '<div id="portal-column-content" class="cell width-3:4 position-1:4"' in browser.contents
+    >>> '<div id="portal-column-content" class="cell width-3:4 position-1:4"' in browser.contents
     True
 
 Now we switch from English to an RTL language. Hebrew for example.
@@ -117,22 +104,18 @@ Changes aren't pick up immediately. We need to reload
 
 And the class on id="portal-column-content" should be changed as well
 
-    >>> if v44:
-    ...     '<div id="portal-column-content" class="cell width-1:2 position-1:4">' in browser.contents
-    ... else:
-    ...     '<div id="portal-column-content" class="cell width-3:4 position-0"' in browser.contents
+    >>> '<div id="portal-column-content" class="cell width-3:4 position-0"' in browser.contents
     True
 
 Both columns
 ~~~~~~~~~~~~
 
-Now lets add Calendar portlet to the right column to have both columns
-populated and visible.  On Plone 4.4 the Calender portlet may already
-be there, but it is fine to have two.
+Now lets add a Search portlet to the right column also to have both columns
+populated and visible.
 
     >>> mapping = self.portal.restrictedTraverse('++contextportlets++plone.rightcolumn')
     >>> addview = mapping.restrictedTraverse('+/' + portlet.addview)
-    >>> if v44:
+    >>> if v50:
     ...     result = addview.createAndAdd({})
     ... else:
     ...     result = addview()

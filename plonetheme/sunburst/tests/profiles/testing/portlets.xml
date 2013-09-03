@@ -7,8 +7,8 @@
         manager="plone.leftcolumn"
         category="context"
         key="/"
-        type="portlets.Calendar"
-        name="calendar"
-        remove="" />
+        type="portlets.Search"
+        name="search"
+        remove="True" />
 
 </portlets>
