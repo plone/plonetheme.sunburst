@@ -11,10 +11,6 @@ Set up and log in
     >>> self.portal.error_log._ignored_exceptions = ()
     >>> self.loginAsPortalOwner()
 
-Get the Plone version
-    >>> from Products.CMFPlone.utils import getFSVersionTuple
-    >>> v50 = getFSVersionTuple()[0] >= 5
-
 Example portlet
     >>> from zope.component import getUtility
     >>> from plone.portlets.interfaces import IPortletType
@@ -61,15 +57,12 @@ In this case content column should take the whole width of the site
 Left column only
 ~~~~~~~~~~~~~~~~
 
-First we need to add a portlet that would definitely be visible. Well, on Plone
-4.3 it was immediately visible, on Plone 5.0 we get an add form.
+First we need to add a portlet that would definitely be visible. So let's add
+the search portlet via it's addview.
 
     >>> mapping = self.portal.restrictedTraverse('++contextportlets++plone.leftcolumn')
     >>> addview = mapping.restrictedTraverse('+/' + portlet.addview)
-    >>> if v50:
-    ...     result = addview.createAndAdd({})
-    ... else:
-    ...     result = addview()
+    >>> result = addview.createAndAdd({})
     >>> bool(result)  # None or empty string
     False
     >>> browser.reload()
@@ -115,10 +108,7 @@ populated and visible.
 
     >>> mapping = self.portal.restrictedTraverse('++contextportlets++plone.rightcolumn')
     >>> addview = mapping.restrictedTraverse('+/' + portlet.addview)
-    >>> if v50:
-    ...     result = addview.createAndAdd({})
-    ... else:
-    ...     result = addview()
+    >>> result = addview.createAndAdd({})
     >>> bool(result)  # None or empty string
     False
     >>> browser.reload()
