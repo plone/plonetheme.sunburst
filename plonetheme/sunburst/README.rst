@@ -13,7 +13,7 @@ Set up and log in
 
 Get the Plone version
     >>> from Products.CMFPlone.utils import getFSVersionTuple
-    >>> v50 = getFSVersionTuple() > (4, 3)
+    >>> v50 = getFSVersionTuple()[0] >= 5
 
 Example portlet
     >>> from zope.component import getUtility
