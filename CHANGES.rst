@@ -5,7 +5,8 @@ Changelog
 1.4.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Move logo.png to Products.CMFPlone
+  [esteele]
 
 
 1.4.5 (2013-08-14)
