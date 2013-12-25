@@ -105,4 +105,4 @@ custom theme. The "sunburst" bundle isn't inlcuded.
       </record>
     </registry>
 
-Of course, the mycustom_skin needs to be registered too.
+Of course, the mycustom_skin needs to be registered in skins.xml too.
