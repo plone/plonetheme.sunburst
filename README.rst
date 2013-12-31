@@ -43,7 +43,7 @@ Here is a way to only include specific stylesheets in your custom theme. This
 example is based on Products.ResourceRegistries with the "bundles" concept,
 which is available from version 2.1a1.
 
-In the stylesheets.xml profile, configure bundles for your styles:
+In the cssregistry.xml profile, configure bundles for your styles:
 
 .. code-block:: xml
 
