@@ -1,30 +1,8 @@
-from Testing.ZopeTestCase import Sandboxed
-
+from plone.app.testing.bbb import PloneTestCaseFixture, PloneTestCase
 from Products.Five import zcml
-from Products.Five import fiveconfigure
-from Products.PloneTestCase.PloneTestCase import installPackage
-from Products.Five.testbrowser import Browser
-from Products.PloneTestCase import PloneTestCase as ptc
+from plone.testing import z2
+from plone.app import testing
 
-from collective.testcaselayer.ptc import BasePTCLayer, ptc_layer
-
-class Layer(BasePTCLayer):
-    """ set up basic testing layer """
-
-    def afterSetUp(self):
-        # load zcml for this package and its dependencies
-        fiveconfigure.debug_mode = True
-        from plonetheme import sunburst
-        zcml.load_config('configure.zcml', package=sunburst)
-        fiveconfigure.debug_mode = False
-        # after which the required packages can be initialized
-        installPackage('plonetheme.sunburst', quiet=True)
-        # finally load the testing profile
-        self.addProfile('plonetheme.sunburst:default')
-
-layer = Layer(bases=[ptc_layer])
-
-ptc.setupPloneSite()
 
 zcml_string = """\
 <configure xmlns="http://namespaces.zope.org/zope"
@@ -46,18 +24,41 @@ zcml_string = """\
 </configure>
 """
 
-class SunburstTestCase(Sandboxed, ptc.PloneTestCase):
+
+class SunburstFixture(PloneTestCaseFixture):
+
+    def setUpZope(self, app, configurationContext):
+        super(PloneTestCaseFixture, self).setUpZope(app, configurationContext)
+        import plonetheme.sunburst
+        self.loadZCML(package=plonetheme.sunburst)
+        z2.installProduct(app, 'plonetheme.sunburst')
+
+    def setUpPloneSite(self, portal):
+        super(PloneTestCaseFixture, self).setUpPloneSite(portal)
+        # install sunburst theme
+        testing.applyProfile(portal, 'plonetheme.sunburst:default')
+
+    def tearDownZope(self, app):
+        super(PloneTestCaseFixture, self).tearDownZope(app)
+        z2.uninstallProduct(app, 'plonetheme.sunburst')
+
+
+
+PTC_FIXTURE = SunburstFixture()
+PTC_FUNCTIONAL_TESTING = testing.FunctionalTesting(
+    bases=(PTC_FIXTURE,), name='PloneTestCase:Functional')
+
+
+class SunburstTestCase(PloneTestCase):
     """ Base class used for test cases """
 
-    layer = layer
+    layer = PTC_FUNCTIONAL_TESTING
 
-class FunctionalTestCase(ptc.FunctionalTestCase):
-
-    layer = layer
+class FunctionalTestCase(PloneTestCase):
 
     def getBrowser(self, loggedIn=True):
         """ instantiate and return a testbrowser for convenience """
-        browser = Browser()
+        browser = z2.Browser()
         if loggedIn:
             user = ptc.default_user
             pwd = ptc.default_password

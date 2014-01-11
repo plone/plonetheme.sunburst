@@ -4,12 +4,14 @@ Detailed documentation
 Set up and log in
 -----------------
 
-    >>> from Products.Five.testbrowser import Browser
-    >>> browser = self.getBrowser()
+    >>> from plone.testing import z2
+    >>> browser = z2.Browser(layer['app'])
     >>> browser.handleErrors = False
-    >>> portal_url = self.portal.absolute_url()
-    >>> self.portal.error_log._ignored_exceptions = ()
-    >>> self.loginAsPortalOwner()
+    >>> portal = layer['portal']
+    >>> portal_url = portal.absolute_url()
+    >>> portal.error_log._ignored_exceptions = ()
+    >>> from plone.app.testing import SITE_OWNER_NAME
+    >>> z2.login(layer['app'], SITE_OWNER_NAME)
 
 Example portlet
     >>> from zope.component import getUtility
@@ -26,7 +28,7 @@ to put these into global ploneview.
 First let's check that the view exists
 
     >>> from plonetheme.sunburst.browser.sunburstview import SunburstView
-    >>> self.view = SunburstView(self.portal, self.app.REQUEST)
+    >>> view = SunburstView(portal, layer['request'])
 
 
 getColumnsClass()
@@ -60,7 +62,7 @@ Left column only
 First we need to add a portlet that would definitely be visible. So let's add
 the search portlet via it's addview.
 
-    >>> mapping = self.portal.restrictedTraverse('++contextportlets++plone.leftcolumn')
+    >>> mapping = portal.restrictedTraverse('++contextportlets++plone.leftcolumn')
     >>> addview = mapping.restrictedTraverse('+/' + portlet.addview)
     >>> result = addview.createAndAdd({})
     >>> bool(result)  # None or empty string
@@ -106,7 +108,7 @@ Both columns
 Now lets add a Search portlet to the right column also to have both columns
 populated and visible.
 
-    >>> mapping = self.portal.restrictedTraverse('++contextportlets++plone.rightcolumn')
+    >>> mapping = portal.restrictedTraverse('++contextportlets++plone.rightcolumn')
     >>> addview = mapping.restrictedTraverse('+/' + portlet.addview)
     >>> result = addview.createAndAdd({})
     >>> bool(result)  # None or empty string
@@ -134,7 +136,7 @@ visible.
     >>> from Products.Five import zcml
     >>> from plonetheme.sunburst.tests.base import zcml_string
     >>> zcml.load_string(zcml_string)
-    >>> portal_setup = self.portal.portal_setup
+    >>> portal_setup = portal.portal_setup
     >>> portal_setup.runAllImportStepsFromProfile('profile-plonetheme.sunburst:testing')
     {...}
     >>> browser.reload()
