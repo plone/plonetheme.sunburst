@@ -1,28 +1,6 @@
 from plone.app.testing.bbb import PloneTestCaseFixture, PloneTestCase
-from Products.Five import zcml
 from plone.testing import z2
 from plone.app import testing
-
-
-zcml_string = """\
-<configure xmlns="http://namespaces.zope.org/zope"
-           xmlns:browser="http://namespaces.zope.org/browser"
-           xmlns:plone="http://namespaces.plone.org/plone"
-           xmlns:gs="http://namespaces.zope.org/genericsetup"
-           package="plonetheme.sunburst"
-           i18n_domain="test">
-
-    <gs:registerProfile
-        name="testing"
-        title="plonetheme.sunburst testing"
-        description="Used for testing only"
-        directory="tests/profiles/testing"
-        for="Products.CMFCore.interfaces.ISiteRoot"
-        provides="Products.GenericSetup.interfaces.EXTENSION"
-        />
-
-</configure>
-"""
 
 
 class SunburstFixture(PloneTestCaseFixture):

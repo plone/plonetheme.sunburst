@@ -11,7 +11,7 @@ Set up and log in
     >>> portal_url = portal.absolute_url()
     >>> portal.error_log._ignored_exceptions = ()
     >>> from plone.app.testing import SITE_OWNER_NAME
-    >>> z2.login(layer['app'], SITE_OWNER_NAME)
+    >>> z2.login(layer['app']['acl_users'], SITE_OWNER_NAME)
 
 Example portlet
     >>> from zope.component import getUtility
@@ -67,6 +67,8 @@ the search portlet via it's addview.
     >>> result = addview.createAndAdd({})
     >>> bool(result)  # None or empty string
     False
+    >>> import transaction
+    >>> transaction.commit()
     >>> browser.reload()
 
 In this case we should have the left column.
@@ -88,6 +90,7 @@ Now we switch from English to an RTL language. Hebrew for example.
     >>> tool.getDefaultLanguage()
     'en'
     >>> tool.setDefaultLanguage('he')
+    >>> transaction.commit()
 
 Changes aren't pick up immediately. We need to reload
 
@@ -113,6 +116,7 @@ populated and visible.
     >>> result = addview.createAndAdd({})
     >>> bool(result)  # None or empty string
     False
+    >>> transaction.commit()
     >>> browser.reload()
 
 In this case we should have both columns visible.
@@ -133,12 +137,10 @@ Right column only
 Now let's get rid of the left column in order to have only the right column
 visible.
 
-    >>> from Products.Five import zcml
-    >>> from plonetheme.sunburst.tests.base import zcml_string
-    >>> zcml.load_string(zcml_string)
-    >>> portal_setup = portal.portal_setup
-    >>> portal_setup.runAllImportStepsFromProfile('profile-plonetheme.sunburst:testing')
-    {...}
+    >>> mapping = portal.restrictedTraverse('++contextportlets++plone.leftcolumn')
+    >>> del mapping['search']
+    >>> transaction.commit()
+
     >>> browser.reload()
     >>> 'id="portal-column-one"' in browser.contents
     False
@@ -161,6 +163,7 @@ Now we switch language back to 'en' and our content should start at position-0
 when there is no left column
 
     >>> tool.setDefaultLanguage('en')
+    >>> transaction.commit()
 
 Changes aren't pick up immediately. We need to reload
 
