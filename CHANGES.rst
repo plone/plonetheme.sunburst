@@ -5,6 +5,9 @@ Changelog
 1.4.6 (unreleased)
 ------------------
 
+- PLIP #13705: Remove <base> tag.
+  [frapell]
+
 - Move logo.png to Products.CMFPlone
   [esteele]
 
