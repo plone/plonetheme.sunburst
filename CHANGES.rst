@@ -8,6 +8,9 @@ Changelog
 - Move logo.png to Products.CMFPlone
   [esteele]
 
+- Ported tests from PloneTestCase to plone.app.testing
+  [tomgross]
+
 
 1.4.5 (2013-08-14)
 ------------------

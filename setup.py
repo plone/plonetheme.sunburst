@@ -36,11 +36,14 @@ setup(name='plonetheme.sunburst',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'Products.CMFCore',
+          'plone.theme',
+          'zope.component',
+          'zope.interface',
       ],
       extras_require={
           'test': [
-              'Products.PloneTestCase',
-              'collective.testcaselayer',
+              'plone.app.testing',
           ]
       },
       entry_points="""
