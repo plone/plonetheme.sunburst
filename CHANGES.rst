@@ -2,10 +2,17 @@ Changelog
 =========
 
 
-1.4.6 (unreleased)
+1.4.6 (2014-02-19)
 ------------------
 
-- Nothing changed yet.
+- Update README.rst to point to correct file for updating portal_css.
+  [aclark]
+
+- Use nocall when referencing site_properties for a mini optimization.
+  [tomgross]
+
+- Clarify documentation about registration of the skins layer.
+  [thet]
 
 
 1.4.5 (2013-08-14)
@@ -23,7 +30,7 @@ Changelog
 1.4.4 (2013-06-13)
 ------------------
 
-- fix green line showing under current select for green bar items in Firefox, 
+- fix green line showing under current select for green bar items in Firefox,
   Checked in Firefox, Chrome and IE8.
   [gbastien, vangheem]
 
