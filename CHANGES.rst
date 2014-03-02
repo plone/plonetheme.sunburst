@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.4.6 (unreleased)
+1.5.0 (2014-03-02)
 ------------------
 
 - PLIP #13705: Remove <base> tag.
