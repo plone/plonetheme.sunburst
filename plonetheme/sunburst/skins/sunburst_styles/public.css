@@ -426,7 +426,8 @@ dl.portlet a:hover {
     margin: 0 0 1em 2em;
 }
 
-#content pre {
+#content pre,
+.portletStaticText pre {
     background-color: #222;
     color: White;
     font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
@@ -436,11 +437,13 @@ dl.portlet a:hover {
     margin-bottom: 1em;
     line-height: 1.25em;
 }
-#content pre.python {
+#content pre.python,
+.portletStaticText pre.python {
     background-color: White;
 }
 
-#content code {
+#content code,
+.portletStaticText code {
     font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
 }
 

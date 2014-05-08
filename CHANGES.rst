@@ -5,7 +5,8 @@ Changelog
 1.4.7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add some missing WYSIWIG/editor styles to the Static Text Portlet.
+  [rpatterson]
 
 
 1.4.6 (2014-02-19)
