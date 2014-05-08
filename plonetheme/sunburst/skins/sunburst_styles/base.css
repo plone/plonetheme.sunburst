@@ -2,17 +2,20 @@
 
 /* Editor styles */
 #content .discreet,
-#sidebar .discreet {
+#sidebar .discreet,
+.portletStaticText .discreet {
     color: #666;
     font-size: 85%;
     font-weight: normal;
 }
 
-#content .visualHighlight {
+#content .visualHighlight,
+.portletStaticText .visualHighlight {
     background-color: #ffb;
 }
 
-#content .pullquote {
+#content .pullquote,
+.portletStaticText .pullquote {
     margin: 0 1em 0.5em 0.5em;
     font-weight: bold;
     line-height: 1.25em;
@@ -23,7 +26,8 @@
     font-size: 1.6em;
     letter-spacing: -0.08em !important;
 }
-#content .callout {
+#content .callout,
+.portletStaticText .callout {
     background: #eee;
     padding: 1em;
     border-left: 1em solid #ccc;

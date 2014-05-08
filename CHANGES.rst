@@ -5,6 +5,9 @@ Changelog
 1.5.1 (unreleased)
 ------------------
 
+- Add some missing WYSIWIG/editor styles to the Static Text Portlet.
+  [rpatterson]
+
 - Move content list style classes (ul, ol, li) from base.css to public.css.
   They were always problematic in themes, based on Sunburst which excluded
   public.css.
