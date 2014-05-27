@@ -365,10 +365,29 @@ dl.portlet {
     margin-bottom: 1em;
 }
 
-#content ul,
-#content ol {
 
+/* Content list styles */
+#content ul {
+    list-style-type: disc;
+    margin-left: 2em;
 }
+
+#content ol,
+dl.portlet ol,
+div.portletStaticText ol {
+    list-style-type: decimal;
+    margin-left: 2em;
+}
+
+#content li,
+dl.portlet li,
+div.portletStaticText li {
+    margin-bottom: 0.25em;
+    line-height: 1.5em;
+    display: list-item;
+}
+/* End content list styles */
+
 
 #content a:link,
 dl.portlet a:link {

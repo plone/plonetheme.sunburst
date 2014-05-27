@@ -5,7 +5,10 @@ Changelog
 1.5.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Move content list style classes (ul, ol, li) from base.css to public.css.
+  They were always problematic in themes, based on Sunburst which excluded
+  public.css.
+  [thet]
 
 
 1.5.0 (2014-03-02)
