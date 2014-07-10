@@ -2,6 +2,12 @@ Changelog
 =========
 
 
+y (unreleased)
+--------------
+
+- Nothing changed yet.
+
+
 1.5.1 (2014-07-10)
 ------------------
 
