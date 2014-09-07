@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.4.7 (unreleased)
+1.4.7 (2014-09-07)
 ------------------
 
 - Add some missing WYSIWIG/editor styles to the Static Text Portlet.
