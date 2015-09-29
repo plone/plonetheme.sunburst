@@ -5,7 +5,8 @@ Changelog
 1.5.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Remove Chrome Frame from ``X-UA-Compatible`` HTTP header as it's deprecated.
+  [hvelarde]
 
 
 1.5.1 (2014-07-10)
@@ -48,7 +49,7 @@ Changelog
 1.4.4 (2013-06-13)
 ------------------
 
-- fix green line showing under current select for green bar items in Firefox, 
+- fix green line showing under current select for green bar items in Firefox,
   Checked in Firefox, Chrome and IE8.
   [gbastien, vangheem]
 
