@@ -5,6 +5,8 @@ Changelog
 1.5.2 (unreleased)
 ------------------
 
+Fixes:
+
 - Remove Chrome Frame from ``X-UA-Compatible`` HTTP header as it's deprecated.
   [hvelarde]
 
