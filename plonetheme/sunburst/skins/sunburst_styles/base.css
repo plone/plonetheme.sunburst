@@ -167,26 +167,31 @@ table.grid th {
     padding: 0;
 }
 
+nav.pagination,
 div.listingBar {
     font-size: 80%;
     margin: 1em 0;
 }
 
+nav.pagination .next,
 div.listingBar .next {
     display: inline-block;
     float: right;
 }
 
+nav.pagination .previous,
 div.listingBar .previous {
     display: inline-block;
 }
 
+nav.pagination a,
 div.listingBar a {
     display: inline-block;
     padding: 0.25em 0.5em;
     border: 0.1em solid #ccc;
 }
 
+nav.pagination a:hover,
 div.listingBar a:hover {
     color: White;
     background-color: #329fd7;

@@ -10,6 +10,9 @@ Fixes:
 - Remove Chrome Frame from ``X-UA-Compatible`` HTTP header as it's deprecated.
   [hvelarde]
 
+- Make plonetheme.sunburst also work with new plone.batching ``pagination`` class.
+  [thet]
+
 
 1.5.1 (2014-07-10)
 ------------------
