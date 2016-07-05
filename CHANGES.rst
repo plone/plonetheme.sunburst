@@ -11,7 +11,8 @@ New:
 
 Fixes:
 
-- *add item here*
+- Use zope.interface decorator.
+  [gforcada]
 
 
 1.5.2 (2016-02-14)
