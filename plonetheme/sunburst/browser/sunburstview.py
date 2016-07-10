@@ -1,14 +1,14 @@
 from Products.Five import BrowserView
 from zope.component import getMultiAdapter
-from zope.interface import implements
+from zope.interface import implementer
 
 from plonetheme.sunburst.browser.interfaces import ISunburstView
 
 _marker = []
 
 
+@implementer(ISunburstView)
 class SunburstView(BrowserView):
-    implements(ISunburstView)
 
     # Utility methods
 
