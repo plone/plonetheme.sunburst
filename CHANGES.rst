@@ -5,10 +5,6 @@ Changelog
 1.5.3 (unreleased)
 ------------------
 
-New:
-
-- *add item here*
-
 Fixes:
 
 - Use zope.interface decorator.
