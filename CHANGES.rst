@@ -5,6 +5,8 @@ Changelog
 1.4.8 (unreleased)
 ------------------
 
+New features:
+
 - Add data-base-url attribute in body tag.
   Closes `issue 2051 <https://github.com/plone/Products.CMFPlone/issues/2051>`_
   [rodfersou]
