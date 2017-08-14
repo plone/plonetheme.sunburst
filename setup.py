@@ -11,7 +11,7 @@ long_description = (
     read('README.rst') + '\n' +
     read('plonetheme', 'sunburst', 'README.rst') + '\n' +
     read('CHANGES.rst') + '\n'
-    )
+)
 
 setup(name='plonetheme.sunburst',
       version=version,
@@ -20,11 +20,14 @@ setup(name='plonetheme.sunburst',
       classifiers=[
           "Environment :: Web Environment",
           "Framework :: Plone",
+          "Framework :: Plone :: 4.3",
           "Framework :: Zope2",
           "License :: OSI Approved :: GNU General Public License (GPL)",
           "Operating System :: OS Independent",
           "Programming Language :: Python",
-        ],
+          "Programming Language :: Python :: 2.6",
+          "Programming Language :: Python :: 2.7",
+      ],
       keywords='web zope plone theme',
       author='Plone Foundation',
       author_email='plone-developers@lists.sourceforge.net',
