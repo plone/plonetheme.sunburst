@@ -7,7 +7,8 @@ Changelog
 
 Breaking changes:
 
-- *add item here*
+- Don't hide portal-logo for mobile devices.
+  [rodfersou]
 
 New features:
 
