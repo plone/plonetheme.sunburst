@@ -10,14 +10,6 @@ Breaking changes:
 - Don't hide portal-logo for mobile devices.
   [rodfersou]
 
-New features:
-
-- *add item here*
-
-Bug fixes:
-
-- *add item here*
-
 
 1.5.3 (2016-08-18)
 ------------------
