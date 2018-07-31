@@ -16,7 +16,7 @@ New features:
 
 Bug fixes:
 
-- Fix ``X-UA-Compatible`` header.
+- Get rid of obsolete ``X-UA-Compatible`` header.
   [hvelarde]
 
 
