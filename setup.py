@@ -18,6 +18,7 @@ setup(name='plonetheme.sunburst',
       description="The default theme for Plone 4.",
       long_description=long_description,
       classifiers=[
+          "Development Status :: 6 - Mature",
           "Environment :: Web Environment",
           "Framework :: Plone",
           "Framework :: Plone :: 5.0",
