@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<object name="portal_skins" default_skin="Sunburst Theme">
+
+ <object remove="True" name="sunburst_images"
+    meta_type="Filesystem Directory View"
+    directory="plonetheme.sunburst:skins/sunburst_images"/>
+ <object remove="True" name="sunburst_templates"
+    meta_type="Filesystem Directory View"
+    directory="plonetheme.sunburst:skins/sunburst_templates"/>
+ <object remove="True" name="sunburst_styles"
+    meta_type="Filesystem Directory View"
+    directory="plonetheme.sunburst:skins/sunburst_styles"/>
+
+ <skin-path remove="True" name="Sunburst Theme">
+  <layer remove="True" name="sunburst_images"/>
+  <layer remove="True" name="sunburst_templates"/>
+  <layer remove="True" name="sunburst_styles"/>
+ </skin-path>
+
+</object>
